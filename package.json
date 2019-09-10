@@ -2,7 +2,8 @@
   "scripts": {
     "build-dev": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.js",
     "watch": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.js --watch",
-    "build-prod": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.prod.js"
+    "build-prod": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.prod.js",
+    "deploy": ""
   },
   "devDependencies": {
     "@types/node": "^12.7.4",
