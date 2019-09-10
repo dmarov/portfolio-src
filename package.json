@@ -3,7 +3,7 @@
     "build-dev": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.ts",
     "watch": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.ts --watch",
     "build-prod": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.prod.ts",
-    "deploy": ""
+    "deploy": "git subtree push --prefix dist origin master"
   },
   "devDependencies": {
     "@types/node": "^12.7.4",

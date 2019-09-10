@@ -1,8 +1,6 @@
 {
     "compilerOptions": {
-        "alwaysStrict": true,
-        "target": "es5",
-        "module": "es6",
+        "esModuleInterop": true,
         "allowSyntheticDefaultImports": true
     }
 }
