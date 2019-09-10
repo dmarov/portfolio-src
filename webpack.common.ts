@@ -2,6 +2,7 @@ import webpack from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import VueLoaderPlugin from 'vue-loader/lib/plugin';
 
 const config: webpack.Configuration = {
 
@@ -11,11 +12,16 @@ const config: webpack.Configuration = {
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
             }
         ]
     },
     plugins: [
+        new VueLoaderPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Portfolio',
