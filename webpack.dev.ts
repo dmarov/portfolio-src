@@ -5,6 +5,6 @@ import common from './webpack.common';
 const config: webpack.Configuration = merge(common, {
 
     mode: 'development',
-};
+});
 
 export default config;

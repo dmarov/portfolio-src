@@ -1,17 +1,19 @@
 {
   "scripts": {
-    "build-dev": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.js",
-    "watch": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.js --watch",
-    "build-prod": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.prod.js",
+    "build-dev": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.ts",
+    "watch": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.ts --watch",
+    "build-prod": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.prod.ts",
     "deploy": ""
   },
   "devDependencies": {
     "@types/node": "^12.7.4",
     "@types/webpack": "^4.39.1",
+    "cross-env": "^5.2.1",
     "ts-node": "^8.3.0",
     "tsconfig-paths": "^3.8.0",
     "typescript": "^3.6.2",
     "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
     "webpack-merge": "^4.2.2"
   }
 }

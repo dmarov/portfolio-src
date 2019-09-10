@@ -2,7 +2,7 @@ import webpack from 'webpack';
 
 const config: webpack.Configuration = {
 
-    entry: 'index.js',
+    entry: './src/index.ts',
 };
 
 export default config;
