@@ -6,6 +6,15 @@ import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 const config: webpack.Configuration = {
 
     entry: './src/index.ts',
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            }
+        ]
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({

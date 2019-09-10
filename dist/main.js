@@ -91,9 +91,10 @@
   !*** ./src/index.ts ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log(\"hello world\");\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+"use strict";
+eval("\nconsole.log(\"hello world\");\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ })
 
