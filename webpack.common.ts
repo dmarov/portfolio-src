@@ -73,9 +73,13 @@ const config: webpack.Configuration = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Portfolio',
+            template: 'src/index.html',
             filename: 'index.html',
         }),
     ],
+    resolve: {
+        extensions: [ '.ts', '.js', '.vue', '.scss', '.css', '.json' ],
+    },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js',

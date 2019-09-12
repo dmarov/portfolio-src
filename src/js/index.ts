@@ -1,5 +1,9 @@
+import Vue from 'vue';
+import App from '../components/layout';
 
-console.log("ok");
+let el = document.querySelector("#app");
 
-let a = [1,2,3];
-let b = [...a, 5];
+new Vue({
+    el,
+    render: h => h(App),
+});

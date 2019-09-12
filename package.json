@@ -34,6 +34,7 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-typescript": "^7.6.0",
     "core-js": "^3.2.1",
-    "regenerator-runtime": "^0.13.3"
+    "regenerator-runtime": "^0.13.3",
+    "vue": "^2.6.10"
   }
 }
