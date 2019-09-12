@@ -33,6 +33,10 @@ const config: webpack.Configuration = {
                             ],
                         },
                     },
+                    {
+                        loader: 'ts-loader',
+                        options: { appendTsSuffixTo: [/\.vue$/] }
+                    },
                 ]
             },
             {
@@ -66,6 +70,10 @@ const config: webpack.Configuration = {
                     'sass-loader',
                 ],
             },
+            {
+                test: /\.pug$/,
+                loader: 'pug-plain-loader',
+            }
         ]
     },
     plugins: [
