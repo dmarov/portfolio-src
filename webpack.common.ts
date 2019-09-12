@@ -7,11 +7,15 @@ import VueLoaderPlugin from 'vue-loader/lib/plugin';
 const config: webpack.Configuration = {
 
     entry: {
-        "js/polyfills": './src/polyfills.ts',
-        "js/global": './src/index.ts'
+        "js/polyfills": './src/js/polyfills.ts',
+        "js/global": './src/js/index.ts'
     },
     module: {
         rules: [
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+            },
             {
                 test: /\.ts$/,
                 exclude: /node_modules/,
@@ -47,8 +51,20 @@ const config: webpack.Configuration = {
                 ]
             },
             {
-                test: /\.vue$/,
-                loader: 'vue-loader',
+                test: /\.css$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                ],
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    'vue-style-loader',
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
             },
         ]
     },
