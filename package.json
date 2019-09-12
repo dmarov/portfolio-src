@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "build:dev": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.ts",
-    "watch": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.dev.ts --watch",
-    "build:prod": "cross-env TS_NODE_PROJECT=\"tsconfig-webpack.json\" webpack --config webpack.prod.ts",
+    "build:dev": "webpack --config webpack.dev.ts",
+    "watch": "webpack --config webpack.dev.ts --watch",
+    "build:prod": "webpack --config webpack.prod.ts",
     "deploy": "git subtree push --prefix dist origin master",
     "start:dev": "webpack-dev-server --config webpack.dev.ts --open"
   },
