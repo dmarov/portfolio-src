@@ -1,19 +1,21 @@
 <script lang='ts'>
-import Menu from './menu';
+import Vue from 'vue';
+import Menu from './menu.vue';
+import Component from 'vue-class-component'
 
-export default {
+@Component({
 
     components: {
-        'vue-menu': Menu,
+        "app-menu": Menu,
     },
-    created() {
-    
-        let a: number = 'a';
-        a = 7;
-    }
+})
+export default class Layout extends Vue {
+
+
 }
 
 </script>
 <template lang='pug'>
-    vue-menu
+    .content
+        app-menu
 </template>

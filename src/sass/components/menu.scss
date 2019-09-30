@@ -1,0 +1,22 @@
+.menu-wrapper {
+
+    background-color: $col-black;
+    padding: 1em;
+    color: $col-white;
+}
+
+.menu {
+
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+
+    &__item {
+    
+        padding: 1em;
+        cursor: pointer;
+        list-style-type: none;
+    }
+}

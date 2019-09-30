@@ -1,0 +1,20 @@
+@import 'const/colors';
+@import 'components/menu';
+@import 'fonts/space-mono.scss';
+
+body {
+
+    margin: 0;
+    height: 100%;
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+.content {
+
+    min-height: 100vh;
+    background-color: $col-white;
+}
