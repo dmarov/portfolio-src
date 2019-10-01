@@ -39,6 +39,15 @@
     transition: transform .2s linear;
     height: 100vh;
 
+    @include break-min-width(700px) {
+
+        position: static;
+        transform: translateX(0);
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+
     &__item {
 
         cursor: pointer;
@@ -69,6 +78,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include break-min-width(700px) {
+
+            display: none;
+        }
     }
 
     &__burger-icon {
@@ -99,6 +113,10 @@
         &:after {
             top: -5px;
         }
+    }
+
+    @include break-min-width(700px) {
+    
     }
 }
 
