@@ -7,10 +7,10 @@ Vue.use(VueRouter);
 
 let el = document.querySelector("#app") as HTMLElement;
 
-const Home = () => import(/* webpackPreload: true */ "../components/home.vue");
-const Projects = () => import("../components/projects.vue");
-const AboutMe = () => import("../components/about-me.vue");
-const Contact = () => import("../components/contact.vue");
+const Home = () => import(/* webpackPreload: true, webpackChunkName: "route-home" */ "../components/home.vue");
+const Projects = () => import(/* webpackChunkName: "route-projects" */ "../components/projects.vue");
+const AboutMe = () => import(/* webpackChunkName: "route-about-me" */ "../components/about-me.vue");
+const Contact = () => import(/* webpackChunkName: "route-contact" */ "../components/contact.vue");
 
 
 const routes = [
