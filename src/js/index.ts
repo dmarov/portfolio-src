@@ -10,14 +10,14 @@ let el = document.querySelector("#app") as HTMLElement;
 const Home = () => import(/* webpackPreload: true */ "../components/home.vue");
 const Projects = () => import("../components/projects.vue");
 const AboutMe = () => import("../components/about-me.vue");
-const Contacts = () => import("../components/contacts.vue");
+const Contact = () => import("../components/contact.vue");
 
 
 const routes = [
     { path: "/", component: Home  },
     { path: "/projects", component: Projects },
     { path: "/about-me", component: AboutMe },
-    { path: "/contacts", component: Contacts },
+    { path: "/contact", component: Contact },
     { path: "*", component: Home },
 ];
 

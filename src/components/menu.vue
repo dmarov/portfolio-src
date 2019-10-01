@@ -17,11 +17,11 @@ export default class Menu extends Vue {
             span.burger-icon.menu__burger-icon
         ul.menu
             li.menu__item
-                a.menu__link Home
+                router-link.menu__link(to="/") Home
             li.menu__item
-                a.menu__link Projects
+                router-link.menu__link(to="/projects") Projects
             li.menu__item
-                a.menu__link About me
+                router-link.menu__link(to="/about-me") About me
             li.menu__item
-                a.menu__link Contact
+                router-link.menu__link(to="/contact") Contact
 </template>
