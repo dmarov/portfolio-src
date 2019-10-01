@@ -3,7 +3,7 @@
     "build:dev": "webpack --config webpack.dev.ts",
     "watch": "webpack --config webpack.dev.ts --watch",
     "build:prod": "webpack --config webpack.prod.ts",
-    "deploy": "yarn run build:prod && git add -A && git commit -m\"deploy $(date '+%Y-%m-%d %H:%M:%S')\" && git subtree push --prefix dist origin master",
+    "deploy": "yarn run build:prod && git add -A && git commit -m\"deploy $(date '+%Y-%m-%d %H:%M:%S')\" && git push && git subtree push --prefix dist origin master",
     "start:dev": "webpack-dev-server --config webpack.dev.ts --open"
   },
   "devDependencies": {
