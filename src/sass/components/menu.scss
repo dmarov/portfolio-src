@@ -1,22 +1,120 @@
+@import '../mixins/breakpoints';
+
 .menu-wrapper {
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: $col-black;
-    padding: 1em;
     color: $col-white;
+    width: 100%;
+    box-shadow: 0 2px 3px 1px $col-pink; 
+    z-index: 1;
+
+    &__logo {
+
+        margin: 20px;
+    }
 }
 
 .menu {
 
+    z-index: 1;
+    background-color: $col-black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
+    list-style: none;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform .2s linear;
 
     &__item {
-    
-        padding: 1em;
+
         cursor: pointer;
-        list-style-type: none;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: $col-pink;
+        }
     }
+
+    &__link {
+
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+    }
+
+    &__burger {
+
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__burger-icon {
+
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $col-pink;
+        position: relative;
+        transition: all 0.2s ease-out;
+        margin: 20px;
+
+        &::before, &::after {
+
+            background-color: $col-pink;
+            content: "";
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        &:before {
+            top: 5px;
+        }
+
+        &:after {
+            top: -5px;
+        }
+    }
+
+
+}
+
+#burger:checked ~ .menu {
+
+    transform: translateX(0);
+}
+
+#burger:checked ~ .menu__burger .menu__burger-icon {
+
+    background: transparent;
+}
+
+#burger:checked ~ .menu__burger .menu__burger-icon::before {
+
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+#burger:checked ~ .menu__burger .menu__burger-icon::after {
+
+    transform: rotate(45deg);
+    top: 0;
 }

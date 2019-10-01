@@ -11,6 +11,10 @@ export default class Menu extends Vue {
 <template lang='pug'>
 
     nav.menu-wrapper
+        .logo.menu-wrapper__logo Logo Here
+        input(type="checkbox" id="burger" class="content__el_invisible")
+        label.menu__burger(for="burger")
+            span.burger-icon.menu__burger-icon
         ul.menu
             li.menu__item
                 a.menu__link Home
