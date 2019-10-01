@@ -18,4 +18,5 @@ export default class Layout extends Vue {
 <template lang='pug'>
     .content
         app-menu
+        router-view
 </template>
