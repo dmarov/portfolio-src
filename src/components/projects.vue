@@ -10,5 +10,11 @@ export default class Menu extends Vue {
 </script>
 <template lang='pug'>
 
-    .page-wrapper Projects
+    .page-wrapper
+        .projects
+            .projects__item
+            .projects__item
+            .projects__item
+            .projects__item
+
 </template>
