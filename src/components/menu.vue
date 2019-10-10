@@ -5,6 +5,11 @@ import Component from 'vue-class-component'
 @Component
 export default class Menu extends Vue {
 
+    hideMenu(): void {
+
+        let checkbox = document.querySelector("#burger") as HTMLInputElement;
+        checkbox.checked = false;
+    }
 }
 
 </script>
@@ -17,11 +22,11 @@ export default class Menu extends Vue {
             span.burger-icon.menu__burger-icon
         ul.menu
             li.menu__item
-                router-link.menu__link(to="/") Home
+                .menu__link(@click='hideMenu(); $router.push("/")') Home
             li.menu__item
-                router-link.menu__link(to="/projects") Projects
+                .menu__link(@click='hideMenu(); $router.push("/projects")') Projects
             li.menu__item
-                router-link.menu__link(to="/about-me") About me
+                .menu__link(@click='hideMenu(); $router.push("/about-me")') About me
             li.menu__item
-                router-link.menu__link(to="/contact") Contact
+                .menu__link(@click='hideMenu(); $router.push("/contact")') Contact
 </template>
