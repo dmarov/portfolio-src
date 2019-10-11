@@ -1,0 +1,58 @@
+
+.swiper {
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &__slides {
+
+        display: flex;
+    }
+
+    &__slide {
+
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    &__button {
+
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_next {
+
+            right: 10px;
+            left: auto;
+
+            &::after {
+                content: '';
+                width: 40px;
+                height: 40px;
+                @include bg-img;
+                background-image: url(../images/arrow-right.svg);
+            }
+        }
+
+        &_prev {
+
+            left: 10px;
+            right: auto;
+
+            &::after {
+                content: '';
+                width: 40px;
+                height: 40px;
+                transform: rotate(180deg);
+                transform-origin: center;
+                @include bg-img;
+                background-image: url(../images/arrow-right.svg);
+            }
+        }
+    }
+}

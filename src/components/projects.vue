@@ -1,12 +1,16 @@
 <script lang="ts">
 import Vue from 'vue';
-import Component from 'vue-class-component'
-import img from '../images/project_trik_0.png';
+import Component from 'vue-class-component';
+import ProjectTrik from './project-trik.vue';
+import ProjectPaxus from './project-paxus.vue';
 
-@Component
+@Component({
+    components: {
+        'project-trik': ProjectTrik,
+        'project-paxus': ProjectPaxus,
+    },
+})
 export default class Menu extends Vue {
-
-    img: any = img;
 
 }
 
@@ -15,10 +19,7 @@ export default class Menu extends Vue {
 
     .page-wrapper
         .projects
-            .projects__item
-                img(:src="img")
-            .projects__item
-            .projects__item
-            .projects__item
+            project-trik
+            project-paxus
 
 </template>

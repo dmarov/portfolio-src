@@ -18,5 +18,19 @@ export default class Layout extends Vue {
 <template lang='pug'>
     .content
         app-menu
-        router-view
+        transition(name="change")
+            router-view
 </template>
+
+<style lang="scss">
+
+.change-enter-active {
+
+    transition: opacity .5s ease-in;
+}
+
+.change-enter {
+
+    opacity: 0;
+}
+</style>

@@ -1,6 +1,12 @@
 @import 'const/colors';
-@import 'components/menu';
+
+@import 'mixins/images';
+@import 'mixins/breakpoints';
+
 @import 'fonts/space-mono';
+
+@import 'components/menu';
+@import 'components/projects';
 
 body {
 
