@@ -48,9 +48,15 @@ export default class Menu extends Vue {
     .project
         .project__info
             .project__title Pharmacy network trik.ru
-            a.project__ref(href="https://trik.ru") Check it out
+            a.project__ref(href="https://trik.ru") Check it out here
             .project__description
-                | I did all backend, 90% frontend logic
+                | I did all backend, 90% frontend logic.
+                | Trik needed web store that would serve their 5 pharmacies.
+                | It required to create custom logic, which could satisfy their requirements.
+                | Their site has complicated search by dynamically assignable properties tags,
+                | and any logical expression which can be constructed from any of them and also
+                | sorting by dynamically assignable properties.
+                | Personal area is completely stateless. It was achieved by using JWT.
         .swiper
             .swiper__slides
                 img.swiper__slide(:src="trikImg0")

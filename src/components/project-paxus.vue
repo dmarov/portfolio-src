@@ -48,9 +48,12 @@ export default class Menu extends Vue {
     .project
         .project__info
             .project__title Moto Factory paxus.ru
-            a.project__ref(href="https://paxus.ru") Check it out
+            a.project__ref(href="https://paxus.ru") Check it out here
             .project__description
                 | I did all backend, all frontend logic
+                | Paxus was one of most challenging customer.
+                | Due to specifics of their market, they needed
+                | to have product constructor. After a lot of strugle we did it
         .swiper
             .swiper__slides
                 img.swiper__slide(:src="paxusImg0")
