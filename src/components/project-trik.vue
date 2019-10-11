@@ -46,6 +46,10 @@ export default class Menu extends Vue {
 <template lang='pug'>
 
     .project
+        .project__title Pharmacy network trik.ru
+        a.project__ref(href="https://trik.ru") Check it out
+        .project__description
+            | I did all backend, 90% frontend logic
         .swiper
             .swiper__slides
                 img.swiper__slide(:src="trikImg0")

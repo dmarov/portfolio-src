@@ -46,6 +46,10 @@ export default class Menu extends Vue {
 <template lang='pug'>
 
     .project
+        .project__title Moto Factory paxus.ru
+        a.project__ref(href="https://paxus.ru") Check it out
+        .project__description
+            | I did all backend, all frontend logic
         .swiper
             .swiper__slides
                 img.swiper__slide(:src="paxusImg0")
