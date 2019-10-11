@@ -3,6 +3,7 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import VueLoaderPlugin from 'vue-loader/lib/plugin';
+import ImageminPlugin from 'imagemin-webpack';
 
 const config: webpack.Configuration = {
 
@@ -73,7 +74,15 @@ const config: webpack.Configuration = {
             {
                 test: /\.pug$/,
                 loader: 'pug-plain-loader',
-            }
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                    {
+                        loader: "url-loader"
+                    },
+                ],
+            },
         ]
     },
     plugins: [
@@ -83,6 +92,27 @@ const config: webpack.Configuration = {
             title: 'Portfolio',
             template: 'src/index.html',
             filename: 'index.html',
+        }),
+        new ImageminPlugin({
+            bail: false,
+            cache: true,
+            imageminOptions: {
+                plugins: [
+                    ["gifsicle", { interlaced: true }],
+                    ["jpegtran", { progressive: true }],
+                    ["optipng", { optimizationLevel: 5 }],
+                    [
+                        "svgo",
+                        {
+                            plugins: [
+                                {
+                                    removeViewBox: false
+                                }
+                            ]
+                        }
+                    ],
+                ],
+            },
         }),
     ],
     resolve: {
