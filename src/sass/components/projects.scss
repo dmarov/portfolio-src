@@ -2,6 +2,24 @@
 .project {
 
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+        font-family: $fnt-mono;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__ref {
+        text-decoration: none;
+        display: block;
+        color: inherit;
+    }
 }
 
 .swiper {
