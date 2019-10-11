@@ -32,6 +32,11 @@ export default class Menu extends Vue {
                 wrapperClass: 'swiper__slides',
                 slideClass: 'swiper__slide',
                 loop: true,
+                pagination: {
+                    el: '.swiper__pagination',
+                    bulletClass: 'swiper__pagination-bullet',
+                    bulletActiveClass: 'swiper__pagination-bullet_active',
+                },
             });
         });
     }
@@ -40,17 +45,15 @@ export default class Menu extends Vue {
 </script>
 <template lang='pug'>
 
-    .page-wrapper
-        .projects
-            .project.projects__item
-                .swiper
-                    .swiper__slides
-                        img.swiper__slide(:src="paxusImg0")
-                        img.swiper__slide(:src="paxusImg1")
-                        img.swiper__slide(:src="paxusImg2")
-                        img.swiper__slide(:src="paxusImg3")
-                    .swiper__pagination
-                    .swiper__button.swiper__button_prev
-                    .swiper__button.swiper__button_next
+    .project
+        .swiper
+            .swiper__slides
+                img.swiper__slide(:src="paxusImg0")
+                img.swiper__slide(:src="paxusImg1")
+                img.swiper__slide(:src="paxusImg2")
+                img.swiper__slide(:src="paxusImg3")
+            .swiper__pagination
+            //.swiper__button.swiper__button_prev
+            //.swiper__button.swiper__button_next
 
 </template>

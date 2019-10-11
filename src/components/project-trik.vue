@@ -25,13 +25,18 @@ export default class Menu extends Vue {
             let prevEl = el.querySelector(".swiper__button_prev") as HTMLElement;
 
             new Swiper(el, {
-                navigation: {
+                /*navigation: {
                     nextEl,
                     prevEl,
-                },
+                },*/
                 wrapperClass: 'swiper__slides',
                 slideClass: 'swiper__slide',
                 loop: true,
+                pagination: {
+                    el: '.swiper__pagination',
+                    bulletClass: 'swiper__pagination-bullet',
+                    bulletActiveClass: 'swiper__pagination-bullet_active',
+                },
             });
         });
     }
@@ -40,17 +45,15 @@ export default class Menu extends Vue {
 </script>
 <template lang='pug'>
 
-    .page-wrapper
-        .projects
-            .project.projects__item
-                .swiper
-                    .swiper__slides
-                        img.swiper__slide(:src="trikImg0")
-                        img.swiper__slide(:src="trikImg1")
-                        img.swiper__slide(:src="trikImg2")
-                        img.swiper__slide(:src="trikImg3")
-                    .swiper__pagination
-                    .swiper__button.swiper__button_prev
-                    .swiper__button.swiper__button_next
+    .project
+        .swiper
+            .swiper__slides
+                img.swiper__slide(:src="trikImg0")
+                img.swiper__slide(:src="trikImg1")
+                img.swiper__slide(:src="trikImg2")
+                img.swiper__slide(:src="trikImg3")
+            .swiper__pagination
+            //.swiper__button.swiper__button_prev
+            //.swiper__button.swiper__button_next
 
 </template>

@@ -1,4 +1,9 @@
 
+.project {
+
+    padding-top: 20px;
+}
+
 .swiper {
 
     position: relative;
@@ -32,8 +37,8 @@
 
             &::after {
                 content: '';
-                width: 40px;
-                height: 40px;
+                width: 20px;
+                height: 20px;
                 @include bg-img;
                 background-image: url(../images/arrow-right.svg);
             }
@@ -46,13 +51,36 @@
 
             &::after {
                 content: '';
-                width: 40px;
-                height: 40px;
+                width: 20px;
+                height: 20px;
                 transform: rotate(180deg);
                 transform-origin: center;
                 @include bg-img;
                 background-image: url(../images/arrow-right.svg);
             }
+        }
+    }
+
+    &__pagination {
+
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__pagination-bullet {
+
+        border-radius: 9px;
+        margin: 9px;
+        width: 18px;
+        height: 18px;
+        background-color: rgba(0, 0, 0, .4);
+
+        &_active {
+
+            background-color: rgba($col-pink, .7);
         }
     }
 }
