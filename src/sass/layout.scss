@@ -39,21 +39,3 @@ body {
         }
     }
 }
-
-.page-wrapper {
-
-    padding: 10px 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.page {
-
-    width: 100%;
-    @include break-min-width(1600px) {
-
-        max-width: 1600px;
-    }
-}
