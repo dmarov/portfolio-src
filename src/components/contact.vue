@@ -10,5 +10,7 @@ export default class Menu extends Vue {
 </script>
 <template lang='pug'>
 
-    .page Contacts
+    .page
+        | You can get in touch with me via
+        a(href="mailto:d.marov94@gmail.com") d.marov94@gmail.com
 </template>

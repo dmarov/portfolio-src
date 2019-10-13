@@ -17,7 +17,7 @@ export default class Menu extends Vue {
 </script>
 <template lang='pug'>
 
-    .projects
+    .page
         project-trik
         project-paxus
 
