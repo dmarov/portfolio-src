@@ -10,5 +10,5 @@ export default class Menu extends Vue {
 </script>
 <template lang='pug'>
 
-    .page-wrapper Contacts
+    .page Contacts
 </template>

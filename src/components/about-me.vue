@@ -10,7 +10,7 @@ export default class Menu extends Vue {
 </script>
 <template lang='pug'>
 
-    .page-wrapper About Me
+    .page
         | I am software developer. I started my career as backend PHP developer.
         | Soon i started to develop frontend.
         | I learned Vue framework, so i can call myself fullstack.

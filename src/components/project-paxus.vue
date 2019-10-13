@@ -40,15 +40,18 @@ export default class Menu extends Vue {
             });
         });
     }
+
+    open(): void {
+        window.open('https://paxus.ru', '_blank');
+    }
 }
 
 </script>
 <template lang='pug'>
 
     .project
-        .project__info
-            .project__title Moto Factory paxus.ru
-            a.project__ref(href="https://paxus.ru") Check it out here
+        .project__info(@click="open()").content__el_pointable
+            h1.project__title Moto Factory paxus.ru
             .project__description
                 | I did all backend, all frontend logic
                 | Paxus was one of most challenging customer.

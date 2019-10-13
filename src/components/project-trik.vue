@@ -40,15 +40,18 @@ export default class Menu extends Vue {
             });
         });
     }
+
+    open(): void {
+        window.open('https://trik.ru', '_blank');
+    }
 }
 
 </script>
 <template lang='pug'>
 
     .project
-        .project__info
-            .project__title Pharmacy network trik.ru
-            a.project__ref(href="https://trik.ru") Check it out here
+        .project__info(@click="open()").content__el_pointable
+            h1.project__title Pharmacy network trik.ru
             .project__description
                 | I did all backend, 90% frontend logic.
                 | Trik needed web store that would serve their 5 pharmacies.

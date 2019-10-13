@@ -18,8 +18,9 @@ export default class Layout extends Vue {
 <template lang='pug'>
     .content
         app-menu
-        transition(name="change")
-            router-view
+        .page-wrapper
+            transition(name="change")
+                router-view
 </template>
 
 <style lang="scss">

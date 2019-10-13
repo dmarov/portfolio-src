@@ -79,7 +79,11 @@ const config: webpack.Configuration = {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 use: [
                     {
-                        loader: "url-loader"
+                        loader: "url-loader",
+                        options: { 
+                            limit: 8000,
+                            name: 'images/[name].[ext]',
+                        }
                     },
                 ],
             },
