@@ -2,6 +2,8 @@
 
 .menu-wrapper {
 
+    top: 0;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
