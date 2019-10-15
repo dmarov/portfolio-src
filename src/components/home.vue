@@ -15,6 +15,8 @@ import logoVuejs from '../images/logo_vuejs.png';
 import logoGulp from '../images/logo_gulp.jpg';
 import logoBabel from '../images/logo_babel.svg';
 import logoGit from '../images/logo_git.png';
+import logoAnsible from '../images/logo_ansible.png';
+import logoOpenapi from '../images/logo_openapi.png';
 
 @Component
 export default class Menu extends Vue {
@@ -32,7 +34,9 @@ export default class Menu extends Vue {
         logoVuejs,
         logoGulp,
         logoBabel,
-        logoGit
+        logoGit,
+        logoAnsible,
+        logoOpenapi,
     ];
 
     getStyle(index: number): object {

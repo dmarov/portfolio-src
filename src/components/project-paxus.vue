@@ -56,7 +56,8 @@ export default class Menu extends Vue {
                 | I did all backend, all frontend logic
                 | Paxus was one of most challenging customer.
                 | Due to specifics of their market, they needed
-                | to have product constructor. After a lot of strugle we did it
+                | to have product constructor. It was challenging to create required functionality,
+                | but i did it.
         .swiper
             .swiper__slides
                 img.swiper__slide(:src="paxusImg0")

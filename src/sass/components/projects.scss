@@ -4,6 +4,7 @@
     padding-top: 3em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     @include break-min-width(1000px) {
 

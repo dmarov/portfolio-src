@@ -55,11 +55,13 @@ export default class Menu extends Vue {
             .project__description
                 | I did all backend, 90% frontend logic.
                 | Trik needed web store that would serve their 5 pharmacies.
-                | It required to create custom logic, which could satisfy their requirements.
+                | It required to create custom logic for catalog, cart and orders,
+                | which could satisfy their requirements.
                 | Their site has complicated search by dynamically assignable properties tags,
-                | and any logical expression which can be constructed from any of them and also
-                | sorting by dynamically assignable properties.
+                | and any logical expression which can be constructed from any of properties or tags.
+                | Also result can be sorted even by dynamically assignable properties.
                 | Personal area is completely stateless. It was achieved by using JWT.
+                | This is one of the most advanced project in which i was engaged in.
         .swiper
             .swiper__slides
                 img.swiper__slide(:src="trikImg0")
