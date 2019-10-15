@@ -1,0 +1,29 @@
+.contacts {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5em;
+
+    &__icon {
+
+        width: 100px;
+        height: 100px;
+        @include bg-img;
+    }
+
+    &__mail {
+
+        background-image: url(../images/logo_gmail.png);
+    }
+
+    &__vk {
+
+        background-image: url(../images/logo_vk.png);
+    }
+
+    &__facebook {
+
+        background-image: url(../images/logo_facebook.png);
+    }
+}
