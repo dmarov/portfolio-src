@@ -60,4 +60,5 @@ export default class Menu extends Vue {
         .tech-stack
             .tech-logo-wrapper(v-for="(img, index) in images")
                 .tech-logo(:style='getStyle(index)')
+        a.github(href="https://github.com/dmarov" target="_blank")
 </template>

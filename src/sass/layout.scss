@@ -39,3 +39,13 @@ body {
         }
     }
 }
+
+.github {
+
+    width: 100px;
+    height: 100px;
+    @include bg-img;
+    background-image: url("../images/logo_github.png");
+    display: block;
+    margin: 5em auto 0;
+}
