@@ -3,7 +3,7 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import VueLoaderPlugin from 'vue-loader/lib/plugin';
-import ImageminPlugin from 'imagemin-webpack';
+import ImageminPlugin from 'imagemin-webpack-plugin';
 
 const config: webpack.Configuration = {
 
@@ -76,7 +76,7 @@ const config: webpack.Configuration = {
                 loader: 'pug-plain-loader',
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
+                test: /\.(jpg|png|gif)$/i,
                 use: [
                     {
                         loader: "url-loader",
@@ -86,6 +86,10 @@ const config: webpack.Configuration = {
                         }
                     },
                 ],
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader',
             },
         ]
     },
@@ -97,25 +101,9 @@ const config: webpack.Configuration = {
             template: 'src/index.html',
             filename: 'index.html',
         }),
-        new ImageminPlugin({
-            bail: false,
-            cache: true,
-            imageminOptions: {
-                plugins: [
-                    ["gifsicle", { interlaced: true }],
-                    ["jpegtran", { progressive: true }],
-                    ["optipng", { optimizationLevel: 5 }],
-                    [
-                        "svgo",
-                        {
-                            plugins: [
-                                {
-                                    removeViewBox: false
-                                }
-                            ]
-                        }
-                    ],
-                ],
+        new ImageminPlugin({ test: "images/**",
+            pngquant: {
+                quality: '75-80'
             },
         }),
     ],
