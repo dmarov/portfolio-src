@@ -76,7 +76,7 @@ const config: webpack.Configuration = {
                 loader: 'pug-plain-loader',
             },
             {
-                test: /\.(jpg|png|gif)$/i,
+                test: /\.(jpg|png|gif|svg)$/i,
                 use: [
                     {
                         loader: "url-loader",
@@ -86,10 +86,6 @@ const config: webpack.Configuration = {
                         }
                     },
                 ],
-            },
-            {
-                test: /\.svg$/,
-                loader: 'svg-inline-loader',
             },
         ]
     },
