@@ -1,4 +1,5 @@
 @import 'menu.scss';
+@import 'burger.scss';
 
 .app-html {
 
@@ -17,8 +18,26 @@
 
 .app {
 
-    &__container {
+    &__header {
+
+        background-color: black;
+        min-height: 48px;
+        top: 0;
+        position: sticky;
+        display: flex;
+        z-index: 1;
+        align-items: center;
+    }
+
+    &__column {
 
     }
+
+    &__burger {
+
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
 }
 

@@ -6,4 +6,24 @@
     margin-bottom: 0;
     padding-left: 0;
     background-color: #171717;
+    flex-wrap: wrap;
+
+    display: none;
+
+    &__item {
+
+    }
+
+    &__link {
+
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: inherit;
+        font-size: 1.3em;
+
+        &:link, &:visited, &:hover, &:active {
+
+            text-decoration: none;
+        }
+    }
 }

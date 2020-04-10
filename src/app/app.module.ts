@@ -8,6 +8,7 @@ import { PageHomeComponent } from './page-home/page-home.component';
 import { PageProjectsComponent } from './page-projects/page-projects.component';
 import { PageAboutMeComponent } from './page-about-me/page-about-me.component';
 import { PageContactsComponent } from './page-contacts/page-contacts.component';
+import { BurgerComponent } from './burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageContactsComponent } from './page-contacts/page-contacts.component';
     PageHomeComponent,
     PageProjectsComponent,
     PageAboutMeComponent,
-    PageContactsComponent
+    PageContactsComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,
