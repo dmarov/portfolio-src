@@ -1,6 +1,17 @@
 <ul class="main-menu">
-    <li class="main-menu__item">Home</li>
-    <li class="main-menu__item">Projects</li>
-    <li class="main-menu__item">About</li>
-    <li class="main-menu__item">Contacts</li>
+    <li class="main-menu__item">
+        <a class="main-menu__link" routerLink="/">Home</a>
+    </li>
+    <li class="main-menu__item">
+        <a class="main-menu__link" routerLink="/projects">Projects</a>
+        <input type="checkbox">
+        <ul class="main-menu__submenu">
+            <li><a routerLink="/projects/1">CMS</a></li>
+            <li><a routerLink="/projects/2">Paxus</a></li>
+            <li><a routerLink="/projects/3">Trick</a></li>
+        </ul>
+    </li>
+    <li class="main-menu__item">
+        <a class="main-menu__link" routerLink="/about">About me</a>
+    </li>
 </ul>
