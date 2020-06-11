@@ -4,11 +4,14 @@
     </li>
     <li class="main-menu__item">
         <a class="main-menu__link" routerLink="/projects">Projects</a>
-        <input type="checkbox">
+        <input id="projects-submenu" type="checkbox">
+        <label class="main-menu__unfold" for="projects-submenu">
+            <img src="/assets/unfold.svg">
+        </label>
         <ul class="main-menu__submenu">
-            <li><a routerLink="/projects/1">CMS</a></li>
-            <li><a routerLink="/projects/2">Paxus</a></li>
-            <li><a routerLink="/projects/3">Trick</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" routerLink="/projects/1">CMS</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" routerLink="/projects/2">Paxus</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" routerLink="/projects/3">Trick</a></li>
         </ul>
     </li>
     <li class="main-menu__item">

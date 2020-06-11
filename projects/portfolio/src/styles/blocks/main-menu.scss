@@ -11,11 +11,14 @@
 
     &__item {
 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
         padding: 10px;
         font-size: 30px;
-        min-width: 146px;
-        text-align: right;
         background-color: inherit;
+        margin: 0 20px;
 
         input[type="checkbox"] {
 
@@ -39,13 +42,30 @@
 
     &__submenu {
 
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
         position: absolute;
         display: none;
         background-color: inherit;
+        top: 56px;
 
-        input[type="checkbox"]:checked + & {
+        input[type="checkbox"]:checked ~ & {
 
             display: block;
+        }
+    }
+
+    &__unfold {
+
+        position: relative;
+        line-height: 0;
+        transition: transform 0.1s linear;
+        cursor: pointer;
+
+        input[type="checkbox"]:checked ~ & {
+
+            transform: scaleY(-1);
         }
     }
 }
