@@ -1,0 +1,17 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    &__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__footer {
+        margin-top: auto;
+    }
+}

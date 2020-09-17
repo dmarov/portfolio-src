@@ -10,25 +10,25 @@
           "style": "scss"
         }
       },
-      "root": "projects/portfolio",
-      "sourceRoot": "projects/portfolio/src",
+      "root": "",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/portfolio",
-            "index": "projects/portfolio/src/index.html",
-            "main": "projects/portfolio/src/main.ts",
-            "polyfills": "projects/portfolio/src/polyfills.ts",
-            "tsConfig": "projects/portfolio/tsconfig.app.json",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/portfolio/src/favicon.ico",
-              "projects/portfolio/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "projects/portfolio/src/styles/index.scss"
+              "src/styles/index.scss"
             ],
             "scripts": []
           },
@@ -36,8 +36,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/portfolio/src/environments/environment.ts",
-                  "with": "projects/portfolio/src/environments/environment.prod.ts"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -83,16 +83,16 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/portfolio/src/test.ts",
-            "polyfills": "projects/portfolio/src/polyfills.ts",
-            "tsConfig": "projects/portfolio/tsconfig.spec.json",
-            "karmaConfig": "projects/portfolio/karma.conf.js",
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
             "assets": [
-              "projects/portfolio/src/favicon.ico",
-              "projects/portfolio/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "projects/portfolio/src/styles.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -101,9 +101,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/portfolio/tsconfig.app.json",
-              "projects/portfolio/tsconfig.spec.json",
-              "projects/portfolio/e2e/tsconfig.json"
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -113,7 +113,7 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/portfolio/e2e/protractor.conf.js",
+            "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "portfolio:serve"
           },
           "configurations": {
