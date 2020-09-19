@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './page-main.component.html',
     styleUrls: ['./page-main.component.scss'],
     host: {
-        class: 'content',
+        class: 'app-layout__content-wrapper',
     },
 })
 export class PageMainComponent implements OnInit {

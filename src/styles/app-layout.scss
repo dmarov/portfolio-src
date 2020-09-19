@@ -4,17 +4,27 @@
     min-height: 100%;
     background-color: $col-black;
 
-    &__page-content {
+    &__content-wrapper {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
         padding-left: 20px;
         padding-right: 20px;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: $col-white;
-        color: $col-black;
+        margin: 20px;
         flex-grow: 1;
         align-self: stretch;
         border-radius: 20px;
+
+        &_text-page {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $col-white;
+            color: $col-black;
+        }
     }
 
     &__header {
