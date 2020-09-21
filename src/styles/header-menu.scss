@@ -1,0 +1,18 @@
+.header-menu {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    paddiong-left: 0;
+    display: flex;
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px;
+        font-size: 1.5em;
+
+        &:link,&:active,&:hover,&:visited {
+            color: $col-white;
+        }
+    }
+}

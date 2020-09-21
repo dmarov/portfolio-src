@@ -7,29 +7,24 @@
     &__content-wrapper {
         flex-grow: 1;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
 
     &__content {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: 20px;
         flex-grow: 1;
         align-self: stretch;
-        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
 
         &_text-page {
             max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: $col-white;
-            color: $col-black;
         }
     }
 
     &__header {
         position: sticky;
-        background-color: $col-green;
+        // background-color: $col-green;
     }
 
     &__main {
@@ -39,6 +34,6 @@
     }
 
     &__footer {
-        background-color: $col-blue;
+        // background-color: $col-blue;
     }
 }
