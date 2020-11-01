@@ -1,11 +1,24 @@
 <ul class="header-menu">
     <li class="header-menu__entry">
-        <a class="header-menu__link" routerLink="/">Home</a>
+        <a class="header-menu__link"
+            [routerLinkActiveOptions]="{exact: true}"
+            routerLinkActive="header-menu__link--active"
+            routerLink="/">
+            Home
+        </a>
     </li>
     <li class="header-menu__entry">
-        <a class="header-menu__link" routerLink="/projects">Projects</a>
+        <a class="header-menu__link"
+            routerLinkActive="header-menu__link--active"
+            routerLink="/projects">
+            Projects
+        </a>
     </li>
     <li class="header-menu__entry">
-        <a class="header-menu__link" routerLink="/contact">Contact me</a>
+        <a class="header-menu__link"
+            routerLinkActive="header-menu__link--active"
+            routerLink="/contact">
+            Contact me
+        </a>
     </li>
 </ul>

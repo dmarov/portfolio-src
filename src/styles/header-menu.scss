@@ -4,15 +4,36 @@
     margin-bottom: 0;
     paddiong-left: 0;
     display: flex;
+    align-items: stretch;
+
+    &__entry {
+        display: flex;
+        align-items: stretch;
+    }
 
     &__link {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 1.5em;
+        transition: color 0.3s linear;
 
-        &:link,&:active,&:hover,&:visited {
+        &:link,&:active,&:visited {
             color: $col-white;
+        }
+
+        &:hover {
+            color: $col-green;
+        }
+
+        &--active {
+
+            &:link,&:active,&:visited {
+                color: $col-green;
+            }
         }
     }
 }
