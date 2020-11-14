@@ -2,9 +2,10 @@
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 0;
-    paddiong-left: 0;
+    padding-left: 0;
     display: flex;
     align-items: stretch;
+    flex-wrap: wrap;
 
     &__entry {
         display: flex;

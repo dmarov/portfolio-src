@@ -24,6 +24,8 @@
 
     &__header {
         position: sticky;
+        top: 0;
+        background-color: rgba(0,0,0,0.9);
         // background-color: $col-green;
     }
 
@@ -31,7 +33,8 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        background: radial-gradient($col-ddblue, $col-dblue);
+        // background: radial-gradient($col-ddblue, $col-dblue);
+        background-image: url(/assets/images/digitization.jpg);
     }
 
     &__footer {
