@@ -3,4 +3,9 @@
     color: $col-black;
     padding: 20px;
     flex-grow: 1;
+
+    &__less-content {
+        display: flex;
+        flex-direction: column;
+    }
 }
