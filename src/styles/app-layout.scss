@@ -4,21 +4,28 @@
     min-height: 100%;
     background-color: $col-black;
 
-    &__content-wrapper {
+    &__page {
         flex-grow: 1;
         display: flex;
         justify-content: center;
     }
 
+    &__content-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
     &__content {
         flex-grow: 1;
-        align-self: stretch;
         padding: 20px;
         display: flex;
         flex-direction: column;
+        max-width: 1200px;
+        align-self: stretch;
 
-        &_narrow {
-            max-width: 1200px;
+        &_footer {
+            align-self: baseline;
         }
     }
 

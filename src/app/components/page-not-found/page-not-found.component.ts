@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './page-not-found.component.html',
     styleUrls: ['./page-not-found.component.scss'],
     host: {
-        class: 'app-layout__content-wrapper',
+        class: 'app-layout__page',
     },
 })
 export class PageNotFoundComponent implements OnInit {
