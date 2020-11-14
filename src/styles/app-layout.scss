@@ -26,18 +26,21 @@
         position: sticky;
         top: 0;
         background-color: rgba(0,0,0,0.9);
-        // background-color: $col-green;
     }
 
     &__main {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        // background: radial-gradient($col-ddblue, $col-dblue);
         background-image: url(/assets/images/digitization.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
     }
 
     &__footer {
-        // background-color: $col-blue;
+        background-color: $col-black;
+        color: $col-white;
+        padding: 20px;
     }
 }

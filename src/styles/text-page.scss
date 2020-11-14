@@ -8,4 +8,14 @@
         display: flex;
         flex-direction: column;
     }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    li {
+        &::marker {
+          color: #010A4C;
+        }
+    }
 }
