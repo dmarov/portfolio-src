@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: column;
 
-        &_text-page {
+        &_narrow {
             max-width: 1200px;
         }
     }
@@ -41,6 +41,5 @@
     &__footer {
         background-color: $col-black;
         color: $col-white;
-        padding: 20px;
     }
 }
