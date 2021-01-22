@@ -1,7 +1,17 @@
 .main-slide {
+    background-color: $col-black;
+    color: $col-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        text-align: center;
+    }
+
     &__img {
         width: 100%;
-        height: 500px;
+        height: 200px;
         outline: 1px solid black;
     }
 }
