@@ -1,6 +1,4 @@
 .main-slide {
-    background-color: $col-black;
-    color: $col-white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,8 +8,7 @@
     }
 
     &__img {
-        width: 100%;
+        width: auto;
         height: 200px;
-        outline: 1px solid black;
     }
 }
