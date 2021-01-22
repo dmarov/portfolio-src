@@ -3,7 +3,7 @@
     flex-direction: column;
     min-height: 100%;
     background-color: $col-black;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', Arial, sans-serif;
 
     &__page {
         flex-grow: 1;
