@@ -1,11 +1,14 @@
 @import 'special/colors.scss';
+
 @import 'app-layout.scss';
-@import 'text-page.scss';
+@import 'footer.scss';
 @import 'header-menu.scss';
 @import 'header.scss';
-@import 'footer.scss';
-@import 'not-found.scss';
 @import 'main-message.scss';
+@import 'main-slide.scss';
+@import 'not-found.scss';
+@import 'page-main.scss';
+@import 'text-page.scss';
 
 html {
     height: 100%;
