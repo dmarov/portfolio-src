@@ -1,4 +1,12 @@
 .main-message {
     min-height: 500px;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    color: $col-white;
 
+    &__text {
+        font-size: 27px;
+        line-height: 32px;
+        text-align: center;
+    }
 }

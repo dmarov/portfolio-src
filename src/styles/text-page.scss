@@ -15,7 +15,14 @@
 
     li {
         &::marker {
-          color: #010A4C;
+            color: #010A4C;
+        }
+    }
+
+    a {
+
+        &:link, &:visited {
+            color: #010A4C;
         }
     }
 }
