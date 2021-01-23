@@ -1,16 +1,16 @@
 .tech-list {
+    --offset: 10px;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    &__items {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: var(--offset);
+    }
 
     &__item {
+        padding: var(--offset);
         list-style-type: none;
     }
-
-    &__img {
-        width: 150px;
-        height: auto;
-    }
-
 }

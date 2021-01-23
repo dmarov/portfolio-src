@@ -12,10 +12,6 @@
         flex-direction: column;
     }
 
-    ul {
-        padding-left: 15px;
-    }
-
     li {
         &::marker {
             color: $col-green;
