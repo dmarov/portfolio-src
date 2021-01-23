@@ -1,4 +1,8 @@
 .main-project {
+
+    --hover-time: 0.3s;
+    --hover-func: linear;
+
     background-color: $col-lblack;
     display: flex;
     flex-direction: column;
@@ -8,7 +12,7 @@
     // padding: 20px;
     user-select: none;
     position: relative;
-    overflow: hidden;
+    transition: transform 0.3s linear;
 
     &__overlay {
         position: absolute;
@@ -32,6 +36,7 @@
     }
 
     &__title {
+        font-size: 2rem;
         color: $col-green;
     }
 
@@ -46,14 +51,29 @@
     }
 
     &__visit-link {
+        font-size: 2rem;
+
         &, &:link, &:visited {
             color: $col-green;
         }
     }
 
     &:hover {
-        .main-project__overlay {
+        transform: scale(1.05);
+
+        &::after {
             opacity: 1;
         }
+    }
+
+    &::after {
+        transition: opacity var(--hover-time) var(--hover-func);
+        z-index: 10;
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        inset: 0;
+        box-shadow: 0 20px 30px rgba(200, 200, 200, 0.5);
+        opacity: 0;
     }
 }
