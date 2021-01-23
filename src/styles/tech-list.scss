@@ -1,14 +1,16 @@
 .tech-list {
 
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     &__item {
         list-style-type: none;
     }
 
     &__img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: auto;
     }
 
 }
