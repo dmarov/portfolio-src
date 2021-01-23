@@ -1,0 +1,17 @@
+.main-projects {
+    --offset: 10px;
+
+    &__items {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: var(--offset);
+    }
+
+    &__item {
+        flex: 0 0 calc(100%/3 - 2 * var(--offset));
+        padding: var(--offset);
+    }
+}

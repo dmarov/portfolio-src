@@ -17,6 +17,10 @@
         }
     }
 
+    &__title {
+        text-align: center;
+    }
+
     &__less-content {
         display: flex;
         flex-direction: column;

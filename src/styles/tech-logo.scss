@@ -16,9 +16,9 @@
         width: 100%;
         height: auto;
 
-        // &--angular {
-        //     transform: scale(1);
-        // }
+        &--angular {
+            transform: scale(1.1);
+        }
 
         &--webpack {
             transform: scale(1.3);
@@ -28,9 +28,9 @@
             transform: scale(0.95);
         }
 
-        // &--nodejs {
-        //     transform: scale(1);
-        // }
+        &--nodejs {
+            transform: scale(0.9);
+        }
 
         &--typescript {
             transform: scale(0.9);
@@ -40,8 +40,8 @@
         //     transform: scale(1);
         // }
 
-        // &--gulp {
-        //     transform: scale(0.9);
-        // }
+        &--gulp {
+            transform: scale(0.9);
+        }
     }
 }
