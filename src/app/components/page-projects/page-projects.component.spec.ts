@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainSliderComponent } from './main-slider.component';
+import { PageProjectsComponent } from './page-projects.component';
 
-describe('MainSliderComponent', () => {
-  let component: MainSliderComponent;
-  let fixture: ComponentFixture<MainSliderComponent>;
+describe('PageProjectsComponent', () => {
+  let component: PageProjectsComponent;
+  let fixture: ComponentFixture<PageProjectsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainSliderComponent ]
+      declarations: [ PageProjectsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainSliderComponent);
+    fixture = TestBed.createComponent(PageProjectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
