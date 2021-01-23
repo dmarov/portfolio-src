@@ -11,8 +11,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
 };
 
 import {
-    MenuComponent, PageMainComponent,
-    PageNotFoundComponent, PageProjectsComponent
+    MenuComponent,
+    PageMainComponent,
+    PageNotFoundComponent,
+    PageProjectsComponent,
+    PageAboutMeComponent,
 } from './components';
 
 @NgModule({
@@ -23,6 +26,7 @@ import {
         PageNotFoundComponent,
         PageMainComponent,
         PageProjectsComponent,
+        PageAboutMeComponent,
     ],
     imports: [
         SwiperModule,
