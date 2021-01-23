@@ -5,15 +5,21 @@
     padding: 20px;
     flex-grow: 1;
     border-radius: 20px;
-    border: 1px solid $col-dwhite;
 
-    &--border {
+    &--theme {
         &--green {
+            box-shadow: 0 0 5px $col-green;
             border: 1px solid $col-green;
         }
 
         &--orange {
+            box-shadow: 0 0 5px $col-orange;
             border: 1px solid $col-orange;
+        }
+
+        &--white {
+            box-shadow: 0 0 5px $col-dwhite;
+            border: 1px solid $col-dwhite;
         }
     }
 
