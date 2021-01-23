@@ -1,0 +1,14 @@
+.tech-list {
+
+    display: flex;
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
