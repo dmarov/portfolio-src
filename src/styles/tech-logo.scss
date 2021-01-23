@@ -15,5 +15,33 @@
     &__img {
         width: 100%;
         height: auto;
+
+        &--angular {
+            transform: scale(1);
+        }
+
+        &--webpack {
+            transform: scale(1.5);
+        }
+
+        &--ngrx {
+            transform: scale(1);
+        }
+
+        &--nodejs {
+            transform: scale(1);
+        }
+
+        &--typescript {
+            transform: scale(1);
+        }
+
+        &--babel {
+            transform: scale(1);
+        }
+
+        &--gulp {
+            transform: scale(0.9);
+        }
     }
 }
