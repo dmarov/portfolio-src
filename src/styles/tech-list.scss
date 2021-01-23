@@ -1,17 +1,19 @@
 .tech-list {
-    --offset: 10px;
+    // --offset: 10px;
 
     &__items {
         padding-left: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: var(--offset);
+        align-items: center;
+        // margin: var(--offset);
     }
 
     &__item {
-        padding: var(--offset);
+        // margin: var(--offset);
         list-style-type: none;
-        flex-basis: calc(100%/7 - 2 * var(--offset));
+        // flex-basis: calc(100%/7 - 2 * var(--offset));
+        flex-basis: calc(100%/7);
     }
 }
