@@ -20,21 +20,21 @@
         //     transform: scale(1);
         // }
 
-        // &--webpack {
-        //     transform: scale(1.5);
-        // }
+        &--webpack {
+            transform: scale(1.3);
+        }
 
-        // &--ngrx {
-        //     transform: scale(1);
-        // }
+        &--ngrx {
+            transform: scale(0.95);
+        }
 
         // &--nodejs {
         //     transform: scale(1);
         // }
 
-        // &--typescript {
-        //     transform: scale(1);
-        // }
+        &--typescript {
+            transform: scale(0.9);
+        }
 
         // &--babel {
         //     transform: scale(1);
