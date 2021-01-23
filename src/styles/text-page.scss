@@ -1,9 +1,11 @@
 .text-page {
-    // background-color: $col-ghostwhite;
+    background-color: $col-grey;
     // background-color: rgba(240, 239, 244, 0.97);
-    color: $col-white;
+    color: $col-dwhite;
     padding: 20px;
     flex-grow: 1;
+    border-radius: 20px;
+    border: 1px solid $col-green;
 
     &__less-content {
         display: flex;
@@ -16,14 +18,14 @@
 
     li {
         &::marker {
-            color: #010A4C;
+            color: $col-green;
         }
     }
 
     a {
 
         &:link, &:visited {
-            color: #010A4C;
+            color: $col-green;
         }
     }
 }

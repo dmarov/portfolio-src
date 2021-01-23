@@ -1,0 +1,18 @@
+.main-title {
+    padding: 50px 40px;
+    color: $col-dwhite;
+    background-color: $col-black;
+
+    &__text {
+        text-align: center;
+
+        &--primary {
+            margin: 10px 0 5px;
+        }
+
+        &--secondary {
+            margin: 10px 0 5px;
+        }
+    }
+
+}
