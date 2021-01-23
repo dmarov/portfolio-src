@@ -32,6 +32,7 @@
     }
 
     &__header {
+        z-index: 1000;
         position: sticky;
         top: 0;
         background-color: rgba(0,0,0,0.9);
