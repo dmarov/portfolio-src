@@ -12,5 +12,6 @@
     &__item {
         padding: var(--offset);
         list-style-type: none;
+        flex-basis: calc(100%/7 - 2 * var(--offset));
     }
 }

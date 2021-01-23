@@ -1,8 +1,12 @@
 .tech-logo {
     position: relative;
+    padding-top: 100%;
+    width: 100%;
 
     &__img {
-        width: 150px;
+        position: absolute;
+        inset: 0;
+        width: 100%;
         height: auto;
     }
 }
