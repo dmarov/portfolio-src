@@ -29,16 +29,16 @@
         }
 
         &--nodejs {
-            transform: scale(0.9);
+            transform: scale(0.8);
         }
 
         &--typescript {
             transform: scale(0.9);
         }
 
-        // &--babel {
-        //     transform: scale(1);
-        // }
+        &--babel {
+            transform: scale(0.9);
+        }
 
         &--gulp {
             transform: scale(0.9);
