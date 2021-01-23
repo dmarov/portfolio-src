@@ -9,6 +9,10 @@
     border-radius: 10px;
     cursor: pointer;
 
+    &, &:visited {
+        color: $col-barelywhite;
+    }
+
     &__img {
         height: 300px;
         width: 100%;

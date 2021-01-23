@@ -26,14 +26,13 @@
         flex-direction: column;
     }
 
-    li {
+    &__li {
         &::marker {
             color: $col-green;
         }
     }
 
-    a {
-
+    &__a {
         &:link, &:visited {
             color: $col-green;
         }
