@@ -1,11 +1,12 @@
 .main-project {
+    background-color: $col-lblack;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid $col-green;
-    border-radius: 10px;
-    padding: 20px;
+    // border: 1px solid $col-green;
+    // border-radius: 10px;
+    // padding: 20px;
     user-select: none;
 
     &__link {
@@ -24,5 +25,16 @@
         margin-top: auto;
         padding-left: 0;
         list-style-type: none;
+        display: flex;
+    }
+
+    &__tech-list-item {
+        padding-left: 5px;
+    }
+
+    &__visit-link {
+        &, &:link, &:visited {
+            color: $col-green;
+        }
     }
 }

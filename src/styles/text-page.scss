@@ -37,4 +37,10 @@
             color: $col-green;
         }
     }
+
+    &__p {
+        &--center {
+            text-align: center;
+        }
+    }
 }
