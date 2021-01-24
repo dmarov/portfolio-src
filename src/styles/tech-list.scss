@@ -1,5 +1,6 @@
 .tech-list {
     // --offset: 10px;
+    --perline: 4;
 
     &__items {
         padding-left: 0;
@@ -14,6 +15,10 @@
         // margin: var(--offset);
         list-style-type: none;
         // flex-basis: calc(100%/7 - 2 * var(--offset));
-        flex-basis: calc(100%/7);
+        flex-basis: calc(100%/var(--perline));
+    }
+
+    @include respond-to('small') {
+        --perline: 7;
     }
 }

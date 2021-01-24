@@ -23,11 +23,15 @@
 
     &__content {
         flex-grow: 1;
-        padding: 20px;
+        padding: 5px 10px;
         display: flex;
         flex-direction: column;
         max-width: 1200px;
         align-self: stretch;
+
+        @include respond-to('medium') {
+            padding: 10px 20px;
+        }
 
         &_footer {
             align-self: baseline;

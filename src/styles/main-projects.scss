@@ -1,6 +1,10 @@
 .main-projects {
     --offset: 10px;
-    --perline: 2;
+    --perline: 1;
+
+    @include respond-to('small') {
+        --perline: 2;
+    }
 
     &__items {
         list-style-type: none;
@@ -9,7 +13,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        margin: var(--offset);
+        margin: calc(-var(--offset));
     }
 
     &__item {
