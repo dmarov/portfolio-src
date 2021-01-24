@@ -4,8 +4,13 @@
     margin-bottom: 0;
     padding-left: 0;
     display: flex;
+    flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
+
+    @include respond-to('small') {
+        flex-direction: row;
+    }
 
     &__entry {
         display: flex;
@@ -17,10 +22,13 @@
         align-items: center;
         text-decoration: none;
         text-transform: uppercase;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.5rem;
+        padding: 5px 20px;
+        font-size: 20px;
         transition: color 0.3s linear;
+
+        @include respond-to('small') {
+            font-size: 30px;
+        }
 
         &:link,&:active,&:visited {
             color: $col-white;
