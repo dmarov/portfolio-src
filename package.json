@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng build --production && git checkout master && git add -A && git commit -m\"deploy $(date '+%Y-%m-%d %H:%M:%S')\" && git push && git subtree push --prefix dist && git checkout source-angular"
   },
   "private": true,
   "dependencies": {
