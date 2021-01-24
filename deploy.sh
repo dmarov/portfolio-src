@@ -1,6 +1,6 @@
 mkdir deploy
 cd deploy
-git clone git@github.com:dmarov/dmarov.github.io.git
+git clone git@github.com:dmarov/dmarov.github.io.git ./
 rm -r ./**
 cp -r ../dist/portfolio/** ./
 git add -A
