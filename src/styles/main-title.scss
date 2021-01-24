@@ -1,5 +1,17 @@
 .main-title {
-    padding: 50px 40px;
+    padding: 20px 20px;
+    font-size: 12px;
+
+    @include respond-to('small') {
+        padding: 30px 30px;
+        font-size: 15px;
+    }
+
+    @include respond-to('medium') {
+        padding: 50px 40px;
+        font-size: 17px;
+    }
+
     color: $col-dwhite;
 
     &__text {

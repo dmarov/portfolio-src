@@ -25,6 +25,16 @@
 
     &__title {
         text-align: center;
+
+        @include respond-to('small') {
+            font-size: 12px;
+        }
+
+        @include respond-to('medium') {
+            font-size: 18px;
+
+        }
+
     }
 
     &--less-content {
