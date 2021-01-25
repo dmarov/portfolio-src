@@ -1,6 +1,11 @@
 .main-img {
     width: 100%;
-    height: 200px;
+    height: 150px;
+
+    @include respond-to('small') {
+        height: 200px;
+    }
+
     background-image: url(/assets/images/main.png);
     background-size: auto 100%;
     background-position: center;
