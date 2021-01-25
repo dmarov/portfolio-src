@@ -1,0 +1,15 @@
+.burger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px;
+    flex-grow: 1;
+    cursor: pointer;
+
+    &__line {
+        border-radius: 1px;
+        height: 2px;
+        background: $col-orange;
+    }
+}

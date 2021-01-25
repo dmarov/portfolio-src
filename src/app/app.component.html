@@ -1,5 +1,14 @@
 <header class="app-layout__header header">
-    <app-menu class="header__menu"></app-menu>
+    <div class="header__content">
+        <app-menu class="header__menu"></app-menu>
+        <div class="header__burger-wrapper">
+            <div class="burger">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </div>
+        </div>
+    </div>
 </header>
 <main class="app-layout__main">
     <router-outlet></router-outlet>
