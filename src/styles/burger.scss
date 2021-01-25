@@ -1,15 +1,52 @@
 .burger {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 8px;
     flex-grow: 1;
-    cursor: pointer;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+    &__center {
+        cursor: pointer;
+        position: relative;
+        margin: 8px;
+        flex-grow: 1;
+    }
 
     &__line {
+        position: absolute;
         border-radius: 1px;
         height: 2px;
-        background: $col-orange;
+        left: 0;
+        right: 0;
+        background: $col-barelywhite;
+        top: 50%;
+
+        &:nth-child(1) {
+            transform: translateY(calc(-50% - 10px));
+        }
+
+        &:nth-child(2) {
+            transform: translateY(calc(-50%));
+        }
+
+        &:nth-child(3) {
+            transform: translateY(calc(-50% + 10px));
+        }
+    }
+
+    input[id="checkbox-menu"]:checked ~ & {
+
+        .burger__line {
+            &:nth-child(1) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-child(2) {
+                visibility: hidden;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(45deg);
+            }
+        }
     }
 }
