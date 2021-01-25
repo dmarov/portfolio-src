@@ -1,8 +1,11 @@
 .header {
     display: flex;
-    min-height: 50px;
-    padding: 10px 70px;
+    padding: 5px;
     color: $col-black;
+
+    @include respond-to('small') {
+        padding: 10px;
+    }
 
     &__menu {
         margin-left: auto;

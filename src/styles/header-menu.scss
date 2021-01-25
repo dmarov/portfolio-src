@@ -8,13 +8,23 @@
     align-items: stretch;
     flex-wrap: wrap;
 
+    .header-menu__link:not(.header-menu__link--active) {
+        display: none;
+    }
+
     @include respond-to('small') {
         flex-direction: row;
+
+        .header-menu__link:not(.header-menu__link--active) {
+            display: block;
+        }
+
     }
 
     &__entry {
         display: flex;
         align-items: stretch;
+
     }
 
     &__link {
