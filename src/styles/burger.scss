@@ -19,9 +19,11 @@
         right: 0;
         background: $col-barelywhite;
         top: 50%;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 1;
 
         &:nth-child(1) {
-            transform: translateY(calc(-50% - 10px));
+            transform: translateY(calc(-50% - 8px));
         }
 
         &:nth-child(2) {
@@ -29,7 +31,7 @@
         }
 
         &:nth-child(3) {
-            transform: translateY(calc(-50% + 10px));
+            transform: translateY(calc(-50% + 8px));
         }
     }
 
@@ -37,15 +39,15 @@
 
         .burger__line {
             &:nth-child(1) {
-                transform: rotate(-45deg);
+                transform: rotate(-45deg) scale(1.1);
             }
 
             &:nth-child(2) {
-                visibility: hidden;
+                opacity: 0;
             }
 
             &:nth-child(3) {
-                transform: rotate(45deg);
+                transform: rotate(45deg) scale(1.1);
             }
         }
     }
