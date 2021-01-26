@@ -27,6 +27,7 @@
     &__entry {
         display: flex;
         align-items: stretch;
+        justify-content: stretch;
 
         &--active {
             .header-menu__link {
@@ -44,6 +45,9 @@
         text-transform: uppercase;
         padding: 5px 20px;
         font-size: 20px;
+        flex-grow: 1;
+        text-align: center;
+        display: block;
         transition: color 0.3s linear;
 
         @include respond-to('small') {
