@@ -14,12 +14,14 @@
         }
 
         @include respond-to('small') {
-            flex-direction: row;
-
             .header-menu__entry:not(.header-menu__entry--active) {
                 display: block;
             }
         }
+    }
+
+    @include respond-to('small') {
+        flex-direction: row;
     }
 
     &__entry {

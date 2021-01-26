@@ -1,9 +1,11 @@
 <header class="app-layout__header header">
     <div class="header__content">
-        <app-menu class="header__menu"></app-menu>
+        <app-menu [isMenuOpen]="isMenuOpen" class="header__menu"></app-menu>
         <div class="header__burger-wrapper">
             <input class="header__checkbox"
                 type="checkbox"
+                [checked]="isMenuOpen"
+                (change)="isMenuOpen = !isMenuOpen"
                 id="checkbox-menu">
             <label class="burger" for="checkbox-menu">
                 <div class="burger__center">

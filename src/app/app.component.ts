@@ -9,6 +9,8 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent {
 
+    isMenuOpen = false;
+
     constructor(
         private router: Router,
     ) {
