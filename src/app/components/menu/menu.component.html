@@ -1,31 +1,23 @@
-<ul class="header-menu">
-    <li class="header-menu__entry">
-        <a class="header-menu__link"
-            [routerLinkActiveOptions]="{exact: true}"
-            routerLinkActive="header-menu__link--active"
-            routerLink="/">
+<ul class="header-menu header-menu--mobile--open">
+    <li class="header-menu__entry"
+        routerLinkActive="header-menu__entry--active"
+        [routerLinkActiveOptions]="{exact: true}">
+        <a class="header-menu__link" routerLink="/">
             Home
         </a>
     </li>
-    <li class="header-menu__entry">
-        <a class="header-menu__link"
-            routerLinkActive="header-menu__link--active"
-            routerLink="/projects">
+    <li class="header-menu__entry"
+        routerLinkActive="header-menu__entry--active"
+        [routerLinkActiveOptions]="{exact: true}">
+        <a class="header-menu__link" routerLink="/projects">
             Projects
         </a>
     </li>
-    <li class="header-menu__entry">
-        <a class="header-menu__link"
-            routerLinkActive="header-menu__link--active"
-            routerLink="/about-me">
+    <li class="header-menu__entry"
+        routerLinkActive="header-menu__entry--active"
+        [routerLinkActiveOptions]="{exact: true}">
+        <a class="header-menu__link" routerLink="/about-me">
             About Me
         </a>
     </li>
-    <!-- <li class="header-menu__entry"> -->
-    <!--     <a class="header-menu__link" -->
-    <!--         routerLinkActive="header-menu__link--active" -->
-    <!--         routerLink="/contact"> -->
-    <!--         Contact me -->
-    <!--     </a> -->
-    <!-- </li> -->
 </ul>
