@@ -11,7 +11,7 @@ export const initialState = {
     detailedMenuVisible: false,
 };
 
-const reducer = createReducer(
+export const reducer = createReducer(
     initialState,
     on(UiActions.setDetailedMenuVisible,
         (state, {visible}) => ({...state, detailedMenuVisible: visible})
