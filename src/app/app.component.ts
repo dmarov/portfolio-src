@@ -1,18 +1,22 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Router, NavigationEnd } from '@angular/router';
+import { Store, select } from '@ngrx/store';
+import { UiActions } from './store/actions';
+import { UiSelectors } from './store/selectors';
+import { Observable } from 'rxjs';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-    isMenuOpen = false;
+    isMenuOpened$: Observable<boolean>;
 
     constructor(
-        private router: Router,
+        private readonly router: Router,
+        private readonly store$: Store
     ) {
         router
             .events
@@ -27,5 +31,15 @@ export class AppComponent {
                     }
                 }
         });
+    }
+
+    ngOnInit() {
+        this.isMenuOpened$ = this.store$.pipe(
+            select(UiSelectors.selectDetailedMenuVisible)
+        )
+    }
+
+    toggleMenuOpen() {
+        this.store$.dispatch(UiActions.toggleMenuVisible());
     }
 }

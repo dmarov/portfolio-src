@@ -4,10 +4,9 @@
         <div class="header__burger-wrapper">
             <input class="header__checkbox"
                 type="checkbox"
-                [checked]="isMenuOpen"
-                (change)="isMenuOpen = !isMenuOpen"
+                [checked]="isMenuOpen$ | async"
                 id="checkbox-menu">
-            <label class="burger" for="checkbox-menu">
+            <label class="burger" for="checkbox-menu" (click)="toggleMenuOpen()">
                 <div class="burger__center">
                     <div class="burger__line"></div>
                     <div class="burger__line"></div>
@@ -25,7 +24,7 @@
         <div class="app-layout__content app-layout__content_footer">
             <div class="footer">
                 <a href="https://github.com/dmarov" target="_blank">
-                    <img class="footer__github" src="/assets/images/github.png" alt="github">
+                    <img class="footer__github" src="/assets/images/github.png" alt="Github">
                 </a>
             </div>
         </div>

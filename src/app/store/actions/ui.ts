@@ -4,3 +4,7 @@ export const setDetailedMenuVisible = createAction(
     '[Ui] setDetailedMenuVisible',
     props<{visible: boolean}>()
 );
+
+export const toggleMenuVisible = createAction(
+    '[Ui] toggleMenuVisible',
+);
