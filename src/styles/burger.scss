@@ -35,8 +35,7 @@
         }
     }
 
-    input[id="checkbox-menu"]:checked ~ & {
-
+    &--opened {
         .burger__line {
             &:nth-child(1) {
                 transform: rotate(-45deg) scale(1.3);

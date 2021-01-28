@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { Store, select } from '@ngrx/store';
 import { UiActions } from './store/actions';
+import { UiSelectors } from './store/selectors';
 
 @Component({
     selector: 'app-root',
@@ -10,12 +12,19 @@ import { UiActions } from './store/actions';
 })
 export class AppComponent implements OnInit {
 
+    isMenuOpen$: Observable<boolean>;
+
     constructor(
         private readonly router: Router,
         private readonly store$: Store
     ) { }
 
     ngOnInit() {
+
+        this.isMenuOpen$ = this.store$.pipe(
+            select(UiSelectors.selectDetailedMenuVisible)
+        );
+
         this.router
             .events
             .subscribe(s => {

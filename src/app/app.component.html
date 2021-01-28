@@ -2,17 +2,15 @@
     <div class="header__content">
         <app-menu [isMenuOpen]="isMenuOpen" class="header__menu"></app-menu>
         <div class="header__burger-wrapper">
-            <input class="header__checkbox"
-                type="checkbox"
-                [checked]="isMenuOpen$ | async"
-                id="checkbox-menu">
-            <label class="burger" for="checkbox-menu" (click)="toggleMenuOpen()">
+            <div class="burger"
+                [ngClass]="{'burger--opened': isMenuOpen$ | async}"
+                (click)="toggleMenuOpen()">
                 <div class="burger__center">
                     <div class="burger__line"></div>
                     <div class="burger__line"></div>
                     <div class="burger__line"></div>
                 </div>
-            </label>
+            </div>
         </div>
     </div>
 </header>
