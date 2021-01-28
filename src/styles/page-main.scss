@@ -1,9 +1,9 @@
 .page-main {
     &__projects-line {
-        margin-top: 10px;
+        margin-top: 20px;
 
         @include respond-to('small') {
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         @include respond-to('medium') {
