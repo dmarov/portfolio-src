@@ -10,12 +10,12 @@
 
     &:not(.header-menu--mobile--open) {
         .header-menu__entry:not(.header-menu__entry--active) {
-            display: none;
+            height: 0;
         }
 
         @include respond-to('small') {
             .header-menu__entry:not(.header-menu__entry--active) {
-                display: block;
+                height: auto;
             }
         }
     }
@@ -25,6 +25,7 @@
     }
 
     &__entry {
+        overflow: hidden;
         display: flex;
         align-items: stretch;
         justify-content: stretch;

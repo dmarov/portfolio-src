@@ -2,19 +2,19 @@
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active"
         [routerLinkActiveOptions]="{exact: true}">
-        <a class="header-menu__link" routerLink="/">
+        <a class="header-menu__link" routerLink="/" (click)="closeMenu()">
             Home
         </a>
     </li>
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active">
-        <a class="header-menu__link" routerLink="/projects">
+        <a class="header-menu__link" routerLink="/projects" (click)="closeMenu()">
             Projects
         </a>
     </li>
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active">
-        <a class="header-menu__link" routerLink="/about-me">
+        <a class="header-menu__link" routerLink="/about-me" (click)="closeMenu()">
             About Me
         </a>
     </li>
