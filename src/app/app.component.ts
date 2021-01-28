@@ -1,9 +1,7 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { Store, select } from '@ngrx/store';
+import { Store } from '@ngrx/store';
 import { UiActions } from './store/actions';
-import { UiSelectors } from './store/selectors';
-import { Observable } from 'rxjs';
 
 @Component({
     selector: 'app-root',
@@ -12,17 +10,17 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
 
-    isMenuOpened$: Observable<boolean>;
-
     constructor(
         private readonly router: Router,
         private readonly store$: Store
-    ) {
-        router
+    ) { }
+
+    ngOnInit() {
+        this.router
             .events
             .subscribe(s => {
                 if (s instanceof NavigationEnd) {
-                    const tree = router.parseUrl(router.url);
+                    const tree = this.router.parseUrl(this.router.url);
                     if (tree.fragment) {
                         const element = document.querySelector("#" + tree.fragment);
                         if (element) { element.scrollIntoView(true); }
@@ -31,12 +29,6 @@ export class AppComponent implements OnInit {
                     }
                 }
         });
-    }
-
-    ngOnInit() {
-        this.isMenuOpened$ = this.store$.pipe(
-            select(UiSelectors.selectDetailedMenuVisible)
-        )
     }
 
     toggleMenuOpen() {

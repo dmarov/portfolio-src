@@ -18,6 +18,8 @@ export class MenuComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.isMenuOpen$ = this.store$.pipe(select(UiSelectors.selectDetailedMenuVisible));
+        this.isMenuOpen$ = this.store$.pipe(
+            select(UiSelectors.selectDetailedMenuVisible)
+        );
     }
 }
