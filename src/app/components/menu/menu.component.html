@@ -2,19 +2,22 @@
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active"
         [routerLinkActiveOptions]="{exact: true}">
-        <a class="header-menu__link" routerLink="/" (click)="closeMenu()">
+        <input type="hidden" [routerLinkActiveOptions]="{exact: true}" routerLink="/" routerLinkActive #home="routerLinkActive"/>
+        <a class="header-menu__link" routerLink="/" (click)="home.isActive ? toggleMenu() : closeMenu()">
             Home
         </a>
     </li>
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active">
-        <a class="header-menu__link" routerLink="/projects" (click)="closeMenu()">
+        <input type="hidden" routerLink="/projects" routerLinkActive #projects="routerLinkActive"/>
+        <a class="header-menu__link" routerLink="/projects" (click)="projects.isActive ? toggleMenu() : closeMenu()">
             Projects
         </a>
     </li>
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active">
-        <a class="header-menu__link" routerLink="/about-me" (click)="closeMenu()">
+        <input type="hidden" routerLink="/about-me" routerLinkActive #aboutme="routerLinkActive"/>
+        <a class="header-menu__link" routerLink="/about-me" (click)="aboutme.isActive ? toggleMenu() : closeMenu()">
             About Me
         </a>
     </li>

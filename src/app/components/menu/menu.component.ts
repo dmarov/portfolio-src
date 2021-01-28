@@ -29,4 +29,10 @@ export class MenuComponent implements OnInit {
             UiActions.setDetailedMenuVisible({visible: false})
         );
     }
+
+    toggleMenu() {
+        this.store$.dispatch(
+            UiActions.toggleMenuVisible()
+        );
+    }
 }
