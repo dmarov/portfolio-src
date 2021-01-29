@@ -25,7 +25,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "404.html", "input": "./src", "output": "./" }
             ],
             "styles": [
               "src/styles/index.scss"
