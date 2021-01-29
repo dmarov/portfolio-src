@@ -20,9 +20,9 @@
     //     }
     // }
 
-    @include respond-to('small') {
-        flex-direction: row;
-    }
+    // @include respond-to('small') {
+    //     flex-direction: row;
+    // }
 
     &__entry {
         overflow: hidden;

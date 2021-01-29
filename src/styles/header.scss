@@ -31,8 +31,8 @@
         justify-content: stretch;
         align-items: stretch;
 
-        @include respond-to('small') {
-            display: none;
-        }
+        // @include respond-to('small') {
+        //     display: none;
+        // }
     }
 }
