@@ -3,11 +3,13 @@ import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { UiSelectors } from '../../store/selectors';
 import { UiActions } from '../../store/actions';
+import { height } from '../../animations';
 
 @Component({
     selector: 'app-menu',
     templateUrl: './menu.component.html',
-    styleUrls: ['./menu.component.scss']
+    styleUrls: ['./menu.component.scss'],
+    animations: [ height ],
 })
 export class MenuComponent implements OnInit {
 

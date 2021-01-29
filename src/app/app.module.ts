@@ -13,6 +13,8 @@ import {
     PageAboutMeComponent,
 } from './components';
 
+import { SmoothHeightAnimDirective } from './directives';
+
 import { StoreBaseModule } from './modules';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
@@ -26,6 +28,7 @@ import { environment } from '../environments/environment';
         PageMainComponent,
         PageProjectsComponent,
         PageAboutMeComponent,
+        SmoothHeightAnimDirective,
     ],
     imports: [
         BrowserModule,

@@ -1,4 +1,5 @@
 <ul class="header-menu" [ngClass]="{'header-menu--mobile--open': isMenuOpen$ | async}">
+        <!-- [smoothHeight]="!home.isActive && (isMenuOpen$ | async)" -->
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active"
         [routerLinkActiveOptions]="{exact: true}">
@@ -7,6 +8,7 @@
             Home
         </a>
     </li>
+        <!-- [smoothHeight]="!projects.isActive && (isMenuOpen$ | async)" -->
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active">
         <input type="hidden" routerLink="/projects" routerLinkActive #projects="routerLinkActive"/>
@@ -14,6 +16,7 @@
             Projects
         </a>
     </li>
+        <!-- [smoothHeight]="!aboutme.isActive && (isMenuOpen$ | async)" -->
     <li class="header-menu__entry"
         routerLinkActive="header-menu__entry--active">
         <input type="hidden" routerLink="/about-me" routerLinkActive #aboutme="routerLinkActive"/>
