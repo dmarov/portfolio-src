@@ -14,4 +14,4 @@ import { environment } from '../../environments/environment';
     ],
 
 })
-export class StoreBaseModule {};
+export class StoreBaseModule {}

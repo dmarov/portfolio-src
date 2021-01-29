@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
                 if (s instanceof NavigationEnd) {
                     const tree = this.router.parseUrl(this.router.url);
                     if (tree.fragment) {
-                        const element = document.querySelector("#" + tree.fragment);
+                        const element = document.querySelector('#' + tree.fragment);
                         if (element) { element.scrollIntoView(true); }
                     } else {
                         window.scrollTo(0, 0);
