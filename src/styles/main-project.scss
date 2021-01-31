@@ -17,13 +17,29 @@
     &__overlay {
         position: absolute;
         inset: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        opacity: 0;
         transition: opacity 0.3s linear;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        pointer-events: none;
+        opacity: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 60%);
+    }
+
+    &__overlay-link {
+        margin: auto auto 10px;
+        padding: 10px 20px;
+        background-color: rgba($col-black, 0.7);
+        border-radius: 5px;
+        font-weight: bold;
+        border: 1px solid $col-barelywhite;
+
+        &, &:link, &:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $col-green;
+        }
     }
 
     &__link {
@@ -58,14 +74,6 @@
         }
     }
 
-    &:hover {
-        transform: scale(1.05);
-
-        &::after {
-            opacity: 1;
-        }
-    }
-
     &::after {
         transition: opacity var(--hover-time) var(--hover-func);
         z-index: 10;
@@ -73,7 +81,20 @@
         content: "";
         position: absolute;
         inset: 0;
-        box-shadow: 0 0 50px 10px rgba($col-dwhite, 0.5);
+        box-shadow: 0 0 50px 10px rgba($col-black, 0.5);
         opacity: 0;
     }
+
+    &:hover {
+        transform: scale(1.02);
+
+        &::after {
+            opacity: 1;
+        }
+
+        .main-project__overlay {
+            opacity: 1;
+        }
+    }
+
 }
