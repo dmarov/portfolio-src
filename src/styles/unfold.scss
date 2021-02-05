@@ -1,7 +1,16 @@
 .unfold {
     position: relative;
     opacity: 1;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    transform: translate(0, 0);
+
+    &--left {
+        transform: translate(-100vw, 0);
+    }
+
+    &--right {
+        transform: translate(100vw, 0);
+    }
 
     &--hidden {
         opacity: 0;
