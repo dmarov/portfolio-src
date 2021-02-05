@@ -1,1 +1,1 @@
-export { StoreBaseModule } from './store-base.module';
+export * from './store-base.module';

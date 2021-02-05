@@ -1,0 +1,9 @@
+.unfold {
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+
+    &--hidden {
+        opacity: 0;
+    }
+}

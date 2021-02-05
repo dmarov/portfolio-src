@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { UnfoldEffect } from '../../utils';
 
 @Component({
     selector: 'app-page-about-me',
@@ -8,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
         class: 'app-layout__page',
     },
 })
-export class PageAboutMeComponent implements OnInit {
+export class PageAboutMeComponent implements OnInit, AfterViewInit {
 
     constructor() { }
 
     ngOnInit(): void {
+    }
+
+    ngAfterViewInit() {
+        UnfoldEffect.init();
     }
 
 }
