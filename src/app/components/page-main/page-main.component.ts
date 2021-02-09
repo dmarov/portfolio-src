@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { UnfoldEffect } from '../../utils';
+import { UnfoldEffect, InViewEffect } from '../../utils';
 
 @Component({
     selector: 'app-page-main',
@@ -18,5 +18,6 @@ export class PageMainComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit() {
         UnfoldEffect.init();
+        InViewEffect.init();
     }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { UnfoldEffect, LightEffect } from '../../utils';
+import { UnfoldEffect, InViewEffect } from '../../utils';
 
 @Component({
     selector: 'app-page-projects',
@@ -18,7 +18,7 @@ export class PageProjectsComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit() {
         UnfoldEffect.init();
-        LightEffect.init();
+        InViewEffect.init();
     }
 
 }
