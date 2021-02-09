@@ -4,22 +4,88 @@
     color: $col-dwhite;
     padding: 20px;
     flex-grow: 1;
-    border-radius: 7px;
+    border-radius: 20px;
 
     &--theme {
         &--green {
-            box-shadow: 0 0 5px $col-green;
-            border: 1px solid $col-green;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                border-radius: 20px;
+                box-shadow: 0 0 5px $col-green;
+                border: 1px solid $col-green;
+                opacity: 1;
+            }
+
+            &.inview {
+                &::after {
+                    transition: opacity 1s ease-in;
+                }
+            }
+
+            &.inview--not {
+                &::after {
+                    opacity: 0;
+                }
+            }
         }
 
         &--orange {
-            box-shadow: 0 0 5px $col-orange;
-            border: 1px solid $col-orange;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                border-radius: 20px;
+                box-shadow: 0 0 5px $col-orange;
+                border: 1px solid $col-orange;
+                opacity: 1;
+            }
+
+            &.inview {
+                &::after {
+                    transition: opacity 1s ease-in;
+                }
+            }
+
+            &.inview--not {
+                &::after {
+                    opacity: 0;
+                }
+            }
         }
 
         &--white {
-            box-shadow: 0 0 5px $col-dwhite;
-            border: 1px solid $col-dwhite;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                border-radius: 20px;
+                box-shadow: 0 0 5px $col-dwhite;
+                border: 1px solid $col-dwhite;
+                opacity: 1;
+            }
+
+            &.inview {
+                &::after {
+                    transition: opacity 1s ease-in;
+                }
+            }
+
+            &.inview--not {
+                &::after {
+                    opacity: 0;
+                }
+            }
         }
     }
 
