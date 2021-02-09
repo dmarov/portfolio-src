@@ -4,7 +4,7 @@
     color: $col-dwhite;
     padding: 20px;
     flex-grow: 1;
-    border-radius: 20px;
+    border-radius: 7px;
 
     &--theme {
         &--green {
@@ -63,9 +63,8 @@
     }
 
     &__img {
-        // display: block;
-        width: 500px;
-        // width: 100%;
+        display: block;
+        width: 100%;
         height: auto;
     }
 }

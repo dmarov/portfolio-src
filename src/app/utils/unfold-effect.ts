@@ -12,6 +12,7 @@ export class UnfoldEffect {
                 entry.target.classList.toggle('unfold--left', false);
                 entry.target.classList.toggle('unfold--right', false);
                 entry.target.classList.toggle('unfold--down', false);
+                observer.unobserve(entry.target);
             });
         });
 
