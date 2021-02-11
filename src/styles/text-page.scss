@@ -4,7 +4,8 @@
     color: $col-dwhite;
     padding: 20px;
     flex-grow: 1;
-    border-radius: 20px;
+    --radius: 10px;
+    border-radius: var(--radius);
 
     &--theme {
         &--green {
@@ -15,7 +16,7 @@
                 position: absolute;
                 inset: 0;
                 pointer-events: none;
-                border-radius: 20px;
+                border-radius: var(--radius);
                 box-shadow: 0 0 5px $col-green;
                 border: 1px solid $col-green;
                 opacity: 1;
@@ -42,7 +43,7 @@
                 position: absolute;
                 inset: 0;
                 pointer-events: none;
-                border-radius: 20px;
+                border-radius: var(--radius);
                 box-shadow: 0 0 5px $col-orange;
                 border: 1px solid $col-orange;
                 opacity: 1;
@@ -69,7 +70,7 @@
                 position: absolute;
                 inset: 0;
                 pointer-events: none;
-                border-radius: 20px;
+                border-radius: var(--radius);
                 box-shadow: 0 0 5px $col-dwhite;
                 border: 1px solid $col-dwhite;
                 opacity: 1;
@@ -91,14 +92,14 @@
 
     &__title {
         text-align: center;
-        font-size: 22px;
+        font-size: 30px;
 
         @include respond-to('small') {
-            font-size: 25px;
+            font-size: 37px;
         }
 
         @include respond-to('medium') {
-            font-size: 30px;
+            font-size: 47px;
         }
 
     }
