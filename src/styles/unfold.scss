@@ -4,18 +4,6 @@
     transition: opacity 0.5s ease-in, transform 0.5s ease-in;
     transform: translate(0, 0);
 
-    &--left {
-        transform: translate(-10vw, 0);
-    }
-
-    &--right {
-        transform: translate(10vw, 0);
-    }
-
-    &--down {
-        transform: translate(0, 10vh);
-    }
-
     &--hidden {
         opacity: 0;
     }
