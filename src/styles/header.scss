@@ -30,9 +30,16 @@
         display: flex;
         justify-content: stretch;
         align-items: stretch;
+    }
 
-        // @include respond-to('small') {
-        //     display: none;
-        // }
+    &__github {
+        position: absolute;
+        left: 0;
+        top: -4px;
+    }
+
+    &__github-img {
+        height: 40px;
+        width: 40px;
     }
 }
