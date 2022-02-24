@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "sh ./deploy.sh"
+    "deploy": "sh ./deploy.sh",
+    "lint:styles": "stylelint src/**/*.scss"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +50,8 @@
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~5.4.3",
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard-scss": "^3.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"

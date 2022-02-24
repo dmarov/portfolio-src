@@ -11,8 +11,8 @@ import { UnfoldEffect, InViewEffect } from '../../utils';
 })
 export class PageMainComponent implements OnInit, AfterViewInit {
 
-    private startDate = new Date("June 17, 2017 00:00:00")
-    public years: number = 0;
+    private startDate = new Date('June 17, 2017 00:00:00');
+    public years = 0;
 
     constructor() { }
 
