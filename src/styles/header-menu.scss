@@ -7,22 +7,12 @@
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
+    flex-grow: 1;
+    padding-top: 6px;
 
-    // &:not(.header-menu--mobile--open) {
-    //     .header-menu__entry:not(.header-menu__entry--active) {
-    //         height: 0;
-    //     }
-
-    //     @include respond-to('small') {
-    //         .header-menu__entry:not(.header-menu__entry--active) {
-    //             height: auto;
-    //         }
-    //     }
-    // }
-
-    // @include respond-to('small') {
-    //     flex-direction: row;
-    // }
+    @include respond-to('small') {
+        padding-top: 0;
+    }
 
     &__entry {
         overflow: hidden;
