@@ -1,10 +1,16 @@
 import { Directive, OnChanges, Input, HostBinding, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[smoothHeight]',
-  host: { '[style.display]': '"block"', '[style.overflow]': '"hidden"' }
+  selector: '[appSmoothHeight]',
 })
 export class SmoothHeightAnimDirective implements OnChanges {
+
+  @HostBinding('[style.display]')
+  styleDisplay = '"block"';
+
+  @HostBinding('[style.overflow]')
+  styleOverflow = '"hidden"';
+
   @Input()
   smoothHeight;
   pulse: boolean;
