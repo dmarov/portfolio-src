@@ -14,7 +14,20 @@ export class RouterEffects {
         () => this.actions$.pipe(
             ofType(ROUTER_NAVIGATED),
             tap(() => {
-                console.log("HERE");
+                const hash = window.location.hash;
+
+                if (hash) {
+                    const id = hash.replace(/#/, "");
+
+                    setTimeout(() => {
+                        const target = document.getElementById(id);
+                        if (target) {
+                            target.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }, 300);
+                } else {
+                    window.scrollTo(0, 0);
+                }
             }),
         ),
         { dispatch: false }
