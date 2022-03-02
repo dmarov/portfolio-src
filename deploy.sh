@@ -1,4 +1,4 @@
-yarn ng build --prod
+yarn build:prod
 mkdir deploy
 cd deploy
 git clone git@github.com:dmarov/dmarov.github.io.git ./
