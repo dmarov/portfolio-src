@@ -92,19 +92,20 @@
         content: "";
         position: absolute;
         inset: 0;
-        box-shadow: 0 0 50px 10px rgba($col-black, 0.5);
+        box-shadow: 0 0 20px 20px $col-black;
         opacity: 0;
     }
 
     &:hover {
-        transform: scale(1.02);
+        z-index: 10;
+        transform: scale(1.1);
 
         &::after {
             opacity: 1;
         }
 
-        .main-project__overlay {
-            opacity: 1;
-        }
+        // .main-project__overlay {
+        //     opacity: 1;
+        // }
     }
 }

@@ -16,6 +16,7 @@ export class RouterEffects {
             tap(() => {
                 const hash = window.location.hash;
 
+                console.log("NAVIGATED");
                 if (hash) {
                     const id = hash.replace(/#/, "");
 
@@ -26,7 +27,12 @@ export class RouterEffects {
                         }
                     }, 300);
                 } else {
-                    window.scrollTo(0, 0);
+                    setTimeout(() => {
+                        const target = document.getElementById("top-pivot");
+                        if (target) {
+                            target.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }, 300);
                 }
             }),
         ),
