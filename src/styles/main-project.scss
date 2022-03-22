@@ -80,21 +80,6 @@
         width: 100%;
     }
 
-    &__title {
-        font-size: 2rem;
-        color: $col-green;
-    }
-
-    &__tech-list {
-        padding-left: 0;
-        list-style-type: none;
-        display: flex;
-    }
-
-    &__tech-list-item {
-        padding-left: 5px;
-    }
-
     &__visit-link {
         font-size: 2rem;
 
@@ -125,5 +110,4 @@
             opacity: 1;
         }
     }
-
 }
