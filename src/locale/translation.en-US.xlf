@@ -26,6 +26,70 @@
         </context-group>
         <note priority="1" from="description">about me</note>
       </trans-unit>
+      <trans-unit id="c914a2f0ab77578e9c11e3349e977edaad20c6b9" datatype="html">
+        <source> Career </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <note priority="1" from="description">career</note>
+      </trans-unit>
+      <trans-unit id="aceb580765f5473b15090b998f52a6574eae1c74" datatype="html">
+        <source> Short after that I&apos;ve started my career as backend developer. It was my first experience of commercial software development. That&apos;s when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">15,21</context>
+        </context-group>
+        <note priority="1" from="description">career start commercial</note>
+      </trans-unit>
+      <trans-unit id="d00514eeaf064afc6644968443c286af193119c8" datatype="html">
+        <source> Then the time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That&apos;s when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> framework which payed out later. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">23,28</context>
+        </context-group>
+        <note priority="1" from="description">career frontend framework</note>
+      </trans-unit>
+      <trans-unit id="4e44f7d083298e4d6f138b1a4bdf96885b69bc15" datatype="html">
+        <source> Path lead to resolve more complex problems related to outdated, unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> I&apos;ve implemented microservices. There&apos;s some of them: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">30,34</context>
+        </context-group>
+        <note priority="1" from="description">career infrastructure</note>
+      </trans-unit>
+      <trans-unit id="7370a3c3045c7b762009cc6caea64718a507e1af" datatype="html">
+        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - rest API to send SMS notifications using GSM gateway<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to convert HTML page to PDF (most useful for printing invoices)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to generate JWT token pairs (useful for authentication)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+        <note priority="1" from="description">career micro services</note>
+      </trans-unit>
+      <trans-unit id="72defb82ae39ea1137726f515d812b0286093cc1" datatype="html">
+        <source> These services was very useful for each new website. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+        <note priority="1" from="description">career servies useful</note>
+      </trans-unit>
+      <trans-unit id="7b8cb436b371a85b72cd29285d24fd7360488372" datatype="html">
+        <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about FreeBSD operating system, so it was time to apply this knowledge in practice. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">46,51</context>
+        </context-group>
+        <note priority="1" from="description">career administering</note>
+      </trans-unit>
+      <trans-unit id="d2d871f620044a88fcad130d708093e5b0f39c82" datatype="html">
+        <source> Then I decided to specialize in frontend and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
+          <context context-type="linenumber">53,60</context>
+        </context-group>
+        <note priority="1" from="description">career frontend</note>
+      </trans-unit>
       <trans-unit id="573c823a56540cb32d54c5b430c4519d6c76d685" datatype="html">
         <source> Welcome! </source>
         <context-group purpose="location">
