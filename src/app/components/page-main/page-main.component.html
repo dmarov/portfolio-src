@@ -5,16 +5,16 @@
 <div class="app-layout__content-wrapper app-layout__content-wrapper--no-extend">
     <div class="app-layout__content">
         <article class="main-title text-page text-page--theme--white unfold unfold--hidden inview inview--not">
-            <h1 class="main-title__text main-title__text--welcome">
+            <h1 i18n="welcome" class="main-title__text main-title__text--welcome">
                 Welcome!
             </h1>
-            <h1 class="main-title__text main-title__text--primary">
+            <h1 i18n="introduct myself" class="main-title__text main-title__text--primary">
                 My name is Dmitry, and this is my portfolio.
             </h1>
-            <h2 class="main-title__text main-title__text--secondary">
+            <h2 i18n="who I am" class="main-title__text main-title__text--secondary">
                 I am software developer with over {{ years }} years of experience in web development.
             </h2>
-            <h2 class="main-title__text main-title__text--secondary">
+            <h2 i18n="what are my goals" class="main-title__text main-title__text--secondary">
                 I'm interested in technology and how to use it to improve web experience.
             </h2>
         </article>
@@ -25,7 +25,7 @@
     <div class="app-layout__content">
 
         <article class="text-page text-page--theme--green unfold unfold--hidden inview inview--not">
-            <h2 class="text-page__title">
+            <h2 i18n="technology stack" class="text-page__title">
                 My Technology Stack
             </h2>
             <div class="page-main__tech tech-list">
@@ -118,7 +118,7 @@
 <div class="app-layout__content-wrapper app-layout__content-wrapper--no-extend">
     <div class="app-layout__content">
         <article class="text-page text-page--theme--orange unfold unfold--hidden inview inview--not">
-            <h2 class="text-page__title">
+            <h2 i18n="my projects" class="text-page__title">
                 My Projects
             </h2>
             <div class="main-projects">
@@ -133,9 +133,10 @@
                             </div>
                             <div class="main-project__overlay">
                                 <h4 class="main-project__overlay-title">
-                                    RiverTV Website
+                                    RiverTV
+                                    <ng-container i18n="website">Website</ng-container>
                                 </h4>
-                                <a class="main-project__overlay-link"
+                                <a i18n="about" class="main-project__overlay-link"
                                     routerLink="/projects"
                                     fragment="project-rivertv">
                                     About
@@ -153,9 +154,10 @@
                             </div>
                             <div class="main-project__overlay">
                                 <h4 class="main-project__overlay-title">
-                                    VMedia Website
+                                    VMedia
+                                    <ng-container i18n="website">Website</ng-container>
                                 </h4>
-                                <a class="main-project__overlay-link"
+                                <a i18n="about" class="main-project__overlay-link"
                                     routerLink="/projects"
                                     fragment="project-vmedia">
                                     About
@@ -173,9 +175,10 @@
                             </div>
                             <div class="main-project__overlay">
                                 <h4 class="main-project__overlay-title">
-                                    Trik Website
+                                    Trik
+                                    <ng-container i18n="website">Website</ng-container>
                                 </h4>
-                                <a class="main-project__overlay-link"
+                                <a i18n="about" class="main-project__overlay-link"
                                     routerLink="/projects"
                                     fragment="project-trik">
                                     About
@@ -193,9 +196,10 @@
                             </div>
                             <div class="main-project__overlay">
                                 <h4 class="main-project__overlay-title">
-                                    Paxus Website
+                                    Paxus
+                                    <ng-container i18n="website">Website</ng-container>
                                 </h4>
-                                <a class="main-project__overlay-link"
+                                <a i18n="about" class="main-project__overlay-link"
                                     routerLink="/projects"
                                     fragment="project-paxus">
                                     About
@@ -206,7 +210,9 @@
                 </ul>
             </div>
             <p class="page-main__projects-line text-page__p text-page__p--center">
-                <a class="text-page__a" routerLink="/projects">more projects</a>
+                <a i18n="more projects" class="text-page__a" routerLink="/projects">
+                    more projects
+                </a>
             </p>
         </article>
     </div>

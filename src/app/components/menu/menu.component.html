@@ -4,7 +4,7 @@
         [@slideInOut]="home.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
         [routerLinkActiveOptions]="{exact: true}">
         <input type="hidden" [routerLinkActiveOptions]="{exact: true}" routerLink="/" routerLinkActive #home="routerLinkActive"/>
-        <a class="header-menu__link" routerLink="/" (click)="home.isActive ? toggleMenu() : closeMenu()">
+        <a i18n="home page" class="header-menu__link" routerLink="/" (click)="home.isActive ? toggleMenu() : closeMenu()">
             Home
         </a>
     </li>
@@ -12,7 +12,7 @@
         [@slideInOut]="projects.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
         routerLinkActive="header-menu__entry--active">
         <input type="hidden" routerLink="/projects" routerLinkActive #projects="routerLinkActive"/>
-        <a class="header-menu__link" routerLink="/projects" (click)="projects.isActive ? toggleMenu() : closeMenu()">
+        <a i18n="projects" class="header-menu__link" routerLink="/projects" (click)="projects.isActive ? toggleMenu() : closeMenu()">
             Projects
         </a>
     </li>
@@ -20,7 +20,7 @@
         [@slideInOut]="aboutme.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
         routerLinkActive="header-menu__entry--active">
         <input type="hidden" routerLink="/about-me" routerLinkActive #aboutme="routerLinkActive"/>
-        <a class="header-menu__link" routerLink="/about-me" (click)="aboutme.isActive ? toggleMenu() : closeMenu()">
+        <a i18n="about me" class="header-menu__link" routerLink="/about-me" (click)="aboutme.isActive ? toggleMenu() : closeMenu()">
             About Me
         </a>
     </li>
