@@ -11,7 +11,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "sh ./deploy.sh",
-    "lint:styles": "stylelint src/**/*.scss"
+    "lint:styles": "stylelint src/**/*.scss",
+    "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.en-US.xlf"
   },
   "private": true,
   "dependencies": {
