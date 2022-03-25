@@ -1,3 +1,4 @@
+rm -rf ./node_modules/.cache
 yarn build:prod
 mkdir deploy
 cd deploy
