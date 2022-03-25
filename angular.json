@@ -158,7 +158,7 @@
         "locales": {
           "ru": {
             "translation": "src/locale/translation.ru-RU.xlf",
-            "baseHref": ""
+            "baseHref": "ru/"
           }
         }
       }
