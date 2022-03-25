@@ -77,7 +77,7 @@
       </trans-unit>
       <trans-unit id="72defb82ae39ea1137726f515d812b0286093cc1" datatype="html">
         <source> These services was very useful for each new website. </source>
-        <target> Эти сервисы были очень полезными для каждого нового веб сайта. </target>
+        <target> Эти сервисы использовались для каждого нового веб сайта. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">42,44</context>
@@ -86,6 +86,7 @@
       </trans-unit>
       <trans-unit id="7b8cb436b371a85b72cd29285d24fd7360488372" datatype="html">
         <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about FreeBSD operating system, so it was time to apply this knowledge in practice. </source>
+        <target> Так как каждый сервис требовал отдельное окружение, то все эти окружения нужно было администрировать, за что я был ответственным. У меня уже было достаточно знаний об операционной системе FreeBSD, поэтому настало время приложить эти знания на практике. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">46,51</context>
@@ -94,6 +95,7 @@
       </trans-unit>
       <trans-unit id="d2d871f620044a88fcad130d708093e5b0f39c82" datatype="html">
         <source> Then I decided to specialize in frontend and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
+        <target> Затем я решил специализироваться во фронтенд разработке и перейти в большие проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> которые до сих пор являются честью моего стека технологий. Такие аспекты как Site Engine Optimization (SEO), реализация UI тестов, pixel perfect вёрстка, кросс-браузерная разработка, accessibility - на этом я более всего сосредоточен. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">53,60</context>
@@ -102,6 +104,7 @@
       </trans-unit>
       <trans-unit id="573c823a56540cb32d54c5b430c4519d6c76d685" datatype="html">
         <source> Welcome! </source>
+        <target> Добро пожаловать! </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">8,10</context>
@@ -110,6 +113,7 @@
       </trans-unit>
       <trans-unit id="f10d4eca9b746103aafc68b4284e5f40151930cc" datatype="html">
         <source> My name is Dmitry, and this is my portfolio. </source>
+        <target> Меня зовут Дмитрий, и это моё портфолио. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">11,13</context>
@@ -118,6 +122,7 @@
       </trans-unit>
       <trans-unit id="ab10090b9b99bd977d59a4694e2cd8a95b186136" datatype="html">
         <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> years of experience in web development. </source>
+        <source> Я разработчик с более чем <x id="INTERPOLATION" equiv-text="{{ years }}"/> годами опыта веб разработки. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">14,16</context>
@@ -126,6 +131,7 @@
       </trans-unit>
       <trans-unit id="08474a0bee8a89ade2923a4791a4cc003fa40ed1" datatype="html">
         <source> I&apos;m interested in technology and how to use it to improve web experience. </source>
+        <target> Мне интересны технологии и как иx использовать чтобы улучшить пользовательский опыт. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">17,19</context>
@@ -134,6 +140,7 @@
       </trans-unit>
       <trans-unit id="0f6101be78cd02a77108b0c6893bee2242facf84" datatype="html">
         <source> My Technology Stack </source>
+        <target> Мой технологический стек </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">28,30</context>
@@ -142,6 +149,7 @@
       </trans-unit>
       <trans-unit id="7a3cf4bc4c331716659fad30be3cda29490249d3" datatype="html">
         <source> My Projects </source>
+        <target> Мои проекты </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">121,123</context>
@@ -150,6 +158,7 @@
       </trans-unit>
       <trans-unit id="afb605e735bef0cdd46dbff3c3d2be15960cdc2b" datatype="html">
         <source>Website</source>
+        <target>Вебсайт</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">137</context>
@@ -190,6 +199,7 @@
       </trans-unit>
       <trans-unit id="0f46ca01225f564d1565a9355540412240f9af6a" datatype="html">
         <source> About </source>
+        <target> Ещё </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">141,143</context>
@@ -210,6 +220,7 @@
       </trans-unit>
       <trans-unit id="6eaf7992d0e6dc6a1b3d460c71df868725aefc9e" datatype="html">
         <source> more projects </source>
+        <target> подробнее о проектах </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">213,215</context>
@@ -218,6 +229,7 @@
       </trans-unit>
       <trans-unit id="2a68ee7f3f04fd76c212100f50ba7b6768fd9bc1" datatype="html">
         <source>This page doesn&apos;t exist</source>
+        <target> Этой страницы не существует </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-not-found/page-not-found.component.html</context>
           <context context-type="linenumber">6</context>
@@ -226,6 +238,7 @@
       </trans-unit>
       <trans-unit id="b96e029138aaa34f2929498a2f28ce85e11a4057" datatype="html">
         <source> Return to Home page </source>
+        <target> Вернуться на домашнюю страницу </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-not-found/page-not-found.component.html</context>
           <context context-type="linenumber">8,10</context>
@@ -234,6 +247,7 @@
       </trans-unit>
       <trans-unit id="d541828ffdfb6607ae3ec95b8f339bac186e6995" datatype="html">
         <source> RiverTV is a video streaming service provided by RiverTV Inc., Canada, Toronto. </source>
+        <target> RiverTV это стриминговый сервис педоставляемый RiverTV Inc., Canada, Toronto. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">10,12</context>
@@ -242,6 +256,7 @@
       </trans-unit>
       <trans-unit id="103dfff26113193ed76bfdc59948eb60c3c167e0" datatype="html">
         <source> RiverTV offers streaming of live channels and on-demand content. The website is online shop and TV web app where RiverTV package and addons can be acquired, managed and watched. </source>
+        <target> RiverTV предоставляет стриминг live каналов и on-demand контента. Вебсайт это онлайн магазин и веб приложение для просмотра TV где RiverTV пакет and аддоны можно приобрести, управлять ими и смотреть TV. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">13,16</context>
@@ -250,6 +265,7 @@
       </trans-unit>
       <trans-unit id="b1b3514f310b7d261b70b39e2f593ddcdd870b3b" datatype="html">
         <source> I developed frontend for checkout and TV guide. </source>
+        <target> Я разрабатывал фронтенд для корзины и TV гайда. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">18,20</context>
@@ -258,6 +274,7 @@
       </trans-unit>
       <trans-unit id="657acb0b03b75357db98add4cda87d02c7b96827" datatype="html">
         <source> Technoligies I used: </source>
+        <target> Технологии которые я использовал: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">21,23</context>
@@ -282,6 +299,7 @@
       </trans-unit>
       <trans-unit id="fc1b671ea70715d1c0955ab7a07a1e21650ee49d" datatype="html">
         <source> Visit </source>
+        <target> Visit </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">32,34</context>
@@ -306,6 +324,7 @@
       </trans-unit>
       <trans-unit id="8912163d562b47f36d35238a0fa595650a1dcd25" datatype="html">
         <source> VMedia is a internet service provider from Canada, Toronto. </source>
+        <target> VMedia это провайдер интернет сервиса из Канады, Торонто. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">50,52</context>
