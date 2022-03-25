@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
+    "start:en": "ng serve --configuration=en",
+    "start:ru": "ng serve --configuration=ru",
     "start": "ng serve",
     "start:prod": "ng serve --configuration=production",
     "build": "ng build",

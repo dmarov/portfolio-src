@@ -37,7 +37,9 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "localize": true,
+            "i18nMissingTranslation": "error"
           },
           "configurations": {
             "production": {
@@ -68,6 +70,16 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "ru": {
+              "localize": [
+                "ru"
+              ]
+            },
+            "en": {
+              "localize": [
+                "en"
+              ]
             }
           },
           "defaultConfiguration": ""
@@ -80,6 +92,14 @@
           "configurations": {
             "production": {
               "browserTarget": "portfolio:build:production"
+            },
+            "en": {
+              "browserTarget": "portfolio:build:en",
+              "port": 4200
+            },
+            "ru": {
+              "browserTarget": "portfolio:build:ru",
+              "port": 4201
             }
           }
         },
@@ -130,6 +150,15 @@
             "production": {
               "devServerTarget": "portfolio:serve:production"
             }
+          }
+        }
+      },
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "ru": {
+            "translation": "src/locale/translation.ru-RU.xlf",
+            "baseHref": ""
           }
         }
       }
