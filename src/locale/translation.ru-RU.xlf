@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
@@ -39,7 +39,8 @@
         <note priority="1" from="description">career</note>
       </trans-unit>
       <trans-unit id="1cea15a29c3edfdb153efa8b0dbac82fe6072d42" datatype="html">
-        <source> Перед началом своей карьеры я получил образование по математике и компьюьерным наукам в <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>САФУ &quot;Прикладная Математика и Информатика&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> который я закончил в 2017 году. В то время я учавствовал в математических олимпиадах и олимпиадах по программированию. В то время основным языком программирования я считал <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> но так же работал с C, Java, Python, Assembly. </source>
+        <source> As a start of my career I've got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>NARFU "Applied Mathematics and Computer Science"<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> which I've graduated in 2017. At that time participated in math and programming olympiads. As a base programming language I regard <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> but also I learned C, Java, Python, Assembly. </source>
+        <target> Перед началом своей карьеры я получил образование по математике и компьюьерным наукам в <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>САФУ &quot;Прикладная Математика и Информатика&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> который я закончил в 2017 году. В то время я учавствовал в математических олимпиадах и олимпиадах по программированию. В то время основным языком программирования я считал <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> но так же работал с C, Java, Python, Assembly. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">7,13</context>
@@ -47,8 +48,8 @@
         <note priority="1" from="description">career start</note>
       </trans-unit>
       <trans-unit id="aceb580765f5473b15090b998f52a6574eae1c74" datatype="html">
-        <source> Short after that I&apos;ve started my career as backend developer. It was my first experience of commercial software development. That&apos;s when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </source>
-        <target> Затем я начал свою карьеру в качестве Backend разработчика. Это был мой первый опыт коммерческой разработки. Тогда я ознакомился с технологиями: <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, а также с фронтенд технологиями, такими как <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </target>
+        <source> Short after that I've started my career as backend developer. It was my first experience of commercial software development. That's when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </source>
+        <target> Затем я начал свою карьеру в качестве Backend разработчика. Это был мой первый опыт коммерческой разработки. Тогда я ознакомился с технологиями: <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, а также с фронтенд технологиями, такими как <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">15,21</context>
@@ -56,8 +57,8 @@
         <note priority="1" from="description">career start commercial</note>
       </trans-unit>
       <trans-unit id="d00514eeaf064afc6644968443c286af193119c8" datatype="html">
-        <source> Then the time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That&apos;s when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> framework which payed out later. </source>
-        <target> Затем настало время, когда нативного Javascript'a стало не хватать для того, чтобы продолжать реализовывать сложные решения эффективным способом. Тогда я принял решение изучить фронтенд фреймворк <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> , что окупилось позднее. </target>
+        <source> Then the time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That's when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> framework which payed out later. </source>
+        <target> Затем настало время, когда нативного Javascript'a стало не хватать для того, чтобы продолжать реализовывать сложные решения эффективным способом. Тогда я принял решение изучить фронтенд фреймворк <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> , что окупилось позднее. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">23,28</context>
@@ -65,8 +66,8 @@
         <note priority="1" from="description">career frontend framework</note>
       </trans-unit>
       <trans-unit id="4e44f7d083298e4d6f138b1a4bdf96885b69bc15" datatype="html">
-        <source> Path lead to resolve more complex problems related to outdated, unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> I&apos;ve implemented microservices. There&apos;s some of them: </source>
-        <target> Путь вёл к тому, что надо былдо решать существующие проблемы связанные с устаревшей, неподдерживаемой инфраструктурой. Имея опыт работы с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> я разрабатывал микросервисы. Вот некоторые из них: </target>
+        <source> Path lead to resolve more complex problems related to outdated, unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> I've implemented microservices. There's some of them: </source>
+        <target> Путь вёл к тому, что надо былдо решать существующие проблемы связанные с устаревшей, неподдерживаемой инфраструктурой. Имея опыт работы с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> я разрабатывал микросервисы. Вот некоторые из них: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">30,34</context>
@@ -74,8 +75,8 @@
         <note priority="1" from="description">career infrastructure</note>
       </trans-unit>
       <trans-unit id="7370a3c3045c7b762009cc6caea64718a507e1af" datatype="html">
-        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - rest API to send SMS notifications using GSM gateway<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to convert HTML page to PDF (most useful for printing invoices)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to generate JWT token pairs (useful for authentication)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
-        <target><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Шлюз для отправки SMS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для отправки SMS оповещений использующий GSM шлюз<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF генератор<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для конвертирования HTML страницы в PDF (полезен для генерации инфойсов)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>генератор JWT токенов<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для генерации пар JWT токенов (используемое для авторизации)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></target>
+        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - rest API to send SMS notifications using GSM gateway<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to convert HTML page to PDF (most useful for printing invoices)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to generate JWT token pairs (useful for authentication)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></source>
+        <target><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Шлюз для отправки SMS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для отправки SMS оповещений использующий GSM шлюз<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PDF генератор<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для конвертирования HTML страницы в PDF (полезен для генерации инфойсов)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>генератор JWT токенов<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для генерации пар JWT токенов (используемое для авторизации)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">37,39</context>
@@ -101,8 +102,8 @@
         <note priority="1" from="description">career administering</note>
       </trans-unit>
       <trans-unit id="d2d871f620044a88fcad130d708093e5b0f39c82" datatype="html">
-        <source> Then I decided to specialize in frontend and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
-        <target> Затем я решил специализироваться во фронтенд разработке и перейти в большие проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> которые до сих пор являются честью моего стека технологий. Такие аспекты как Site Engine Optimization (SEO), реализация UI тестов, pixel perfect вёрстка, кросс-браузерная разработка, accessibility - на этом я более всего сосредоточен. </target>
+        <source> Then I decided to specialize in frontend and move to big projects. That's when I've learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I'm most focused on at work. </source>
+        <target> Затем я решил специализироваться во фронтенд разработке и перейти в большие проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> которые до сих пор являются честью моего стека технологий. Такие аспекты как Site Engine Optimization (SEO), реализация UI тестов, pixel perfect вёрстка, кросс-браузерная разработка, accessibility - на этом я более всего сосредоточен. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">53,60</context>
@@ -137,7 +138,7 @@
         <note priority="1" from="description">who I am</note>
       </trans-unit>
       <trans-unit id="08474a0bee8a89ade2923a4791a4cc003fa40ed1" datatype="html">
-        <source> I&apos;m interested in technology and how to use it to improve web experience. </source>
+        <source> I'm interested in technology and how to use it to improve web experience. </source>
         <target> Мне интересны технологии и как иx использовать чтобы улучшить пользовательский опыт. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
@@ -235,13 +236,13 @@
         <note priority="1" from="description">more projects</note>
       </trans-unit>
       <trans-unit id="2a68ee7f3f04fd76c212100f50ba7b6768fd9bc1" datatype="html">
-        <source>This page doesn&apos;t exist</source>
+        <source>This page doesn't exist</source>
         <target> Этой страницы не существует </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-not-found/page-not-found.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
-        <note priority="1" from="description">this page doesn&apos;t exist</note>
+        <note priority="1" from="description">this page doesn't exist</note>
       </trans-unit>
       <trans-unit id="b96e029138aaa34f2929498a2f28ce85e11a4057" datatype="html">
         <source> Return to Home page </source>
@@ -348,7 +349,7 @@
         <note priority="1" from="description">VMedia does</note>
       </trans-unit>
       <trans-unit id="1cc7631ab2890e0c81325c8b55d819d7e1a16526" datatype="html">
-        <source> У сайта очень сложный модуль корзины, фронтенд в целом сложный. Я рефакторил фронтенд код, разрабатывал новые фичи, исправлял баги, обновил очень много лигаси кода. </source>
+        <source> The site has very complex checkout and frontend overall. I refactored frontend, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">58,61</context>
@@ -356,8 +357,8 @@
         <note priority="1" from="description">VMedia what I did</note>
       </trans-unit>
       <trans-unit id="aebddfcd89b6726be78ea2a10e1f1f538f1540f4" datatype="html">
-        <source> &quot;Scarlett &amp; Monarch&quot; CMS </source>
-        <target> CMS &quot;Скарлетт и Монарх&quot; </target>
+        <source> "Scarlett &amp; Monarch" CMS </source>
+        <target> CMS "Скарлетт и Монарх" </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">86,88</context>
@@ -365,8 +366,8 @@
         <note priority="1" from="description">Scarlett and Monarch CMS</note>
       </trans-unit>
       <trans-unit id="9f63505c5ed748cd3317f07e7cbaf71198ad0e0e" datatype="html">
-        <source> Content management sytem of &quot;Scarlett &amp; Monarch&quot; is used for each and every website project of company. Each customer had their own requirements. CMS evolved with each new requirement. </source>
-        <target> Система управления контентом &quot;Скарлетт и Монарх&quot; используется для каждого веб проекта компании. У каждого заказчика свои требования. CMS эволюционировала с каждым новым требованием. </target>
+        <source> Content management sytem of "Scarlett &amp; Monarch" is used for each and every website project of company. Each customer had their own requirements. CMS evolved with each new requirement. </source>
+        <target> Система управления контентом "Скарлетт и Монарх" используется для каждого веб проекта компании. У каждого заказчика свои требования. CMS эволюционировала с каждым новым требованием. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">89,92</context>
@@ -374,8 +375,8 @@
         <note priority="1" from="description">S&amp;M CMS is used for</note>
       </trans-unit>
       <trans-unit id="1ac1ca4d710bd66f0f40718d59cbffc199954efb" datatype="html">
-        <source> I developed backend and frontend, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog product editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </source>
-        <target> Я разрабатывал backend и frontend, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>редактор товаров каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>обработчик заказов<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </target>
+        <source> I developed backend and frontend, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>catalog product editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </source>
+        <target> Я разрабатывал backend и frontend, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор товаров каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>обработчик заказов<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">94,97</context>
@@ -383,8 +384,8 @@
         <note priority="1" from="description">S&amp;M CMS what I did</note>
       </trans-unit>
       <trans-unit id="3efdc15ea17513beedcd116c050b26160dc87e88" datatype="html">
-        <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog product editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, which allows binding arbitrary properties to product. It allows bind array of products, array of images, text, number, boolean, array of strings, arbitrary json. Api of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its&apos; structure with every new project. Order has standard properties such as full name and mobile number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders&apos; content, adding, removing and modifying products. Orders&apos; sum recalculates automatically, including discounts. It also allows to notify client via SMS or email. </source>
-        <target> Один из наиболее продвинутых модулей это <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>редактор товаров каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, который позволяет привязать произвольные свойства к товару. Можно привязать к товару другие товары, картинки, текст, число, булев тип, массивы, произвольный json. API веб сайта позволяет производить "умный поиск" по произвольным свойствам. Модуль обработки заказов позволяет гибко управлять заказами, которые меняют свою структуру с каждым новым проектом. У заказов есть стандартные свойства, такие как имя и телефон клиента, но так же могут иметь любое другое свойство которое можно отобразить и изменить в модуле. Также модуль позволяет менять содержимое заказа, добавление, удаление и модификация товаров. Итого сумма заказа высчитывается автоматически, включая скидки. Также модуль позволяет отправить сообщение клиенту через SMS или email. </target>
+        <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>catalog product editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, which allows binding arbitrary properties to product. It allows bind array of products, array of images, text, number, boolean, array of strings, arbitrary json. Api of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its' structure with every new project. Order has standard properties such as full name and mobile number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders' content, adding, removing and modifying products. Orders' sum recalculates automatically, including discounts. It also allows to notify client via SMS or email. </source>
+        <target> Один из наиболее продвинутых модулей это <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор товаров каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, который позволяет привязать произвольные свойства к товару. Можно привязать к товару другие товары, картинки, текст, число, булев тип, массивы, произвольный json. API веб сайта позволяет производить "умный поиск" по произвольным свойствам. Модуль обработки заказов позволяет гибко управлять заказами, которые меняют свою структуру с каждым новым проектом. У заказов есть стандартные свойства, такие как имя и телефон клиента, но так же могут иметь любое другое свойство которое можно отобразить и изменить в модуле. Также модуль позволяет менять содержимое заказа, добавление, удаление и модификация товаров. Итого сумма заказа высчитывается автоматически, включая скидки. Также модуль позволяет отправить сообщение клиенту через SMS или email. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">97,108</context>
@@ -419,7 +420,7 @@
         <note priority="1" from="description">Trik what I did</note>
       </trans-unit>
       <trans-unit id="2bdff512b346353fa864290cd041a5815b5da0db" datatype="html">
-        <source> Paxus is a company from Archangelsk, Russian Federation. It constructs and sells offroad vehicles, which can be customized depending on customer&apos;s needs. The website is an online shop + CMS. </source>
+        <source> Paxus is a company from Archangelsk, Russian Federation. It constructs and sells offroad vehicles, which can be customized depending on customer's needs. The website is an online shop + CMS. </source>
         <target> Paxus это компания из Архангельска, Российская федерация. Создаёт и продаёт вездеходы и другие транспортные средства для внедорожья, которые могут быть кастомизированы в зависимости от требований заказчика. Вебсайт это онлайн магазин + CMS. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
