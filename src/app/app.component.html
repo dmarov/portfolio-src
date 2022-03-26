@@ -1,18 +1,18 @@
 <div id="top-pivot"></div>
 <header class="app-layout__header header">
     <div class="header__content">
-        <a href="https://github.com/dmarov"
-            target="_blank"
-            class="header__github-wrapper">
-            <img class="header__github"
-                alt="Github"
-                src="assets/images/github.png?v=1">
-        </a>
-        <app-menu class="header__menu"></app-menu>
-        <div class="header__lang-wrapper">
-            <app-lang></app-lang>
+        <div class="header__side">
+            <a href="https://github.com/dmarov"
+                target="_blank"
+                class="header__github-wrapper">
+                <img class="header__github"
+                    alt="Github"
+                    src="assets/images/github.png?v=1">
+            </a>
         </div>
-        <div class="header__burger-wrapper">
+        <app-menu class="header__menu"></app-menu>
+        <div class="header__side">
+            <app-lang></app-lang>
             <div class="burger"
                 [ngClass]="{'burger--opened': isMenuOpen$ | async}"
                 (click)="toggleMenuOpen()">

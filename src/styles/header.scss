@@ -3,6 +3,8 @@
     padding: 5px;
     color: $col-black;
     transition: background-color linear 0.3s;
+    border-bottom: $col-grey 3px solid;
+    align-items: flex-start;
 
     &:hover {
         background-color: $col-grey;
@@ -27,19 +29,12 @@
         flex-grow: 1;
     }
 
-    &__burger-wrapper {
-        width: 40px;
-        height: 40px;
-        right: 0;
-        top: -4px;
+    &__side {
         display: flex;
-        justify-content: stretch;
-        align-items: stretch;
-    }
-
-    &__github-wrapper {
-        left: 0;
-        top: -4px;
+        align-items: center;
+        align-self: flex-start;
+        flex-basis: 83px;
+        flex-shrink: 0;
     }
 
     &__github {

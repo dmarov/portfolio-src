@@ -5,6 +5,10 @@
     padding-left: 0;
     display: flex;
 
+    &__entry--active {
+        display: none;
+    }
+
     &__entries {
         margin: -10px;
     }
@@ -14,10 +18,7 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $col-white;
-
-        &--active {
-            color: $col-green;
-        }
+        transition: color 0.3s linear;
 
         &:hover {
             color: $col-orange;
