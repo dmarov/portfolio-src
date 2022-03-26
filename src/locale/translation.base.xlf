@@ -34,43 +34,43 @@
         </context-group>
         <note priority="1" from="description">career</note>
       </trans-unit>
-      <trans-unit id="1cea15a29c3edfdb153efa8b0dbac82fe6072d42" datatype="html">
-        <source> As a start of my career I&apos;ve got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>NARFU &quot;Applied Mathematics and Computer Science&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which I&apos;ve graduated in 2017. At that time participated in math and programming olympiads. As a base programming language I regard <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> but also I learned C, Java, Python, Assembly. </source>
+      <trans-unit id="a2e89b140503bb71eca1a9a3635a5c6db66cf7a8" datatype="html">
+        <source> In order to start my career as a software developer I&apos;ve got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>NARFU &quot;Applied Mathematics and Computer Science&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. At that time I participated in math and programming olympiads. As my base programming language I regarded <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> but also I learned and worked with C, Java, Python, Assembly. I&apos;ve graduated in 2017. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">7,13</context>
+          <context context-type="linenumber">7,15</context>
         </context-group>
         <note priority="1" from="description">career start</note>
       </trans-unit>
-      <trans-unit id="aceb580765f5473b15090b998f52a6574eae1c74" datatype="html">
-        <source> Short after that I&apos;ve started my career as backend developer. It was my first experience of commercial software development. That&apos;s when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </source>
+      <trans-unit id="b10a0ad97ab9481c50e1b7973c2ab11c2664bd3c" datatype="html">
+        <source> Short after that I&apos;ve started my career as backend developer. It was my first experience of commercial software development and that&apos;s when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">15,21</context>
+          <context context-type="linenumber">17,23</context>
         </context-group>
         <note priority="1" from="description">career start commercial</note>
       </trans-unit>
-      <trans-unit id="d00514eeaf064afc6644968443c286af193119c8" datatype="html">
-        <source> Then the time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That&apos;s when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> framework which payed out later. </source>
+      <trans-unit id="51f0526bda60eab911b270c6c870e288bf13e496" datatype="html">
+        <source> The time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That&apos;s when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> framework which payed out later. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">23,28</context>
+          <context context-type="linenumber">25,30</context>
         </context-group>
         <note priority="1" from="description">career frontend framework</note>
       </trans-unit>
-      <trans-unit id="4e44f7d083298e4d6f138b1a4bdf96885b69bc15" datatype="html">
-        <source> Path lead to resolve more complex problems related to outdated, unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> I&apos;ve implemented microservices. There&apos;s some of them: </source>
+      <trans-unit id="85279647f3a9d8851f2258e8dbf4677cbe99c7f1" datatype="html">
+        <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> In order to resolve some of existed problems I&apos;ve implemented microservices. There&apos;s some of them: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">30,34</context>
+          <context context-type="linenumber">32,37</context>
         </context-group>
         <note priority="1" from="description">career infrastructure</note>
       </trans-unit>
-      <trans-unit id="7370a3c3045c7b762009cc6caea64718a507e1af" datatype="html">
-        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - rest API to send SMS notifications using GSM gateway<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to convert HTML page to PDF (most useful for printing invoices)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to generate JWT token pairs (useful for authentication)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
+      <trans-unit id="597228e4fdbd6e7965a9bb7d15bb16dbab8bf921" datatype="html">
+        <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to send SMS notifications using GSM gateway<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to convert HTML page to PDF (useful for printing invoices, and not just that)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to generate JWT token pairs (useful for authorization)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">37,39</context>
+          <context context-type="linenumber">40,42</context>
         </context-group>
         <note priority="1" from="description">career micro services</note>
       </trans-unit>
@@ -78,23 +78,23 @@
         <source> These services was very useful for each new website. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">45,47</context>
         </context-group>
         <note priority="1" from="description">career servies useful</note>
       </trans-unit>
-      <trans-unit id="7b8cb436b371a85b72cd29285d24fd7360488372" datatype="html">
-        <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about FreeBSD operating system, so it was time to apply this knowledge in practice. </source>
+      <trans-unit id="fcb19784c374b3a402bcf610278eb447e28fcde9" datatype="html">
+        <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> operating system, so it was time to apply this knowledge in practice. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">46,51</context>
+          <context context-type="linenumber">49,54</context>
         </context-group>
         <note priority="1" from="description">career administering</note>
       </trans-unit>
-      <trans-unit id="d2d871f620044a88fcad130d708093e5b0f39c82" datatype="html">
-        <source> Then I decided to specialize in frontend and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
+      <trans-unit id="bc3c742e4ed846282ce8a08c610aa543b631fd80" datatype="html">
+        <source> Then I decided to specialize in front-end and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
-          <context context-type="linenumber">53,60</context>
+          <context context-type="linenumber">56,63</context>
         </context-group>
         <note priority="1" from="description">career frontend</note>
       </trans-unit>
@@ -122,8 +122,8 @@
         </context-group>
         <note priority="1" from="description">who I am</note>
       </trans-unit>
-      <trans-unit id="08474a0bee8a89ade2923a4791a4cc003fa40ed1" datatype="html">
-        <source> I&apos;m interested in technology and how to use it to improve web experience. </source>
+      <trans-unit id="474662658cb6115d87c6e29b62aabbd91c5f480d" datatype="html">
+        <source> I&apos;m interested in technology and how to use it to make life better. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">17,19</context>
@@ -138,8 +138,8 @@
         </context-group>
         <note priority="1" from="description">technology stack</note>
       </trans-unit>
-      <trans-unit id="7a3cf4bc4c331716659fad30be3cda29490249d3" datatype="html">
-        <source> My Projects </source>
+      <trans-unit id="efd35a273483b8d9c0d8ac9ee6d38accc5d20bd3" datatype="html">
+        <source> Projects </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">121,123</context>
@@ -170,19 +170,19 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">134</context>
+          <context context-type="linenumber">135</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">176</context>
+          <context context-type="linenumber">180</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">216</context>
+          <context context-type="linenumber">223</context>
         </context-group>
         <note priority="1" from="description">website</note>
       </trans-unit>
@@ -230,24 +230,24 @@
         </context-group>
         <note priority="1" from="description">return to home page</note>
       </trans-unit>
-      <trans-unit id="d541828ffdfb6607ae3ec95b8f339bac186e6995" datatype="html">
-        <source> RiverTV is a video streaming service provided by RiverTV Inc., Canada, Toronto. </source>
+      <trans-unit id="729eae209fdbe8e29c2997437e58de66a4593f7a" datatype="html">
+        <source> RiverTV is a video streaming service provided by RiverTV Inc. from Canada. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">10,12</context>
         </context-group>
         <note priority="1" from="description">RiverTV is</note>
       </trans-unit>
-      <trans-unit id="103dfff26113193ed76bfdc59948eb60c3c167e0" datatype="html">
-        <source> RiverTV offers streaming of live channels and on-demand content. The website is online shop and TV web app where RiverTV package and addons can be acquired, managed and watched. </source>
+      <trans-unit id="64e3d9b41daf3c4c846b4f3c20025557292ae3c7" datatype="html">
+        <source> RiverTV offers streaming of live channels and on-demand content. The website is an online shop and streaming web app where RiverTV package and addons can be acquired, managed and watched. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">13,16</context>
         </context-group>
         <note priority="1" from="description">RiverTV does</note>
       </trans-unit>
-      <trans-unit id="b1b3514f310b7d261b70b39e2f593ddcdd870b3b" datatype="html">
-        <source> I developed frontend for checkout and TV guide. </source>
+      <trans-unit id="f91dea49245baf2c142d13b44c5365bf4a264e44" datatype="html">
+        <source> I developed front-end part. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">18,20</context>
@@ -262,19 +262,23 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">112,114</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">149,151</context>
+          <context context-type="linenumber">152,154</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">189,191</context>
+          <context context-type="linenumber">193,195</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">224,226</context>
+          <context context-type="linenumber">234,236</context>
         </context-group>
         <note priority="1" from="description">technologies i used</note>
       </trans-unit>
@@ -282,31 +286,31 @@
         <source> Visit </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">33,35</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">72,74</context>
+          <context context-type="linenumber">74,76</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">160,162</context>
+          <context context-type="linenumber">164,166</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">200,202</context>
+          <context context-type="linenumber">207,209</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">234,236</context>
+          <context context-type="linenumber">244,246</context>
         </context-group>
         <note priority="1" from="description">visit</note>
       </trans-unit>
-      <trans-unit id="8912163d562b47f36d35238a0fa595650a1dcd25" datatype="html">
-        <source> VMedia is a internet service provider from Canada, Toronto. </source>
+      <trans-unit id="13a55e47ebe9194fee6a6ce63e9c7308a285c55e" datatype="html">
+        <source> VMedia is an internet service provider from Canada. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">50,52</context>
+          <context context-type="linenumber">51,53</context>
         </context-group>
         <note priority="1" from="description">VMedia is</note>
       </trans-unit>
@@ -314,15 +318,15 @@
         <source> Apart from internet it also offers services such as cable-free TV, home phone and home security. The website is online shop where such services can acquired and managed. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">53,56</context>
+          <context context-type="linenumber">54,57</context>
         </context-group>
         <note priority="1" from="description">VMedia does</note>
       </trans-unit>
-      <trans-unit id="1cc7631ab2890e0c81325c8b55d819d7e1a16526" datatype="html">
-        <source> The site has very complex checkout and frontend overall. I refactored frontend, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
+      <trans-unit id="00faad098ed5799862d8f5697cf93642eb05568b" datatype="html">
+        <source> I refactored front-end, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">58,61</context>
+          <context context-type="linenumber">59,61</context>
         </context-group>
         <note priority="1" from="description">VMedia what I did</note>
       </trans-unit>
@@ -330,55 +334,55 @@
         <source> &quot;Scarlett &amp; Monarch&quot; CMS </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">86,88</context>
+          <context context-type="linenumber">88,90</context>
         </context-group>
         <note priority="1" from="description">Scarlett and Monarch CMS</note>
       </trans-unit>
-      <trans-unit id="9f63505c5ed748cd3317f07e7cbaf71198ad0e0e" datatype="html">
-        <source> Content management sytem of &quot;Scarlett &amp; Monarch&quot; is used for each and every website project of company. Each customer had their own requirements. CMS evolved with each new requirement. </source>
+      <trans-unit id="f2ab190332f56ff261361dc5fcb553c5388d2395" datatype="html">
+        <source> &quot;Scarlett &amp; Monarch&quot; is a company of commercial website development and hosting. Content management sytem of &quot;Scarlett &amp; Monarch&quot; is used for each and every website project of company. Each customer has their own requirements. CMS evolved with each new requirement. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">89,92</context>
+          <context context-type="linenumber">91,95</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS is used for</note>
       </trans-unit>
-      <trans-unit id="1ac1ca4d710bd66f0f40718d59cbffc199954efb" datatype="html">
-        <source> I developed backend and frontend, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog product editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </source>
+      <trans-unit id="076a4b78b3fba14667bea070d53f6b5b096fa356" datatype="html">
+        <source> I developed back-end and front-end, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">94,97</context>
+          <context context-type="linenumber">97,100</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS what I did</note>
       </trans-unit>
-      <trans-unit id="3efdc15ea17513beedcd116c050b26160dc87e88" datatype="html">
-        <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog product editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, which allows binding arbitrary properties to product. It allows bind array of products, array of images, text, number, boolean, array of strings, arbitrary json. Api of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its&apos; structure with every new project. Order has standard properties such as full name and mobile number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders&apos; content, adding, removing and modifying products. Orders&apos; sum recalculates automatically, including discounts. It also allows to notify client via SMS or email. </source>
+      <trans-unit id="37253db38cfbe78681ed683bddb1d65c1e5d46f0" datatype="html">
+        <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, which allows binding arbitrary properties to product. It allows bind arbitrary properties such as array of products, array of images, text, number, boolean, array of strings or even arbitrary structure if all the previous was not enough. Api of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its&apos; structure with every new project. Order has standard properties such as full name and mobile number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders&apos; content, adding, removing and modifying products. Orders&apos; sum recalculates automatically, including discounts. It also allows to notify client via SMS or email. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">97,108</context>
+          <context context-type="linenumber">100,111</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS about</note>
-      </trans-unit>
-      <trans-unit id="8670aa4d588d9bd2c3d071d8da6ad02a43badcf8" datatype="html">
-        <source> All this was made by me using Vue.js framework. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">109,111</context>
-        </context-group>
-        <note priority="1" from="description">S&amp;M CMS technologies</note>
       </trans-unit>
       <trans-unit id="08469a2e4a858fb3937a4405e74493452848d3d7" datatype="html">
         <source> Trik is a pharmacy network from Krasnodar, Russian Federation. The website is an online shop + CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">136,139</context>
+          <context context-type="linenumber">137,140</context>
         </context-group>
         <note priority="1" from="description">Trik is</note>
       </trans-unit>
-      <trans-unit id="472462ceb063b0fd8d3d988db2d378b014d4a0b6" datatype="html">
-        <source> I developed backend, 90% of frontend logic. Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </source>
+      <trans-unit id="f39e6167f362743fed9e10cddc28390bed40c862" datatype="html">
+        <source> Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">141,148</context>
+          <context context-type="linenumber">142,148</context>
+        </context-group>
+        <note priority="1" from="description">Trik about</note>
+      </trans-unit>
+      <trans-unit id="cad8f2084910c4fb468ecf9b646c28d02ec71ca7" datatype="html">
+        <source> I developed back-end, 90% of front-end logic. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
+          <context context-type="linenumber">149,151</context>
         </context-group>
         <note priority="1" from="description">Trik what I did</note>
       </trans-unit>
@@ -386,7 +390,7 @@
         <source> Paxus is a company from Archangelsk, Russian Federation. It constructs and sells offroad vehicles, which can be customized depending on customer&apos;s needs. The website is an online shop + CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">178,182</context>
+          <context context-type="linenumber">182,186</context>
         </context-group>
         <note priority="1" from="description">Paxus is</note>
       </trans-unit>
@@ -394,17 +398,33 @@
         <source> Catalog includes product constructor where customer can customize vehicle parts such as engine, color, features, etc. Available customization for product can be assigned in CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">184,188</context>
+          <context context-type="linenumber">188,192</context>
         </context-group>
         <note priority="1" from="description">Paxus about</note>
+      </trans-unit>
+      <trans-unit id="befa219767718d58d551c10b77e1ba003d615b5b" datatype="html">
+        <source> I developed back-end and Implemented most complex parts of front-end logic. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
+          <context context-type="linenumber">196,198</context>
+        </context-group>
+        <note priority="1" from="description">technologies I used</note>
       </trans-unit>
       <trans-unit id="9d2fbfb0580ae5d0fe2a9092015a74d29fc4dec0" datatype="html">
         <source> Administration of Kemerovo, Russian Federation, ordered a web site to post relevent information related to business of Kemerovo city. The website has news lines, search, feedback and CMS to manage it all. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">218,222</context>
+          <context context-type="linenumber">225,229</context>
         </context-group>
         <note priority="1" from="description">Kemerovo is</note>
+      </trans-unit>
+      <trans-unit id="dc72f3275367e8d86fed7302130bc4deb0b13f40" datatype="html">
+        <source> I developed back-end. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
+          <context context-type="linenumber">231,233</context>
+        </context-group>
+        <note priority="1" from="description">Kemerovo what i did</note>
       </trans-unit>
     </body>
   </file>
