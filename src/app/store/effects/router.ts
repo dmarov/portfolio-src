@@ -16,7 +16,6 @@ export class RouterEffects {
             tap(() => {
                 const hash = window.location.hash;
 
-                console.log("NAVIGATED");
                 if (hash) {
                     const id = hash.replace(/#/, "");
 
