@@ -146,9 +146,6 @@
           <context context-type="linenumber">17,19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="0f6101be78cd02a77108b0c6893bee2242facf84" datatype="html">
-        <source> My Technology Stack </source>
-        <target> Мой стек технологий </target>
         <note priority="1" from="description">technology stack</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
@@ -336,7 +333,7 @@
       </trans-unit>
       <trans-unit id="13a55e47ebe9194fee6a6ce63e9c7308a285c55e" datatype="html">
         <source> VMedia is an internet service provider from Canada. </source>
-        <target> VMedia is an internet service provider from Canada. </target>
+        <target> VMedia это провайдер интернета в Канаде. </target>
         <note priority="1" from="description">VMedia is</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -345,7 +342,7 @@
       </trans-unit>
       <trans-unit id="3546a6f7067438320c4bc5d25b729a3b63967c68" datatype="html">
         <source> Apart from internet it also offers services such as cable-free TV, home phone and home security. The website is online shop where such services can acquired and managed. </source>
-        <target> Кроме интернета также предоставляет сервисы такие как безкабельное TV, домашняя телефония и системы охраны дома. Вебсайт представляет собой онлайн магазин где эти сервисы можно купить и управлять ими. </target>
+        <target> Кроме интернета также предоставляет сервисы такие как безпроводное TV, домашняя телефония и системы охраны дома. Вебсайт представляет собой онлайн магазин где эти сервисы можно купить и управлять ими. </target>
         <note priority="1" from="description">VMedia does</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -408,7 +405,7 @@
       </trans-unit>
       <trans-unit id="f39e6167f362743fed9e10cddc28390bed40c862" datatype="html">
         <source> Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </source>
-        <target>Трику нужен был онлайн магазин, который обслуживал бы 5 аптек компании. Это требовало создания кастомной логики каталога, корзины и заказов. Из сайт позволяет совершать умный поиск по динамически назначаемым свойствам, тегам, и любому логическому выражинию которое может быть составлено из свойств и тегов. Результаты потска могут быть отфильтрованы по динамически назначаемым свойствам. </target>
+        <target>Трику нужен был онлайн магазин, который обслуживал бы 5 аптек компании. Это требовало создания кастомной логики каталога, корзины и заказов. Их сайт позволяет совершать умный поиск по динамически назначаемым свойствам, тегам, и любому логическому выражинию которое может быть составлено из свойств и тегов. Результаты поиска могут быть отфильтрованы по динамически назначаемым свойствам. </target>
         <note priority="1" from="description">Trik about</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -426,7 +423,7 @@
       </trans-unit>
       <trans-unit id="2bdff512b346353fa864290cd041a5815b5da0db" datatype="html">
         <source> Paxus is a company from Archangelsk, Russian Federation. It constructs and sells offroad vehicles, which can be customized depending on customer's needs. The website is an online shop + CMS. </source>
-        <target> Paxus это компания из Архангельска, Российская федерация. Создаёт и продаёт вездеходы и другие транспортные средства для внедорожья, которые могут быть кастомизированы в зависимости от требований заказчика. Вебсайт это онлайн магазин + CMS. </target>
+        <target> Paxus это компания из Архангельска, Российская федерация. Создаёт и продаёт вездеходы и другие транспортные средства для внедорожья, которые могут быть кастомизированы в зависимости от требований покупателя. Вебсайт это онлайн магазин + CMS. </target>
         <note priority="1" from="description">Paxus is</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
