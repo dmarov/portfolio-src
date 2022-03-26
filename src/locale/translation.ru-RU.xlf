@@ -148,7 +148,7 @@
       </trans-unit>
       <trans-unit id="0f6101be78cd02a77108b0c6893bee2242facf84" datatype="html">
         <source> My Technology Stack </source>
-        <target> Мой технологический стек </target>
+        <target> Мой стек технологий </target>
         <note priority="1" from="description">technology stack</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
