@@ -22,18 +22,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-
-const title = "Hello, I see you decided to open console, which probably means that you're interested and want to know more";
-console.log(`%c${title}`, "color: red; font-size: 40px");
-
-const subTitle = "I think I said everything I needed regarding my carrier, so there's some other stuff"
-console.log(`%c${subTitle}`, "color: yellow; font-size: 30px");
-
-console.log(`%cI like hacking which I regard as trying new stuff`, "color: white; font-size: 20px");
-console.log(`%cRegarding to game hacking I've spend a lot of time trying to bypass commercial anti-cheat and I've managed to do it, surprisingly`, "color: white; font-size: 20px");
-console.log(`%cI enjoy learning music theory`, "color: white; font-size: 20px");
-console.log(`%cI like thinking process by itself`, "color: white; font-size: 20px");
-
 @NgModule({
     declarations: [
         AppComponent,
