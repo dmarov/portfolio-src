@@ -130,7 +130,7 @@
       </trans-unit>
       <trans-unit id="ab10090b9b99bd977d59a4694e2cd8a95b186136" datatype="html">
         <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> years of experience in web development. </source>
-        <source> Я разработчик с более чем <x id="INTERPOLATION" equiv-text="{{ years }}"/> годами опыта веб разработки. </source>
+        <target> Я разработчик с более чем <x id="INTERPOLATION" equiv-text="{{ years }}"/> годами опыта веб разработки. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">14,16</context>
@@ -350,6 +350,7 @@
       </trans-unit>
       <trans-unit id="1cc7631ab2890e0c81325c8b55d819d7e1a16526" datatype="html">
         <source> The site has very complex checkout and frontend overall. I refactored frontend, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
+        <target> У сайта очень сложный чекаут и фронтенд в целом. Я рефакторил фронтенд код, реализовывал новые фичи, исправлял баги, обновлял легаси код. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
           <context context-type="linenumber">58,61</context>
