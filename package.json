@@ -16,7 +16,7 @@
     "e2e": "ng e2e",
     "deploy": "sh ./deploy.sh",
     "lint:styles": "stylelint src/**/*.scss",
-    "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf",
+    "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf && xliffmerge --profile xliffmerge.json ru-RU",
     "serve:prod": "http-server ./dist/portfolio"
   },
   "private": true,
@@ -59,6 +59,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ngx-i18nsupport": "^0.17.1",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
