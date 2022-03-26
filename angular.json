@@ -25,11 +25,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              {
-                "glob": "404.html",
-                "input": "./src",
-                "output": "./"
-              },
               "src/manifest.webmanifest"
             ],
             "styles": [

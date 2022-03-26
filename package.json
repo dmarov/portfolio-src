@@ -16,7 +16,7 @@
     "e2e": "ng e2e",
     "deploy": "sh ./deploy.sh",
     "lint:styles": "stylelint src/**/*.scss",
-    "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.en-US.xlf",
+    "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf",
     "serve:prod": "http-server ./dist/portfolio"
   },
   "private": true,
