@@ -1,0 +1,26 @@
+.lang {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+
+    &__entries {
+        margin: -10px;
+    }
+
+    &__link {
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $col-white;
+
+        &--active {
+            color: $col-green;
+        }
+
+        &:hover {
+            color: $col-orange;
+        }
+    }
+}

@@ -14,6 +14,7 @@ import {
     PageNotFoundComponent,
     PageProjectsComponent,
     PageAboutMeComponent,
+    LangComponent,
 } from './components';
 
 import { StoreBaseModule } from './modules';
@@ -42,6 +43,7 @@ console.log(`%cI like thinking process by itself`, "color: white; font-size: 20p
         PageMainComponent,
         PageProjectsComponent,
         PageAboutMeComponent,
+        LangComponent,
     ],
     imports: [
         BrowserModule,

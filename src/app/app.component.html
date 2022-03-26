@@ -9,6 +9,9 @@
                 src="assets/images/github.png?v=1">
         </a>
         <app-menu class="header__menu"></app-menu>
+        <div class="header__lang-wrapper">
+            <app-lang></app-lang>
+        </div>
         <div class="header__burger-wrapper">
             <div class="burger"
                 [ngClass]="{'burger--opened': isMenuOpen$ | async}"
