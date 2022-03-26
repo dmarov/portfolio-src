@@ -94,7 +94,7 @@
       </trans-unit>
       <trans-unit id="fcb19784c374b3a402bcf610278eb447e28fcde9" datatype="html">
         <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> operating system, so it was time to apply this knowledge in practice. </source>
-        <target>Так как каждый сервис требовал отдельного окружения то из нужно было администрировать, за что я также был ответственным. У меня уже были знания об операционной системе <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, поэтому пришло время применить эти знания на практике. </target>
+        <target>Так как каждый сервис требовал отдельного окружения то их нужно было администрировать, за что я также был ответственным. У меня уже были знания об операционной системе <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, поэтому пришло время применить эти знания на практике. </target>
         <note priority="1" from="description">career administering</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
@@ -102,7 +102,7 @@
         </context-group>
       </trans-unit><trans-unit id="6e9977aadc6b0939d1481e5a476206f5bfb5473d" datatype="html">
       <source> Then I decided to specialize in front-end and move to big projects. That's when I've learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I'm most focused on at work. </source>
-      <target>Далее я решил специализироваться на фронтенде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> что до сих пор составляет часть моего стека технологий. Такие аспекты как Search Engine Optimization (SEO), реализация UI тестов, pixel perfect вёрстка, кросс-брфазерная разработка, accessibility - на этом я наиболее сфокусирован на работе.</target>
+      <target>Далее я решил специализироваться на фронтенде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> что до сих пор составляет часть моего стека технологий. Такие аспекты как Search Engine Optimization (SEO), реализация UI тестов, pixel perfect вёрстка, кросс-брфазерная разработка, accessibility - это то на чём я наиболее сфокусирован.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">56,63</context>
@@ -145,13 +145,20 @@
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">17,19</context>
         </context-group>
+      </trans-unit><trans-unit id="0f6101be78cd02a77108b0c6893bee2242facf84" datatype="html">
+        <source> My Technology Stack </source><target state="new"> My Technology Stack </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+        <note priority="1" from="description">technology stack</note>
       </trans-unit>
         <note priority="1" from="description">technology stack</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
           <context context-type="linenumber">28,30</context>
         </context-group>
-      </trans-unit>
+
       <trans-unit id="efd35a273483b8d9c0d8ac9ee6d38accc5d20bd3" datatype="html">
         <source> Projects </source>
         <target>Проекты</target>
@@ -281,31 +288,13 @@
         <source> Technoligies I used: </source>
         <target> Технологии которые я использовал: </target>
         <note priority="1" from="description">technologies i used</note>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">62</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">112</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">152</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">193</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">234</context>
-        </context-group>
-      </trans-unit>
+
+
+
+
+
+
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context><context context-type="linenumber">21</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context><context context-type="linenumber">62</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context><context context-type="linenumber">112</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context><context context-type="linenumber">152</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context><context context-type="linenumber">196</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context><context context-type="linenumber">234</context></context-group></trans-unit>
       <trans-unit id="fc1b671ea70715d1c0955ab7a07a1e21650ee49d" datatype="html">
         <source> Visit </source>
         <target> Посетить </target>
@@ -443,11 +432,8 @@
         <source> I developed back-end and Implemented most complex parts of front-end logic. </source>
         <target>Я разрабатывал бэкенд и реализовывал наиболее сложную часть фронтенд логики.</target>
         <note priority="1" from="description">technologies I used</note>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">196,198</context>
-        </context-group>
-      </trans-unit>
+
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context><context context-type="linenumber">193</context></context-group></trans-unit>
       <trans-unit id="9d2fbfb0580ae5d0fe2a9092015a74d29fc4dec0" datatype="html">
         <source> Administration of Kemerovo, Russian Federation, ordered a web site to post relevent information related to business of Kemerovo city. The website has news lines, search, feedback and CMS to manage it all. </source>
         <target> Администрация Кемерово, Российская Федерация, заказали вебсайт для публикования релевантной информации относящейся к бизнесу в Кемерово. Вебсайт состоит из лент новостей, поиска, обратной связи и CMS чтобы управлять всем этим. </target>

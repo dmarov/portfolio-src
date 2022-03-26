@@ -274,7 +274,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">193,195</context>
+          <context context-type="linenumber">196,198</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -406,7 +406,7 @@
         <source> I developed back-end and Implemented most complex parts of front-end logic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
-          <context context-type="linenumber">196,198</context>
+          <context context-type="linenumber">193,195</context>
         </context-group>
         <note priority="1" from="description">technologies I used</note>
       </trans-unit>
