@@ -19,13 +19,13 @@
           }
           document.cookie = name + "=" + (value || "")  + expires + "; path=/";
       }
-      var path = window.location.href;
+      var path = window.location.pathname;
 
-      if (path.startsWith("/en") {
+      if (path.startsWith("/en")) {
           setCookie('lang','en',300000);
       }
 
-      if (path.startsWith("/ru") {
+      if (path.startsWith("/ru")) {
           setCookie('lang','ru',300000);
       }
 

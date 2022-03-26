@@ -32,7 +32,7 @@
           document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
       }
 
-      var path = window.location.href;
+      var path = window.location.pathname;
 
       if (!path.startsWith("/en") && !path.startsWith("/ru")) {
         var lang = getCookie('lang');
