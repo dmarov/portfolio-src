@@ -66,15 +66,15 @@
         </context-group>
       </trans-unit>
       <trans-unit id="85279647f3a9d8851f2258e8dbf4677cbe99c7f1" datatype="html">
-        <source>Вскоре пришло время решать продлемы связанные с устаревшей и не поддерживаемой инфраструктурой. Имея опыт работы с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> для того чтобы решить существующие проблемы я реализовывал микросервисы. Вот некоторые из них: </source>
-        <target>Вскоре пришло время решать продлемы связанные с устаревшей и не поддерживаемой инфраструктурой. Имея опыт работы с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> для того чтобы решить существующие проблемы я реализовывал микросервисы. Вот некоторые из них: </target>
+        <source>Вскоре пришло время решать проблемы связанные с устаревшей и не поддерживаемой инфраструктурой. Имея опыт работы с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> для того чтобы решить существующие проблемы я реализовывал микросервисы. Вот некоторые из них: </source>
+        <target>Вскоре пришло время решать проблемы связанные с устаревшей и не поддерживаемой инфраструктурой. Имея опыт работы с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> для того чтобы решить существующие проблемы я реализовывал микросервисы. Вот некоторые из них: </target>
         <note priority="1" from="description">career infrastructure</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">32,37</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2c2e814fc4d4837f67188f36595d07a972d1cfd5" datatype="html">
+      <trans-unit id="597228e4fdbd6e7965a9bb7d15bb16dbab8bf921" datatype="html">
         <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>шлюз для отправки SMS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для отправки SMS оповещений с использованием GSM шлюза<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>генератор PDF<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для конвертации HTML страниц в PDF (используется для печати инвойсов и не только)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>генератор JWT токенов<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для генерации пар JWT токенов (используется для авторизации)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
         <target><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>шлюз для отправки SMS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для отправки SMS оповещений с использованием GSM шлюза<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>генератор PDF<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для конвертации HTML страниц в PDF (используется для печати инвойсов и не только)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>генератор JWT токенов<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API для генерации пар JWT токенов (используется для авторизации)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></target>
         <note priority="1" from="description">career micro services</note>
@@ -93,8 +93,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="fcb19784c374b3a402bcf610278eb447e28fcde9" datatype="html">
-        <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> operating system, so it was time to apply this knowledge in practice. </source>
-        <target> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> operating system, so it was time to apply this knowledge in practice. </target>
+        <source>Так как каждый сервис требовал отдельного окружения то из нужно было администрировать, за что я также был ответственным. У меня уже были знания об операционной системе <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, поэтому пришло время применить эти знания на практике. </source>
+        <target>Так как каждый сервис требовал отдельного окружения то из нужно было администрировать, за что я также был ответственным. У меня уже были знания об операционной системе <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, поэтому пришло время применить эти знания на практике. </target>
         <note priority="1" from="description">career administering</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
@@ -102,8 +102,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="bc3c742e4ed846282ce8a08c610aa543b631fd80" datatype="html">
-        <source> Then I decided to specialize in front-end and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
-        <target> Then I decided to specialize in front-end and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </target>
+        <source>Далее я решил специализироваться на фронтенде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> что до сих пор составляет часть моего стека технологий. Такие аспекты как Search Engine Optimization (SEO), реализация UI тестов, pixel perfect вёрстка, кросс-брфазерная разработка, accessibility - на этом я наиболее сфокусирован на работе. </source>
+        <target>Далее я решил специализироваться на фронтенде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> что до сих пор составляет часть моего стека технологий. Такие аспекты как Search Engine Optimization (SEO), реализация UI тестов, pixel perfect вёрстка, кросс-брфазерная разработка, accessibility - на этом я наиболее сфокусирован на работе. </target>
         <note priority="1" from="description">career frontend</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
@@ -138,8 +138,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="474662658cb6115d87c6e29b62aabbd91c5f480d" datatype="html">
-        <source> I&apos;m interested in technology and how to use it to make life better. </source>
-        <target> I&apos;m interested in technology and how to use it to make life better. </target>
+        <source>Мне интересны технологии и как их использовать чтобы сделать жизнь лучше.</source>
+        <target>Мне интересны технологии и как их использовать чтобы сделать жизнь лучше.</target>
         <note priority="1" from="description">what are my goals</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
@@ -156,8 +156,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="efd35a273483b8d9c0d8ac9ee6d38accc5d20bd3" datatype="html">
-        <source> Projects </source>
-        <target> Projects </target>
+        <source>Проекты</source>
+        <target>Проекты</target>
         <note priority="1" from="description">my projects</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
@@ -165,8 +165,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="afb605e735bef0cdd46dbff3c3d2be15960cdc2b" datatype="html">
-        <source>Вебсайт</source>
-        <target>Вебсайт</target>
+        <source>Веб сайт</source>
+        <target>Веб сайт</target>
         <note priority="1" from="description">website</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-main/page-main.component.html</context>
@@ -254,8 +254,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="729eae209fdbe8e29c2997437e58de66a4593f7a" datatype="html">
-        <source> RiverTV is a video streaming service provided by RiverTV Inc. from Canada. </source>
-        <target> RiverTV is a video streaming service provided by RiverTV Inc. from Canada. </target>
+        <source>RiverTV это стриминговый сервис предоставляемый RiverTV Inc. в Канаде. </source>
+        <target>RiverTV это стриминговый сервис предоставляемый RiverTV Inc. в Канаде. </target>
         <note priority="1" from="description">RiverTV is</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -263,8 +263,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="64e3d9b41daf3c4c846b4f3c20025557292ae3c7" datatype="html">
-        <source> RiverTV offers streaming of live channels and on-demand content. The website is an online shop and streaming web app where RiverTV package and addons can be acquired, managed and watched. </source>
-        <target> RiverTV offers streaming of live channels and on-demand content. The website is an online shop and streaming web app where RiverTV package and addons can be acquired, managed and watched. </target>
+        <source> RiverTV предоставляет стриминг лайв каналов и on-demand контент. Вебсайт это онлайн магазин и приложение для стриминга где пакет RiverTV и аддоны можно приобрести, управлять ими и смотреть. </source>
+        <target> RiverTV предоставляет стриминг лайв каналов и on-demand контент. Вебсайт это онлайн магазин и приложение для стриминга где пакет RiverTV и аддоны можно приобрести, управлять ими и смотреть. </target>
         <note priority="1" from="description">RiverTV does</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -272,8 +272,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="f91dea49245baf2c142d13b44c5365bf4a264e44" datatype="html">
-        <source> I developed front-end part. </source>
-        <target> I developed front-end part. </target>
+        <source>Я разрабатывал фронтенд часть.</source>
+        <target>Я разрабатывал фронтенд часть.</target>
         <note priority="1" from="description">RiverTV what i did</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -353,8 +353,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="00faad098ed5799862d8f5697cf93642eb05568b" datatype="html">
-        <source> I refactored front-end, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
-        <target> I refactored front-end, implemented new features, fixed bugs, upgraded a lot of legacy code. </target>
+        <source>Я рефакторил фронтенд код, реализовывал новые фичи, исправлял баги, обновлял легаси код. </source>
+        <target>Я рефакторил фронтенд код, реализовывал новые фичи, исправлял баги, обновлял легаси код. </target>
         <note priority="1" from="description">VMedia what I did</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -371,8 +371,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="f2ab190332f56ff261361dc5fcb553c5388d2395" datatype="html">
-        <source> &quot;Scarlett &amp; Monarch&quot; is a company of commercial website development and hosting. Content management sytem of &quot;Scarlett &amp; Monarch&quot; is used for each and every website project of company. Each customer has their own requirements. CMS evolved with each new requirement. </source>
-        <target> &quot;Scarlett &amp; Monarch&quot; is a company of commercial website development and hosting. Content management sytem of &quot;Scarlett &amp; Monarch&quot; is used for each and every website project of company. Each customer has their own requirements. CMS evolved with each new requirement. </target>
+        <source> &quot;Scarlett &amp; Monarch&quot; это компания по коммерческой веб разработке и хостингу. Система управления контентом &quot;Скарлетт и монарх&quot; используется для каждого веб сайта компании. Каждый заказчик имеет свои требования. Система управления контентом эволюционировала с каждым новым требованием. </source>
+        <target> &quot;Scarlett &amp; Monarch&quot; это компания по коммерческой веб разработке и хостингу. Система управления контентом &quot;Скарлетт и монарх&quot; используется для каждого веб сайта компании. Каждый заказчик имеет свои требования. Система управления контентом эволюционировала с каждым новым требованием. </target>
         <note priority="1" from="description">S&amp;M CMS is used for</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -380,8 +380,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="076a4b78b3fba14667bea070d53f6b5b096fa356" datatype="html">
-        <source> I developed back-end and front-end, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </source>
-        <target> I developed back-end and front-end, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </target>
+        <source>Я разрабатывал бэкенд и фронтенд, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>управление заказами<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </source>
+        <target>Я разрабатывал бэкенд и фронтенд, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>управление заказами<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </target>
         <note priority="1" from="description">S&amp;M CMS what I did</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -389,8 +389,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="37253db38cfbe78681ed683bddb1d65c1e5d46f0" datatype="html">
-        <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, which allows binding arbitrary properties to product. It allows bind arbitrary properties such as array of products, array of images, text, number, boolean, array of strings or even arbitrary structure if all the previous was not enough. Api of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its&apos; structure with every new project. Order has standard properties such as full name and mobile number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders&apos; content, adding, removing and modifying products. Orders&apos; sum recalculates automatically, including discounts. It also allows to notify client via SMS or email. </source>
-        <target> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, which allows binding arbitrary properties to product. It allows bind arbitrary properties such as array of products, array of images, text, number, boolean, array of strings or even arbitrary structure if all the previous was not enough. Api of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its&apos; structure with every new project. Order has standard properties such as full name and mobile number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders&apos; content, adding, removing and modifying products. Orders&apos; sum recalculates automatically, including discounts. It also allows to notify client via SMS or email. </target>
+        <source>Один из самых продвинутых модулей это <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, который позволяет привязать произвольные свойства к продукту, такие как массив продуктов, массив картинок, текст, числа, булев тип, массив строк или даже произвольную структуру если ни один из предыдущих вариантов не подошёл. API веб сайта позволяет проводить умный поиск по этим свойствам. Модуль обработки заказов позволяет создавать заказы с гибкой структурой, которые меняют свою структуру с каждым новым проектом. У заказа есть стандартные свойства, такие как имя и номер телефона клиента, но также может иметь другие свойства которые будут отображены с возможностью редактирования. Этот модуль такде позволяет редактировать содержимое заказов, добавлять, удалять и модифицировать товары. Сумма заказа пересчитывается автоматически с учётом скидок. Также модуль позволяет уведомить клиента о статусе заказа по SMS.</source>
+        <target>Один из самых продвинутых модулей это <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, который позволяет привязать произвольные свойства к продукту, такие как массив продуктов, массив картинок, текст, числа, булев тип, массив строк или даже произвольную структуру если ни один из предыдущих вариантов не подошёл. API веб сайта позволяет проводить умный поиск по этим свойствам. Модуль обработки заказов позволяет создавать заказы с гибкой структурой, которые меняют свою структуру с каждым новым проектом. У заказа есть стандартные свойства, такие как имя и номер телефона клиента, но также может иметь другие свойства которые будут отображены с возможностью редактирования. Этот модуль такде позволяет редактировать содержимое заказов, добавлять, удалять и модифицировать товары. Сумма заказа пересчитывается автоматически с учётом скидок. Также модуль позволяет уведомить клиента о статусе заказа по SMS.</target>
         <note priority="1" from="description">S&amp;M CMS about</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -407,8 +407,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="f39e6167f362743fed9e10cddc28390bed40c862" datatype="html">
-        <source> Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </source>
-        <target> Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </target>
+        <source>Трику нужен был онлайн магазин, который обслуживал бы 5 аптек компании. Это требовало создания кастомной логики каталога, корзины и заказов. Из сайт позволяет совершать умный поиск по динамически назначаемым свойствам, тегам, и любому логическому выражинию которое может быть составлено из свойств и тегов. Результаты потска могут быть отфильтрованы по динамически назначаемым свойствам. </source>
+        <target>Трику нужен был онлайн магазин, который обслуживал бы 5 аптек компании. Это требовало создания кастомной логики каталога, корзины и заказов. Из сайт позволяет совершать умный поиск по динамически назначаемым свойствам, тегам, и любому логическому выражинию которое может быть составлено из свойств и тегов. Результаты потска могут быть отфильтрованы по динамически назначаемым свойствам. </target>
         <note priority="1" from="description">Trik about</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -416,8 +416,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="cad8f2084910c4fb468ecf9b646c28d02ec71ca7" datatype="html">
-        <source> I developed back-end, 90% of front-end logic. </source>
-        <target> I developed back-end, 90% of front-end logic. </target>
+        <source>Я разрабатывал бэкенд, 90% логики фронтенда.</source>
+        <target>Я разрабатывал бэкенд, 90% логики фронтенда.</target>
         <note priority="1" from="description">Trik what I did</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -443,8 +443,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="befa219767718d58d551c10b77e1ba003d615b5b" datatype="html">
-        <source> I developed back-end and Implemented most complex parts of front-end logic. </source>
-        <target> I developed back-end and Implemented most complex parts of front-end logic. </target>
+        <source>Я разрабатывал бэкенд и реализовывал наиболее сложную часть фронтенд логики.</source>
+        <target>Я разрабатывал бэкенд и реализовывал наиболее сложную часть фронтенд логики.</target>
         <note priority="1" from="description">technologies I used</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -452,8 +452,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="9d2fbfb0580ae5d0fe2a9092015a74d29fc4dec0" datatype="html">
-        <source> Администрация Кемерово, Российская Федерация, закакали вебсайт для публикования релевантной информации относящейся к бизнесу в Кемерово. Вебсайт состоит из лент новостей, поиска, обратной связи и CMS чтобы управлять всем этим. </source>
-        <target> Администрация Кемерово, Российская Федерация, закакали вебсайт для публикования релевантной информации относящейся к бизнесу в Кемерово. Вебсайт состоит из лент новостей, поиска, обратной связи и CMS чтобы управлять всем этим. </target>
+        <source> Администрация Кемерово, Российская Федерация, заказали вебсайт для публикования релевантной информации относящейся к бизнесу в Кемерово. Вебсайт состоит из лент новостей, поиска, обратной связи и CMS чтобы управлять всем этим. </source>
+        <target> Администрация Кемерово, Российская Федерация, заказали вебсайт для публикования релевантной информации относящейся к бизнесу в Кемерово. Вебсайт состоит из лент новостей, поиска, обратной связи и CMS чтобы управлять всем этим. </target>
         <note priority="1" from="description">Kemerovo is</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>
@@ -461,8 +461,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="dc72f3275367e8d86fed7302130bc4deb0b13f40" datatype="html">
-        <source> I developed back-end. </source>
-        <target> I developed back-end. </target>
+        <source>Я разрабатывал бэкенд</source>
+        <target>Я разрабатывал бэкенд</target>
         <note priority="1" from="description">Kemerovo what i did</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-projects/page-projects.component.html</context>

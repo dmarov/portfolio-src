@@ -91,7 +91,7 @@
         <note priority="1" from="description">career administering</note>
       </trans-unit>
       <trans-unit id="bc3c742e4ed846282ce8a08c610aa543b631fd80" datatype="html">
-        <source> Then I decided to specialize in front-end and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Site Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
+        <source> Then I decided to specialize in front-end and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">56,63</context>
