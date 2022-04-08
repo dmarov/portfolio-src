@@ -22,6 +22,12 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+declare global {
+    interface Window {
+        dataLayer: any;
+    }
+}
+
 @NgModule({
     declarations: [
         AppComponent,
