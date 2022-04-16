@@ -58,8 +58,8 @@
         </context-group>
         <note priority="1" from="description">career frontend framework</note>
       </trans-unit>
-      <trans-unit id="85279647f3a9d8851f2258e8dbf4677cbe99c7f1" datatype="html">
-        <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> In order to resolve some of existed problems I&apos;ve implemented microservices. There&apos;s some of them: </source>
+      <trans-unit id="f809ea02ef20742203472f4cf2065ad1442b62d0" datatype="html">
+        <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> In order to resolve some of existed problems I&apos;ve implemented microservices. There are some of them: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">32,37</context>

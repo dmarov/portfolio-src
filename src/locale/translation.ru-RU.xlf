@@ -64,16 +64,16 @@
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">25,30</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="85279647f3a9d8851f2258e8dbf4677cbe99c7f1" datatype="html">
-        <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> In order to resolve some of existed problems I've implemented microservices. There's some of them: </source>
+      </trans-unit><trans-unit id="f809ea02ef20742203472f4cf2065ad1442b62d0" datatype="html">
+      <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> In order to resolve some of existed problems I've implemented microservices. There are some of them: </source>
         <target>Вскоре пришло время решать проблемы связанные с устаревшей и не поддерживаемой инфраструктурой. Имея опыт работы с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> для того чтобы решить существующие проблемы я реализовывал микросервисы. Вот некоторые из них: </target>
-        <note priority="1" from="description">career infrastructure</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/page-about-me/page-about-me.component.html</context>
           <context context-type="linenumber">32,37</context>
         </context-group>
+        <note priority="1" from="description">career infrastructure</note>
       </trans-unit>
+
       <trans-unit id="597228e4fdbd6e7965a9bb7d15bb16dbab8bf921" datatype="html">
         <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to send SMS notifications using GSM gateway<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to convert HTML page to PDF (useful for printing invoices, and not just that)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to generate JWT token pairs (useful for authorization)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></source>
         <target><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>шлюз для отправки SMS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для отправки SMS оповещений с использованием GSM шлюза<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>генератор PDF<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для конвертации HTML страниц в PDF (используется для печати инвойсов и не только)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>генератор JWT токенов<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для генерации пар JWT токенов (используется для авторизации)<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></target>
