@@ -1,8 +1,8 @@
 <ul class="lang">
     <li class="lang__entry" [ngClass]="{'lang__entry--active': isEn}">
-        <a class="lang__link" href="/en/">en</a>
+        <a class="lang__link" [href]="'/en' + path">en</a>
     </li>
     <li class="lang__entry" [ngClass]="{'lang__entry--active': isRu}">
-        <a class="lang__link" href="/ru/">ru</a>
+        <a class="lang__link" [href]="'/ru' + path">ru</a>
     </li>
 </ul>
