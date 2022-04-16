@@ -28,8 +28,10 @@ export class LangComponent implements OnInit, OnDestroy {
             this.actions$.pipe(
                 ofType(ROUTER_NAVIGATED),
             ).subscribe(() => {
-                this.path = window.location
-                    .pathname
+                const relPath = window.location.pathname +
+                    window.location.search +
+                    window.location.hash;
+                this.path = relPath
                     .replace(/^\/en/, '')
                     .replace(/^\/ru/, '');
             })
