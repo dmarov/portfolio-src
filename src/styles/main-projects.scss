@@ -2,7 +2,7 @@
     --offset: 10px;
     --perline: 1;
 
-    @include respond-to('small') {
+    @include respond-to("small") {
         --perline: 2;
     }
 
@@ -17,7 +17,9 @@
     }
 
     &__item {
-        flex: 0 0 calc(100%/var(--perline) - 2 * var(--offset));
+        // TODO: make report to stylelint
+        // flex: 0 0 calc(100%/var(--perline) - 2 * var(--offset));
+        flex: 0 0 calc(100% / var(--perline) - 2 * var(--offset));
         padding: var(--offset);
         display: flex;
         align-items: stretch;

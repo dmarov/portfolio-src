@@ -1,5 +1,4 @@
 .project-about {
-
     &__visit-wrapper {
         margin: 20px 10px;
         display: flex;
@@ -18,7 +17,9 @@
         position: relative;
         text-align: center;
 
-        &, &:link, &:visited {
+        &,
+        &:link,
+        &:visited {
             text-decoration: none;
             color: $col-green;
         }
@@ -29,6 +30,7 @@
             content: "";
             position: absolute;
             inset: 0;
+
             // box-shadow: 0 0 50px rgba($col-black, 0.5);
             opacity: 0;
             transition: opacity 0.3s linear;

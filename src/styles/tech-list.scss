@@ -14,7 +14,7 @@
         flex-basis: calc(100% / var(--perline));
     }
 
-    @include respond-to('small') {
+    @include respond-to("small") {
         --perline: 8;
     }
 }

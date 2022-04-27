@@ -1,10 +1,13 @@
 .text-page {
     background-color: $col-grey;
+
     // background-color: rgba(240, 239, 244, 0.97);
     color: $col-dwhite;
     padding: 20px;
     flex-grow: 1;
+
     --radius: 10px;
+
     border-radius: var(--radius);
 
     &--theme {
@@ -94,14 +97,13 @@
         text-align: center;
         font-size: 30px;
 
-        @include respond-to('small') {
+        @include respond-to("small") {
             font-size: 37px;
         }
 
-        @include respond-to('medium') {
+        @include respond-to("medium") {
             font-size: 47px;
         }
-
     }
 
     &--less-content {
@@ -116,7 +118,8 @@
     }
 
     &__a {
-        &:link, &:visited {
+        &:link,
+        &:visited {
             color: $col-green;
         }
     }

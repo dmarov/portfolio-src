@@ -8,7 +8,6 @@ import { height } from '@/animations';
 @Component({
     selector: 'app-menu',
     templateUrl: './menu.component.html',
-    styleUrls: ['./menu.component.scss'],
     animations: [ height ],
 })
 export class MenuComponent implements OnInit {

@@ -4,7 +4,6 @@ import { UnfoldEffect, InViewEffect } from '@/utils';
 @Component({
     selector: 'app-page-main',
     templateUrl: './page-main.component.html',
-    styleUrls: ['./page-main.component.scss'],
 })
 export class PageMainComponent implements OnInit, AfterViewInit {
 
