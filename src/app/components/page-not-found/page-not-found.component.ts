@@ -1,18 +1,12 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
     selector: 'app-page-not-found',
     templateUrl: './page-not-found.component.html',
     styleUrls: ['./page-not-found.component.scss'],
 })
-export class PageNotFoundComponent implements OnInit {
+export class PageNotFoundComponent {
 
     @HostBinding('class')
     class = 'app-layout__page';
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
-
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, HostBinding } from '@angular/core';
+import { Component, AfterViewInit, HostBinding } from '@angular/core';
 import { UnfoldEffect, InViewEffect } from '../../utils';
 
 @Component({
@@ -6,19 +6,13 @@ import { UnfoldEffect, InViewEffect } from '../../utils';
     templateUrl: './page-projects.component.html',
     styleUrls: ['./page-projects.component.scss'],
 })
-export class PageProjectsComponent implements OnInit, AfterViewInit {
+export class PageProjectsComponent implements AfterViewInit {
 
     @HostBinding('class')
     classes = 'app-layout__page';
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
 
     ngAfterViewInit() {
         UnfoldEffect.init();
         InViewEffect.init();
     }
-
 }
