@@ -1,27 +1,25 @@
-@import 'normalize.css';
-
-@import 'special/colors.scss';
-@import 'special/mixins.scss';
-
-@import 'app-layout.scss';
-@import 'burger.scss';
-@import 'footer.scss';
-@import 'fragment.scss';
-@import 'header-menu.scss';
-@import 'header.scss';
-@import 'main-img.scss';
-@import 'main-message.scss';
-@import 'main-project.scss';
-@import 'main-projects.scss';
-@import 'main-title.scss';
-@import 'not-found.scss';
-@import 'page-main.scss';
-@import 'project-about.scss';
-@import 'tech-list.scss';
-@import 'tech-logo.scss';
-@import 'text-page.scss';
-@import 'unfold.scss';
-@import 'lang.scss';
+@import "normalize.css";
+@import "special/colors";
+@import "special/mixins";
+@import "app-layout";
+@import "burger";
+@import "footer";
+@import "fragment";
+@import "header-menu";
+@import "header";
+@import "main-img";
+@import "main-message";
+@import "main-project";
+@import "main-projects";
+@import "main-title";
+@import "not-found";
+@import "page-main";
+@import "project-about";
+@import "tech-list";
+@import "tech-logo";
+@import "text-page";
+@import "unfold";
+@import "lang";
 
 html {
     height: 100%;
@@ -37,4 +35,3 @@ html {
     height: 100%;
     overflow-x: hidden;
 }
-

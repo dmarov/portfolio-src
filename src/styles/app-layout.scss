@@ -3,7 +3,7 @@
     flex-direction: column;
     min-height: 100%;
     background-color: $col-black;
-    font-family: 'Ubuntu', Arial, sans-serif;
+    font-family: Ubuntu, Arial, sans-serif;
 
     &__page {
         flex-grow: 1;
@@ -29,11 +29,11 @@
         max-width: 1000px;
         align-self: stretch;
 
-        @include respond-to('small') {
+        @include respond-to("small") {
             padding: 5px 10px;
         }
 
-        @include respond-to('medium') {
+        @include respond-to("medium") {
             padding: 10px 20px;
         }
 
@@ -45,7 +45,7 @@
     &__header {
         z-index: 1000;
         top: 0;
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgb(0 0 0 / 90%);
         position: sticky;
     }
 

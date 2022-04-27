@@ -10,7 +10,7 @@
         background-color: $col-grey;
     }
 
-    @include respond-to('small') {
+    @include respond-to("small") {
         padding: 10px;
     }
 

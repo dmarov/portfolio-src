@@ -20,12 +20,13 @@
         align-items: center;
         pointer-events: none;
         opacity: 0;
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.9),
-            rgba(0, 0, 0, 0.5) 10%,
-            rgba(0, 0, 0, 0) 20%
-        );
+        background:
+            linear-gradient(
+                to bottom,
+                rgb(0 0 0 / 90%),
+                rgb(0 0 0 / 50%) 10%,
+                rgb(0 0 0 / 0%) 20%
+            );
     }
 
     &__overlay-link {
@@ -39,7 +40,9 @@
         pointer-events: auto;
         position: relative;
 
-        &, &:link, &:visited {
+        &,
+        &:link,
+        &:visited {
             text-decoration: none;
             color: $col-green;
         }
@@ -80,7 +83,9 @@
     &__visit-link {
         font-size: 2rem;
 
-        &, &:link, &:visited {
+        &,
+        &:link,
+        &:visited {
             color: $col-green;
         }
     }
