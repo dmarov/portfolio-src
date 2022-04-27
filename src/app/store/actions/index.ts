@@ -1,2 +1,1 @@
-import * as UiActions from './ui';
-export { UiActions };
+export * as UiActions from './ui';

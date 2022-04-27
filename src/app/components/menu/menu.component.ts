@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
-import { UiSelectors } from '../../store/selectors';
-import { UiActions } from '../../store/actions';
-import { height } from '../../animations';
+import { UiSelectors } from '@/store/selectors';
+import { UiActions } from '@/store/actions';
+import { height } from '@/animations';
 
 @Component({
     selector: 'app-menu',

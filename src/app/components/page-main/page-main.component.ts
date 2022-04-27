@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, HostBinding } from '@angular/core';
-import { UnfoldEffect, InViewEffect } from '../../utils';
+import { UnfoldEffect, InViewEffect } from '@/utils';
 
 @Component({
     selector: 'app-page-main',

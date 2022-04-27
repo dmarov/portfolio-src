@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { UiActions } from '../actions';
+import { UiActions } from '@/store/actions';
 
 export const featureKey = 'ui';
 

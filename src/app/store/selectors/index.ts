@@ -1,2 +1,1 @@
-import * as UiSelectors from './ui';
-export { UiSelectors };
+export * as UiSelectors from './ui';
