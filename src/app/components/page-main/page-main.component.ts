@@ -1,9 +1,10 @@
-import { Component, OnInit, AfterViewInit, HostBinding } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { UnfoldEffect, InViewEffect } from '@/utils';
 
 @Component({
     selector: 'app-page-main',
     templateUrl: './page-main.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PageMainComponent implements OnInit, AfterViewInit {
 

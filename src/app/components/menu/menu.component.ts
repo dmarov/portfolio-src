@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { UiSelectors } from '@/store/selectors';
@@ -9,6 +9,7 @@ import { height } from '@/animations';
     selector: 'app-menu',
     templateUrl: './menu.component.html',
     animations: [ height ],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MenuComponent implements OnInit {
 

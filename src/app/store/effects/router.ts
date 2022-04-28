@@ -3,7 +3,9 @@ import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { ROUTER_NAVIGATED } from "@ngrx/router-store";
 import { tap } from "rxjs/operators";
 
-@Injectable()
+@Injectable({
+    providedIn: "root",
+})
 export class RouterEffects {
 
     constructor(

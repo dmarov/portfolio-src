@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 import { Actions, ofType } from '@ngrx/effects';
 import { ROUTER_NAVIGATED } from '@ngrx/router-store';
 import { Subscription } from 'rxjs';
@@ -6,6 +6,7 @@ import { Subscription } from 'rxjs';
 @Component({
     selector: 'app-lang',
     templateUrl: './lang.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LangComponent implements OnInit, OnDestroy {
 

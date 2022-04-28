@@ -31,18 +31,18 @@ declare global {
 @NgModule({
     declarations: [
         AppComponent,
+        LangComponent,
         MenuComponent,
+        PageAboutMeComponent,
+        PageMainComponent,
         PageMainComponent,
         PageNotFoundComponent,
-        PageMainComponent,
         PageProjectsComponent,
-        PageAboutMeComponent,
-        LangComponent,
     ],
     imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
         AppRoutingModule,
+        BrowserAnimationsModule,
+        BrowserModule,
         StoreBaseModule,
         StoreModule.forFeature(UiReducers.featureKey, UiReducers.reducer),
         EffectsModule.forFeature([ RouterEffects ]),
