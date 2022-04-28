@@ -14,7 +14,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "yarn lint && yarn:stylelint && sh ./deploy.sh",
+    "deploy": "yarn lint && yarn lint:styles && sh ./deploy.sh",
     "lint:styles": "stylelint src/**/*.scss",
     "lint:styles:fix": "stylelint src/**/*.scss --fix",
     "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf && xliffmerge --profile xliffmerge.json ru-RU",
