@@ -3,7 +3,7 @@
   <file source-language="ru" target-language="ru" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="menuHomeLink" datatype="html">
-        <source> Home </source><target state="new"> Главная </target>
+        <source> Home </source><target> Главная </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">23,25</context>
@@ -11,7 +11,7 @@
         <note priority="1" from="description">Home page menu link</note>
         <note priority="1" from="meaning">home page</note>
       </trans-unit><trans-unit id="menuProjectsLink" datatype="html">
-        <source> Projects </source><target state="new"> Проекты </target>
+        <source> Projects </source><target> Проекты </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">43,45</context>
@@ -19,7 +19,7 @@
         <note priority="1" from="description">Projects page menu link</note>
         <note priority="1" from="meaning">projects</note>
       </trans-unit><trans-unit id="menuAboutMeLink" datatype="html">
-        <source> About Me </source><target state="new"> Обо Мне </target>
+        <source> About Me </source><target> Обо Мне </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">63,65</context>
