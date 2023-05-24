@@ -4,7 +4,7 @@
         [@slideInOut]="home.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
         [routerLinkActiveOptions]="{exact: true}">
         <input type="hidden" [routerLinkActiveOptions]="{exact: true}" routerLink="/" routerLinkActive #home="routerLinkActive"/>
-        <a i18n="home page" class="header-menu__link" routerLink="/" (click)="home.isActive ? toggleMenu() : closeMenu()">
+        <a i18n="home page|Home page menu link@@menuHome" class="header-menu__link" routerLink="/" (click)="home.isActive ? toggleMenu() : closeMenu()">
             Home
         </a>
     </li>
