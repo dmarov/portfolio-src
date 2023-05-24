@@ -6,7 +6,8 @@
     class="header-menu__entry"
     routerLinkActive="header-menu__entry--active"
     [@slideInOut]="home.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
-    [routerLinkActiveOptions]="{exact: true}">
+    [routerLinkActiveOptions]="{exact: true}"
+  >
     <input
       type="hidden"
       [routerLinkActiveOptions]="{exact: true}"
@@ -24,7 +25,8 @@
   <li
     class="header-menu__entry"
     [@slideInOut]="projects.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
-    routerLinkActive="header-menu__entry--active">
+    routerLinkActive="header-menu__entry--active"
+  >
     <input
       type="hidden"
       routerLink="/projects"
