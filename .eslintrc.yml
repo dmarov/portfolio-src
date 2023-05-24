@@ -6,12 +6,12 @@ overrides:
 - files:
   - "*.ts"
   parserOptions:
-    project:
-    - tsconfig.json
-    - e2e/tsconfig.json
+    project: ./tsconfig.json
     createDefaultProgram: true
   extends:
   - plugin:@angular-eslint/all
+  - airbnb-base
+  - airbnb-typescript/base
   - plugin:@angular-eslint/template/process-inline-templates
   rules:
     "@angular-eslint/component-selector":
@@ -27,6 +27,24 @@ overrides:
     indent:
       - error
       - 2
+    import/prefer-default-export: off
+    no-console:
+    - error
+    - allow:
+      - ''
+    "@typescript-eslint/indent":
+    - error
+    - 2
+    - ignoredNodes:
+      - PropertyDefinition[decorators]
+      - TSUnionType
+      SwitchCase: 1
+    class-methods-use-this: off
+    "@typescript-eslint/no-explicit-any": error
+    "import/extensions":
+    - error
+    - ignorePackages
+    - { ts: never, "": never }
 - files:
   - "*.html"
   extends:
