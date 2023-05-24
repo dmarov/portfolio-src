@@ -1,5 +1,5 @@
 rm -rf ./node_modules/.cache
-yarn build:prod
+npm build:prod
 mkdir deploy
 cd deploy
 git clone git@github.com:dmarov/dmarov.github.io.git ./
