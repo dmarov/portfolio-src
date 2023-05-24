@@ -8,13 +8,13 @@ import { EffectsModule } from '@ngrx/effects';
 @NgModule({
   declarations: [],
   imports: [
-  StoreModule.forRoot({}, {}),
-  EffectsModule.forRoot([]),
-  StoreDevtoolsModule.instrument({
-    maxAge: 25,
-    logOnly: environment.production,
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([]),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production,
     }),
-  StoreRouterConnectingModule.forRoot(),
+    StoreRouterConnectingModule.forRoot(),
   ],
-  })
+})
 export class StoreBaseModule {}

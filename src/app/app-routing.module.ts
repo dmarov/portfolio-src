@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import {
-  PageMainComponent, PageNotFoundComponent,
-  PageProjectsComponent, PageAboutMeComponent,
+  PageMainComponent,
+  PageNotFoundComponent,
+  PageProjectsComponent,
+  PageAboutMeComponent,
 } from '@/components';
 
 const routes: Routes = [
@@ -15,6 +17,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule]
-  })
-export class AppRoutingModule { }
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
