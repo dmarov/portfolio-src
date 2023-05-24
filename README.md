@@ -36,3 +36,4 @@ npm install {some package}
 - update docker config
 - add jest unit testing
 - add cypress tests
+- add deployment pipeline
