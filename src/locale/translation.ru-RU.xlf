@@ -2,24 +2,24 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="ru" target-language="ru" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="f78f01b5ec1911d7808e84c3090d718a78e0bef5" datatype="html">
-        <source> Home </source><target> Главная </target>
+      <trans-unit id="menuHomeLink" datatype="html">
+        <source> Home </source><target state="new"> Главная </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">23,25</context>
         </context-group>
         <note priority="1" from="description">Home page menu link</note>
         <note priority="1" from="meaning">home page</note>
-      </trans-unit><trans-unit id="b46794b3334077fe6d63948557bb3c7209a8b244" datatype="html">
-        <source> Projects </source><target> Проекты </target>
+      </trans-unit><trans-unit id="menuProjectsLink" datatype="html">
+        <source> Projects </source><target state="new"> Проекты </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">43,45</context>
         </context-group>
         <note priority="1" from="description">Projects page menu link</note>
         <note priority="1" from="meaning">projects</note>
-      </trans-unit><trans-unit id="e2a03e8b7ed4c02bd8452b8bf846c295de1ba1f7" datatype="html">
-        <source> About Me </source><target> Обо Мне </target>
+      </trans-unit><trans-unit id="menuAboutMeLink" datatype="html">
+        <source> About Me </source><target state="new"> Обо Мне </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
           <context context-type="linenumber">63,65</context>

@@ -16,7 +16,7 @@
       #home="routerLinkActive"
     />
     <a
-      i18n="home page|Home page menu link"
+      i18n="home page|Home page menu link@@menuHomeLink"
       class="header-menu__link"
       routerLink="/"
       (click)="home.isActive ? toggleMenu() : closeMenu()"
@@ -36,7 +36,7 @@
       #projects="routerLinkActive"
     />
     <a
-      i18n="projects|Projects page menu link"
+      i18n="projects|Projects page menu link@@menuProjectsLink"
       class="header-menu__link"
       routerLink="/projects"
       (click)="projects.isActive ? toggleMenu() : closeMenu()"
@@ -56,7 +56,7 @@
       #aboutme="routerLinkActive"
     />
     <a
-      i18n="about me|About Me page menu link"
+      i18n="about me|About Me page menu link@@menuAboutMeLink"
       class="header-menu__link"
       routerLink="/about-me"
       (click)="aboutme.isActive ? toggleMenu() : closeMenu()"

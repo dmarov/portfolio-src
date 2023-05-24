@@ -2,7 +2,7 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="f78f01b5ec1911d7808e84c3090d718a78e0bef5" datatype="html">
+      <trans-unit id="menuHomeLink" datatype="html">
         <source> Home </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
@@ -11,7 +11,7 @@
         <note priority="1" from="description">Home page menu link</note>
         <note priority="1" from="meaning">home page</note>
       </trans-unit>
-      <trans-unit id="b46794b3334077fe6d63948557bb3c7209a8b244" datatype="html">
+      <trans-unit id="menuProjectsLink" datatype="html">
         <source> Projects </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
@@ -20,7 +20,7 @@
         <note priority="1" from="description">Projects page menu link</note>
         <note priority="1" from="meaning">projects</note>
       </trans-unit>
-      <trans-unit id="e2a03e8b7ed4c02bd8452b8bf846c295de1ba1f7" datatype="html">
+      <trans-unit id="menuAboutMeLink" datatype="html">
         <source> About Me </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
