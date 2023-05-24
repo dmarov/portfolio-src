@@ -26,6 +26,7 @@ npm install {some package}
 ## TODO:
 
 - fix language switch
+- update tech stack and rework home page
 - update "About me"
 - change home image
 - improve menu for desktop
