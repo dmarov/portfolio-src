@@ -48,3 +48,16 @@ npm install {some package}
 ```
 
 4. `docker compose down [--volumes]` - to stop detached container [and clear volumes]
+
+## TODO:
+
+- fix language switch
+- update "About me"
+- change home image
+- improve menu for desktop
+- add "Voice Robots" project
+- improve design
+- google analytics
+- update docker config
+- add jest unit testing
+- add cypress tests
