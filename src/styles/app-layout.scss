@@ -1,66 +1,66 @@
 .app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: $col-black;
+  font-family: Ubuntu, Arial, sans-serif;
+
+  &__page {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    &--no-extend {
+      flex-grow: 0;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 5px 4px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    align-self: stretch;
+
+    @include respond-to("small") {
+      padding: 5px 10px;
+    }
+
+    @include respond-to("medium") {
+      padding: 10px 20px;
+    }
+
+    &_footer {
+      align-self: baseline;
+    }
+  }
+
+  &__header {
+    z-index: 1000;
+    top: 0;
+    background-color: rgb(0 0 0 / 90%);
+    position: sticky;
+  }
+
+  &__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  &__footer {
     background-color: $col-black;
-    font-family: Ubuntu, Arial, sans-serif;
-
-    &__page {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__content-wrapper {
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-
-        &--no-extend {
-            flex-grow: 0;
-        }
-    }
-
-    &__content {
-        flex-grow: 1;
-        padding: 5px 4px;
-        display: flex;
-        flex-direction: column;
-        max-width: 1000px;
-        align-self: stretch;
-
-        @include respond-to("small") {
-            padding: 5px 10px;
-        }
-
-        @include respond-to("medium") {
-            padding: 10px 20px;
-        }
-
-        &_footer {
-            align-self: baseline;
-        }
-    }
-
-    &__header {
-        z-index: 1000;
-        top: 0;
-        background-color: rgb(0 0 0 / 90%);
-        position: sticky;
-    }
-
-    &__main {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        background-size: 1920px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
-
-    &__footer {
-        background-color: $col-black;
-        color: $col-white;
-    }
+    color: $col-white;
+  }
 }

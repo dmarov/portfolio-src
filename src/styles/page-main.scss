@@ -1,25 +1,25 @@
 .page-main {
-    &__img-wrapper {
-        padding-bottom: 20px;
+  &__img-wrapper {
+    padding-bottom: 20px;
+  }
+
+  &__projects-line {
+    margin-top: 20px;
+
+    @include respond-to("small") {
+      margin-top: 30px;
     }
 
-    &__projects-line {
-        margin-top: 20px;
-
-        @include respond-to("small") {
-            margin-top: 30px;
-        }
-
-        @include respond-to("medium") {
-            margin-top: 40px;
-        }
-
-        @include respond-to("large") {
-            margin-top: 70px;
-        }
-
-        a {
-            text-transform: uppercase;
-        }
+    @include respond-to("medium") {
+      margin-top: 40px;
     }
+
+    @include respond-to("large") {
+      margin-top: 70px;
+    }
+
+    a {
+      text-transform: uppercase;
+    }
+  }
 }

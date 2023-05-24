@@ -4,10 +4,10 @@ import { ROUTER_NAVIGATED } from '@ngrx/router-store';
 import { Subscription } from 'rxjs';
 
 @Component({
-    selector: 'app-lang',
-    templateUrl: './lang.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
-})
+  selector: 'app-lang',
+  templateUrl: './lang.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  })
 export class LangComponent implements OnInit, OnDestroy {
 
     isEn = false;
@@ -22,24 +22,24 @@ export class LangComponent implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit(): void {
-        this.isEn = window.location.pathname.startsWith("/en");
-        this.isRu = window.location.pathname.startsWith("/ru");
+      this.isEn = window.location.pathname.startsWith("/en");
+      this.isRu = window.location.pathname.startsWith("/ru");
 
-        this.subscription.add(
-            this.actions$.pipe(
-                ofType(ROUTER_NAVIGATED),
-            ).subscribe(() => {
-                const relPath = window.location.pathname +
+      this.subscription.add(
+        this.actions$.pipe(
+          ofType(ROUTER_NAVIGATED),
+        ).subscribe(() => {
+          const relPath = window.location.pathname +
                     window.location.search +
                     window.location.hash;
-                this.path = relPath
-                    .replace(/^\/en/, '')
-                    .replace(/^\/ru/, '');
-            })
-        );
+          this.path = relPath
+            .replace(/^\/en/, '')
+            .replace(/^\/ru/, '');
+        })
+      );
     }
 
     ngOnDestroy(): void {
-        this.subscription.unsubscribe();
+      this.subscription.unsubscribe();
     }
 }

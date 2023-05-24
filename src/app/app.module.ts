@@ -9,12 +9,12 @@ import * as UiReducers from '@/store/reducers/ui';
 import { RouterEffects } from "@/store/effects";
 
 import {
-    MenuComponent,
-    PageMainComponent,
-    PageNotFoundComponent,
-    PageProjectsComponent,
-    PageAboutMeComponent,
-    LangComponent,
+  MenuComponent,
+  PageMainComponent,
+  PageNotFoundComponent,
+  PageProjectsComponent,
+  PageAboutMeComponent,
+  LangComponent,
 } from './components';
 
 import { StoreBaseModule } from '@/modules';
@@ -28,25 +28,25 @@ declare global {
 }
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        LangComponent,
-        MenuComponent,
-        PageAboutMeComponent,
-        PageMainComponent,
-        PageMainComponent,
-        PageNotFoundComponent,
-        PageProjectsComponent,
-    ],
-    imports: [
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        BrowserModule,
-        StoreBaseModule,
-        StoreModule.forFeature(UiReducers.featureKey, UiReducers.reducer),
-        EffectsModule.forFeature([ RouterEffects ]),
-        StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
-    ],
-    bootstrap: [AppComponent]
-})
+  declarations: [
+  AppComponent,
+  LangComponent,
+  MenuComponent,
+  PageAboutMeComponent,
+  PageMainComponent,
+  PageMainComponent,
+  PageNotFoundComponent,
+  PageProjectsComponent,
+  ],
+  imports: [
+  AppRoutingModule,
+  BrowserAnimationsModule,
+  BrowserModule,
+  StoreBaseModule,
+  StoreModule.forFeature(UiReducers.featureKey, UiReducers.reducer),
+  EffectsModule.forFeature([ RouterEffects ]),
+  StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+  ],
+  bootstrap: [AppComponent]
+  })
 export class AppModule { }

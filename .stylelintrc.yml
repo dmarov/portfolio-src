@@ -1,6 +1,6 @@
 ---
 extends: stylelint-config-standard-scss
 rules:
-    indentation: 4
+    indentation: 2
     # This rule is incompatible with BEM
     selector-class-pattern: null

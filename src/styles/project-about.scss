@@ -1,39 +1,39 @@
 .project-about {
-    &__visit-wrapper {
-        margin: 20px 10px;
-        display: flex;
-        justify-content: center;
+  &__visit-wrapper {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__visit-btn {
+    flex-basis: 200px;
+    padding: 10px 20px;
+    background-color: rgba($col-black, 0.85);
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid $col-barelywhite;
+    text-transform: uppercase;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $col-green;
     }
 
-    &__visit-btn {
-        flex-basis: 200px;
-        padding: 10px 20px;
-        background-color: rgba($col-black, 0.85);
-        border-radius: 5px;
-        font-weight: bold;
-        border: 1px solid $col-barelywhite;
-        text-transform: uppercase;
-        pointer-events: auto;
-        position: relative;
-        text-align: center;
+    &::after {
+      z-index: 10;
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      inset: 0;
 
-        &,
-        &:link,
-        &:visited {
-            text-decoration: none;
-            color: $col-green;
-        }
-
-        &::after {
-            z-index: 10;
-            pointer-events: none;
-            content: "";
-            position: absolute;
-            inset: 0;
-
-            // box-shadow: 0 0 50px rgba($col-black, 0.5);
-            opacity: 0;
-            transition: opacity 0.3s linear;
-        }
+      // box-shadow: 0 0 50px rgba($col-black, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s linear;
     }
+  }
 }

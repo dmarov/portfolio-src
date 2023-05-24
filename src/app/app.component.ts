@@ -6,10 +6,10 @@ import { UiActions } from '@/store/actions';
 import { UiSelectors } from '@/store/selectors';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
-})
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  })
 export class AppComponent implements OnInit {
 
     isMenuOpen$: Observable<boolean>;
@@ -21,26 +21,26 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
 
-        this.isMenuOpen$ = this.store$.pipe(
-            select(UiSelectors.selectDetailedMenuVisible)
-        );
+      this.isMenuOpen$ = this.store$.pipe(
+        select(UiSelectors.selectDetailedMenuVisible)
+      );
 
-        this.router
-            .events
-            .subscribe(s => {
-                if (s instanceof NavigationEnd) {
-                    const tree = this.router.parseUrl(this.router.url);
-                    if (tree.fragment) {
-                        const element = document.querySelector('#' + tree.fragment);
-                        if (element) { element.scrollIntoView(true); }
-                    } else {
-                        window.scrollTo(0, 0);
-                    }
-                }
+      this.router
+        .events
+        .subscribe(s => {
+          if (s instanceof NavigationEnd) {
+            const tree = this.router.parseUrl(this.router.url);
+            if (tree.fragment) {
+              const element = document.querySelector('#' + tree.fragment);
+              if (element) { element.scrollIntoView(true); }
+            } else {
+              window.scrollTo(0, 0);
+            }
+          }
         });
     }
 
     toggleMenuOpen() {
-        this.store$.dispatch(UiActions.toggleMenuVisible());
+      this.store$.dispatch(UiActions.toggleMenuVisible());
     }
 }

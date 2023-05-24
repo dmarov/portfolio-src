@@ -2,10 +2,10 @@ import { Component, OnInit, AfterViewInit, HostBinding, ChangeDetectionStrategy 
 import { UnfoldEffect, InViewEffect } from '@/utils';
 
 @Component({
-    selector: 'app-page-main',
-    templateUrl: './page-main.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
-})
+  selector: 'app-page-main',
+  templateUrl: './page-main.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  })
 export class PageMainComponent implements OnInit, AfterViewInit {
 
     @HostBinding('class')
@@ -17,13 +17,13 @@ export class PageMainComponent implements OnInit, AfterViewInit {
     constructor() { }
 
     ngOnInit(): void {
-        const years = (Date.now() - this.startDate.getTime()) / (1000 * 60 * 60 * 24 * 365);
+      const years = (Date.now() - this.startDate.getTime()) / (1000 * 60 * 60 * 24 * 365);
 
-        this.years = Math.floor(years);
+      this.years = Math.floor(years);
     }
 
     ngAfterViewInit() {
-        UnfoldEffect.init();
-        InViewEffect.init();
+      UnfoldEffect.init();
+      InViewEffect.init();
     }
 }

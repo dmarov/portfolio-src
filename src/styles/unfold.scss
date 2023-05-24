@@ -1,10 +1,10 @@
 .unfold {
-    position: relative;
-    opacity: 1;
-    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
-    transform: translate(0, 0);
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  transform: translate(0, 0);
 
-    &--hidden {
-        opacity: 0;
-    }
+  &--hidden {
+    opacity: 0;
+  }
 }

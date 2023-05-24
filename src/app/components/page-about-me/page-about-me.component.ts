@@ -2,10 +2,10 @@ import { Component, AfterViewInit, HostBinding, ChangeDetectionStrategy } from '
 import { UnfoldEffect, InViewEffect } from '@/utils';
 
 @Component({
-    selector: 'app-page-about-me',
-    templateUrl: './page-about-me.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
-})
+  selector: 'app-page-about-me',
+  templateUrl: './page-about-me.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  })
 export class PageAboutMeComponent implements AfterViewInit {
 
     @HostBinding('class')
@@ -14,7 +14,7 @@ export class PageAboutMeComponent implements AfterViewInit {
     constructor() { }
 
     ngAfterViewInit() {
-        UnfoldEffect.init();
-        InViewEffect.init();
+      UnfoldEffect.init();
+      InViewEffect.init();
     }
 }

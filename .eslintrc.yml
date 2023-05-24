@@ -24,6 +24,9 @@ overrides:
     - prefix: app
       style: camelCase
       type: attribute
+    indent:
+      - error
+      - 2
 - files:
   - "*.html"
   extends:

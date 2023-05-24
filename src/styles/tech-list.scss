@@ -1,20 +1,20 @@
 .tech-list {
-    --perline: 4;
+  --perline: 4;
 
-    &__items {
-        padding-left: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+  &__items {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &__item {
-        list-style-type: none;
-        flex-basis: calc(100% / var(--perline));
-    }
+  &__item {
+    list-style-type: none;
+    flex-basis: calc(100% / var(--perline));
+  }
 
-    @include respond-to("small") {
-        --perline: 8;
-    }
+  @include respond-to("small") {
+    --perline: 8;
+  }
 }

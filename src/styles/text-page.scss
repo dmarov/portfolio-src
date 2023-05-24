@@ -1,140 +1,140 @@
 .text-page {
-    background-color: $col-grey;
+  background-color: $col-grey;
 
-    // background-color: rgba(240, 239, 244, 0.97);
-    color: $col-dwhite;
-    padding: 20px;
-    flex-grow: 1;
+  // background-color: rgba(240, 239, 244, 0.97);
+  color: $col-dwhite;
+  padding: 20px;
+  flex-grow: 1;
 
-    --radius: 10px;
+  --radius: 10px;
 
-    border-radius: var(--radius);
+  border-radius: var(--radius);
 
-    &--theme {
-        &--green {
-            position: relative;
+  &--theme {
+    &--green {
+      position: relative;
 
-            &::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                pointer-events: none;
-                border-radius: var(--radius);
-                box-shadow: 0 0 5px $col-green;
-                border: 1px solid $col-green;
-                opacity: 1;
-            }
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: var(--radius);
+        box-shadow: 0 0 5px $col-green;
+        border: 1px solid $col-green;
+        opacity: 1;
+      }
 
-            &.inview {
-                &::after {
-                    transition: opacity 1s ease-in;
-                }
-            }
-
-            &.inview--not {
-                &::after {
-                    opacity: 0;
-                }
-            }
+      &.inview {
+        &::after {
+          transition: opacity 1s ease-in;
         }
+      }
 
-        &--orange {
-            position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                pointer-events: none;
-                border-radius: var(--radius);
-                box-shadow: 0 0 5px $col-orange;
-                border: 1px solid $col-orange;
-                opacity: 1;
-            }
-
-            &.inview {
-                &::after {
-                    transition: opacity 1s ease-in;
-                }
-            }
-
-            &.inview--not {
-                &::after {
-                    opacity: 0;
-                }
-            }
+      &.inview--not {
+        &::after {
+          opacity: 0;
         }
-
-        &--white {
-            position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                pointer-events: none;
-                border-radius: var(--radius);
-                box-shadow: 0 0 5px $col-dwhite;
-                border: 1px solid $col-dwhite;
-                opacity: 1;
-            }
-
-            &.inview {
-                &::after {
-                    transition: opacity 1s ease-in;
-                }
-            }
-
-            &.inview--not {
-                &::after {
-                    opacity: 0;
-                }
-            }
-        }
+      }
     }
 
-    &__title {
-        text-align: center;
-        font-size: 30px;
+    &--orange {
+      position: relative;
 
-        @include respond-to("small") {
-            font-size: 37px;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: var(--radius);
+        box-shadow: 0 0 5px $col-orange;
+        border: 1px solid $col-orange;
+        opacity: 1;
+      }
+
+      &.inview {
+        &::after {
+          transition: opacity 1s ease-in;
         }
+      }
 
-        @include respond-to("medium") {
-            font-size: 47px;
+      &.inview--not {
+        &::after {
+          opacity: 0;
         }
+      }
     }
 
-    &--less-content {
-        display: flex;
-        flex-direction: column;
-    }
+    &--white {
+      position: relative;
 
-    &__li {
-        &::marker {
-            color: $col-green;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: var(--radius);
+        box-shadow: 0 0 5px $col-dwhite;
+        border: 1px solid $col-dwhite;
+        opacity: 1;
+      }
+
+      &.inview {
+        &::after {
+          transition: opacity 1s ease-in;
         }
-    }
+      }
 
-    &__a {
-        &:link,
-        &:visited {
-            color: $col-green;
+      &.inview--not {
+        &::after {
+          opacity: 0;
         }
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+
+    @include respond-to("small") {
+      font-size: 37px;
     }
 
-    &__p {
-        font-size: 1.2rem;
-
-        &--center {
-            text-align: center;
-        }
+    @include respond-to("medium") {
+      font-size: 47px;
     }
+  }
 
-    &__img {
-        display: block;
-        width: 100%;
-        height: auto;
+  &--less-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__li {
+    &::marker {
+      color: $col-green;
     }
+  }
+
+  &__a {
+    &:link,
+    &:visited {
+      color: $col-green;
+    }
+  }
+
+  &__p {
+    font-size: 1.2rem;
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }

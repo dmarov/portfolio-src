@@ -1,27 +1,27 @@
 .lang {
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    display: flex;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
 
-    &__entry--active {
-        display: none;
+  &__entry--active {
+    display: none;
+  }
+
+  &__entries {
+    margin: -10px;
+  }
+
+  &__link {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $col-white;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $col-orange;
     }
-
-    &__entries {
-        margin: -10px;
-    }
-
-    &__link {
-        padding: 10px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $col-white;
-        transition: color 0.3s linear;
-
-        &:hover {
-            color: $col-orange;
-        }
-    }
+  }
 }

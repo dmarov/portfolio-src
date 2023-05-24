@@ -1,27 +1,27 @@
 .main-projects {
-    --offset: 10px;
-    --perline: 1;
+  --offset: 10px;
+  --perline: 1;
 
-    @include respond-to("small") {
-        --perline: 2;
-    }
+  @include respond-to("small") {
+    --perline: 2;
+  }
 
-    &__items {
-        list-style-type: none;
-        padding-left: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        margin: calc(-1 * var(--offset));
-    }
+  &__items {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: calc(-1 * var(--offset));
+  }
 
-    &__item {
-        // TODO: make report to stylelint
-        // flex: 0 0 calc(100%/var(--perline) - 2 * var(--offset));
-        flex: 0 0 calc(100% / var(--perline) - 2 * var(--offset));
-        padding: var(--offset);
-        display: flex;
-        align-items: stretch;
-    }
+  &__item {
+    // TODO: make report to stylelint
+    // flex: 0 0 calc(100%/var(--perline) - 2 * var(--offset));
+    flex: 0 0 calc(100% / var(--perline) - 2 * var(--offset));
+    padding: var(--offset);
+    display: flex;
+    align-items: stretch;
+  }
 }

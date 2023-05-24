@@ -8,15 +8,15 @@ export class State {
 }
 
 export const initialState = {
-    detailedMenuVisible: false,
+  detailedMenuVisible: false,
 };
 
 export const reducer = createReducer(
-    initialState,
-    on(UiActions.setDetailedMenuVisible,
-        (state, {visible}) => ({...state, detailedMenuVisible: visible})
-    ),
-    on(UiActions.toggleMenuVisible,
-        (state) => ({...state, detailedMenuVisible: !state.detailedMenuVisible})
-    ),
+  initialState,
+  on(UiActions.setDetailedMenuVisible,
+    (state, {visible}) => ({...state, detailedMenuVisible: visible})
+  ),
+  on(UiActions.toggleMenuVisible,
+    (state) => ({...state, detailedMenuVisible: !state.detailedMenuVisible})
+  ),
 );
