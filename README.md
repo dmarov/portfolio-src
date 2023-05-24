@@ -29,6 +29,7 @@ npm install {some package}
 - update "About me"
 - change home image
 - improve menu for desktop
+- migrate from ngrx to services
 - add "Voice Robots" project
 - improve design
 - google analytics
