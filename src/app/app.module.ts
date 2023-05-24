@@ -20,7 +20,6 @@ import {
 import { StoreBaseModule } from '@/modules';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
-import { ServiceWorkerModule } from '@angular/service-worker';
 
 declare global {
     interface Window {
@@ -47,7 +46,6 @@ declare global {
         StoreModule.forFeature(UiReducers.featureKey, UiReducers.reducer),
         EffectsModule.forFeature([ RouterEffects ]),
         StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
-        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     ],
     bootstrap: [AppComponent]
 })

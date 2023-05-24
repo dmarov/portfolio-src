@@ -1,3 +1,4 @@
+.angular/cache
 .vim
 dist
 node_modules
