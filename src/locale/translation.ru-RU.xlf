@@ -3,33 +3,30 @@
   <file source-language="ru" target-language="ru" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="menuHome" datatype="html">
-        <source> Home </source>
+        <source>Home</source>
         <target> Главная </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
-          <context context-type="linenumber">7,9</context>
-        </context-group>
+
         <note priority="1" from="description">Home page menu link</note>
         <note priority="1" from="meaning">home page</note>
-      </trans-unit>
-      <trans-unit id="d648fdcaaf1924b1f0429f72a4cfadd59bda4c3e" datatype="html">
-        <source> Projects </source>
-        <target> Проекты </target>
-        <note priority="1" from="description">projects</note>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/components/menu/menu.component.html</context><context context-type="linenumber">12</context></context-group></trans-unit><trans-unit id="menuProjects" datatype="html">
+        <source> Projects </source><target> Проекты </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
-          <context context-type="linenumber">15,17</context>
+          <context context-type="linenumber">18,20</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="283e5350ee7dd2081a34d6b96f8b23ade36fad34" datatype="html">
-        <source> About Me </source>
-        <target> Обо мне </target>
-        <note priority="1" from="description">about me</note>
+        <note priority="1" from="description">Projects page menu link</note>
+        <note priority="1" from="meaning">projects</note>
+      </trans-unit><trans-unit id="menuAboutMe" datatype="html">
+        <source> About Me </source><target> Обо Мне </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/menu/menu.component.html</context>
-          <context context-type="linenumber">23,25</context>
+          <context context-type="linenumber">26,28</context>
         </context-group>
+        <note priority="1" from="description">About Me page menu link</note>
+        <note priority="1" from="meaning">about me</note>
       </trans-unit>
+
+
       <trans-unit id="c914a2f0ab77578e9c11e3349e977edaad20c6b9" datatype="html">
         <source> Career </source>
         <target> Карьера </target>

@@ -1,29 +1,56 @@
 <ul class="header-menu" [ngClass]="{'header-menu--mobile--open': isMenuOpen$ | async}">
-    <li class="header-menu__entry"
-        routerLinkActive="header-menu__entry--active"
-        [@slideInOut]="home.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
-        [routerLinkActiveOptions]="{exact: true}">
-        <input type="hidden" [routerLinkActiveOptions]="{exact: true}" routerLink="/" routerLinkActive #home="routerLinkActive"/>
-        <a i18n="home page|Home page menu link@@menuHome"
-          class="header-menu__link"
-          routerLink="/"
-          (click)="home.isActive ? toggleMenu() : closeMenu()"
-        >Home</a>
-    </li>
-    <li class="header-menu__entry"
-        [@slideInOut]="projects.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
-        routerLinkActive="header-menu__entry--active">
-        <input type="hidden" routerLink="/projects" routerLinkActive #projects="routerLinkActive"/>
-        <a i18n="projects" class="header-menu__link" routerLink="/projects" (click)="projects.isActive ? toggleMenu() : closeMenu()">
-            Projects
-        </a>
-    </li>
-    <li class="header-menu__entry"
-        [@slideInOut]="aboutme.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
-        routerLinkActive="header-menu__entry--active">
-        <input type="hidden" routerLink="/about-me" routerLinkActive #aboutme="routerLinkActive"/>
-        <a i18n="about me" class="header-menu__link" routerLink="/about-me" (click)="aboutme.isActive ? toggleMenu() : closeMenu()">
-            About Me
-        </a>
-    </li>
+  <li
+    class="header-menu__entry"
+    routerLinkActive="header-menu__entry--active"
+    [@slideInOut]="home.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
+    [routerLinkActiveOptions]="{exact: true}">
+    <input
+      type="hidden"
+      [routerLinkActiveOptions]="{exact: true}"
+      routerLink="/"
+      routerLinkActive
+      #home="routerLinkActive"
+    />
+    <a
+      i18n="home page|Home page menu link@@menuHome"
+      class="header-menu__link"
+      routerLink="/"
+      (click)="home.isActive ? toggleMenu() : closeMenu()"
+    >Home</a>
+  </li>
+  <li
+    class="header-menu__entry"
+    [@slideInOut]="projects.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
+    routerLinkActive="header-menu__entry--active">
+    <input
+      type="hidden"
+      routerLink="/projects"
+      routerLinkActive
+      #projects="routerLinkActive"
+    />
+    <a
+      i18n="projects|Projects page menu link@@menuProjects"
+      class="header-menu__link"
+      routerLink="/projects"
+      (click)="projects.isActive ? toggleMenu() : closeMenu()"
+    >Projects</a>
+  </li>
+  <li
+    class="header-menu__entry"
+    [@slideInOut]="aboutme.isActive ? 'in' :((isMenuOpen$ | async) ? 'in' : 'out')"
+    routerLinkActive="header-menu__entry--active"
+  >
+    <input
+      type="hidden"
+      routerLink="/about-me"
+      routerLinkActive
+      #aboutme="routerLinkActive"
+    />
+    <a
+      i18n="about me|About Me page menu link@@menuAboutMe"
+      class="header-menu__link"
+      routerLink="/about-me"
+      (click)="aboutme.isActive ? toggleMenu() : closeMenu()"
+    >About Me</a>
+  </li>
 </ul>
