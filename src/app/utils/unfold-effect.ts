@@ -1,7 +1,9 @@
 export class UnfoldEffect {
+
   static init() {
+
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+      entries.forEach(entry => {
         if (entry.intersectionRatio <= 0) {
           return;
         }
@@ -14,8 +16,9 @@ export class UnfoldEffect {
       });
     });
 
-    document.querySelectorAll('.unfold').forEach((el) => {
-      observer.observe(el);
-    });
+    document.querySelectorAll('.unfold')
+      .forEach(el => {
+        observer.observe(el);
+      });
   }
 }

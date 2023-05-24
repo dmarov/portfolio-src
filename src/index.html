@@ -1,39 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8">
     <title>Portfolio of Dmitry Marov</title>
-    <meta
-      name="description"
-      content="Personal portfolio website of Dmitry Marov. I am software developer with over 3 years experience in web development."
-    />
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="styleshteet" href="assets/fonts/index.css" />
-    <meta
-      name="google-site-verification"
-      content="N2RqEwBYfGVvHkoErbDOAl29oGAZFypLKGgOMBzXxBw"
-    />
+    <meta name="description" content="Personal portfolio website of Dmitry Marov. I am software developer with over 3 years experience in web development.">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="styleshteet" href="assets/fonts/index.css">
+    <meta name="google-site-verification" content="N2RqEwBYfGVvHkoErbDOAl29oGAZFypLKGgOMBzXxBw"/>
     <script>
-      function setCookie(name, value, days) {
-        var expires = "";
-        if (days) {
-          var date = new Date();
-          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-          expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      function setCookie(name,value,days) {
+          var expires = "";
+          if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + (days*24*60*60*1000));
+              expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "")  + expires + "; path=/";
       }
       var path = window.location.pathname;
 
       if (path.startsWith("/en")) {
-        setCookie("lang", "en", 300000);
+          setCookie('lang','en',300000);
       }
 
       if (path.startsWith("/ru")) {
-        setCookie("lang", "ru", 300000);
+          setCookie('lang','ru',300000);
       }
+
     </script>
     <!-- Github Pages SPA workaround -->
     <script>
@@ -47,45 +42,32 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function (l) {
-        if (l.search[1] === "/") {
-          var decoded = l.search
-            .slice(1)
-            .split("&")
-            .map(function (s) {
-              return s.replace(/~and~/g, "&");
-            })
-            .join("?");
-          window.history.replaceState(
-            null,
-            null,
-            l.pathname.slice(0, -1) + decoded + l.hash
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      })(window.location);
+      }(window.location))
     </script>
     <!-- Github Pages SPA workaround -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-P82955HLSD"
-    ></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P82955HLSD"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag("config", "G-P82955HLSD");
+        gtag('config', 'G-P82955HLSD');
     </script>
-    <link rel="manifest" href="manifest.webmanifest" />
-    <meta name="theme-color" content="#1976d2" />
-  </head>
-  <body class="body">
-    <app-root class="app-layout"></app-root>
-    <noscript
-      >Please enable JavaScript to continue using this application.</noscript
-    >
-  </body>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+</head>
+<body class="body">
+  <app-root class="app-layout"></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
 </html>

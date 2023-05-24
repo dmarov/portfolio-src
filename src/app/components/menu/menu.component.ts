@@ -1,9 +1,4 @@
-import {
-  Component,
-  OnInit,
-  Input,
-  ChangeDetectionStrategy,
-} from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { UiSelectors } from '@/store/selectors';
@@ -13,26 +8,33 @@ import { height } from '@/animations';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  animations: [height],
+  animations: [ height ],
   changeDetection: ChangeDetectionStrategy.OnPush,
-})
+  })
 export class MenuComponent implements OnInit {
-  @Input()
-  isMenuOpen$: Observable<boolean>;
 
-  constructor(private readonly store$: Store) {}
+    @Input()
+    isMenuOpen$: Observable<boolean>;
 
-  ngOnInit() {
-    this.isMenuOpen$ = this.store$.pipe(
-      select(UiSelectors.selectDetailedMenuVisible)
-    );
-  }
+    constructor(
+        private readonly store$: Store
+    ) { }
 
-  closeMenu() {
-    this.store$.dispatch(UiActions.setDetailedMenuVisible({ visible: false }));
-  }
+    ngOnInit() {
+      this.isMenuOpen$ = this.store$.pipe(
+        select(UiSelectors.selectDetailedMenuVisible)
+      );
+    }
 
-  toggleMenu() {
-    this.store$.dispatch(UiActions.toggleMenuVisible());
-  }
+    closeMenu() {
+      this.store$.dispatch(
+        UiActions.setDetailedMenuVisible({visible: false})
+      );
+    }
+
+    toggleMenu() {
+      this.store$.dispatch(
+        UiActions.toggleMenuVisible()
+      );
+    }
 }

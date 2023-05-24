@@ -1,7 +1,9 @@
 export class InViewEffect {
+
   static init() {
+
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+      entries.forEach(entry => {
         if (entry.intersectionRatio <= 0) {
           if (!entry.target.classList.contains('inview--not')) {
             entry.target.classList.toggle('inview--not', true);
@@ -14,8 +16,9 @@ export class InViewEffect {
       });
     });
 
-    document.querySelectorAll('.inview').forEach((el) => {
-      observer.observe(el);
-    });
+    document.querySelectorAll('.inview')
+      .forEach(el => {
+        observer.observe(el);
+      });
   }
 }

@@ -6,6 +6,5 @@ export const selectState = createFeatureSelector<UiReducers.State>(
 );
 
 export const selectDetailedMenuVisible = createSelector(
-  selectState,
-  (state) => state.detailedMenuVisible
+  selectState, (state) => state.detailedMenuVisible
 );
