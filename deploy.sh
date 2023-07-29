@@ -1,4 +1,3 @@
-rm -rf ./node_modules/.cache
 npm build:prod
 mkdir deploy
 cd deploy
