@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-page-not-found',
-  templateUrl: './page-not-found.component.html',
+  selector: 'app-not-found',
+  templateUrl: './not-found.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PageNotFoundComponent {
+export class NotFoundComponent {
   @HostBinding('class')
   class = 'app-layout__page';
 }

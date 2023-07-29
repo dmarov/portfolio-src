@@ -9,11 +9,11 @@ import { InViewEffect } from '@/shared/utils/inview-effect';
 import { UnfoldEffect } from '@/shared/utils/unfold-effect';
 
 @Component({
-  selector: 'app-page-main',
-  templateUrl: './page-main.component.html',
+  selector: 'app-main',
+  templateUrl: './main.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PageMainComponent implements OnInit, AfterViewInit {
+export class MainComponent implements OnInit, AfterViewInit {
   @HostBinding('class')
   classes = 'app-layout__page page-main';
 

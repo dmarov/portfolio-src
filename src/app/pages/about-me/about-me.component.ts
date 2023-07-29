@@ -8,11 +8,11 @@ import { InViewEffect } from '@/shared/utils/inview-effect';
 import { UnfoldEffect } from '@/shared/utils/unfold-effect';
 
 @Component({
-  selector: 'app-page-projects',
-  templateUrl: './page-projects.component.html',
+  selector: 'app-about-me',
+  templateUrl: './about-me.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PageProjectsComponent implements AfterViewInit {
+export class AboutMeComponent implements AfterViewInit {
   @HostBinding('class')
   classes = 'app-layout__page';
 

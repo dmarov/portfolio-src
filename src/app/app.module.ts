@@ -12,21 +12,20 @@ import { environment } from '../environments/environment';
 import { StoreBaseModule } from './shared/modules/store-base.module';
 import { LangComponent } from './shared/components/lang/lang.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
-import { PageAboutMeComponent } from './page-about-me/page-about-me.component';
-import { PageMainComponent } from './page-main/page-main.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { PageProjectsComponent } from './page-projects/page-projects.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { MainComponent } from './pages/main/main.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LangComponent,
     MenuComponent,
-    PageAboutMeComponent,
-    PageMainComponent,
-    PageMainComponent,
-    PageNotFoundComponent,
-    PageProjectsComponent,
+    AboutMeComponent,
+    MainComponent,
+    NotFoundComponent,
+    ProductsComponent,
   ],
   imports: [
     AppRoutingModule,
