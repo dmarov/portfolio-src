@@ -9,13 +9,13 @@ import { AppComponent } from '@/app.component';
 import * as UiReducers from '@/store/reducers/ui';
 import { RouterEffects } from '@/store/effects';
 import { environment } from '../environments/environment';
-import { LangComponent } from './components/lang/lang.component';
-import { MenuComponent } from './components/menu/menu.component';
-import { PageAboutMeComponent } from './components/page-about-me/page-about-me.component';
-import { PageMainComponent } from './components/page-main/page-main.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { PageProjectsComponent } from './components/page-projects/page-projects.component';
 import { StoreBaseModule } from './shared/modules/store-base.module';
+import { LangComponent } from './shared/components/lang/lang.component';
+import { MenuComponent } from './shared/components/menu/menu.component';
+import { PageAboutMeComponent } from './page-about-me/page-about-me.component';
+import { PageMainComponent } from './page-main/page-main.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageProjectsComponent } from './page-projects/page-projects.component';
 
 @NgModule({
   declarations: [
