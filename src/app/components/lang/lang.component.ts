@@ -18,8 +18,7 @@ import { languages } from '@/models/languages.const';
 export class LangComponent implements OnInit, OnDestroy {
   languages = languages;
 
-  activeLang =
-  this.languages.find((l) => window.location.pathname.startsWith(l.url))
+  activeLang = this.languages.find((l) => window.location.pathname.startsWith(l.url))
     ?? null;
 
   subscription = new Subscription();

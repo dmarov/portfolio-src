@@ -24,9 +24,6 @@ overrides:
     - prefix: app
       style: camelCase
       type: attribute
-    indent:
-      - error
-      - 2
     import/prefer-default-export: off
     no-console:
     - error
