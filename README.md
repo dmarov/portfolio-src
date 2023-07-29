@@ -32,6 +32,7 @@ npm install {some package}
 - improve menu for desktop
 - migrate from ngrx to services
 - add "Voice Robots" project
+- add "This Website was made using..."
 - improve design
 - google analytics
 - update docker config

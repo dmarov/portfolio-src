@@ -72,7 +72,7 @@
                   "maximumError": "10kb"
                 }
               ],
-              "serviceWorker": false,
+              "serviceWorker": false
             },
             "ru": {
               "localize": [

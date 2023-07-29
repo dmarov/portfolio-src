@@ -8,7 +8,6 @@
     "start:prod:en": "ng serve --configuration=production,en",
     "start:prod:ru": "ng serve --configuration=production,ru",
     "build": "ng build",
-    "build:prod:rework": "ng build --configuration=production,en",
     "build:prod": "ng build --configuration=production && node ./scripts/copy-index.js",
     "build:prod:en": "ng build --configuration=production,en",
     "build:prod:ru": "ng build --configuration=production,ru",
