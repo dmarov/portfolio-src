@@ -8,5 +8,4 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowser().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+platformBrowser().bootstrapModule(AppModule);

@@ -1,41 +1,51 @@
 <div id="top-pivot"></div>
 <header class="app-layout__header header">
-    <div class="header__content">
-        <div class="header__side">
-            <a href="https://github.com/dmarov"
-                target="_blank"
-                class="header__github-wrapper">
-                <img class="header__github"
-                    alt="Github"
-                    src="assets/images/github.png?v=1">
-            </a>
-        </div>
-        <app-menu class="header__menu"></app-menu>
-        <div class="header__side">
-            <app-lang></app-lang>
-            <div class="burger"
-                [ngClass]="{'burger--opened': isMenuOpen$ | async}"
-                (click)="toggleMenuOpen()">
-                <div class="burger__center">
-                    <div class="burger__line"></div>
-                    <div class="burger__line"></div>
-                    <div class="burger__line"></div>
-                </div>
-            </div>
-        </div>
+  <div class="header__content">
+    <div class="header__side header__side_logo">
+      <a
+        href="https://github.com/dmarov"
+        target="_blank"
+        class="header__github-wrapper"
+      >
+        <img
+          class="header__github"
+          alt="Github"
+          src="assets/images/github.png?v=1"
+        />
+      </a>
     </div>
+    <app-menu class="header__menu"></app-menu>
+    <div class="header__side">
+      <div
+        class="burger"
+        [ngClass]="{ 'burger--opened': isMenuOpen$ | async }"
+        (click)="toggleMenuOpen()"
+      >
+        <div class="burger__center">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+      </div>
+      <app-lang *ngIf="isMultilang"></app-lang>
+    </div>
+  </div>
 </header>
 <main class="app-layout__main">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </main>
 <footer class="app-layout__footer">
-    <div class="app-layout__content-wrapper">
-        <div class="app-layout__content app-layout__content_footer">
-            <div class="footer">
-                <a href="https://github.com/dmarov" target="_blank">
-                    <img class="footer__github" src="assets/images/github.png?v=1" alt="Github">
-                </a>
-            </div>
-        </div>
+  <div class="app-layout__content-wrapper">
+    <div class="app-layout__content app-layout__content_footer">
+      <div class="footer">
+        <a href="https://github.com/dmarov" target="_blank">
+          <img
+            class="footer__github"
+            src="assets/images/github.png?v=1"
+            alt="Github"
+          />
+        </a>
+      </div>
     </div>
+  </div>
 </footer>

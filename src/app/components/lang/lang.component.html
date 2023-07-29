@@ -1,8 +1,9 @@
 <ul class="lang">
-    <li class="lang__entry" [ngClass]="{'lang__entry--active': isEn}">
-        <a class="lang__link" [href]="'/en' + path">en</a>
-    </li>
-    <li class="lang__entry" [ngClass]="{'lang__entry--active': isRu}">
-        <a class="lang__link" [href]="'/ru' + path">ru</a>
-    </li>
+  <li
+    *ngFor="let lang of languages"
+    class="lang__entry"
+    [ngClass]="{ 'lang__entry--active': lang === activeLang }"
+  >
+    <a class="lang__link" [href]="lang.url + path">{{ lang.text }}</a>
+  </li>
 </ul>

@@ -1,3 +1,7 @@
-interface Window {
-    dataLayer: any;
+export {};
+
+declare global {
+  interface Window {
+    dataLayer: Array<object>;
+  }
 }

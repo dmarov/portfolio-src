@@ -1,4 +1,4 @@
-/***************************************************************************************************
+/** ************************************************************************************************
  * Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
  */
 import '@angular/localize/init';
@@ -18,7 +18,7 @@ import '@angular/localize/init';
  * Learn more in https://angular.io/guide/browser-support
  */
 
-/***************************************************************************************************
+/** ************************************************************************************************
  * BROWSER POLYFILLS
  */
 
@@ -36,10 +36,11 @@ import 'intersection-observer';
  * The flags allowed in zone-flags.ts are listed here.
  *
  * The following flags will work for all browsers.
- *
- * (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame
+ * // disable patch requestAnimationFrame
+ * (window as any).__Zone_disable_requestAnimationFrame = true;
  * (window as any).__Zone_disable_on_property = true; // disable patch onProperty such as onclick
- * (window as any).__zone_symbol__UNPATCHED_EVENTS = ['scroll', 'mousemove']; // disable patch specified eventNames
+ * // disable patch specified eventNames
+ * (window as any).__zone_symbol__UNPATCHED_EVENTS = ['scroll', 'mousemove'];
  *
  *  in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js
  *  with the following flag, it will bypass `zone.js` patch for IE/Edge
@@ -48,12 +49,11 @@ import 'intersection-observer';
  *
  */
 
-/***************************************************************************************************
+/** ************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js';  // Included with Angular CLI.
+import 'zone.js'; // Included with Angular CLI.
 
-
-/***************************************************************************************************
+/** ************************************************************************************************
  * APPLICATION IMPORTS
  */
