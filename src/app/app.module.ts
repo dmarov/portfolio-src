@@ -19,11 +19,11 @@ import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
+    AboutMeComponent,
     AppComponent,
     LangComponent,
-    MenuComponent,
-    AboutMeComponent,
     MainComponent,
+    MenuComponent,
     NotFoundComponent,
     ProductsComponent,
   ],
