@@ -25,17 +25,17 @@ npm install {some package}
 
 ## TODO:
 
+- befrend prettier and eslint
+- add "Voice Robots" project
+- add "This Website was made using..."
 - fix language switch
 - update tech stack and rework home page
 - update "About me"
 - change home image
 - improve menu for desktop
 - migrate from ngrx to services
-- add "Voice Robots" project
-- add "This Website was made using..."
 - improve design
 - google analytics
-- update docker config
 - add jest unit testing
 - add cypress tests
 - add deployment pipeline
