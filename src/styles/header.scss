@@ -35,6 +35,11 @@
     align-self: flex-start;
     flex-basis: 83px;
     flex-shrink: 0;
+    flex-direction: row-reverse;
+
+    &_logo {
+      flex-direction: row;
+    }
   }
 
   &__github {
