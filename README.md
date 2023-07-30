@@ -8,6 +8,7 @@
 SERVER_PORT=4200 # (4200 by default) angular server port
 HOST_USER_ID=1000 # (1000 by default) host user id to fix file permissions issue
 HOST_GROUP_ID=1000 # (1000 by default) host group id to fix file permissions issue
+APP_LANG=en ('en' by default) language of application to serve
 ```
 
 2. `docker compose up [--build]` - to run development container [and rebuild]. Press `Ctrl+C` to stop container.
@@ -25,15 +26,14 @@ npm install {some package}
 
 ## TODO:
 
-- befrend prettier and eslint
-- add "Voice Robots" project
-- add "This Website was made using..."
+- migrate from ngrx to services
 - fix language switch
+- add "This Website was made using..."
+- add "Voice Robots" project
 - update tech stack and rework home page
 - update "About me"
 - change home image
 - improve menu for desktop
-- migrate from ngrx to services
 - improve design
 - google analytics
 - add jest unit testing

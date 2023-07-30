@@ -1,10 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Router, NavigationEnd } from "@angular/router";
 import { Observable } from "rxjs";
-import { Store, select } from "@ngrx/store";
 import { environment } from "src/environments/environment";
-import { UiActions } from "@/store/actions";
-import { UiSelectors } from "@/store/selectors";
+import { MenuService } from "./shared/services/menu.service";
 
 @Component({
   selector: "app-root",
@@ -18,30 +16,38 @@ export class AppComponent implements OnInit {
 
   public constructor(
     private readonly router: Router,
-    private readonly store$: Store,
+    private readonly menuService: MenuService,
   ) {}
 
   public ngOnInit(): void {
-    this.isMenuOpen$ = this.store$.pipe(
-      select(UiSelectors.selectDetailedMenuVisible),
-    );
+    this.isMenuOpen$ = this.menuService.menuVisible$;
 
     this.router.events.subscribe((s) => {
       if (s instanceof NavigationEnd) {
-        const tree = this.router.parseUrl(this.router.url);
-        if (tree.fragment) {
-          const element = document.querySelector(`#${tree.fragment}`);
-          if (element) {
-            element.scrollIntoView(true);
-          }
+        const { hash } = window.location;
+
+        if (hash) {
+          const id = hash.replace(/#/, "");
+
+          setTimeout(() => {
+            const target = document.getElementById(id);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 300);
         } else {
-          window.scrollTo(0, 0);
+          setTimeout(() => {
+            const target = document.getElementById("top-pivot");
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 300);
         }
       }
     });
   }
 
   public toggleMenuOpen(): void {
-    this.store$.dispatch(UiActions.toggleMenuVisible());
+    this.menuService.toggle();
   }
 }

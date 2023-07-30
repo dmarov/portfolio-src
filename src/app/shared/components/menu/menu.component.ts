@@ -5,10 +5,8 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { Observable } from "rxjs";
-import { Store, select } from "@ngrx/store";
-import { UiSelectors } from "@/store/selectors";
-import { UiActions } from "@/store/actions";
-import { height } from "@/shared/animations";
+import { MenuService } from "@/shared/services/menu.service";
+import { height } from "@/shared/animations/height";
 
 @Component({
   selector: "app-menu",
@@ -20,19 +18,19 @@ export class MenuComponent implements OnInit {
   @Input()
   public isMenuOpen$: Observable<boolean>;
 
-  public constructor(private readonly store$: Store) {}
+  public constructor(
+    private readonly menuService: MenuService,
+  ) {}
 
   public ngOnInit(): void {
-    this.isMenuOpen$ = this.store$.pipe(
-      select(UiSelectors.selectDetailedMenuVisible),
-    );
+    this.isMenuOpen$ = this.menuService.menuVisible$;
   }
 
   public closeMenu(): void {
-    this.store$.dispatch(UiActions.setDetailedMenuVisible({ visible: false }));
+    this.menuService.hide();
   }
 
   public toggleMenu(): void {
-    this.store$.dispatch(UiActions.toggleMenuVisible());
+    this.menuService.toggle();
   }
 }
