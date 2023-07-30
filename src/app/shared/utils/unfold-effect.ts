@@ -6,15 +6,15 @@ export class UnfoldEffect {
           return;
         }
 
-        entry.target.classList.toggle('unfold--hidden', false);
-        entry.target.classList.toggle('unfold--left', false);
-        entry.target.classList.toggle('unfold--right', false);
-        entry.target.classList.toggle('unfold--down', false);
+        entry.target.classList.toggle("unfold--hidden", false);
+        entry.target.classList.toggle("unfold--left", false);
+        entry.target.classList.toggle("unfold--right", false);
+        entry.target.classList.toggle("unfold--down", false);
         observer.unobserve(entry.target);
       });
     });
 
-    document.querySelectorAll('.unfold').forEach((el) => {
+    document.querySelectorAll(".unfold").forEach((el) => {
       observer.observe(el);
     });
   }

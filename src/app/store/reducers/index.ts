@@ -1,1 +1,1 @@
-export * as UiReducers from './ui';
+export * as UiReducers from "./ui";

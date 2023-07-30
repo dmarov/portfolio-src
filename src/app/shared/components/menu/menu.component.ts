@@ -3,16 +3,16 @@ import {
   OnInit,
   Input,
   ChangeDetectionStrategy,
-} from '@angular/core';
-import { Observable } from 'rxjs';
-import { Store, select } from '@ngrx/store';
-import { UiSelectors } from '@/store/selectors';
-import { UiActions } from '@/store/actions';
-import { height } from '@/shared/animations';
+} from "@angular/core";
+import { Observable } from "rxjs";
+import { Store, select } from "@ngrx/store";
+import { UiSelectors } from "@/store/selectors";
+import { UiActions } from "@/store/actions";
+import { height } from "@/shared/animations";
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
+  selector: "app-menu",
+  templateUrl: "./menu.component.html",
   animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

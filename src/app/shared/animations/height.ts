@@ -4,24 +4,24 @@ import {
   style,
   animate,
   transition,
-} from '@angular/animations';
+} from "@angular/animations";
 
-export const height = trigger('slideInOut', [
+export const height = trigger("slideInOut", [
   state(
-    'in',
+    "in",
     style({
-      overflow: 'hidden',
-      height: '*',
+      overflow: "hidden",
+      height: "*",
     }),
   ),
   state(
-    'out',
+    "out",
     style({
-      opacity: '0',
-      overflow: 'hidden',
-      height: '0px',
+      opacity: "0",
+      overflow: "hidden",
+      height: "0px",
     }),
   ),
-  transition('in => out', animate('400ms ease-in-out')),
-  transition('out => in', animate('400ms ease-in-out')),
+  transition("in => out", animate("400ms ease-in-out")),
+  transition("out => in", animate("400ms ease-in-out")),
 ]);

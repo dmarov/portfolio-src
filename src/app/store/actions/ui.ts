@@ -1,8 +1,8 @@
-import { createAction, props } from '@ngrx/store';
+import { createAction, props } from "@ngrx/store";
 
 export const setDetailedMenuVisible = createAction(
-  '[Ui] setDetailedMenuVisible',
+  "[Ui] setDetailedMenuVisible",
   props<{ visible: boolean }>(),
 );
 
-export const toggleMenuVisible = createAction('[Ui] toggleMenuVisible');
+export const toggleMenuVisible = createAction("[Ui] toggleMenuVisible");

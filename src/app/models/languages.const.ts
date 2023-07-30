@@ -1,14 +1,14 @@
-import { Lang } from './lang.enum';
+import { Lang } from "./lang.enum";
 
 export const languages = [
   {
     type: Lang.English,
-    url: '/en',
-    text: 'EN',
+    url: "/en",
+    text: "EN",
   },
   {
     type: Lang.Russian,
-    url: '/ru',
-    text: 'RU',
+    url: "/ru",
+    text: "RU",
   },
 ];
