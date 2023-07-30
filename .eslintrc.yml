@@ -43,6 +43,12 @@ overrides:
         - error
         - ignorePackages
         - { ts: never, "": never }
+      "@typescript-eslint/explicit-function-return-type": error
+      "@typescript-eslint/explicit-member-accessibility": error
+      no-console":
+        - error
+        - allow:
+          - ""
   - files:
       - "*.html"
     extends:
