@@ -14,9 +14,9 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 })
 export class AboutMeComponent implements AfterViewInit {
   @HostBinding("class")
-  classes = "app-layout__page";
+  public classes = "app-layout__page";
 
-  ngAfterViewInit() {
+  public ngAfterViewInit(): void {
     UnfoldEffect.init();
     InViewEffect.init();
   }

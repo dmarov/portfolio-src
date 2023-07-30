@@ -18,21 +18,21 @@ import { height } from "@/shared/animations";
 })
 export class MenuComponent implements OnInit {
   @Input()
-  isMenuOpen$: Observable<boolean>;
+  public isMenuOpen$: Observable<boolean>;
 
-  constructor(private readonly store$: Store) {}
+  public constructor(private readonly store$: Store) {}
 
-  ngOnInit() {
+  public ngOnInit(): void {
     this.isMenuOpen$ = this.store$.pipe(
       select(UiSelectors.selectDetailedMenuVisible),
     );
   }
 
-  closeMenu() {
+  public closeMenu(): void {
     this.store$.dispatch(UiActions.setDetailedMenuVisible({ visible: false }));
   }
 
-  toggleMenu() {
+  public toggleMenu(): void {
     this.store$.dispatch(UiActions.toggleMenuVisible());
   }
 }

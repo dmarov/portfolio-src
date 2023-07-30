@@ -1,5 +1,5 @@
 export class InViewEffect {
-  static init() {
+  public static init(): void {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.intersectionRatio <= 0) {

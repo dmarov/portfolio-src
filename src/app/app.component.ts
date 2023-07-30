@@ -12,16 +12,16 @@ import { UiSelectors } from "@/store/selectors";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit {
-  isMultilang = environment.multilang;
+  public isMultilang = environment.multilang;
 
-  isMenuOpen$: Observable<boolean>;
+  public isMenuOpen$: Observable<boolean>;
 
-  constructor(
+  public constructor(
     private readonly router: Router,
     private readonly store$: Store,
   ) {}
 
-  ngOnInit() {
+  public ngOnInit(): void {
     this.isMenuOpen$ = this.store$.pipe(
       select(UiSelectors.selectDetailedMenuVisible),
     );
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  toggleMenuOpen() {
+  public toggleMenuOpen(): void {
     this.store$.dispatch(UiActions.toggleMenuVisible());
   }
 }

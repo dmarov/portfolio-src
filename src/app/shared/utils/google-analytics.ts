@@ -1,7 +1,7 @@
 export class GoogleAnalytics {
   private static timeout = 1000;
 
-  static async sendEvent(eventName: string, data: object): Promise<void> {
+  public static async sendEvent(eventName: string, data: object): Promise<void> {
     return new Promise((res) => {
       window.dataLayer.push({
         ...data,

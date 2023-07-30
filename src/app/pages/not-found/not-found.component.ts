@@ -7,5 +7,5 @@ import { ChangeDetectionStrategy, Component, HostBinding } from "@angular/core";
 })
 export class NotFoundComponent {
   @HostBinding("class")
-  class = "app-layout__page";
+  public class = "app-layout__page";
 }

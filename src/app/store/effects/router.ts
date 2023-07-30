@@ -7,9 +7,9 @@ import { tap } from "rxjs/operators";
   providedIn: "root",
 })
 export class RouterEffects {
-  constructor(private readonly actions$: Actions) {}
+  public constructor(private readonly actions$: Actions) {}
 
-  onNavigated$ = createEffect(
+  public onNavigated$ = createEffect(
     () =>
       this.actions$.pipe(
         ofType(ROUTER_NAVIGATED),

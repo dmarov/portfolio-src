@@ -15,20 +15,20 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 })
 export class MainComponent implements OnInit, AfterViewInit {
   @HostBinding("class")
-  classes = "app-layout__page page-main";
+  public classes = "app-layout__page page-main";
 
   private startDate = new Date("June 17, 2017 00:00:00");
 
   public years = 0;
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     const years =
       (Date.now() - this.startDate.getTime()) / (1000 * 60 * 60 * 24 * 365);
 
     this.years = Math.floor(years);
   }
 
-  ngAfterViewInit() {
+  public ngAfterViewInit(): void {
     UnfoldEffect.init();
     InViewEffect.init();
   }

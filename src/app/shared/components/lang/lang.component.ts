@@ -16,19 +16,19 @@ import { languages } from "@/models/languages.const";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LangComponent implements OnInit, OnDestroy {
-  languages = languages;
+  public languages = languages;
 
-  activeLang =
-    this.languages.find((l) => window.location.pathname.startsWith(l.url)) ??
-    null;
+  public activeLang = this.languages.find(
+    (l) => window.location.pathname.startsWith(l.url)
+  ) ?? null;
 
-  subscription = new Subscription();
+  private subscription = new Subscription();
 
-  path = "/";
+  public path = "/";
 
-  constructor(private readonly actions$: Actions) {}
+  public constructor(private readonly actions$: Actions) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.subscription.add(
       this.actions$.pipe(ofType(ROUTER_NAVIGATED)).subscribe(() => {
         const relPath =
@@ -44,7 +44,7 @@ export class LangComponent implements OnInit, OnDestroy {
     );
   }
 
-  ngOnDestroy(): void {
+  public ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
 }

@@ -4,7 +4,7 @@ import { UiActions } from "@/store/actions";
 export const featureKey = "ui";
 
 export class State {
-  detailedMenuVisible: boolean;
+  public detailedMenuVisible: boolean;
 }
 
 export const initialState = {
