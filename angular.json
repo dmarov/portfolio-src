@@ -111,6 +111,13 @@
           "options": {
             "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "configPath": "./jest.config.js",
+            "tsConfig": "./tsconfig.spec.json"
+          }
         }
       },
       "i18n": {

@@ -24,9 +24,14 @@ npm install {some package}
 
 4. `docker compose down [--volumes]` - to stop detached container [and clear volumes]
 
+## Unit testing
+
+1. Use `ng test` to run unit tests once
+
+2. Use `ng test --watch` to run unit tests in watch mode.
+
 ## TODO:
 
-- migrate from ngrx to services
 - fix language switch
 - add "This Website was made using..."
 - add "Voice Robots" project
@@ -36,6 +41,6 @@ npm install {some package}
 - improve menu for desktop
 - improve design
 - google analytics
-- add jest unit testing
+- add jest unit tests
 - add cypress tests
 - add deployment pipeline

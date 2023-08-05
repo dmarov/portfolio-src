@@ -2,7 +2,7 @@
 FROM node:18-alpine AS image-build
 
 # zsh used for operating inside docker container
-# git used for running unit tests
+# git used for running unit tests (ng test --watch)
 RUN apk add --update zsh git
 
 ENV SERVER_PORT=4200
