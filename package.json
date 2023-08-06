@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
+    "start": "ng serve",
     "start:en": "ng serve --configuration=en --open",
     "start:ru": "ng serve --configuration=ru --open",
-    "start": "ng serve",
     "start:prod:en": "ng serve --configuration=production,en",
     "start:prod:ru": "ng serve --configuration=production,ru",
     "build": "ng build",
@@ -12,11 +12,11 @@
     "build:prod:en": "ng build --configuration=production,en",
     "build:prod:ru": "ng build --configuration=production,ru",
     "lint": "ng lint",
-    "deploy": "yarn lint && yarn lint:styles && sh ./deploy.sh",
     "lint:styles": "stylelint src/**/*.scss",
     "lint:styles:fix": "stylelint src/**/*.scss --fix",
     "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf && xliffmerge --profile xliffmerge.json ru-RU",
-    "serve:prod": "http-server ./dist/portfolio"
+    "serve:prod": "http-server ./dist/portfolio",
+    "deploy": "npm run lint && npm run lint:styles && sh ./deploy.sh"
   },
   "private": true,
   "dependencies": {

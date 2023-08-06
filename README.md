@@ -30,6 +30,8 @@ npm install {some package}
 
 2. Use `ng test --watch` to run unit tests in watch mode.
 
+3. Use *Behavior Driven Development* principles for development process.
+
 ## TODO:
 
 - fix language switch
