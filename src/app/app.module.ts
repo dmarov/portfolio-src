@@ -6,7 +6,7 @@ import { AppComponent } from "@/app.component";
 import { LangComponent } from "./shared/components/lang/lang.component";
 import { MenuComponent } from "./shared/components/menu/menu.component";
 import { AboutMeComponent } from "./pages/about-me/about-me.component";
-import { MainComponent } from "./pages/main/main.component";
+import { HomeComponent } from "./pages/home/home.component";
 import { NotFoundComponent } from "./pages/not-found/not-found.component";
 import { ProductsComponent } from "./pages/products/products.component";
 import { MenuService } from "./shared/services/menu.service";
@@ -15,8 +15,8 @@ import { MenuService } from "./shared/services/menu.service";
   declarations: [
     AboutMeComponent,
     AppComponent,
+    HomeComponent,
     LangComponent,
-    MainComponent,
     MenuComponent,
     NotFoundComponent,
     ProductsComponent,
