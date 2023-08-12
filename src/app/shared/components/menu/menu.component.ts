@@ -16,7 +16,7 @@ import { height } from "@/shared/animations/height";
 })
 export class MenuComponent implements OnInit {
   @Input()
-  public isMenuOpen$: Observable<boolean>;
+  public isMenuOpen$!: Observable<boolean>;
 
   public constructor(
     private readonly menuService: MenuService,

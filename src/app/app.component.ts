@@ -12,7 +12,7 @@ import { MenuService } from "./shared/services/menu.service";
 export class AppComponent implements OnInit {
   public isMultilang = environment.multilang;
 
-  public isMenuOpen$: Observable<boolean>;
+  public isMenuOpen$!: Observable<boolean>;
 
   public constructor(
     private readonly router: Router,

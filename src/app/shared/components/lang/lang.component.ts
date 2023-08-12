@@ -40,6 +40,10 @@ export class LangComponent implements OnInit, OnDestroy {
             window.location.search +
             window.location.hash;
 
+          if (this.activeLang === null) {
+            return;
+          }
+
           this.path = relPath.replace(
             new RegExp(`^${escapeRegexp(this.activeLang.url)}`),
             "",

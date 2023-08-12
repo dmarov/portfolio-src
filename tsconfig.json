@@ -15,7 +15,8 @@
     "paths": {
       "@/*": ["src/app/*"]
     },
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "strict": true
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
