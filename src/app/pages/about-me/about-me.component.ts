@@ -11,6 +11,7 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
   selector: "app-about-me",
   templateUrl: "./about-me.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
 })
 export class AboutMeComponent implements AfterViewInit {
   @HostBinding("class")

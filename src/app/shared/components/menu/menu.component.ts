@@ -4,6 +4,8 @@ import {
   Input,
   ChangeDetectionStrategy,
 } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
 import { Observable } from "rxjs";
 import { MenuService } from "@/shared/services/menu.service";
 import { height } from "@/shared/animations/height";
@@ -13,6 +15,11 @@ import { height } from "@/shared/animations/height";
   templateUrl: "./menu.component.html",
   animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+  ],
 })
 export class MenuComponent implements OnInit {
   @Input()

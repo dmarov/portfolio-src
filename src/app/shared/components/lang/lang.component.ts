@@ -5,6 +5,7 @@ import {
   OnInit,
 } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
+import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
 import { escapeRegexp } from "@/shared/utils/escape-regexp.util";
 import { languages } from "@/models/languages.const";
@@ -13,6 +14,10 @@ import { languages } from "@/models/languages.const";
   selector: "app-lang",
   templateUrl: "./lang.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [
+    CommonModule,
+  ],
 })
 export class LangComponent implements OnInit, OnDestroy {
   public languages = languages;

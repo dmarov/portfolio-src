@@ -5,6 +5,7 @@ import {
   HostBinding,
   ChangeDetectionStrategy,
 } from "@angular/core";
+import { RouterModule } from "@angular/router";
 import { InViewEffect } from "@/shared/utils/inview-effect";
 import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 
@@ -12,6 +13,10 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
   selector: "app-home",
   templateUrl: "./home.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [
+    RouterModule,
+  ],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @HostBinding("class")
