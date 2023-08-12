@@ -15,13 +15,13 @@ RUN npm install -g @angular/cli@16
 WORKDIR /app
 
 # create user if not exist
-RUN addgroup -S ${HOST_GROUP_ID} \
-&& adduser \
-&& --disabled-password \
-&& --gecos "" \
-&& --ingroup "${HOST_GROUP_ID}" \
-&& --uid "${HOST_USER_ID}" \
-&& "${USER_NAME}" || true
+RUN addgroup -S ${HOST_GROUP_ID} && adduser\
+ --disabled-password\
+ --gecos ""\
+ --ingroup "${HOST_GROUP_ID}"\
+ --uid "${HOST_USER_ID}"\
+ --shell /bin/zsh\
+ "${USER_NAME}" || true
 
 # act as non-root user inside container (1000:1000 by default)
 USER ${HOST_USER_ID}:${HOST_GROUP_ID}
