@@ -5,7 +5,7 @@ import { provideRouter } from "@angular/router";
 import { environment } from "./environments/environment";
 import { AppComponent } from "@/app.component";
 import { MenuService } from "@/shared/services/menu.service";
-import { routes } from "@/routes.const";
+import { routes } from "@/pages/routes.const";
 
 if (environment.production) {
   enableProdMode();
