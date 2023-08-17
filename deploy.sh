@@ -1,4 +1,5 @@
-npm run lint \
+npm run prettier \
+&& npm run lint \
 && npm run lint:styles \
 && npm run test \
 && npm run build:prod \

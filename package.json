@@ -15,6 +15,7 @@
     "lint": "ng lint",
     "lint:styles": "stylelint src/**/*.scss",
     "lint:styles:fix": "stylelint src/**/*.scss --fix",
+    "prettier": "prettier . -c",
     "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf && xliffmerge --profile xliffmerge.json ru-RU",
     "serve:prod": "http-server ./dist/portfolio",
     "deploy": "npm run lint && npm run lint:styles && sh ./deploy.sh"
