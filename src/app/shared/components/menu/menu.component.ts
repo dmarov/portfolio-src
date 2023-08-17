@@ -15,7 +15,7 @@ import { height } from "@/shared/animations/height";
   selector: "app-menu",
   templateUrl: "./menu.component.html",
   styleUrls: ["./menu.component.scss"],
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.None,
   animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,

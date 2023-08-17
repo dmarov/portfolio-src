@@ -15,9 +15,9 @@ import { I18nUrl } from "@/shared/utils/i18n-url/i18n-url.util";
 @Component({
   selector: "app-lang",
   templateUrl: "./lang.component.html",
-  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ["./lang.component.scss"],
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CommonModule],
   providers: [I18nUrl],

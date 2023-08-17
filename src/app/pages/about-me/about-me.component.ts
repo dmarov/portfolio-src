@@ -12,7 +12,7 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
   selector: "app-about-me",
   templateUrl: "./about-me.component.html",
   styleUrls: ["./about-me.component.scss"],
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })

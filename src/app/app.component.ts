@@ -16,7 +16,7 @@ import { MenuService } from "./shared/services/menu.service";
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [RouterModule, CommonModule, MenuComponent, LangComponent],

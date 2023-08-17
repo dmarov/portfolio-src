@@ -10,7 +10,7 @@ import { RouterModule } from "@angular/router";
   selector: "app-not-found",
   templateUrl: "./not-found.component.html",
   styleUrls: ["./not-found.component.scss"],
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [RouterModule],
