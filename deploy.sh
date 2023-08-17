@@ -1,4 +1,5 @@
-npm run build:prod \
+npm run test \
+&& npm run build:prod \
 && mkdir deploy \
 && cd deploy \
 && git clone git@github.com:dmarov/dmarov.github.io.git ./ \
