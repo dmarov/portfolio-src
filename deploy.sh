@@ -1,4 +1,5 @@
-npm run test \
+npm run lint \
+&& npm run test \
 && npm run build:prod \
 && mkdir deploy \
 && cd deploy \
