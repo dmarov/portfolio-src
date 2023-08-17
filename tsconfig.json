@@ -13,7 +13,8 @@
     "target": "ES2022",
     "lib": ["es2018", "dom"],
     "paths": {
-      "@/*": ["src/app/*"]
+      "@/*": ["src/app/*"],
+      "@styles/*": ["src/styles/*"]
     },
     "useDefineForClassFields": false,
     "strict": true
