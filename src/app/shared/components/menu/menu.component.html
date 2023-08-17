@@ -4,21 +4,21 @@
 >
   <li
     class="header-menu__entry"
-    routerLinkActive="header-menu__entry--active"
+    routerLinkActive="header-menu__entry_active"
     [@slideInOut]="home.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'"
     [routerLinkActiveOptions]="{ exact: true }"
   >
     <input
       type="hidden"
       [routerLinkActiveOptions]="{ exact: true }"
-      routerLink="/"
+      [routerLink]="routePath.Home"
       routerLinkActive
       #home="routerLinkActive"
     />
     <a
       i18n="go to home page|link to land on home page@@HOME_PAGE_LINK"
       class="header-menu__link"
-      routerLink="/"
+      [routerLink]="routePath.Home"
       (click)="home.isActive ? toggleMenu() : closeMenu()"
     >
       Home
@@ -29,11 +29,11 @@
     [@slideInOut]="
       products.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'
     "
-    routerLinkActive="header-menu__entry--active"
+    routerLinkActive="header-menu__entry_active"
   >
     <input
       type="hidden"
-      routerLink="/products"
+      [routerLink]="routePath.Products"
       routerLinkActive
       #products="routerLinkActive"
     />
@@ -41,7 +41,7 @@
       i18n="
         go to projects page|link to land on projects page@@PROJECTS_PAGE_LINK"
       class="header-menu__link"
-      routerLink="/products"
+      [routerLink]="routePath.Products"
       (click)="products.isActive ? toggleMenu() : closeMenu()"
     >
       Products
@@ -52,11 +52,11 @@
     [@slideInOut]="
       aboutme.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'
     "
-    routerLinkActive="header-menu__entry--active"
+    routerLinkActive="header-menu__entry_active"
   >
     <input
       type="hidden"
-      routerLink="/about-me"
+      [routerLink]="routePath.AboutMe"
       routerLinkActive
       #aboutme="routerLinkActive"
     />
@@ -64,7 +64,7 @@
       i18n="
         go to about me page|link to land on about me page@@ABOUT_ME_PAGE_LINK"
       class="header-menu__link"
-      routerLink="/about-me"
+      [routerLink]="routePath.AboutMe"
       (click)="aboutme.isActive ? toggleMenu() : closeMenu()"
     >
       About Me

@@ -3,19 +3,18 @@ import {
   OnInit,
   Input,
   ChangeDetectionStrategy,
-  ViewEncapsulation,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { Observable } from "rxjs";
-import { MenuService } from "@/shared/services/menu.service";
-import { height } from "@/shared/animations/height";
+import { MenuService } from "@/app/shared/services/menu.service";
+import { height } from "@/app/shared/animations/height";
+import { RoutePath } from "@/app/models/route-path.enum";
 
 @Component({
   selector: "app-menu",
   templateUrl: "./menu.component.html",
   styleUrls: ["./menu.component.scss"],
-  encapsulation: ViewEncapsulation.None,
   animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
@@ -24,6 +23,8 @@ import { height } from "@/shared/animations/height";
 export class MenuComponent implements OnInit {
   @Input()
   public isMenuOpen$!: Observable<boolean>;
+
+  public routePath = RoutePath;
 
   public constructor(private readonly menuService: MenuService) {}
 

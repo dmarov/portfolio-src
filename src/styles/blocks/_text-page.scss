@@ -1,20 +1,17 @@
-@import "special/colors";
-@import "special/mixins";
+@import "../shared/colors";
+@import "../shared/mixins";
 
 .text-page {
-  background-color: $col-grey;
+  --radius: 10px;
 
-  // background-color: rgba(240, 239, 244, 0.97);
+  background-color: $col-grey;
   color: $col-dwhite;
   padding: 20px;
   flex-grow: 1;
-
-  --radius: 10px;
-
   border-radius: var(--radius);
 
-  &--theme {
-    &--green {
+  &_theme {
+    &_green {
       position: relative;
 
       &::after {
@@ -34,14 +31,14 @@
         }
       }
 
-      &.inview--not {
+      &.inview_not {
         &::after {
           opacity: 0;
         }
       }
     }
 
-    &--orange {
+    &_orange {
       position: relative;
 
       &::after {
@@ -61,14 +58,14 @@
         }
       }
 
-      &.inview--not {
+      &.inview_not {
         &::after {
           opacity: 0;
         }
       }
     }
 
-    &--white {
+    &_white {
       position: relative;
 
       &::after {
@@ -88,7 +85,7 @@
         }
       }
 
-      &.inview--not {
+      &.inview_not {
         &::after {
           opacity: 0;
         }
@@ -109,7 +106,7 @@
     }
   }
 
-  &--less-content {
+  &_less-content {
     display: flex;
     flex-direction: column;
   }
@@ -130,7 +127,7 @@
   &__p {
     font-size: 1.2rem;
 
-    &--center {
+    &_center {
       text-align: center;
     }
   }

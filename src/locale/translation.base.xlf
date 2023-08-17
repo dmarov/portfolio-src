@@ -6,7 +6,7 @@
         <source> Career </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">9,11</context>
+          <context context-type="linenumber">10,12</context>
         </context-group>
         <note priority="1" from="description">carier page header</note>
       </trans-unit>
@@ -14,7 +14,7 @@
         <source> In order to start my career as a software developer I&apos;ve got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>NARFU &quot;Applied Mathematics and Computer Science&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. At that time I participated in math and programming olympiads. As my base programming language I regarded <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> but also I learned and worked with C, Java, Python, Assembly. I&apos;ve graduated in 2017. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">12,20</context>
+          <context context-type="linenumber">13,21</context>
         </context-group>
         <note priority="1" from="description">career beginning</note>
       </trans-unit>
@@ -22,7 +22,7 @@
         <source> Short after that I&apos;ve started my career as backend developer. It was my first experience of commercial software development and that&apos;s when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">25,31</context>
+          <context context-type="linenumber">26,32</context>
         </context-group>
         <note priority="1" from="description">career beginning commercial</note>
       </trans-unit>
@@ -30,7 +30,7 @@
         <source> The time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That&apos;s when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> framework which payed out later. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">36,40</context>
+          <context context-type="linenumber">37,41</context>
         </context-group>
         <note priority="1" from="description">career frontend framework</note>
       </trans-unit>
@@ -38,7 +38,7 @@
         <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> In order to resolve some of existed problems I&apos;ve implemented microservices. There are some of them: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">45,50</context>
+          <context context-type="linenumber">46,51</context>
         </context-group>
         <note priority="1" from="description">career infrastructure</note>
       </trans-unit>
@@ -46,7 +46,7 @@
         <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to send SMS notifications using GSM gateway <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to convert HTML page to PDF (useful for printing invoices, and not just that) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to generate JWT token pairs (useful for authorization) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">53,64</context>
+          <context context-type="linenumber">54,65</context>
         </context-group>
         <note priority="1" from="description">career micro services</note>
       </trans-unit>
@@ -54,7 +54,7 @@
         <source> These services was very useful for each new website. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">70,72</context>
+          <context context-type="linenumber">71,73</context>
         </context-group>
         <note priority="1" from="description">career servies useful</note>
       </trans-unit>
@@ -62,7 +62,7 @@
         <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> operating system, so it was time to apply this knowledge in practice. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">74,79</context>
+          <context context-type="linenumber">78,83</context>
         </context-group>
         <note priority="1" from="description">career administering</note>
       </trans-unit>
@@ -70,7 +70,7 @@
         <source> Then I decided to specialize in front-end and move to big projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">81,88</context>
+          <context context-type="linenumber">85,92</context>
         </context-group>
         <note priority="1" from="description">career frontend</note>
       </trans-unit>
@@ -78,7 +78,7 @@
         <source> Welcome! </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">13,15</context>
+          <context context-type="linenumber">14,16</context>
         </context-group>
         <note priority="1" from="description">Home page welcome</note>
         <note priority="1" from="meaning">welcome</note>
@@ -87,7 +87,7 @@
         <source> My name is Dmitry, and this is my portfolio. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">19,21</context>
+          <context context-type="linenumber">20,22</context>
         </context-group>
         <note priority="1" from="description">introduction</note>
       </trans-unit>
@@ -95,7 +95,7 @@
         <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> years of experience in web development. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">25,28</context>
+          <context context-type="linenumber">26,29</context>
         </context-group>
         <note priority="1" from="description">who am i</note>
       </trans-unit>
@@ -103,7 +103,7 @@
         <source> I&apos;m interested in technology and how to use it to make life better. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">32,34</context>
+          <context context-type="linenumber">33,35</context>
         </context-group>
         <note priority="1" from="description">my goals</note>
       </trans-unit>
@@ -111,7 +111,7 @@
         <source> My Technology Stack </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">44,46</context>
+          <context context-type="linenumber">48,50</context>
         </context-group>
         <note priority="1" from="description">technology stack</note>
       </trans-unit>
@@ -119,7 +119,7 @@
         <source>Products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">155</context>
+          <context context-type="linenumber">159</context>
         </context-group>
         <note priority="1" from="description">projects</note>
       </trans-unit>
@@ -131,35 +131,35 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">207</context>
+          <context context-type="linenumber">205</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">237</context>
+          <context context-type="linenumber">231</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">267</context>
+          <context context-type="linenumber">259</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">72</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">186</context>
+          <context context-type="linenumber">196</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">242</context>
+          <context context-type="linenumber">255</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">299</context>
+          <context context-type="linenumber">315</context>
         </context-group>
         <note priority="1" from="description">website</note>
       </trans-unit>
@@ -171,15 +171,15 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">214,216</context>
+          <context context-type="linenumber">212,214</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">244,246</context>
+          <context context-type="linenumber">238,240</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">274,276</context>
+          <context context-type="linenumber">266,268</context>
         </context-group>
         <note priority="1" from="description">about</note>
       </trans-unit>
@@ -187,7 +187,7 @@
         <source> more products </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">287,289</context>
+          <context context-type="linenumber">279,281</context>
         </context-group>
         <note priority="1" from="description">more products</note>
       </trans-unit>
@@ -195,7 +195,7 @@
         <source> This page doesn&apos;t exist </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
-          <context context-type="linenumber">6,8</context>
+          <context context-type="linenumber">7,9</context>
         </context-group>
         <note priority="1" from="description">this page doesn&apos;t exist</note>
       </trans-unit>
@@ -203,7 +203,7 @@
         <source> Return to Home page </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
-          <context context-type="linenumber">15,17</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
         <note priority="1" from="description">return to home page</note>
       </trans-unit>
@@ -211,7 +211,7 @@
         <source> RiverTV is a video streaming service provided by RiverTV Inc. from Canada. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">12,15</context>
+          <context context-type="linenumber">13,16</context>
         </context-group>
         <note priority="1" from="description">RiverTV is</note>
       </trans-unit>
@@ -219,7 +219,7 @@
         <source> RiverTV offers streaming of live channels and on-demand content. The website is an online shop and streaming web app where RiverTV package and addons can be acquired, managed and watched. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">16,20</context>
+          <context context-type="linenumber">17,21</context>
         </context-group>
         <note priority="1" from="description">RiverTV does</note>
       </trans-unit>
@@ -227,7 +227,7 @@
         <source> I developed front-end part. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">28,30</context>
+          <context context-type="linenumber">29,31</context>
         </context-group>
         <note priority="1" from="description">RiverTV what i did</note>
       </trans-unit>
@@ -235,43 +235,19 @@
         <source> Technologies I used: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">31,33</context>
+          <context context-type="linenumber">35,37</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">89,91</context>
+          <context context-type="linenumber">96,98</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">161,163</context>
+          <context context-type="linenumber">171,173</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">207,209</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">265,267</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">319,321</context>
-        </context-group>
-        <note priority="1" from="description">technologies I used</note>
-      </trans-unit>
-      <trans-unit id="VISIT" datatype="html">
-        <source> Visit </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">50,52</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">108,110</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">224,226</context>
+          <context context-type="linenumber">220,222</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
@@ -279,7 +255,31 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">334,336</context>
+          <context context-type="linenumber">336,338</context>
+        </context-group>
+        <note priority="1" from="description">technologies I used</note>
+      </trans-unit>
+      <trans-unit id="VISIT" datatype="html">
+        <source> Visit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
+          <context context-type="linenumber">54,56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
+          <context context-type="linenumber">237,239</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
+          <context context-type="linenumber">297,299</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
+          <context context-type="linenumber">351,353</context>
         </context-group>
         <note priority="1" from="description">visit</note>
       </trans-unit>
@@ -287,7 +287,7 @@
         <source> VMedia is an internet service provider from Canada. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">70,72</context>
+          <context context-type="linenumber">74,76</context>
         </context-group>
         <note priority="1" from="description">VMedia is</note>
       </trans-unit>
@@ -295,7 +295,7 @@
         <source> Apart from internet it also offers services such as cable-free TV, home phone and home security. The website is online shop where such services can acquired and managed. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">73,77</context>
+          <context context-type="linenumber">77,81</context>
         </context-group>
         <note priority="1" from="description">VMedia does</note>
       </trans-unit>
@@ -303,7 +303,7 @@
         <source> I refactored front-end, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">85,88</context>
+          <context context-type="linenumber">89,92</context>
         </context-group>
         <note priority="1" from="description">VMedia what I did</note>
       </trans-unit>
@@ -311,7 +311,7 @@
         <source> &quot;Scarlett &amp; Monarch&quot; CMS </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">127,129</context>
+          <context context-type="linenumber">134,136</context>
         </context-group>
         <note priority="1" from="description">Scarlett and Monarch CMS</note>
       </trans-unit>
@@ -319,7 +319,7 @@
         <source> &quot;Scarlett &amp; Monarch&quot; is a company of commercial website development and hosting. Content management sytem of &quot;Scarlett &amp; Monarch&quot; is used for each and every website project of company. Each customer has their own requirements. CMS evolved with each new requirement. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">130,135</context>
+          <context context-type="linenumber">137,142</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS is used for</note>
       </trans-unit>
@@ -327,7 +327,7 @@
         <source> I developed back-end and front-end, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">140,144</context>
+          <context context-type="linenumber">147,151</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS what I did</note>
       </trans-unit>
@@ -335,7 +335,7 @@
         <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, which allows binding arbitrary properties to product. It allows bind arbitrary properties such as array of products, array of images, text, number, boolean, array of strings or even arbitrary structure if all the previous was not enough. API of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its&apos; structure with every new project. Order has standard properties such as full name and phone number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders&apos; content, adding, removing and modifying products. Orders&apos; sum recalculates automatically, including discounts. It also allows to notify client via SMS or email about order status. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">146,160</context>
+          <context context-type="linenumber">153,167</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS about</note>
       </trans-unit>
@@ -343,7 +343,7 @@
         <source> Trik is a pharmacy network from Krasnodar, Russian Federation. The website is an online shop + CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">188,191</context>
+          <context context-type="linenumber">198,201</context>
         </context-group>
         <note priority="1" from="description">Trik is</note>
       </trans-unit>
@@ -351,7 +351,7 @@
         <source> Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">193,200</context>
+          <context context-type="linenumber">203,210</context>
         </context-group>
         <note priority="1" from="description">Trik about</note>
       </trans-unit>
@@ -359,7 +359,7 @@
         <source> I developed back-end, 90% of front-end logic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">204,206</context>
+          <context context-type="linenumber">214,216</context>
         </context-group>
         <note priority="1" from="description">Trik what I did</note>
       </trans-unit>
@@ -367,7 +367,7 @@
         <source> Paxus is a company from Archangelsk, Russian Federation. It constructs and sells offroad vehicles, which can be customized depending on customer&apos;s needs. The website is an online shop + CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">244,248</context>
+          <context context-type="linenumber">257,261</context>
         </context-group>
         <note priority="1" from="description">Paxus is</note>
       </trans-unit>
@@ -375,7 +375,7 @@
         <source> Catalog includes product constructor where customer can customize vehicle parts such as engine, color, features, etc. Available customization for product can be assigned in CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">253,257</context>
+          <context context-type="linenumber">266,270</context>
         </context-group>
         <note priority="1" from="description">Paxus about</note>
       </trans-unit>
@@ -383,7 +383,7 @@
         <source> I developed back-end and Implemented most complex parts of front-end logic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">261,264</context>
+          <context context-type="linenumber">274,277</context>
         </context-group>
         <note priority="1" from="description">Paxus my responsibilities</note>
       </trans-unit>
@@ -391,7 +391,7 @@
         <source> Administration of Kemerovo, Russian Federation, ordered a web site to post relevent information related to business of Kemerovo city. The website has news lines, search, feedback and CMS to manage it all. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">301,305</context>
+          <context context-type="linenumber">317,322</context>
         </context-group>
         <note priority="1" from="description">Kemerovo is</note>
       </trans-unit>
@@ -399,7 +399,7 @@
         <source> I developed back-end. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/products.component.html</context>
-          <context context-type="linenumber">313,315</context>
+          <context context-type="linenumber">330,332</context>
         </context-group>
         <note priority="1" from="description">Kemerovo what i did</note>
       </trans-unit>

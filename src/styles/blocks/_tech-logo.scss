@@ -16,35 +16,35 @@
     width: 100%;
     height: auto;
 
-    &--angular {
+    &_angular {
       transform: scale(1.1);
     }
 
-    &--webpack {
+    &_webpack {
       transform: scale(1.3);
     }
 
-    &--ngrx {
+    &_ngrx {
       transform: scale(0.95);
     }
 
-    &--nodejs {
+    &_nodejs {
       transform: scale(0.8);
     }
 
-    &--typescript {
+    &_typescript {
       transform: scale(0.9);
     }
 
-    &--babel {
+    &_babel {
       transform: scale(0.9);
     }
 
-    &--gulp {
+    &_gulp {
       transform: scale(0.9);
     }
 
-    &--vue {
+    &_vue {
       transform: scale(1.2);
     }
   }

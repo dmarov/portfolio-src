@@ -15,11 +15,8 @@ $breakpoints: (
     @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
-  }
-
-  // If the key doesn't exist in the map
-  @else {
-    @warn "Invalid breakpoint `#{$breakpoint}`, available: #{map-keys($breakpoints)}";
+  } @else {
+    @error "Invalid breakpoint `#{$breakpoint}`";
   }
 }
 

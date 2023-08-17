@@ -19,7 +19,7 @@
     "prettier:fix": "prettier . --write",
     "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf && xliffmerge --profile xliffmerge.json ru-RU",
     "serve:prod": "http-server ./dist/portfolio",
-    "deploy": "npm run lint && npm run lint:styles && sh ./deploy.sh"
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "private": true,
   "dependencies": {

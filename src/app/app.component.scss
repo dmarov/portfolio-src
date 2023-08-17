@@ -1,1 +1,9 @@
-@import "../styles/app-layout";
+@import "blocks/app";
+@import "blocks/content-wrapper";
+@import "blocks/content";
+@import "blocks/footer";
+
+:host {
+  display: block;
+  flex-grow: 1;
+}

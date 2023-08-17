@@ -1,5 +1,5 @@
-@import "special/colors";
-@import "special/mixins";
+@import "../shared/colors";
+@import "../shared/mixins";
 
 .app {
   display: flex;
@@ -12,37 +12,6 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-  }
-
-  &__content-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-
-    &--no-extend {
-      flex-grow: 0;
-    }
-  }
-
-  &__content {
-    flex-grow: 1;
-    padding: 5px 4px;
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-    align-self: stretch;
-
-    @include respond-to("small") {
-      padding: 5px 10px;
-    }
-
-    @include respond-to("medium") {
-      padding: 10px 20px;
-    }
-
-    &_footer {
-      align-self: baseline;
-    }
   }
 
   &__header {

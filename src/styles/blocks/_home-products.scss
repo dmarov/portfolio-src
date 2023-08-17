@@ -1,4 +1,4 @@
-.main-projects {
+.home-products {
   --offset: 10px;
   --perline: 1;
 
@@ -17,8 +17,6 @@
   }
 
   &__item {
-    // TODO: make report to stylelint
-    // flex: 0 0 calc(100%/var(--perline) - 2 * var(--offset));
     flex: 0 0 calc(100% / var(--perline) - 2 * var(--offset));
     padding: var(--offset);
     display: flex;

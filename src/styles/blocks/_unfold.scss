@@ -4,7 +4,7 @@
   transition: opacity 0.5s ease-in, transform 0.5s ease-in;
   transform: translate(0, 0);
 
-  &--hidden {
+  &_hidden {
     opacity: 0;
   }
 }

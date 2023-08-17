@@ -1,2 +1,11 @@
-@import "../../../styles/not-found";
-@import "../../../styles/text-page";
+@import "blocks/not-found";
+@import "blocks/text-page";
+@import "blocks/content-wrapper";
+@import "blocks/content";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex-grow: 1;
+}

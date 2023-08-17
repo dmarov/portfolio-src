@@ -34,10 +34,11 @@ npm install {some package}
 
 ## TODO:
 
-- use component local styles ViewEncapsulation.None
+- remove sticky menu for small resolutions
+- change home image
 - add "This Website was made using..."
 - add "Voice Robots" project
-- change home image
+- use swiper for products on home page
 - update tech stack and rework home page
 - update "About me"
 - improve menu for desktop

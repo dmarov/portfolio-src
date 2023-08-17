@@ -1,0 +1,20 @@
+.content {
+  flex-grow: 1;
+  padding: 5px 4px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  align-self: stretch;
+
+  @include respond-to("small") {
+    padding: 5px 10px;
+  }
+
+  @include respond-to("medium") {
+    padding: 10px 20px;
+  }
+
+  &_footer {
+    align-self: baseline;
+  }
+}

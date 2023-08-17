@@ -1,6 +1,6 @@
-@import "special/mixins";
+@import "../shared/mixins";
 
-.page-home {
+.home {
   &__img-wrapper {
     padding-bottom: 20px;
   }

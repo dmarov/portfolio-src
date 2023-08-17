@@ -4,24 +4,25 @@ import {
   AfterViewInit,
   HostBinding,
   ChangeDetectionStrategy,
-  ViewEncapsulation,
 } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { InViewEffect } from "@/shared/utils/inview-effect";
-import { UnfoldEffect } from "@/shared/utils/unfold-effect";
+import { InViewEffect } from "@/app/shared/utils/inview-effect";
+import { UnfoldEffect } from "@/app/shared/utils/unfold-effect";
+import { RoutePath } from "@/app/models/route-path.enum";
 
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.scss"],
-  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [RouterModule],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @HostBinding("class")
-  public classes = "app__page page-main";
+  public classes = "app__page";
+
+  public routePath = RoutePath;
 
   private startDate = new Date("June 17, 2017 00:00:00");
 

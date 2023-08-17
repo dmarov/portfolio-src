@@ -1,21 +1,22 @@
 import { Routes } from "@angular/router";
+import { RoutePath } from "@/app/models/route-path.enum";
 
 export const routes: Routes = [
   {
-    path: "",
+    path: RoutePath.Home,
     loadComponent: () =>
       import("./home/home.component").then((mod) => mod.HomeComponent),
     pathMatch: "full",
   },
   {
-    path: "products",
+    path: RoutePath.Products,
     loadComponent: () =>
       import("./products/products.component").then(
         (mod) => mod.ProductsComponent,
       ),
   },
   {
-    path: "about-me",
+    path: RoutePath.AboutMe,
     loadComponent: () =>
       import("./about-me/about-me.component").then(
         (mod) => mod.AboutMeComponent,

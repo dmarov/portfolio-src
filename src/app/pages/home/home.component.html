@@ -1,277 +1,302 @@
-<section class="page-home__img-wrapper">
-  <div class="main-img"></div>
-</section>
+<div class="home">
+  <section class="home__img-wrapper">
+    <div class="home-img"></div>
+  </section>
 
-<div class="app__content-wrapper app__content-wrapper--no-extend">
-  <div class="app__content">
-    <article
-      class="main-title text-page text-page--theme--white unfold unfold--hidden inview inview--not"
-    >
-      <h1
-        i18n="welcome|Home page welcome@@BANNER_WELCOME"
-        class="main-title__text main-title__text--welcome"
+  <div class="content-wrapper content-wrapper_no-extend">
+    <div class="content">
+      <article
+        class="home-title text-page text-page_theme_white unfold unfold_hidden inview inview_not"
       >
-        Welcome!
-      </h1>
-      <h1
-        i18n="introduction@@BANNER_INTRODUCTION"
-        class="main-title__text main-title__text--primary"
-      >
-        My name is Dmitry, and this is my portfolio.
-      </h1>
-      <h2
-        i18n="who am i@@BANNER_WHO_AM_I"
-        class="main-title__text main-title__text--secondary"
-      >
-        I am software developer with over {{ years }} years of experience in web
-        development.
-      </h2>
-      <h2
-        i18n="my goals@@BANNER_MY_GOALS"
-        class="main-title__text main-title__text--secondary"
-      >
-        I'm interested in technology and how to use it to make life better.
-      </h2>
-    </article>
-  </div>
-</div>
-
-<div class="app__content-wrapper app__content-wrapper--no-extend">
-  <div class="app__content">
-    <article
-      class="text-page text-page--theme--green unfold unfold--hidden inview inview--not"
-    >
-      <h2 i18n="technology stack@@MY_TECHNOLOGY_STACK" class="text-page__title">
-        My Technology Stack
-      </h2>
-      <div class="page-home__tech tech-list">
-        <ul class="tech-list__items">
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--angular"
-                  src="assets/images/tech-logos/angular.svg"
-                  alt="Angular"
-                  title="Angular"
-                />
-              </div>
-            </div>
-          </li>
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--typescript"
-                  src="assets/images/tech-logos/typescript.svg"
-                  alt="Typescript"
-                  title="Typescript"
-                />
-              </div>
-            </div>
-          </li>
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--ngrx"
-                  src="assets/images/tech-logos/ngrx.svg"
-                  alt="NgRx"
-                  title="NgRx"
-                />
-              </div>
-            </div>
-          </li>
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--vue"
-                  src="assets/images/tech-logos/vue.png"
-                  alt="Vue"
-                  title="Vue"
-                />
-              </div>
-            </div>
-          </li>
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--nodejs"
-                  src="assets/images/tech-logos/nodejs.png"
-                  alt="Nodejs"
-                  title="Nodejs"
-                />
-              </div>
-            </div>
-          </li>
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--webpack"
-                  src="assets/images/tech-logos/webpack.svg"
-                  alt="Webpack"
-                  title="Webpack"
-                />
-              </div>
-            </div>
-          </li>
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--babel"
-                  src="assets/images/tech-logos/babel.svg"
-                  alt="Babel"
-                  title="Babel"
-                />
-              </div>
-            </div>
-          </li>
-          <li class="tech-list__item">
-            <div class="tech-logo">
-              <div class="tech-logo__img-wrapper">
-                <img
-                  class="tech-logo__img tech-logo__img--gulp"
-                  src="assets/images/tech-logos/gulp.svg"
-                  alt="Gulp"
-                  title="Gulp"
-                />
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </article>
-  </div>
-</div>
-<div class="app__content-wrapper app__content-wrapper--no-extend">
-  <div class="app__content">
-    <article
-      class="text-page text-page--theme--orange unfold unfold--hidden inview inview--not"
-    >
-      <h2 i18n="projects@@PRODUCTS" class="text-page__title">Products</h2>
-      <div class="main-projects">
-        <ul class="main-projects__items">
-          <li class="main-projects__item">
-            <a class="main-project" routerLink="/products" fragment="rivertv">
-              <div class="main-project__link">
-                <img
-                  class="main-project__img"
-                  alt="RiverTV"
-                  src="assets/images/project-thumbnails/t1/rivertv.png?v=1"
-                  srcset="
-                    assets/images/project-thumbnails/t2/rivertv.png?v=1 2x
-                  "
-                />
-              </div>
-              <div class="main-project__overlay">
-                <h4 class="main-project__overlay-title">
-                  RiverTV
-                  <ng-container i18n="website@@WEBSITE">Website</ng-container>
-                </h4>
-                <a
-                  i18n="about@@ABOUT"
-                  class="main-project__overlay-link"
-                  routerLink="/products"
-                  fragment="rivertv"
-                >
-                  About
-                </a>
-              </div>
-            </a>
-          </li>
-          <li class="main-projects__item">
-            <a class="main-project" routerLink="/products" fragment="vmedia">
-              <div class="main-project__link">
-                <img
-                  class="main-project__img"
-                  alt="VMedia"
-                  src="assets/images/project-thumbnails/t1/vmedia.png?v=1"
-                  srcset="assets/images/project-thumbnails/t2/vmedia.png?v=1 2x"
-                />
-              </div>
-              <div class="main-project__overlay">
-                <h4 class="main-project__overlay-title">
-                  VMedia
-                  <ng-container i18n="website@@WEBSITE">Website</ng-container>
-                </h4>
-                <a
-                  i18n="about@@ABOUT"
-                  class="main-project__overlay-link"
-                  routerLink="/products"
-                  fragment="project-vmedia"
-                >
-                  About
-                </a>
-              </div>
-            </a>
-          </li>
-          <li class="main-projects__item">
-            <a class="main-project" routerLink="/products" fragment="trik">
-              <div class="main-project__link">
-                <img
-                  class="main-project__img"
-                  alt="Trik"
-                  src="assets/images/project-thumbnails/t1/trik.png?v=1"
-                  srcset="assets/images/project-thumbnails/t2/trik.png?v=1 2x"
-                />
-              </div>
-              <div class="main-project__overlay">
-                <h4 class="main-project__overlay-title">
-                  Trik
-                  <ng-container i18n="website@@WEBSITE">Website</ng-container>
-                </h4>
-                <a
-                  i18n="about@@ABOUT"
-                  class="main-project__overlay-link"
-                  routerLink="/products"
-                  fragment="project-trik"
-                >
-                  About
-                </a>
-              </div>
-            </a>
-          </li>
-          <li class="main-projects__item">
-            <a class="main-project" routerLink="/products" fragment="paxus">
-              <div class="main-project__link">
-                <img
-                  class="main-project__img"
-                  alt="Paxus"
-                  src="assets/images/project-thumbnails/t1/paxus.png?v=1"
-                  srcset="assets/images/project-thumbnails/t2/paxus.png?v=1 2x"
-                />
-              </div>
-              <div class="main-project__overlay">
-                <h4 class="main-project__overlay-title">
-                  Paxus
-                  <ng-container i18n="website@@WEBSITE">Website</ng-container>
-                </h4>
-                <a
-                  i18n="about@@ABOUT"
-                  class="main-project__overlay-link"
-                  routerLink="/products"
-                  fragment="project-paxus"
-                >
-                  About
-                </a>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="page-home__projects-line text-page__p text-page__p--center">
-        <a
-          i18n="more products@@MORE_PRODUCTS"
-          class="text-page__a"
-          routerLink="/products"
+        <h1
+          i18n="welcome|Home page welcome@@BANNER_WELCOME"
+          class="home-title__text home-title__text_welcome"
         >
-          more products
-        </a>
-      </p>
-    </article>
+          Welcome!
+        </h1>
+        <h1
+          i18n="introduction@@BANNER_INTRODUCTION"
+          class="home-title__text home-title__text_primary"
+        >
+          My name is Dmitry, and this is my portfolio.
+        </h1>
+        <h2
+          i18n="who am i@@BANNER_WHO_AM_I"
+          class="home-title__text home-title__text_secondary"
+        >
+          I am software developer with over {{ years }} years of experience in
+          web development.
+        </h2>
+        <h2
+          i18n="my goals@@BANNER_MY_GOALS"
+          class="home-title__text home-title__text_secondary"
+        >
+          I'm interested in technology and how to use it to make life better.
+        </h2>
+      </article>
+    </div>
+  </div>
+
+  <div class="content-wrapper content-wrapper_no-extend">
+    <div class="content">
+      <article
+        class="text-page text-page_theme_green unfold unfold_hidden inview inview_not"
+      >
+        <h2
+          i18n="technology stack@@MY_TECHNOLOGY_STACK"
+          class="text-page__title"
+        >
+          My Technology Stack
+        </h2>
+        <div class="home__tech tech-list">
+          <ul class="tech-list__items">
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_angular"
+                    src="assets/images/tech-logos/angular.svg"
+                    alt="Angular"
+                    title="Angular"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_typescript"
+                    src="assets/images/tech-logos/typescript.svg"
+                    alt="Typescript"
+                    title="Typescript"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_ngrx"
+                    src="assets/images/tech-logos/ngrx.svg"
+                    alt="NgRx"
+                    title="NgRx"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_vue"
+                    src="assets/images/tech-logos/vue.png"
+                    alt="Vue"
+                    title="Vue"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_nodejs"
+                    src="assets/images/tech-logos/nodejs.png"
+                    alt="Nodejs"
+                    title="Nodejs"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_webpack"
+                    src="assets/images/tech-logos/webpack.svg"
+                    alt="Webpack"
+                    title="Webpack"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_babel"
+                    src="assets/images/tech-logos/babel.svg"
+                    alt="Babel"
+                    title="Babel"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="tech-list__item">
+              <div class="tech-logo">
+                <div class="tech-logo__img-wrapper">
+                  <img
+                    class="tech-logo__img tech-logo__img_gulp"
+                    src="assets/images/tech-logos/gulp.svg"
+                    alt="Gulp"
+                    title="Gulp"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="content-wrapper content-wrapper_no-extend">
+    <div class="content">
+      <article
+        class="text-page text-page_theme_orange unfold unfold_hidden inview inview_not"
+      >
+        <h2 i18n="projects@@PRODUCTS" class="text-page__title">Products</h2>
+        <div class="home-products">
+          <ul class="home-products__items">
+            <li class="home-products__item">
+              <a
+                class="home-product"
+                [routerLink]="routePath.Products"
+                fragment="rivertv"
+              >
+                <div class="home-product__link">
+                  <img
+                    class="home-product__img"
+                    alt="RiverTV"
+                    src="assets/images/project-thumbnails/t1/rivertv.png?v=1"
+                    srcset="
+                      assets/images/project-thumbnails/t2/rivertv.png?v=1 2x
+                    "
+                  />
+                </div>
+                <div class="home-product__overlay">
+                  <h4 class="home-product__overlay-title">
+                    RiverTV
+                    <ng-container i18n="website@@WEBSITE">Website</ng-container>
+                  </h4>
+                  <a
+                    i18n="about@@ABOUT"
+                    class="home-product__overlay-link"
+                    [routerLink]="routePath.Products"
+                    fragment="rivertv"
+                  >
+                    About
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="home-products__item">
+              <a
+                class="home-product"
+                [routerLink]="routePath.Products"
+                fragment="vmedia"
+              >
+                <div class="home-product__link">
+                  <img
+                    class="home-product__img"
+                    alt="VMedia"
+                    src="assets/images/project-thumbnails/t1/vmedia.png?v=1"
+                    srcset="
+                      assets/images/project-thumbnails/t2/vmedia.png?v=1 2x
+                    "
+                  />
+                </div>
+                <div class="home-product__overlay">
+                  <h4 class="home-product__overlay-title">
+                    VMedia
+                    <ng-container i18n="website@@WEBSITE">Website</ng-container>
+                  </h4>
+                  <a
+                    i18n="about@@ABOUT"
+                    class="home-product__overlay-link"
+                    [routerLink]="routePath.Products"
+                    fragment="project-vmedia"
+                  >
+                    About
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="home-products__item">
+              <a
+                class="home-product"
+                [routerLink]="routePath.Products"
+                fragment="trik"
+              >
+                <div class="home-product__link">
+                  <img
+                    class="home-product__img"
+                    alt="Trik"
+                    src="assets/images/project-thumbnails/t1/trik.png?v=1"
+                    srcset="assets/images/project-thumbnails/t2/trik.png?v=1 2x"
+                  />
+                </div>
+                <div class="home-product__overlay">
+                  <h4 class="home-product__overlay-title">
+                    Trik
+                    <ng-container i18n="website@@WEBSITE">Website</ng-container>
+                  </h4>
+                  <a
+                    i18n="about@@ABOUT"
+                    class="home-product__overlay-link"
+                    [routerLink]="routePath.Products"
+                    fragment="project-trik"
+                  >
+                    About
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="home-products__item">
+              <a
+                class="home-product"
+                [routerLink]="routePath.Products"
+                fragment="paxus"
+              >
+                <div class="home-product__link">
+                  <img
+                    class="home-product__img"
+                    alt="Paxus"
+                    src="assets/images/project-thumbnails/t1/paxus.png?v=1"
+                    srcset="
+                      assets/images/project-thumbnails/t2/paxus.png?v=1 2x
+                    "
+                  />
+                </div>
+                <div class="home-product__overlay">
+                  <h4 class="home-product__overlay-title">
+                    Paxus
+                    <ng-container i18n="website@@WEBSITE">Website</ng-container>
+                  </h4>
+                  <a
+                    i18n="about@@ABOUT"
+                    class="home-product__overlay-link"
+                    [routerLink]="routePath.Products"
+                    fragment="project-paxus"
+                  >
+                    About
+                  </a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="home__projects-line text-page__p text-page__p_center">
+          <a
+            i18n="more products@@MORE_PRODUCTS"
+            class="text-page__a"
+            [routerLink]="routePath.Products"
+          >
+            more products
+          </a>
+        </p>
+      </article>
+    </div>
   </div>
 </div>

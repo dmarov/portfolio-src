@@ -1,4 +1,4 @@
-@import "special/colors";
+@import "../shared/colors";
 
 .lang {
   list-style-type: none;
@@ -7,7 +7,7 @@
   padding-left: 0;
   display: flex;
 
-  &__entry--active {
+  &__entry_active {
     display: none;
   }
 

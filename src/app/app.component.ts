@@ -1,43 +1,20 @@
 import { CommonModule } from "@angular/common";
-import {
-  ChangeDetectionStrategy,
-  Component,
-  HostBinding,
-  OnInit,
-  ViewEncapsulation,
-} from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Router, NavigationEnd, RouterModule } from "@angular/router";
-import { Observable } from "rxjs";
-import { environment } from "src/environments/environment";
-import { LangComponent } from "./shared/components/lang/lang.component";
-import { MenuComponent } from "./shared/components/menu/menu.component";
-import { MenuService } from "./shared/services/menu.service";
+import { HeaderComponent } from "./shared/components/header/header.component";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
-  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [RouterModule, CommonModule, MenuComponent, LangComponent],
+  imports: [RouterModule, CommonModule, HeaderComponent],
 })
 export class AppComponent implements OnInit {
-  @HostBinding("class")
-  public classes = "app";
-
-  public isMultilang = environment.multilang;
-
-  public isMenuOpen$!: Observable<boolean>;
-
-  public constructor(
-    private readonly router: Router,
-    private readonly menuService: MenuService,
-  ) {}
+  public constructor(private readonly router: Router) {}
 
   public ngOnInit(): void {
-    this.isMenuOpen$ = this.menuService.menuVisible$;
-
     this.router.events.subscribe((s) => {
       if (s instanceof NavigationEnd) {
         const { hash } = window.location;
@@ -61,9 +38,5 @@ export class AppComponent implements OnInit {
         }
       }
     });
-  }
-
-  public toggleMenuOpen(): void {
-    this.menuService.toggle();
   }
 }

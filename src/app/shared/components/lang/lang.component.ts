@@ -4,19 +4,17 @@ import {
   Component,
   OnDestroy,
   OnInit,
-  ViewEncapsulation,
 } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
-import { languages } from "@/models/languages.const";
-import { I18nUrl } from "@/shared/utils/i18n-url/i18n-url.util";
+import { languages } from "@/app/models/languages.const";
+import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
 
 @Component({
   selector: "app-lang",
   templateUrl: "./lang.component.html",
   styleUrls: ["./lang.component.scss"],
-  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CommonModule],

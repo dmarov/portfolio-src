@@ -3,16 +3,14 @@ import {
   AfterViewInit,
   HostBinding,
   ChangeDetectionStrategy,
-  ViewEncapsulation,
 } from "@angular/core";
-import { InViewEffect } from "@/shared/utils/inview-effect";
-import { UnfoldEffect } from "@/shared/utils/unfold-effect";
+import { InViewEffect } from "@/app/shared/utils/inview-effect";
+import { UnfoldEffect } from "@/app/shared/utils/unfold-effect";
 
 @Component({
   selector: "app-products",
   templateUrl: "./products.component.html",
   styleUrls: ["./products.component.scss"],
-  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })

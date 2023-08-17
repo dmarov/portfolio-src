@@ -1,0 +1,9 @@
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
+  &_no-extend {
+    flex-grow: 0;
+  }
+}

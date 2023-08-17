@@ -7,7 +7,9 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": true,
+          "changeDetection": "OnPush"
         }
       },
       "root": "",
@@ -41,7 +43,10 @@
             "optimization": false,
             "namedChunks": true,
             "localize": true,
-            "i18nMissingTranslation": "error"
+            "i18nMissingTranslation": "error",
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles"]
+            }
           },
           "configurations": {
             "production": {

@@ -1,6 +1,6 @@
-@import "special/colors";
+@import "../shared/colors";
 
-.project-about {
+.product-about {
   &__visit-wrapper {
     margin: 20px 10px;
     display: flex;
@@ -32,8 +32,6 @@
       content: "";
       position: absolute;
       inset: 0;
-
-      // box-shadow: 0 0 50px rgba($col-black, 0.5);
       opacity: 0;
       transition: opacity 0.3s linear;
     }
