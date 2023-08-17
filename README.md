@@ -34,6 +34,7 @@ npm install {some package}
 
 ## TODO:
 
+- use component local styles ViewEncapsulation.None
 - add "This Website was made using..."
 - add "Voice Robots" project
 - change home image
@@ -43,6 +44,5 @@ npm install {some package}
 - improve design
 - google analytics
 - add jest unit tests
-- use component local styles ViewEncapsulation.None
 - add cypress tests
 - add deployment pipeline

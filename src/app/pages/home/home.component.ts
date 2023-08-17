@@ -4,6 +4,7 @@ import {
   AfterViewInit,
   HostBinding,
   ChangeDetectionStrategy,
+  ViewEncapsulation,
 } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { InViewEffect } from "@/shared/utils/inview-effect";
@@ -12,6 +13,10 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
+  styleUrls: [
+    './home.component.scss',
+  ],
+  encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [

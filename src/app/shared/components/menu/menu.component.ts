@@ -3,6 +3,7 @@ import {
   OnInit,
   Input,
   ChangeDetectionStrategy,
+  ViewEncapsulation,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
@@ -13,6 +14,10 @@ import { height } from "@/shared/animations/height";
 @Component({
   selector: "app-menu",
   templateUrl: "./menu.component.html",
+  styleUrls: [
+    './menu.component.scss',
+  ],
+  encapsulation: ViewEncapsulation.Emulated,
   animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
