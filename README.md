@@ -34,7 +34,6 @@ npm install {some package}
 
 ## TODO:
 
-- set russian as default language
 - add "This Website was made using..."
 - add "Voice Robots" project
 - change home image
