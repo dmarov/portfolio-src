@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
+    "test": "ng test",
     "start": "ng serve",
     "start:en": "ng serve --configuration=en --open",
     "start:ru": "ng serve --configuration=ru --open",
