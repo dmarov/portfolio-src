@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import {
   ChangeDetectionStrategy,
   Component,
+  HostBinding,
   OnInit,
   ViewEncapsulation,
 } from "@angular/core";
@@ -22,6 +23,9 @@ import { MenuService } from "./shared/services/menu.service";
   imports: [RouterModule, CommonModule, MenuComponent, LangComponent],
 })
 export class AppComponent implements OnInit {
+  @HostBinding("class")
+  public classes = "app";
+
   public isMultilang = environment.multilang;
 
   public isMenuOpen$!: Observable<boolean>;

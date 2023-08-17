@@ -17,5 +17,5 @@ import { RouterModule } from "@angular/router";
 })
 export class NotFoundComponent {
   @HostBinding("class")
-  public class = "app-layout__page";
+  public class = "app__page";
 }

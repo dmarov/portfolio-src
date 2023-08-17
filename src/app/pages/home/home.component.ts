@@ -21,7 +21,7 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @HostBinding("class")
-  public classes = "app-layout__page page-main";
+  public classes = "app__page page-main";
 
   private startDate = new Date("June 17, 2017 00:00:00");
 
