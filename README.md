@@ -34,14 +34,16 @@ npm install {some package}
 
 ## TODO:
 
+- set russian as default language
 - add "This Website was made using..."
 - add "Voice Robots" project
+- change home image
 - update tech stack and rework home page
 - update "About me"
-- change home image
 - improve menu for desktop
 - improve design
 - google analytics
 - add jest unit tests
+- use component local styles ViewEncapsulation.None
 - add cypress tests
 - add deployment pipeline
