@@ -1,5 +1,10 @@
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  ViewEncapsulation,
+} from "@angular/core";
 import { Router, NavigationEnd, RouterModule } from "@angular/router";
 import { Observable } from "rxjs";
 import { environment } from "src/environments/environment";
@@ -10,18 +15,11 @@ import { MenuService } from "./shared/services/menu.service";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: [
-    './app.component.scss',
-  ],
+  styleUrls: ["./app.component.scss"],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [
-    RouterModule,
-    CommonModule,
-    MenuComponent,
-    LangComponent,
-  ],
+  imports: [RouterModule, CommonModule, MenuComponent, LangComponent],
 })
 export class AppComponent implements OnInit {
   public isMultilang = environment.multilang;
