@@ -13,15 +13,11 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
-  styleUrls: [
-    './home.component.scss',
-  ],
+  styleUrls: ["./home.component.scss"],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [
-    RouterModule,
-  ],
+  imports: [RouterModule],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @HostBinding("class")

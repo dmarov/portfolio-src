@@ -11,9 +11,7 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 @Component({
   selector: "app-products",
   templateUrl: "./products.component.html",
-  styleUrls: [
-    './products.component.scss',
-  ],
+  styleUrls: ["./products.component.scss"],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,

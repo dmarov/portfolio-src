@@ -1,6 +1,6 @@
-import { I18nUrl } from './i18n-url.util';
+import { I18nUrl } from "./i18n-url.util";
 
-describe('I18nUrl', () => {
+describe("I18nUrl", () => {
   let langUrl: I18nUrl;
 
   beforeEach(() => {
@@ -8,18 +8,18 @@ describe('I18nUrl', () => {
   });
 
   it('should map "/en" to "/"', () => {
-    const fullPath = '/en';
+    const fullPath = "/en";
 
     const pagePath = langUrl.getPagePath(fullPath);
 
-    expect(pagePath).toEqual('/');
+    expect(pagePath).toEqual("/");
   });
 
   it('should map "/en/products" to "/products"', () => {
-    const fullPath = '/en/products';
+    const fullPath = "/en/products";
 
     const pagePath = langUrl.getPagePath(fullPath);
 
-    expect(pagePath).toEqual('/products');
+    expect(pagePath).toEqual("/products");
   });
 });

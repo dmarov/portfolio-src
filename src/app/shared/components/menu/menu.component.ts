@@ -14,25 +14,18 @@ import { height } from "@/shared/animations/height";
 @Component({
   selector: "app-menu",
   templateUrl: "./menu.component.html",
-  styleUrls: [
-    './menu.component.scss',
-  ],
+  styleUrls: ["./menu.component.scss"],
   encapsulation: ViewEncapsulation.Emulated,
   animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-  ],
+  imports: [CommonModule, RouterModule],
 })
 export class MenuComponent implements OnInit {
   @Input()
   public isMenuOpen$!: Observable<boolean>;
 
-  public constructor(
-    private readonly menuService: MenuService,
-  ) {}
+  public constructor(private readonly menuService: MenuService) {}
 
   public ngOnInit(): void {
     this.isMenuOpen$ = this.menuService.menuVisible$;

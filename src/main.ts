@@ -15,8 +15,6 @@ bootstrapApplication(AppComponent, {
   providers: [
     MenuService,
     provideRouter(routes),
-    importProvidersFrom([
-      BrowserAnimationsModule,
-    ]),
+    importProvidersFrom([BrowserAnimationsModule]),
   ],
 });

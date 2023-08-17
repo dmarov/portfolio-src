@@ -16,17 +16,11 @@ import { I18nUrl } from "@/shared/utils/i18n-url/i18n-url.util";
   selector: "app-lang",
   templateUrl: "./lang.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  styleUrls: [
-    './lang.component.scss',
-  ],
+  styleUrls: ["./lang.component.scss"],
   encapsulation: ViewEncapsulation.Emulated,
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
-  providers: [
-    I18nUrl,
-  ]
+  imports: [CommonModule],
+  providers: [I18nUrl],
 })
 export class LangComponent implements OnInit, OnDestroy {
   public languages = languages;

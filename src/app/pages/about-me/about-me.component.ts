@@ -11,9 +11,7 @@ import { UnfoldEffect } from "@/shared/utils/unfold-effect";
 @Component({
   selector: "app-about-me",
   templateUrl: "./about-me.component.html",
-  styleUrls: [
-    './about-me.component.scss',
-  ],
+  styleUrls: ["./about-me.component.scss"],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
