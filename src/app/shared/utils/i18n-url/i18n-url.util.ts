@@ -1,9 +1,10 @@
 export class I18nUrl {
-  public constructor(
-    private readonly langs: ReadonlyArray<string>,
-  ) { }
-
   public getPagePath(fullPath: string): string {
-    return fullPath;
+    const pos = fullPath.replace(/^\//, '').indexOf('/');
+    if (pos === -1 || pos === fullPath.length - 1) {
+      return '/';
+    }
+
+    return fullPath.substring(pos + 1, fullPath.length);
   }
 }
