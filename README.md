@@ -34,7 +34,6 @@ npm install {some package}
 
 ## TODO:
 
-- fix language switch
 - add "This Website was made using..."
 - add "Voice Robots" project
 - update tech stack and rework home page

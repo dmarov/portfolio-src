@@ -1,5 +1,6 @@
 import {
   ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   OnDestroy,
   OnInit,
@@ -7,8 +8,8 @@ import {
 import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
-import { escapeRegexp } from "@/shared/utils/escape-regexp.util";
 import { languages } from "@/models/languages.const";
+import { I18nUrl } from "@/shared/utils/i18n-url/i18n-url.util";
 
 @Component({
   selector: "app-lang",
@@ -18,6 +19,9 @@ import { languages } from "@/models/languages.const";
   imports: [
     CommonModule,
   ],
+  providers: [
+    I18nUrl,
+  ]
 })
 export class LangComponent implements OnInit, OnDestroy {
   public languages = languages;
@@ -34,6 +38,8 @@ export class LangComponent implements OnInit, OnDestroy {
 
   public constructor(
     private readonly router: Router,
+    private readonly cdr: ChangeDetectorRef,
+    private readonly i18nUrl: I18nUrl,
   ) {}
 
   public ngOnInit(): void {
@@ -49,10 +55,8 @@ export class LangComponent implements OnInit, OnDestroy {
             return;
           }
 
-          this.path = relPath.replace(
-            new RegExp(`^${escapeRegexp(this.activeLang.url)}`),
-            "",
-          );
+          this.path = this.i18nUrl.getPagePath(relPath);
+          this.cdr.detectChanges();
         }
       }),
     );
