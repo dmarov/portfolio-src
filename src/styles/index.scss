@@ -17,3 +17,23 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+a {
+  transition: color 100ms linear;
+  text-decoration: none;
+}
+
+a,
+a:link,
+a:visited {
+  color: $col-link;
+}
+
+a:hover {
+  color: $col-link-hover;
+  text-decoration: underline;
+}
+
+a:active {
+  color: $col-link-active;
+}

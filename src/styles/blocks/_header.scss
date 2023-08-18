@@ -3,7 +3,6 @@
 
 .header {
   display: flex;
-  padding: 5px;
   color: $col-black;
   transition: background-color linear 0.3s;
   border-bottom: $col-grey 3px solid;
@@ -13,15 +12,11 @@
     background-color: $col-grey;
   }
 
-  @include respond-to("small") {
-    padding: 10px;
-  }
-
   &__content {
     flex-grow: 1;
     position: relative;
     display: flex;
-    align-items: top;
+    align-items: flex-start;
   }
 
   &__menu {
