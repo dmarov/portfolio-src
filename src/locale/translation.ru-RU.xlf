@@ -7,7 +7,7 @@
         <target> Главная </target>
         <note priority="1" from="description">link to land on home page</note>
         <note priority="1" from="meaning">go to home page</note>
-        
+
         <note priority="1" from="description">Home page of website</note>
         <note priority="1" from="meaning">home page</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.html</context><context context-type="linenumber">23</context></context-group></trans-unit>
@@ -16,275 +16,275 @@
         <target> Продукты </target>
         <note priority="1" from="description">link to land on projects page</note>
         <note priority="1" from="meaning">go to projects page</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.html</context><context context-type="linenumber">46</context></context-group></trans-unit>
       <trans-unit id="ABOUT_ME_PAGE_LINK" datatype="html">
         <source> About Me </source>
         <target> Обо мне </target>
         <note priority="1" from="description">link to land on about me page</note>
         <note priority="1" from="meaning">go to about me page</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.html</context><context context-type="linenumber">69</context></context-group></trans-unit>
       <trans-unit id="CAREER_PAGE_HEADER" datatype="html">
         <source> Career </source>
         <target> Карьера </target>
         <note priority="1" from="description">carier page header</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">10</context></context-group></trans-unit>
       <trans-unit id="CAREER_BEGINNING" datatype="html">
         <source> In order to start my career as a software developer I've got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>NARFU "Applied Mathematics and Computer Science"<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. At that time I participated in math and programming olympiads. As my base programming language I regarded <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> but also I learned and worked with C, Java, Python, Assembly. I've graduated in 2017. </source>
         <target> Перед тем как начать свою карьеру разработчика я получил высшее образование по специальности <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>"Прикладная математика и информатика"<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> в САФУ. В то время я активно учавствовал в олимпиадах по программированию. Своим основным языком программирования я считал <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> но, также, изучал другие языки, такие как C, Java, Python, Assembly. Я закончил университет в 2017. </target>
         <note priority="1" from="description">career beginning</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">13</context></context-group></trans-unit>
       <trans-unit id="CAREER_BEGINNING_COMMERCIAL" datatype="html">
         <source> Short after that I've started my career as backend developer. It was my first experience of commercial software development and that's when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </source>
         <target> Затем я начал свою карьеру в качестве бэк-энд разработчика. Это был мой первый опыт коммерческой разработки программного обеспечения и тогда я ознакомился с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, а так же с фронт-энд технологиями, такими как <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </target>
         <note priority="1" from="description">career beginning commercial</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">26</context></context-group></trans-unit>
       <trans-unit id="CARRIER_FRONTEND_FRAMEWORK" datatype="html">
         <source> The time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That's when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> framework which payed out later. </source>
         <target> Вскоре настало время когда одного Javascript стало не достаточно для того чтобы реализовывать сложные решения эффективным способом. Тогда я принял решение изучить фреймворк <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, что оправдало себя позже. </target>
         <note priority="1" from="description">career frontend framework</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">37</context></context-group></trans-unit>
       <trans-unit id="CAREER_INFRASTRUCTURE" datatype="html">
         <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> In order to resolve some of existed problems I've implemented microservices. There are some of them: </source>
         <target> Дальнейшее развитие приводило к необходимости решать более сложные проблемы, относящиеся к монолитной легаси инфраструктуре, которую было сложно поддерживать. Имея опыт использования <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> для решения существующих проблем я реализовывал микросервисы. Вот некоторые из них: </target>
         <note priority="1" from="description">career infrastructure</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">46</context></context-group></trans-unit>
       <trans-unit id="CAREER_MICRO_SERVICES" datatype="html">
         <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to send SMS notifications using GSM gateway <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to convert HTML page to PDF (useful for printing invoices, and not just that) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to generate JWT token pairs (useful for authorization) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></source>
         <target><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>шлюз для отправки SMS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для отправки SMS сообщений с использованием GSM модема <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PDF генератор<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для конвертации HTML страницы в PDF (полезно для печати инвойсов и не только) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>JWT генератор<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для генерации пар JWT токенов (используются для авторизации) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></target>
         <note priority="1" from="description">career micro services</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">54</context></context-group></trans-unit>
       <trans-unit id="CAREER_SERVICES_USEFUL" datatype="html">
         <source> These services was very useful for each new website. </source>
         <target> Эти сервисы были полезны и использовались при последующей разработке веб-сайтов. </target>
         <note priority="1" from="description">career servies useful</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">71</context></context-group></trans-unit>
       <trans-unit id="CAREER_ADMINISTERING" datatype="html">
         <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> operating system, so it was time to apply this knowledge in practice. </source>
         <target> Так как каждый сервис требовал изолированного окружения, то администрирование требовало значительных затрат и усилий. Администрирование также было моей обязанностью. У меня уже было достаточно знаний об операционной системе <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, поэтому настало время чтобы применить эти знания на практике. </target>
         <note priority="1" from="description">career administering</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">78</context></context-group></trans-unit>
       <trans-unit id="CAREER_FRONTEND" datatype="html">
         <source> Then I decided to specialize in front-end and move to big projects. That's when I've learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing UI test, pixel perfect markup, cross browser development, accessibility - this is what I'm most focused on at work. </source>
         <target> Затем я решил специализироваться на фронт-энде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> которые стали частью моего основного технологического стека до настоящего времени. Такие аспекты как оптимизация для поисковых движков (SEO), реализация end-to-end тестов, вёрстка с точностью до пикселя (pixel perfect), кросс-браузерная разработка, досупность (accessibility) - на этом я сосредоточен во время работы. </target>
         <note priority="1" from="description">career frontend</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">85</context></context-group></trans-unit>
       <trans-unit id="BANNER_WELCOME" datatype="html">
         <source> Welcome! </source>
         <target> Добро пожаловать! </target>
         <note priority="1" from="description">Home page welcome</note>
         <note priority="1" from="meaning">welcome</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">14</context></context-group></trans-unit>
       <trans-unit id="BANNER_INTRODUCTION" datatype="html">
         <source> My name is Dmitry, and this is my portfolio. </source>
         <target> Меня зовут Дмитрий, и это моё портфолио. </target>
         <note priority="1" from="description">introduction</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit>
       <trans-unit id="BANNER_WHO_AM_I" datatype="html">
         <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> years of experience in web development. </source>
         <target> Я разработчик с более чем <x id="INTERPOLATION" equiv-text="{{ years }}"/> годами опыта веб разработки. </target>
         <note priority="1" from="description">who am i</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">26</context></context-group></trans-unit>
       <trans-unit id="BANNER_MY_GOALS" datatype="html">
         <source> I'm interested in technology and how to use it to make life better. </source>
-        <target> Я заинтересован в технолигиях и как их использовать чтобы сделать жизнь лучше. </target>
+        <target> Я интересуюсь технолигиями и как их использовать чтобы сделать жизнь лучше. </target>
         <note priority="1" from="description">my goals</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">33</context></context-group></trans-unit>
       <trans-unit id="MY_TECHNOLOGY_STACK" datatype="html">
         <source> My Technology Stack </source>
         <target> Мой технологический стек </target>
         <note priority="1" from="description">technology stack</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">48</context></context-group></trans-unit>
       <trans-unit id="PRODUCTS" datatype="html">
         <source>Products</source>
         <target>Продукты</target>
         <note priority="1" from="description">projects</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">159</context></context-group></trans-unit>
       <trans-unit id="WEBSITE" datatype="html">
         <source>Website</source>
         <target>Веб-сайт</target>
         <note priority="1" from="description">website</note>
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">177</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">205</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">231</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">259</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">11</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">72</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">196</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">255</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">315</context></context-group></trans-unit>
       <trans-unit id="ABOUT" datatype="html">
         <source> About </source>
         <target> Обо мне </target>
         <note priority="1" from="description">about</note>
-        
-        
-        
-        
+
+
+
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">184</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">212</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">238</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">266</context></context-group></trans-unit>
       <trans-unit id="MORE_PRODUCTS" datatype="html">
         <source> more products </source>
         <target> все продукты </target>
         <note priority="1" from="description">more products</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">279</context></context-group></trans-unit>
       <trans-unit id="PAGE_DOES_NOT_EXIST" datatype="html">
         <source> This page doesn't exist </source>
         <target> Этой страницы не существует </target>
         <note priority="1" from="description">this page doesn't exist</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context><context context-type="linenumber">7</context></context-group></trans-unit>
       <trans-unit id="RETURN_TO_HOME_PAGE" datatype="html">
         <source> Return to Home page </source>
         <target> Вернуться на главную страницу </target>
         <note priority="1" from="description">return to home page</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context><context context-type="linenumber">16</context></context-group></trans-unit>
       <trans-unit id="PROJECT_RIVERTV_IS" datatype="html">
         <source> RiverTV is a video streaming service provided by RiverTV Inc. from Canada. </source>
         <target> RiverTV - это стриминговый сервис, предоставляемый RiverTV Inc. в Канаде. </target>
         <note priority="1" from="description">RiverTV is</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">13</context></context-group></trans-unit>
       <trans-unit id="PROJECT_RIVERTV_DOES" datatype="html">
         <source> RiverTV offers streaming of live channels and on-demand content. The website is an online shop and streaming web app where RiverTV package and addons can be acquired, managed and watched. </source>
         <target> RiverTV предоставляет стриминг лайв каналов и on-demand контент. Вебсайт это онлайн магазин и приложение для стриминга где пакет RiverTV и аддоны можно приобрести, управлять ими и смотреть. </target>
         <note priority="1" from="description">RiverTV does</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">17</context></context-group></trans-unit>
       <trans-unit id="PROJECT_RIVERTV_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed front-end part. </source>
         <target> Я разрабатывал фронтенд часть. </target>
         <note priority="1" from="description">RiverTV what i did</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">29</context></context-group></trans-unit>
       <trans-unit id="TECHNOLOGIES_I_USED" datatype="html">
         <source> Technologies I used: </source>
         <target> Технологии которые я использовал: </target>
         <note priority="1" from="description">technologies I used</note>
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">35</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">96</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">171</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">220</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">281</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">336</context></context-group></trans-unit>
       <trans-unit id="VISIT" datatype="html">
         <source> Visit </source>
         <target> Посетить </target>
         <note priority="1" from="description">visit</note>
-        
-        
-        
-        
-        
+
+
+
+
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">54</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">115</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">237</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">297</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">351</context></context-group></trans-unit>
       <trans-unit id="PROJECT_VMEDIA_IS" datatype="html">
         <source> VMedia is an internet service provider from Canada. </source>
         <target> VMedia это провайдер интернета в Канаде. </target>
         <note priority="1" from="description">VMedia is</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">74</context></context-group></trans-unit>
       <trans-unit id="PROJECT_VMEDIA_DOES" datatype="html">
         <source> Apart from internet it also offers services such as cable-free TV, home phone and home security. The website is online shop where such services can acquired and managed. </source>
         <target> Кроме интернета также предоставляет сервисы такие как безпроводное TV, домашняя телефония и системы охраны дома. Вебсайт представляет собой онлайн магазин где эти сервисы можно купить и управлять ими. </target>
         <note priority="1" from="description">VMedia does</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">77</context></context-group></trans-unit>
       <trans-unit id="PROJECT_VMEDIA_MY_RESPONSIBILITIES" datatype="html">
         <source> I refactored front-end, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
         <target> Я рефакторил фронтенд код, реализовывал новые фичи, исправлял баги, обновлял легаси код. </target>
         <note priority="1" from="description">VMedia what I did</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">89</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_IS" datatype="html">
         <source> "Scarlett &amp; Monarch" CMS </source>
         <target> CMS "Скарлетт и Монарх" </target>
         <note priority="1" from="description">Scarlett and Monarch CMS</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">134</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_DOES" datatype="html">
         <source> "Scarlett &amp; Monarch" is a company of commercial website development and hosting. Content management sytem of "Scarlett &amp; Monarch" is used for each and every website project of company. Each customer has their own requirements. CMS evolved with each new requirement. </source>
         <target> "Скарлетт и Монарх" это компания по коммерческой веб разработке и хостингу. Система управления контентом "Скарлетт и монарх" используется для каждого веб сайта компании. Каждый заказчик имеет свои требования. Система управления контентом эволюционировала с каждым новым требованием. </target>
         <note priority="1" from="description">S&amp;M CMS is used for</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">137</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed back-end and front-end, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </source>
         <target> Я разрабатывал бэкенд и фронтенд, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>управление заказами<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </target>
         <note priority="1" from="description">S&amp;M CMS what I did</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">147</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_ABOUT" datatype="html">
         <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, which allows binding arbitrary properties to product. It allows bind arbitrary properties such as array of products, array of images, text, number, boolean, array of strings or even arbitrary structure if all the previous was not enough. API of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its' structure with every new project. Order has standard properties such as full name and phone number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders' content, adding, removing and modifying products. Orders' sum recalculates automatically, including discounts. It also allows to notify client via SMS or email about order status. </source>
         <target> Один из самых продвинутых модулей это <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, который позволяет привязать произвольные свойства к продукту, такие как массив продуктов, массив картинок, текст, числа, булев тип, массив строк или даже произвольную структуру если ни один из предыдущих вариантов не подошёл. API веб сайта позволяет проводить умный поиск по этим свойствам. Модуль обработки заказов позволяет создавать заказы с гибкой структурой, которые меняют свою структуру с каждым новым проектом. У заказа есть стандартные свойства, такие как имя и номер телефона клиента, но также может иметь другие свойства которые будут отображены с возможностью редактирования. Этот модуль также позволяет редактировать содержимое заказов, добавлять, удалять и модифицировать товары. Сумма заказа пересчитывается автоматически с учётом скидок. Также модуль позволяет уведомить клиента о статусе заказа по SMS или через email. </target>
         <note priority="1" from="description">S&amp;M CMS about</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">153</context></context-group></trans-unit>
       <trans-unit id="PROJECT_TRIK_IS" datatype="html">
         <source> Trik is a pharmacy network from Krasnodar, Russian Federation. The website is an online shop + CMS. </source>
         <target> "Трик" это сеть аптек из Краснодара, Российская Федерация. Вебсайт представляет собой онлайн магазин + CMS. </target>
         <note priority="1" from="description">Trik is</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">198</context></context-group></trans-unit>
       <trans-unit id="PROJECT_TRIK_DOES" datatype="html">
         <source> Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </source>
         <target> Сети "Трик" нужен был онлайн магазин, который обслуживал бы 5 аптек компании. Это требовало создания кастомной логики каталога, корзины и заказов. Их сайт позволяет совершать умный поиск по динамически назначаемым свойствам, тегам, и любому логическому выражинию которое может быть составлено из свойств и тегов. Результаты поиска могут быть отфильтрованы по динамически назначаемым свойствам. </target>
         <note priority="1" from="description">Trik about</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">203</context></context-group></trans-unit>
       <trans-unit id="PROJECT_TRIK_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed back-end, 90% of front-end logic. </source>
         <target> Я разрабатывал бэкенд, 90% логики фронтенда. </target>
         <note priority="1" from="description">Trik what I did</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">214</context></context-group></trans-unit>
       <trans-unit id="PROJECT_PAXUS_IS" datatype="html">
         <source> Paxus is a company from Archangelsk, Russian Federation. It constructs and sells offroad vehicles, which can be customized depending on customer's needs. The website is an online shop + CMS. </source>
         <target> Paxus это компания из Архангельска, Российская федерация. Создаёт и продаёт вездеходы и другие транспортные средства для внедорожья, которые могут быть кастомизированы в зависимости от требований покупателя. Вебсайт это онлайн магазин + CMS. </target>
         <note priority="1" from="description">Paxus is</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">257</context></context-group></trans-unit>
       <trans-unit id="PROJECT_PAXUS_DOES" datatype="html">
         <source> Catalog includes product constructor where customer can customize vehicle parts such as engine, color, features, etc. Available customization for product can be assigned in CMS. </source>
         <target> Каталог включает в себя редактор товара в котором покупатель может кастомизировать части транспрортного средства, такие как двигатель, цвет, дополнения, и.т.д. Допустимая кастомизация продукта может быть назначена в CMS. </target>
         <note priority="1" from="description">Paxus about</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">266</context></context-group></trans-unit>
       <trans-unit id="PROJECT_PAXUS_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed back-end and Implemented most complex parts of front-end logic. </source>
         <target> Я разрабатывал бэкенд и реализовывал наиболее сложную часть фронтенд логики. </target>
         <note priority="1" from="description">Paxus my responsibilities</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">274</context></context-group></trans-unit>
       <trans-unit id="PROJECT_KEMEROVO_IS" datatype="html">
         <source> Administration of Kemerovo, Russian Federation, ordered a web site to post relevent information related to business of Kemerovo city. The website has news lines, search, feedback and CMS to manage it all. </source>
         <target> Администрация Кемерово, Российская Федерация, заказали вебсайт для публикования релевантной информации относящейся к бизнесу в Кемерово. Вебсайт состоит из лент новостей, поиска, обратной связи и CMS чтобы управлять всем этим. </target>
         <note priority="1" from="description">Kemerovo is</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">317</context></context-group></trans-unit>
       <trans-unit id="PROJECT_KEMEROVO_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed back-end. </source>
         <target> Я разрабатывал бэк-енд. </target>
         <note priority="1" from="description">Kemerovo what i did</note>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/products.component.html</context><context context-type="linenumber">330</context></context-group></trans-unit>
     </body>
   </file>
