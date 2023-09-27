@@ -34,10 +34,11 @@ npm install {some package}
 
 ## TODO:
 
+- add "Voice Robots" project
+- add "This Website was made using..."
+- add skills (bdd, patterns, refactoring)
 - remove sticky menu for small resolutions
 - change home image
-- add "This Website was made using..."
-- add "Voice Robots" project
 - use swiper for products on home page
 - update tech stack and rework home page
 - update "About me"
