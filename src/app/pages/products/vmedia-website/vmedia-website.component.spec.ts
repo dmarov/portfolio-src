@@ -1,18 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { VmediaWebsiteComponent } from './vmedia-website.component';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { VmediaWebsiteComponent } from "./vmedia-website.component";
 
 @Component({
-  selector: 'app-vmedia-website-test',
+  selector: "app-vmedia-website-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-vmedia-website></app-vmedia-website>`
+  template: `<app-vmedia-website></app-vmedia-website>`,
 })
-export class VmediaWebsiteTestComponent {
+export class VmediaWebsiteTestComponent {}
 
-}
-
-describe('VmediaWebsiteComponent', () => {
+describe("VmediaWebsiteComponent", () => {
   let fixture: ComponentFixture<VmediaWebsiteComponent>;
 
   beforeEach(() => {
@@ -23,9 +21,10 @@ describe('VmediaWebsiteComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should have test attribute', () => {
-    const input = document.querySelector('[data-test="vmedia-website"]') as HTMLInputElement;
+  it("should have test attribute", () => {
+    const input = document.querySelector(
+      '[data-test="vmedia-website"]',
+    ) as HTMLInputElement;
     expect(input).toBeTruthy();
   });
 });
-

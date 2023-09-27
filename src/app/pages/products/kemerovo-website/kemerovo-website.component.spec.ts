@@ -1,18 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { KemerovoWebsiteComponent } from './kemerovo-website.component';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { KemerovoWebsiteComponent } from "./kemerovo-website.component";
 
 @Component({
-  selector: 'app-kemerovo-website-test',
+  selector: "app-kemerovo-website-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-kemerovo-website></app-kemerovo-website>`
+  template: `<app-kemerovo-website></app-kemerovo-website>`,
 })
-export class KemerovoWebsiteTestComponent {
+export class KemerovoWebsiteTestComponent {}
 
-}
-
-describe('KemerovoWebsiteComponent', () => {
+describe("KemerovoWebsiteComponent", () => {
   let fixture: ComponentFixture<KemerovoWebsiteComponent>;
 
   beforeEach(() => {
@@ -23,9 +21,10 @@ describe('KemerovoWebsiteComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should have test attribute', () => {
-    const input = document.querySelector('[data-test="kemerovo-website"]') as HTMLInputElement;
+  it("should have test attribute", () => {
+    const input = document.querySelector(
+      '[data-test="kemerovo-website"]',
+    ) as HTMLInputElement;
     expect(input).toBeTruthy();
   });
 });
-

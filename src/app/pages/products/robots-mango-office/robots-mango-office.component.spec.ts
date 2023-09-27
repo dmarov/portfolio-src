@@ -1,18 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RobotsMangoOfficeComponent } from './robots-mango-office.component';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { RobotsMangoOfficeComponent } from "./robots-mango-office.component";
 
 @Component({
-  selector: 'app-counter-input-test',
+  selector: "app-counter-input-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-robots-mango-office></app-robots-mango-office>`
+  template: `<app-robots-mango-office></app-robots-mango-office>`,
 })
-export class RobotsMangoOfficeTestComponent {
+export class RobotsMangoOfficeTestComponent {}
 
-}
-
-describe('RobotsMangoOfficeComponent', () => {
+describe("RobotsMangoOfficeComponent", () => {
   let fixture: ComponentFixture<RobotsMangoOfficeComponent>;
 
   beforeEach(() => {
@@ -23,9 +21,10 @@ describe('RobotsMangoOfficeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should have test attribute', () => {
-    const input = document.querySelector('[data-test="robots-mango-office"]') as HTMLInputElement;
+  it("should have test attribute", () => {
+    const input = document.querySelector(
+      '[data-test="robots-mango-office"]',
+    ) as HTMLInputElement;
     expect(input).toBeTruthy();
   });
 });
-
