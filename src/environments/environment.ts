@@ -7,6 +7,9 @@ import { AppEnvironment } from "@/app/models/app-environment.interface";
 export const environment: AppEnvironment = {
   production: false,
   multilang: false,
+  features: {
+    robotsMangoOfficeEnabled: true,
+  },
 };
 
 /*
