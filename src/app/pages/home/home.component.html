@@ -163,6 +163,34 @@
               <a
                 class="home-product"
                 [routerLink]="routePath.Products"
+                fragment="robots"
+              >
+                <div class="home-product__link">
+                  <img
+                    class="home-product__img"
+                    alt="Robots"
+                    src="assets/images/robots/robots-thumbnail.png"
+                  />
+                </div>
+                <div class="home-product__overlay">
+                  <h4 class="home-product__overlay-title">
+                    Robots MANGO OFFICE
+                  </h4>
+                  <a
+                    i18n="about@@ABOUT"
+                    class="home-product__overlay-link"
+                    [routerLink]="routePath.Products"
+                    fragment="project-robots"
+                  >
+                    About
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="home-products__item">
+              <a
+                class="home-product"
+                [routerLink]="routePath.Products"
                 fragment="rivertv"
               >
                 <div class="home-product__link">
@@ -217,36 +245,6 @@
                     class="home-product__overlay-link"
                     [routerLink]="routePath.Products"
                     fragment="project-vmedia"
-                  >
-                    About
-                  </a>
-                </div>
-              </a>
-            </li>
-            <li class="home-products__item">
-              <a
-                class="home-product"
-                [routerLink]="routePath.Products"
-                fragment="trik"
-              >
-                <div class="home-product__link">
-                  <img
-                    class="home-product__img"
-                    alt="Trik"
-                    src="assets/images/project-thumbnails/t1/trik.png?v=1"
-                    srcset="assets/images/project-thumbnails/t2/trik.png?v=1 2x"
-                  />
-                </div>
-                <div class="home-product__overlay">
-                  <h4 class="home-product__overlay-title">
-                    Trik
-                    <ng-container i18n="website@@WEBSITE">Website</ng-container>
-                  </h4>
-                  <a
-                    i18n="about@@ABOUT"
-                    class="home-product__overlay-link"
-                    [routerLink]="routePath.Products"
-                    fragment="project-trik"
                   >
                     About
                   </a>
