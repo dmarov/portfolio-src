@@ -7,7 +7,6 @@ import {
 import { CommonModule } from "@angular/common";
 import { InViewEffect } from "@/app/shared/utils/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect";
-import { environment } from "@/environments/environment";
 import { RobotsMangoOfficeComponent } from "./robots-mango-office/robots-mango-office.component";
 import { RivertvWebsiteComponent } from "./rivertv-website/rivertv-website.component";
 import { VmediaWebsiteComponent } from "./vmedia-website/vmedia-website.component";
@@ -36,8 +35,6 @@ import { KemerovoWebsiteComponent } from "./kemerovo-website/kemerovo-website.co
 export class ProductsComponent implements AfterViewInit {
   @HostBinding("class")
   public classes = "app__page";
-
-  public robotsEnabled = environment.features.robotsMangoOfficeEnabled;
 
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
