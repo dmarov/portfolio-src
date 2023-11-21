@@ -1,15 +1,16 @@
+#!/bin/sh
+
+$DEPLOY_DIR=../../dmarov.github.io
+
 npm run prettier \
 && npm run lint \
 && npm run lint:styles \
 && npm run test \
 && npm run build:prod \
-&& mkdir deploy \
-&& cd deploy \
-&& git clone git@github.com:dmarov/dmarov.github.io.git ./ \
+&& cd $DEPLOY_DIR \
 && rm -rdf ./** \
-&& cp -r ../dist/portfolio/** ./ \
+&& cp -r ../protfolio-src/dist/portfolio/** ./ \
 && git add -A \
 && git commit -m"deploy $(date '+%Y-%m-%d %H:%M:%S')" \
 && git push \
-&& cd ../ \
-&& rm -rdf ./deploy
+&& cd ../protfolio-src
