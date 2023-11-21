@@ -34,9 +34,11 @@ npm install {some package}
 
 ## TODO:
 
-- add "Voice Robots" project
+- fix Robots preview
+- add preview title on hover
 - add "This Website was made using..."
 - add skills (bdd, patterns, refactoring)
+- add scroll up button
 - remove sticky menu for small resolutions
 - change home image
 - use swiper for products on home page
