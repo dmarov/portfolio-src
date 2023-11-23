@@ -23,14 +23,13 @@ class Deployer {
     const build = "npm run build:prod";
     const cd = "cd ../../dmarov.github.io";
     const pull = "git pull";
-    const rm = "rm -rdf ./**"
-    const copyDist = "cp -r ../protfolio-src/dist/portfolio/** ./";
+    const rm = "rm -rdf ./**";
+    const copyDist = "cp -r ../portfolio-src/dist/portfolio/** ./";
     const add = "git add -A";
     const commit = "git commit -m \"deploy $(date '+%Y-%m-%d %H:%M:%S')\"";
     const push = "git push";
-    const cdBack = "cd ../protfolio-src";
 
-    const cmd = `${prettier} && ${lintScripts} && ${lintStyles} && ${test} && ${build} && ${cd} && ${pull} && ${rm} && ${copyDist} && ${add} && ${commit} && ${push} && ${cdBack}`;
+    const cmd = `${prettier} && ${lintScripts} && ${lintStyles} && ${test} && ${build} && ${cd} && ${pull} && ${rm} && ${copyDist} && ${add} && ${commit} && ${push}`;
 
     this.execute(cmd, __dirname);
   }
