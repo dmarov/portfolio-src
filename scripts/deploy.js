@@ -16,22 +16,22 @@ const { spawn } = require("child_process");
 // && cd ../protfolio-src
 class Deployer {
   async deploy() {
-    const prettier = "npm run prettier";
-    const lintScripts = "npm run lint";
-    const lintStyles = "npm run lint:styles";
-    const test = "npm run test";
-    const build = "npm run build:prod";
-    const cd = "cd ../../dmarov.github.io";
-    const pull = "git pull";
-    const rm = "rm -rdf ./**";
-    const copyDist = "cp -r ../portfolio-src/dist/portfolio/** ./";
-    const add = "git add -A";
-    const commit = "git commit -m \"deploy $(date '+%Y-%m-%d %H:%M:%S')\"";
-    const push = "git push";
+    const cmds = [
+      "npm run prettier",
+      "npm run lint",
+      "npm run lint:styles",
+      "npm run test",
+      "npm run build:prod",
+      "cd ../../dmarov.github.io",
+      "git pull",
+      "rm -rdf ./**",
+      "cp -r ../portfolio-src/dist/portfolio/** ./",
+      "git add -A",
+      "git commit -m \"deploy $(date '+%Y-%m-%d %H:%M:%S')\"",
+      "git push",
+    ];
 
-    const cmd = `${prettier} && ${lintScripts} && ${lintStyles} && ${test} && ${build} && ${cd} && ${pull} && ${rm} && ${copyDist} && ${add} && ${commit} && ${push}`;
-
-    this.execute(cmd, __dirname);
+    this.execute(cmds.join(' && '), __dirname);
   }
 
   async execute(cmd, cwd, params = []) {
