@@ -34,8 +34,8 @@ npm install {some package}
 
 ## TODO:
 
-- fix Robots preview
-- add preview title on hover
+- add "My Skills" list
+- add preview title on hover, and touch
 - add "This Website was made using..."
 - add skills (bdd, patterns, refactoring)
 - add scroll up button

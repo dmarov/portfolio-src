@@ -20,16 +20,32 @@
       transform: scale(1.1);
     }
 
+    &_angular-material {
+      transform: scale(0.9);
+    }
+
     &_webpack {
-      transform: scale(1.3);
+      transform: scale(1.2);
     }
 
     &_ngrx {
       transform: scale(0.95);
     }
 
+    &_docker {
+      transform: scale(0.9);
+    }
+
+    &_nginx {
+      transform: scale(0.95);
+    }
+
     &_nodejs {
       transform: scale(0.8);
+    }
+
+    &_socketio {
+      transform: scale(0.9);
     }
 
     &_typescript {

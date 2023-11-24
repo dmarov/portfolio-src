@@ -15,6 +15,6 @@
   }
 
   @include respond-to("small") {
-    --perline: 8;
+    --perline: 6;
   }
 }
