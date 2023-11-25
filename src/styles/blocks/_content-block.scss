@@ -1,7 +1,7 @@
 @import "../shared/colors";
 @import "../shared/mixins";
 
-.text-page {
+.content-block {
   --radius: 10px;
 
   background-color: $col-grey;
@@ -10,85 +10,48 @@
   flex-grow: 1;
   border-radius: var(--radius);
 
-  &_theme {
-    &_green {
-      position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: var(--radius);
+    opacity: 1;
+  }
 
+  &.inview {
+    &::after {
+      transition: opacity 1s ease-in;
+    }
+  }
+
+  &.inview_not {
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &_theme {
+    position: relative;
+
+    &_green {
       &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        border-radius: var(--radius);
         box-shadow: 0 0 5px $col-green;
         border: 1px solid $col-green;
-        opacity: 1;
-      }
-
-      &.inview {
-        &::after {
-          transition: opacity 1s ease-in;
-        }
-      }
-
-      &.inview_not {
-        &::after {
-          opacity: 0;
-        }
       }
     }
 
     &_orange {
-      position: relative;
-
       &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        border-radius: var(--radius);
         box-shadow: 0 0 5px $col-orange;
         border: 1px solid $col-orange;
-        opacity: 1;
-      }
-
-      &.inview {
-        &::after {
-          transition: opacity 1s ease-in;
-        }
-      }
-
-      &.inview_not {
-        &::after {
-          opacity: 0;
-        }
       }
     }
 
     &_white {
-      position: relative;
-
       &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        border-radius: var(--radius);
         box-shadow: 0 0 5px $col-dwhite;
         border: 1px solid $col-dwhite;
-        opacity: 1;
-      }
-
-      &.inview {
-        &::after {
-          transition: opacity 1s ease-in;
-        }
-      }
-
-      &.inview_not {
-        &::after {
-          opacity: 0;
-        }
       }
     }
   }

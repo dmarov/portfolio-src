@@ -6,7 +6,7 @@
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
       <article
-        class="home-title text-page text-page_theme_white unfold unfold_hidden inview inview_not"
+        class="home-title content-block content-block_theme_white unfold unfold_hidden inview inview_not"
       >
         <h1
           i18n="welcome|Home page welcome@@BANNER_WELCOME"
@@ -40,11 +40,11 @@
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
       <article
-        class="text-page text-page_theme_green unfold unfold_hidden inview inview_not"
+        class="content-block content-block_theme_green unfold unfold_hidden inview inview_not"
       >
         <h2
           i18n="technology stack@@MY_TECHNOLOGY_STACK"
-          class="text-page__title"
+          class="content-block__title"
         >
           My Technology Stack
         </h2>
@@ -202,9 +202,9 @@
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
       <article
-        class="text-page text-page_theme_orange unfold unfold_hidden inview inview_not"
+        class="content-block content-block_theme_orange unfold unfold_hidden inview inview_not"
       >
-        <h2 i18n="projects@@PRODUCTS" class="text-page__title">Products</h2>
+        <h2 i18n="projects@@PRODUCTS" class="content-block__title">Products</h2>
         <div class="home-products">
           <ul class="home-products__items">
             <li class="home-products__item">
@@ -217,7 +217,8 @@
                   <img
                     class="home-product__img"
                     alt="Robots"
-                    src="assets/images/robots/robots-thumbnail.png"
+                    src="assets/images/project-thumbnails/t1/robots.png"
+                    srcset="assets/images/project-thumbnails/t2/robots.png 2x"
                   />
                 </div>
                 <div class="home-product__overlay">
@@ -245,9 +246,9 @@
                   <img
                     class="home-product__img"
                     alt="RiverTV"
-                    src="assets/images/project-thumbnails/t1/rivertv.png?v=1"
+                    src="assets/images/project-thumbnails/t1/rivertv.png?v=2"
                     srcset="
-                      assets/images/project-thumbnails/t2/rivertv.png?v=1 2x
+                      assets/images/project-thumbnails/t2/rivertv.png?v=2 2x
                     "
                   />
                 </div>
@@ -277,9 +278,9 @@
                   <img
                     class="home-product__img"
                     alt="VMedia"
-                    src="assets/images/project-thumbnails/t1/vmedia.png?v=1"
+                    src="assets/images/project-thumbnails/t1/vmedia.png?v=2"
                     srcset="
-                      assets/images/project-thumbnails/t2/vmedia.png?v=1 2x
+                      assets/images/project-thumbnails/t2/vmedia.png?v=2 2x
                     "
                   />
                 </div>
@@ -333,7 +334,7 @@
             </li>
           </ul>
         </div>
-        <p class="home__projects-line text-page__p text-page__p_center">
+        <p class="home__projects-line content-block__p content-block__p_center">
           <a
             i18n="more products@@MORE_PRODUCTS"
             [routerLink]="routePath.Products"
