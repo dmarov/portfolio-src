@@ -17,51 +17,51 @@
     height: auto;
 
     &_angular {
-      transform: scale(1.1);
+      transform: scale(0.9);
+    }
+
+    &_typescript {
+      transform: scale(0.7);
     }
 
     &_angular-material {
-      transform: scale(0.9);
-    }
-
-    &_webpack {
-      transform: scale(1.2);
+      transform: scale(0.7);
     }
 
     &_ngrx {
-      transform: scale(0.95);
+      transform: scale(0.7);
     }
 
     &_docker {
-      transform: scale(0.9);
-    }
-
-    &_nginx {
-      transform: scale(0.95);
+      transform: scale(0.8);
     }
 
     &_nodejs {
-      transform: scale(0.8);
+      transform: scale(0.75);
     }
 
     &_socketio {
       transform: scale(0.9);
     }
 
-    &_typescript {
+    &_webpack {
+      transform: scale(1);
+    }
+
+    &_gulp {
+      transform: scale(0.7);
+    }
+
+    &_nginx {
+      transform: scale(0.8);
+    }
+
+    &_vue {
       transform: scale(0.9);
     }
 
     &_babel {
-      transform: scale(0.9);
-    }
-
-    &_gulp {
-      transform: scale(0.9);
-    }
-
-    &_vue {
-      transform: scale(1.2);
+      transform: scale(0.8);
     }
   }
 }
