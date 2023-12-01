@@ -115,7 +115,7 @@
         <target>Продукты</target>
         <note priority="1" from="description">projects</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">159</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">207</context></context-group></trans-unit>
       <trans-unit id="WEBSITE" datatype="html">
         <source>Website</source>
         <target>Веб-сайт</target>
@@ -129,7 +129,7 @@
 
 
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">209</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">241</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">273</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">258</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">290</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">322</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">4</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit>
       <trans-unit id="ABOUT" datatype="html">
         <source> About </source>
         <target> Обо мне </target>
@@ -138,25 +138,25 @@
 
 
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">184</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">216</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">248</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">280</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">233</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">265</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">297</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">329</context></context-group></trans-unit>
       <trans-unit id="MORE_PRODUCTS" datatype="html">
         <source> more products </source>
         <target> все продукты </target>
         <note priority="1" from="description">more products</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">292</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">341</context></context-group></trans-unit>
       <trans-unit id="PAGE_DOES_NOT_EXIST" datatype="html">
         <source> This page doesn't exist </source>
         <target> Этой страницы не существует </target>
         <note priority="1" from="description">this page doesn't exist</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context><context context-type="linenumber">7</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context><context context-type="linenumber">9</context></context-group></trans-unit>
       <trans-unit id="RETURN_TO_HOME_PAGE" datatype="html">
         <source> Return to Home page </source>
         <target> Вернуться на главную страницу </target>
         <note priority="1" from="description">return to home page</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context><context context-type="linenumber">16</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context><context context-type="linenumber">18</context></context-group></trans-unit>
       <trans-unit id="PROJECT_RIVERTV_IS" datatype="html">
         <source> RiverTV is a video streaming service provided by RiverTV Inc. from Canada. </source>
         <target> RiverTV - это стриминговый сервис, предоставляемый RiverTV Inc. в Канаде. </target>
@@ -174,55 +174,33 @@
         <target> Я разрабатывал фронт-энд часть. </target>
         <note priority="1" from="description">RiverTV what i did</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">28</context></context-group></trans-unit><trans-unit id="ROBOTS" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">31</context></context-group></trans-unit><trans-unit id="ROBOTS" datatype="html">
         <source>Robots</source><target state="translated">Роботы</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
+        
         <note priority="1" from="description">Robots service of MANGO OFFICE</note>
         <note priority="1" from="meaning">Robots</note>
-      </trans-unit><trans-unit id="MANGO_OFFICE_IS" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit><trans-unit id="MANGO_OFFICE_IS" datatype="html">
         <source> MANGO OFFICE is a provider for B2B solution in realm of telecommuniactions from Moscow, Russian Federation. </source><target state="translated"> MANGO OFFICE это провайдер B2B решений в области телекоммуникаций из Москвы, Российская Федерация. </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">7,10</context>
-        </context-group>
+        
         <note priority="1" from="description">MANGO OFFICE is</note>
-      </trans-unit><trans-unit id="VIRTUAL_ASSISTANT_IS" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">9</context></context-group></trans-unit><trans-unit id="VIRTUAL_ASSISTANT_IS" datatype="html">
         <source> It has large ecosystem of products. One of the products is "Virtual Assistant" service. It provides solution for creating and managing virtual employees also known as "robots". </source><target state="translated"> Компания имеет большую экосистему продуктов. Один из них называется "Виртуальный помощник". Он позволяет создавать и управлять виртуальными операторами, так же называемыми "роботами". </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">12,17</context>
-        </context-group>
+        
         <note priority="1" from="description">robots service</note>
-      </trans-unit><trans-unit id="VIRTUAL_ASSISTANT_PURPOSE" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">14</context></context-group></trans-unit><trans-unit id="VIRTUAL_ASSISTANT_PURPOSE" datatype="html">
         <source> "Robot" can make outcoming calls through an entire clients base, accept incoming calls, handle chat for all the different platforms such as "Telegram" or "Whatsapp". </source><target state="translated"> "Робот" может делать изходящие звонки по всей пользовательской базе клиента, принимать входящие звонки, вести чат на различных платформах, таких как "Телеграм" или "Whatsapp". </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">19,23</context>
-        </context-group>
+        
         <note priority="1" from="description">robot purpose</note>
-      </trans-unit><trans-unit id="VIRTUAL_ASSISTANT_SCRIPT_CONSTRUCTOR" datatype="html">
-        <source> Script constructor enables major possibilities for scripting
-          with conditions, cycles, SMS and email notifications, handling user
-          input and lots of other features used to automate routine.
-      </source><target state="translated"> Конструктор скриптов создаёт
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit><trans-unit id="VIRTUAL_ASSISTANT_SCRIPT_CONSTRUCTOR" datatype="html">
+        <source> Script constructor enables major possibilities for scripting with conditions, cycles, SMS and email notifications, handling user input and lots of other features used to automate routine. </source><target state="translated"> Конструктор скриптов создаёт
         множество возможностей для создания сценариев с ветвлениями, циклами, отправкой SMS и email уведомлений, обработкой действий пользователя и множеством других возможностей, используемых для автоматизации шаблонных действий.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">28,32</context>
-        </context-group>
-        <note priority="1" from="description">robots script
-    constructor</note>
-      </trans-unit><trans-unit id="PROJECT_ROBOTS_MY_RESPONSIBILITIES" datatype="html">
+        
+        <note priority="1" from="description">robots script constructor</note>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">31</context></context-group></trans-unit><trans-unit id="PROJECT_ROBOTS_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed front-end. </source><target state="translated"> Я разрабатывал фронт-энд часть.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">37,39</context>
-        </context-group>
+        
         <note priority="1" from="description">virtual assistant what i did</note>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">40</context></context-group></trans-unit>
       <trans-unit id="TECHNOLOGIES_I_USED" datatype="html">
         <source> Technologies I used: </source>
         <target> Технологии которые я использовал: </target>
@@ -233,7 +211,28 @@
 
 
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">28</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">33</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">31</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">41</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">35</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">34</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">32</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">31</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context><context context-type="linenumber">28</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">36</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">34</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">44</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">38</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">34</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">32</context></context-group></trans-unit><trans-unit id="PROJECT_MY_PORTFOLIO_TITLE" datatype="html">
+        <source> My Portfolio Website </source><target state="translated">Вебсайт моего портфолио</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <note priority="1" from="description">My Portfolio title</note>
+      </trans-unit><trans-unit id="PROJECT_MY_PORTFOLIO_IS" datatype="html">
+        <source> Dmitry Marov is an awesome software developer from Russian Federation. He decided that it is a good idea to make such website, which will display all the awesome projects he was involved in during his career. </source><target state="translated">Дмитрий Маров - супер мега разработчик из Российской Федерации. Он решил что былобы неплохо сделать такой вебсайт, на котором будут представлены все те замечательные проекты, над которыми от трудился на протяжении всей своей карьеры.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
+          <context context-type="linenumber">6,10</context>
+        </context-group>
+        <note priority="1" from="description">My Portfolio is</note>
+      </trans-unit><trans-unit id="PROJECT_MY_PORTFOLIO_DOES" datatype="html">
+        <source> He hopes that this website will provide all the information in which potential employer might be interested in. </source><target state="translated">Он надеется, что этот вебсайт предоставит всю необходимую информацию, в которой потенциальный работодатель может быть заинтересован.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+        <note priority="1" from="description">My Portfolio is</note>
+      </trans-unit>
       <trans-unit id="VISIT" datatype="html">
         <source> Visit </source>
         <target> Посетить </target>
@@ -243,7 +242,7 @@
 
 
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">18</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">18</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">21</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">17</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">21</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context><context context-type="linenumber">23</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">21</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">24</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">17</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit>
       <trans-unit id="PROJECT_VMEDIA_IS" datatype="html">
         <source> VMedia is an internet service provider from Canada. </source>
         <target> VMedia это провайдер интернета в Канаде. </target>
@@ -267,25 +266,25 @@
         <target> CMS "Скарлетт и Монарх" </target>
         <note priority="1" from="description">Scarlett and Monarch CMS</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">2</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_DOES" datatype="html">
         <source> "Scarlett &amp; Monarch" is a company of commercial website development and hosting. Content management sytem of "Scarlett &amp; Monarch" is used for each and every website project of company. Each customer has their own requirements. CMS evolved with each new requirement. </source>
         <target> "Скарлетт и Монарх" это компания по коммерческой веб разработке и хостингу. Система управления контентом "Скарлетт и монарх" используется для каждого веб сайта компании. Каждый заказчик имеет свои требования. Система управления контентом эволюционировала с каждым новым требованием. </target>
         <note priority="1" from="description">S&amp;M CMS is used for</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">8</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed back-end and front-end, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </source>
         <target> Я разрабатывал бэкенд и фронт-энд, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>управление заказами<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </target>
         <note priority="1" from="description">S&amp;M CMS what I did</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">15</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">18</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_ABOUT" datatype="html">
         <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, which allows binding arbitrary properties to product. It allows bind arbitrary properties such as array of products, array of images, text, number, boolean, array of strings or even arbitrary structure if all the previous was not enough. API of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its' structure with every new project. Order has standard properties such as full name and phone number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders' content, adding, removing and modifying products. Orders' sum recalculates automatically, including discounts. It also allows to notify client via SMS or email about order status. </source>
         <target> Один из самых продвинутых модулей это <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, который позволяет привязать произвольные свойства к продукту, такие как массив продуктов, массив картинок, текст, числа, булев тип, массив строк или даже произвольную структуру если ни один из предыдущих вариантов не подошёл. API веб сайта позволяет проводить умный поиск по этим свойствам. Модуль обработки заказов позволяет создавать заказы с гибкой структурой, которые меняют свою структуру с каждым новым проектом. У заказа есть стандартные свойства, такие как имя и номер телефона клиента, но также может иметь другие свойства которые будут отображены с возможностью редактирования. Этот модуль также позволяет редактировать содержимое заказов, добавлять, удалять и модифицировать товары. Сумма заказа пересчитывается автоматически с учётом скидок. Также модуль позволяет уведомить клиента о статусе заказа по SMS или через email. </target>
         <note priority="1" from="description">S&amp;M CMS about</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit>
       <trans-unit id="PROJECT_TRIK_IS" datatype="html">
         <source> Trik is a pharmacy network from Krasnodar, Russian Federation. The website is an online shop + CMS. </source>
         <target> "Трик" это сеть аптек из Краснодара, Российская Федерация. Вебсайт представляет собой онлайн магазин + CMS. </target>
@@ -315,13 +314,13 @@
         <target> Каталог включает в себя редактор товара в котором покупатель может кастомизировать части транспрортного средства, такие как двигатель, цвет, дополнения, и.т.д. Допустимая кастомизация продукта может быть назначена в CMS. </target>
         <note priority="1" from="description">Paxus about</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">22</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">25</context></context-group></trans-unit>
       <trans-unit id="PROJECT_PAXUS_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed back-end and Implemented most complex parts of front-end logic. </source>
         <target> Я разрабатывал бэкенд и реализовывал наиболее сложную часть фронт-энд логики. </target>
         <note priority="1" from="description">Paxus my responsibilities</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">30</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">33</context></context-group></trans-unit>
       <trans-unit id="PROJECT_KEMEROVO_IS" datatype="html">
         <source> Administration of Kemerovo, Russian Federation, ordered a web site to post relevent information related to business of Kemerovo city. The website has news lines, search, feedback and CMS to manage it all. </source>
         <target> Администрация Кемерово, Российская Федерация, заказали вебсайт для публикования релевантной информации относящейся к бизнесу в Кемерово. Вебсайт состоит из лент новостей, поиска, обратной связи и CMS чтобы управлять всем этим. </target>
@@ -333,7 +332,7 @@
         <target> Я разрабатывал бэк-енд. </target>
         <note priority="1" from="description">Kemerovo what i did</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">25</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">28</context></context-group></trans-unit>
     </body>
   </file>
 </xliff>
