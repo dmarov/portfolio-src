@@ -219,7 +219,7 @@
         </context-group>
         <note priority="1" from="description">My Portfolio title</note>
       </trans-unit><trans-unit id="PROJECT_MY_PORTFOLIO_IS" datatype="html">
-        <source> Dmitry Marov is an awesome software developer from Russian Federation. He decided that it is a good idea to make such website, which will display all the awesome projects he was involved in during his career. </source><target state="translated">Дмитрий Маров - супер мега разработчик из Российской Федерации. Он решил что былобы неплохо сделать такой вебсайт, на котором будут представлены все те замечательные проекты, над которыми от трудился на протяжении всей своей карьеры.</target>
+      <source> Dmitry Marov is an awesome software developer from Russian Federation. He decided that it is a good idea to make such website, which will display all the awesome projects he was involved in during his career. </source><target state="translated">Дмитрий Маров - супер разработчик из Российской Федерации. Он решил что было бы неплохо сделать такой вебсайт, на котором будут представлены все те замечательные проекты, над которыми от трудился на протяжении своей карьеры.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
           <context context-type="linenumber">6,10</context>
