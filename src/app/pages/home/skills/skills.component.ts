@@ -9,4 +9,4 @@ import { CommonModule } from "@angular/common";
   styleUrls: ["./skills.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SkillsComponent { }
+export class SkillsComponent {}
