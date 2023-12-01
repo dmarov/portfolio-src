@@ -8,4 +8,4 @@ import { CommonModule } from "@angular/common";
   templateUrl: "./skills.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SkillsComponent { }
+export class SkillsComponent {}
