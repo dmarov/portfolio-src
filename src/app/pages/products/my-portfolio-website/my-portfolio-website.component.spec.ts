@@ -8,7 +8,7 @@ import { MyPortfolioWebsiteComponent } from "./my-portfolio-website.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `<app-my-portfolio-website></app-my-portfolio-website>`,
 })
-export class KemerovoWebsiteTestComponent { }
+export class KemerovoWebsiteTestComponent {}
 
 describe("MyPortfolioWebsiteComponent", () => {
   let fixture: ComponentFixture<MyPortfolioWebsiteComponent>;
