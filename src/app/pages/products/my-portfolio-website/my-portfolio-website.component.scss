@@ -1,0 +1,17 @@
+@import "blocks/product-about";
+@import "blocks/content-block";
+
+.my-portfolio-website {
+  &__iframe-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: calc(100% * 1080 / 1920);
+    overflow: hidden;
+  }
+
+  &__iframe {
+    position: absolute;
+    transform-origin: 0 0;
+    inset: 0;
+  }
+}

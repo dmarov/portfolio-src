@@ -1,0 +1,60 @@
+<div
+  class="my-portfolio-website product-about"
+  data-test="my-portfolio-website"
+>
+  <h1 class="content-block__title">
+    My Portfolio
+    <ng-container i18n="website@@WEBSITE">Website</ng-container>
+  </h1>
+
+  <p i18n="My Portfolio is@@PROJECT_MY_PORTFOLIO_IS" class="content-block__p">
+    Dmitry Marov is an awesome software developer from Archangelsk, Russian
+    Federation. He decided that it is a good idea to make such website, which
+    will display all the awesome projects he was involved in during his career.
+  </p>
+
+  <p i18n="My Portfolio is@@PROJECT_MY_PORTFOLIO_IS" class="content-block__p">
+    He hopes that this website will provide all the information in which
+    potential employer might be interested in.
+  </p>
+
+  <div #container class="my-portfolio-website__iframe-wrapper">
+    <iframe
+      [ngStyle]="{ transform: styleTransform }"
+      class="my-portfolio-website__iframe"
+      src="/"
+      width="1920"
+      height="1080"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <p i18n="Kemerovo technologies@@TECHNOLOGIES_I_USED" class="content-block__p">
+    Technologies I used:
+  </p>
+
+  <ul>
+    <li>Angular</li>
+    <li>Angular i18n</li>
+    <li>Jest</li>
+    <li>Docker</li>
+    <li>Sass</li>
+    <li>Eslint</li>
+    <li>Stylelint</li>
+    <li>Prettier</li>
+    <li>Nodejs</li>
+    <li>Github pages</li>
+  </ul>
+
+  <div class="product-about__visit-wrapper">
+    <a
+      i18n="visit@@VISIT"
+      class="product-about__visit-btn"
+      href="/"
+      target="_blank"
+    >
+      Visit
+    </a>
+  </div>
+</div>
