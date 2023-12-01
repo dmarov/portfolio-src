@@ -15,7 +15,6 @@ import { TrikWebsiteComponent } from "./trik-website/trik-website.component";
 import { PaxusWebsiteComponent } from "./paxus-website/paxus-website.component";
 import { KemerovoWebsiteComponent } from "./kemerovo-website/kemerovo-website.component";
 import { MyPortfolioWebsiteComponent } from "./my-portfolio-website/my-portfolio-website.component";
-import { environment } from "@/environments/environment";
 
 @Component({
   selector: "app-products",
@@ -38,9 +37,6 @@ import { environment } from "@/environments/environment";
 export class ProductsComponent implements AfterViewInit {
   @HostBinding("class")
   public classes = "app__page";
-
-  public showMyPortfolioProject =
-    environment.features.projectMyPortfolioEnabled;
 
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
