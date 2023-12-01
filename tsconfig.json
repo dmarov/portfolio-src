@@ -16,7 +16,8 @@
       "@/*": ["src/*"]
     },
     "useDefineForClassFields": false,
-    "strict": true
+    "strict": true,
+    "skipLibCheck": true
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

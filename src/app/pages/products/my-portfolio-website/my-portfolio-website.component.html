@@ -1,36 +1,31 @@
-<div
-  class="my-portfolio-website product-about"
-  data-test="my-portfolio-website"
->
-  <h1 class="content-block__title">
-    My Portfolio
-    <ng-container i18n="website@@WEBSITE">Website</ng-container>
+<div class="my-portfolio-website product-about" data-test="my-portfolio-website">
+  <h1 class="content-block__title" i18n="My Portfolio title@@PROJECT_MY_PORTFOLIO_TITLE">
+    My Portfolio Website
   </h1>
 
   <p i18n="My Portfolio is@@PROJECT_MY_PORTFOLIO_IS" class="content-block__p">
-    Dmitry Marov is an awesome software developer from Archangelsk, Russian
-    Federation. He decided that it is a good idea to make such website, which
-    will display all the awesome projects he was involved in during his career.
+    Dmitry Marov is an awesome software developer from Russian Federation. He
+    decided that it is a good idea to make such website, which will display all
+    the awesome projects he was involved in during his career.
   </p>
 
-  <p i18n="My Portfolio is@@PROJECT_MY_PORTFOLIO_IS" class="content-block__p">
+  <p i18n="My Portfolio is@@PROJECT_MY_PORTFOLIO_DOES" class="content-block__p">
     He hopes that this website will provide all the information in which
     potential employer might be interested in.
   </p>
 
   <div #container class="my-portfolio-website__iframe-wrapper">
-    <iframe
-      [ngStyle]="{ transform: styleTransform }"
-      class="my-portfolio-website__iframe"
-      src="/"
-      width="1920"
-      height="1080"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+    <iframe [ngStyle]="{ transform: styleTransform }" class="my-portfolio-website__iframe" src="/" width="1920"
+      height="1080" frameborder="0" allowfullscreen></iframe>
   </div>
 
-  <p i18n="Kemerovo technologies@@TECHNOLOGIES_I_USED" class="content-block__p">
+  <div class="product-about__visit-wrapper">
+    <a i18n="visit@@VISIT" class="product-about__visit-btn" href="/" target="_blank">
+      Visit
+    </a>
+  </div>
+
+  <p i18n="My portfolio technologies@@TECHNOLOGIES_I_USED" class="content-block__p">
     Technologies I used:
   </p>
 
@@ -46,15 +41,4 @@
     <li>Nodejs</li>
     <li>Github pages</li>
   </ul>
-
-  <div class="product-about__visit-wrapper">
-    <a
-      i18n="visit@@VISIT"
-      class="product-about__visit-btn"
-      href="/"
-      target="_blank"
-    >
-      Visit
-    </a>
-  </div>
 </div>

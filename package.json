@@ -34,6 +34,7 @@
     "@angular/router": "^16.1.8",
     "intersection-observer": "^0.12.0",
     "normalize.css": "^8.0.1",
+    "resize-observer-polyfill": "^1.5.1",
     "rxjs": "~6.5.4",
     "swiper": "^6.3.5",
     "tslib": "^2.0.0",
