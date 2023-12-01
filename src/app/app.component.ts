@@ -12,12 +12,16 @@ import { HeaderComponent } from "./shared/components/header/header.component";
   imports: [RouterModule, CommonModule, HeaderComponent],
 })
 export class AppComponent implements OnInit {
-  public constructor(private readonly router: Router) {}
+  public constructor(private readonly router: Router) { }
 
   public ngOnInit(): void {
     this.router.events.subscribe((s) => {
       if (s instanceof NavigationEnd) {
         const { hash } = window.location;
+
+        if (window.self !== window.top) {
+          return;
+        }
 
         if (hash) {
           const id = hash.replace(/#/, "");

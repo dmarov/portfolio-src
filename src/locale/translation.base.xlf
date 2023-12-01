@@ -308,10 +308,10 @@
         <note priority="1" from="description">My Portfolio is</note>
       </trans-unit>
       <trans-unit id="PROJECT_MY_PORTFOLIO_SOURCE_CODE" datatype="html">
-        <source> Source code for this project can be viewed in <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dmarov/portfolio-src&quot; target=&quot;_blank&quot;&gt;"/> project repository <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <source> Source code for this project can be viewed in <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dmarov/portfolio-src&quot; target=&quot;_blank&quot;&gt;"/> project repository <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> . </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">69,73</context>
+          <context context-type="linenumber">69,75</context>
         </context-group>
         <note priority="1" from="description">My Portfolio source code</note>
       </trans-unit>
