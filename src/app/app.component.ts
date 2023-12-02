@@ -34,13 +34,9 @@ export class AppComponent implements OnInit {
     if (hash) {
       const id = hash.replace(/#/, "");
 
-      setTimeout(() => {
-        this.scrollToId(id);
-      }, 300);
+      this.scrollToId(id);
     } else {
-      setTimeout(() => {
-        this.scrollToId("top-pivot");
-      }, 300);
+      this.scrollToId("top-pivot");
     }
   }
 
