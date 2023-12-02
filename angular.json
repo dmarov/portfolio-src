@@ -31,8 +31,7 @@
                 "glob": "404.html",
                 "input": "./src",
                 "output": "./"
-              },
-              "src/manifest.webmanifest"
+              }
             ],
             "styles": ["src/styles/index.scss"],
             "scripts": [],
@@ -74,8 +73,7 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ],
-              "serviceWorker": false
+              ]
             },
             "ru": {
               "localize": ["ru"]
