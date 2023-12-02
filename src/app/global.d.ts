@@ -1,6 +1,6 @@
 import { Tracking } from "./shared/utils/tracking/tracking";
 
-export { };
+export {};
 
 declare global {
   interface Window {
