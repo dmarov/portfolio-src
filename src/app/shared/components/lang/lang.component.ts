@@ -8,8 +8,10 @@ import {
 import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
-import { languages } from "@/app/models/languages.const";
 import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
+import { GoogleAnalytics } from "../../utils/google-analytics/google-analytics";
+import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { Lang } from "@/app/models/lang.enum";
 
 @Component({
   selector: "app-lang",
@@ -21,15 +23,32 @@ import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
   providers: [I18nUrl],
 })
 export class LangComponent implements OnInit, OnDestroy {
-  public languages = languages;
+  public readonly languages = [
+    {
+      type: Lang.English,
+      url: "/en",
+      text: "EN",
+      onClick(): void {
+        GoogleAnalytics.sendEvent(TrackingEvents.SwitchEnClick, {});
+      },
+    },
+    {
+      type: Lang.Russian,
+      url: "/ru",
+      text: "RU",
+      onClick(): void {
+        GoogleAnalytics.sendEvent(TrackingEvents.SwitchRuClick, {});
+      },
+    },
+  ];
 
-  private activeMatch = this.languages.find((l) =>
+  private readonly activeMatch = this.languages.find((l) =>
     window.location.pathname.startsWith(l.url),
   );
 
   public activeLang = this.activeMatch ?? null;
 
-  private subscription = new Subscription();
+  private readonly subscription = new Subscription();
 
   public path = "/";
 
