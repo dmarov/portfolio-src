@@ -1,13 +1,13 @@
 .home-title {
-  font-size: 12px;
+  font-size: 11px;
   color: $col-dwhite;
 
   @include respond-to("small") {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @include respond-to("medium") {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   &__text {
@@ -23,15 +23,15 @@
 
     &_welcome {
       margin: 0;
-      font-size: 40px;
+      font-size: 35px;
       color: $col-dwhite;
 
       @include respond-to("small") {
-        font-size: 50px;
+        font-size: 45px;
       }
 
       @include respond-to("medium") {
-        font-size: 60px;
+        font-size: 55px;
       }
     }
   }

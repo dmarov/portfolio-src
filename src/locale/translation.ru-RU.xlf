@@ -100,7 +100,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">26</context></context-group></trans-unit>
       <trans-unit id="BANNER_MY_GOALS" datatype="html">
         <source> I'm interested in technology and how to use it to make life better. </source>
-        <target> Я интересуюсь технологиями и как их использовать чтобы сделать жизнь лучше. </target>
+        <target> Мне интересны технологии и как их использовать чтобы сделать жизнь лучше. </target>
         <note priority="1" from="description">my goals</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/home.component.html</context><context context-type="linenumber">33</context></context-group></trans-unit>
