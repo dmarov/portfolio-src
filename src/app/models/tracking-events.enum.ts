@@ -10,4 +10,5 @@ export enum TrackingEvents {
   PreviewRivertvClick = "PreviewRivertvClick",
   PreviewVmediaClick = "PreviewVmediaClick",
   PreviewPaxusClick = "PreviewPaxusClick",
+  MoreProductsClick = "MoreProductsClick",
 }

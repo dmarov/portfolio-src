@@ -54,4 +54,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   public onPreviewPaxusClick(): void {
     GoogleAnalytics.sendEvent(TrackingEvents.PreviewPaxusClick, {});
   }
+
+  public onMoreProductsClick(): void {
+    GoogleAnalytics.sendEvent(TrackingEvents.MoreProductsClick, {});
+  }
 }
