@@ -12,7 +12,7 @@ import { KemerovoWebsiteComponent } from "./kemerovo-website.component";
 export class KemerovoWebsiteTestComponent {}
 
 describe("KemerovoWebsiteComponent", () => {
-  let fixture: ComponentFixture<KemerovoWebsiteComponent>;
+  let fixture: ComponentFixture<KemerovoWebsiteTestComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
