@@ -1,28 +1,30 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { RivertvWebsiteComponent } from "./rivertv-website.component";
+import { mockIntersectionObserver } from "jsdom-testing-mocks";
+import { LangComponent } from "./lang.component";
 
 @Component({
-  selector: "app-rivertv-website-test",
+  selector: "app-lang-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-rivertv-website></app-rivertv-website>`,
-  imports: [RivertvWebsiteComponent],
+  template: "<app-lang></app-lang>",
+  imports: [LangComponent],
 })
-export class RivertvWebsiteTestComponent {}
+export class LangTestComponent {}
 
-describe("RivertvWebsiteComponent", () => {
-  let fixture: ComponentFixture<RivertvWebsiteTestComponent>;
+describe("LangComponent", () => {
+  let fixture: ComponentFixture<LangTestComponent>;
+  mockIntersectionObserver();
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    fixture = TestBed.createComponent(RivertvWebsiteTestComponent);
+    fixture = TestBed.createComponent(LangTestComponent);
     fixture.detectChanges();
   });
 
   it("should have test attribute", () => {
     const input = document.querySelector(
-      '[data-test="rivertv-website"]',
+      '[data-test="lang"]',
     ) as HTMLInputElement;
     expect(input).toBeTruthy();
   });

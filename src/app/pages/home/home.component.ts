@@ -2,13 +2,13 @@ import {
   Component,
   OnInit,
   AfterViewInit,
-  HostBinding,
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { InViewEffect } from "@/app/shared/utils/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect";
 import { RoutePath } from "@/app/models/route-path.enum";
+import { environment } from "@/environments/environment";
 
 @Component({
   selector: "app-home",
@@ -19,18 +19,15 @@ import { RoutePath } from "@/app/models/route-path.enum";
   imports: [RouterModule],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  @HostBinding("class")
-  public classes = "app__page";
-
   public routePath = RoutePath;
 
-  private startDate = new Date("June 17, 2017 00:00:00");
+  private startDate = new Date(environment.dateBeginning);
 
   public years = 0;
 
   public ngOnInit(): void {
-    const years =
-      (Date.now() - this.startDate.getTime()) / (1000 * 60 * 60 * 24 * 365);
+    const msInYear = 1000 * 60 * 60 * 24 * 365;
+    const years = (Date.now() - this.startDate.getTime()) / msInYear;
 
     this.years = Math.floor(years);
   }

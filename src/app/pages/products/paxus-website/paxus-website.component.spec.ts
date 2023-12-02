@@ -6,18 +6,17 @@ import { PaxusWebsiteComponent } from "./paxus-website.component";
   selector: "app-paxus-website-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-paxus-website></app-paxus-website>`,
+  template: "<app-paxus-website></app-paxus-website>",
+  imports: [PaxusWebsiteComponent],
 })
 export class PaxusWebsiteTestComponent {}
 
 describe("PaxusWebsiteComponent", () => {
-  let fixture: ComponentFixture<PaxusWebsiteComponent>;
+  let fixture: ComponentFixture<PaxusWebsiteTestComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [PaxusWebsiteComponent],
-    });
-    fixture = TestBed.createComponent(PaxusWebsiteComponent);
+    TestBed.configureTestingModule({});
+    fixture = TestBed.createComponent(PaxusWebsiteTestComponent);
     fixture.detectChanges();
   });
 

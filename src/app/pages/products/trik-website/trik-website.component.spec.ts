@@ -6,18 +6,19 @@ import { TrikWebsiteComponent } from "./trik-website.component";
   selector: "app-trik-website-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-trik-website></app-trik-website>`,
+  template: "<app-trik-website></app-trik-website>",
+  imports: [TrikWebsiteComponent],
 })
 export class TrikWebsiteTestComponent {}
 
 describe("TrikWebsiteComponent", () => {
-  let fixture: ComponentFixture<TrikWebsiteComponent>;
+  let fixture: ComponentFixture<TrikWebsiteTestComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [TrikWebsiteComponent],
     });
-    fixture = TestBed.createComponent(TrikWebsiteComponent);
+    fixture = TestBed.createComponent(TrikWebsiteTestComponent);
     fixture.detectChanges();
   });
 

@@ -6,7 +6,8 @@ import { KemerovoWebsiteComponent } from "./kemerovo-website.component";
   selector: "app-kemerovo-website-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-kemerovo-website></app-kemerovo-website>`,
+  template: "<app-kemerovo-website></app-kemerovo-website>",
+  imports: [KemerovoWebsiteComponent],
 })
 export class KemerovoWebsiteTestComponent {}
 
@@ -14,10 +15,8 @@ describe("KemerovoWebsiteComponent", () => {
   let fixture: ComponentFixture<KemerovoWebsiteComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [KemerovoWebsiteComponent],
-    });
-    fixture = TestBed.createComponent(KemerovoWebsiteComponent);
+    TestBed.configureTestingModule({});
+    fixture = TestBed.createComponent(KemerovoWebsiteTestComponent);
     fixture.detectChanges();
   });
 

@@ -2,7 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Observable } from "rxjs";
 import { environment } from "@/environments/environment";
-import { MenuService } from "@/app/shared/services/menu.service";
+import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { MenuComponent } from "../menu/menu.component";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";

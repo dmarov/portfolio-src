@@ -4,8 +4,9 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { provideRouter } from "@angular/router";
 import { environment } from "@/environments/environment";
 import { AppComponent } from "@/app/app.component";
-import { MenuService } from "@/app/shared/services/menu.service";
+import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
+import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
 
 if (environment.production) {
   enableProdMode();
@@ -13,7 +14,10 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    MenuService,
+    {
+      provide: MenuService,
+      useClass: MenuServiceImpl,
+    },
     provideRouter(routes),
     importProvidersFrom([BrowserAnimationsModule]),
   ],

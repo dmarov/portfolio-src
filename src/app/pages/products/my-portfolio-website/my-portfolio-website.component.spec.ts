@@ -6,18 +6,17 @@ import { MyPortfolioWebsiteComponent } from "./my-portfolio-website.component";
   selector: "app-kemerovo-website-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-my-portfolio-website></app-my-portfolio-website>`,
+  template: "<app-my-portfolio-website></app-my-portfolio-website>",
+  imports: [MyPortfolioWebsiteComponent],
 })
-export class KemerovoWebsiteTestComponent {}
+export class MyPortfolioWebsiteTestComponent {}
 
 describe("MyPortfolioWebsiteComponent", () => {
-  let fixture: ComponentFixture<MyPortfolioWebsiteComponent>;
+  let fixture: ComponentFixture<MyPortfolioWebsiteTestComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [MyPortfolioWebsiteComponent],
-    });
-    fixture = TestBed.createComponent(MyPortfolioWebsiteComponent);
+    TestBed.configureTestingModule({});
+    fixture = TestBed.createComponent(MyPortfolioWebsiteTestComponent);
     fixture.detectChanges();
   });
 

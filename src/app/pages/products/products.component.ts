@@ -1,7 +1,6 @@
 import {
   Component,
   AfterViewInit,
-  HostBinding,
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
@@ -35,9 +34,6 @@ import { MyPortfolioWebsiteComponent } from "./my-portfolio-website/my-portfolio
   ],
 })
 export class ProductsComponent implements AfterViewInit {
-  @HostBinding("class")
-  public classes = "app__page";
-
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
     InViewEffect.init();

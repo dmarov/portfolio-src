@@ -7,7 +7,7 @@ import {
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { Observable } from "rxjs";
-import { MenuService } from "@/app/shared/services/menu.service";
+import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { height } from "@/app/shared/animations/height";
 import { RoutePath } from "@/app/models/route-path.enum";
 

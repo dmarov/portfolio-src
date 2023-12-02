@@ -7,17 +7,16 @@ import { RobotsMangoOfficeComponent } from "./robots-mango-office.component";
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `<app-robots-mango-office></app-robots-mango-office>`,
+  imports: [RobotsMangoOfficeComponent],
 })
 export class RobotsMangoOfficeTestComponent {}
 
 describe("RobotsMangoOfficeComponent", () => {
-  let fixture: ComponentFixture<RobotsMangoOfficeComponent>;
+  let fixture: ComponentFixture<RobotsMangoOfficeTestComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [RobotsMangoOfficeComponent],
-    });
-    fixture = TestBed.createComponent(RobotsMangoOfficeComponent);
+    TestBed.configureTestingModule({});
+    fixture = TestBed.createComponent(RobotsMangoOfficeTestComponent);
     fixture.detectChanges();
   });
 

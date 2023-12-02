@@ -1,11 +1,13 @@
 import { BehaviorSubject, Observable } from "rxjs";
+import { MenuService } from "./menu.service";
 
-export class MenuService {
-  public menuVisible$: Observable<boolean>;
+export class MenuServiceImpl extends MenuService {
+  public readonly menuVisible$: Observable<boolean>;
 
-  private menuVisibleInner$ = new BehaviorSubject<boolean>(false);
+  private readonly menuVisibleInner$ = new BehaviorSubject<boolean>(false);
 
   public constructor() {
+    super();
     this.menuVisible$ = this.menuVisibleInner$.asObservable();
   }
 

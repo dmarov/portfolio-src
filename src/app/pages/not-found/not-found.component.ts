@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, HostBinding } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
 
 @Component({
@@ -9,7 +9,4 @@ import { RouterModule } from "@angular/router";
   standalone: true,
   imports: [RouterModule],
 })
-export class NotFoundComponent {
-  @HostBinding("class")
-  public class = "app__page";
-}
+export class NotFoundComponent {}

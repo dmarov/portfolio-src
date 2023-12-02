@@ -6,18 +6,19 @@ import { VmediaWebsiteComponent } from "./vmedia-website.component";
   selector: "app-vmedia-website-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-vmedia-website></app-vmedia-website>`,
+  template: "<app-vmedia-website></app-vmedia-website>",
+  imports: [VmediaWebsiteComponent],
 })
 export class VmediaWebsiteTestComponent {}
 
 describe("VmediaWebsiteComponent", () => {
-  let fixture: ComponentFixture<VmediaWebsiteComponent>;
+  let fixture: ComponentFixture<VmediaWebsiteTestComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [VmediaWebsiteComponent],
     });
-    fixture = TestBed.createComponent(VmediaWebsiteComponent);
+    fixture = TestBed.createComponent(VmediaWebsiteTestComponent);
     fixture.detectChanges();
   });
 

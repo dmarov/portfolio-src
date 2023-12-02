@@ -7,6 +7,7 @@ import { AppEnvironment } from "@/app/models/app-environment.interface";
 export const environment: AppEnvironment = {
   production: false,
   multilang: false,
+  dateBeginning: "June 17, 2017 00:00:00",
 };
 
 /*

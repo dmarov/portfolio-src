@@ -6,18 +6,17 @@ import { ScarlettAndMonarchCmsComponent } from "./scarlett-and-monarch-cms.compo
   selector: "app-scarlett-and-monarch-cms-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<app-scarlett-and-monarch-cms></app-scarlett-and-monarch-cms>`,
+  template: "<app-scarlett-and-monarch-cms></app-scarlett-and-monarch-cms>",
+  imports: [ScarlettAndMonarchCmsComponent],
 })
 export class ScarlettAndMonarchCmsTestComponent {}
 
 describe("ScarlettAndMonarchCmsComponent", () => {
-  let fixture: ComponentFixture<ScarlettAndMonarchCmsComponent>;
+  let fixture: ComponentFixture<ScarlettAndMonarchCmsTestComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [ScarlettAndMonarchCmsComponent],
-    });
-    fixture = TestBed.createComponent(ScarlettAndMonarchCmsComponent);
+    TestBed.configureTestingModule({});
+    fixture = TestBed.createComponent(ScarlettAndMonarchCmsTestComponent);
     fixture.detectChanges();
   });
 
