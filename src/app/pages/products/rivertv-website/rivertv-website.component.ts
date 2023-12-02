@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 
 @Component({
   selector: "app-rivertv-website",
@@ -12,6 +12,9 @@ import { TrackingEvents } from "@/app/models/tracking-events.enum";
 })
 export class RivertvWebsiteComponent {
   public onVisitClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.VisitRiverTvWebsiteClick, {});
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.VisitRiverTvWebsiteClick,
+      {},
+    );
   }
 }

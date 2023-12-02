@@ -1,0 +1,16 @@
+export enum CustomTrackingEvent {
+  VisitRiverTvWebsiteClick = "visit_rivertv_website_click",
+  VisitVmediaWebsiteClick = "visit_vmedia_website_click",
+  VisitPaxusWebsiteClick = "visit_paxus_website_click",
+  VisitTrikWebsiteClick = "visit_trik_website_click",
+  VisitKemerovoWebsiteClick = "visit_kemerovo_website_click",
+  VisitMyPortfolioWebsiteClick = "visit_my_portfolio_website_click",
+  VisitMyPortfolioRepositoryClick = "visit_my_portfolio_repository_click",
+  PreviewRobotsClick = "preview_robots_click",
+  PreviewRivertvClick = "preview_rivertv_click",
+  PreviewVmediaClick = "preview_vmedia_click",
+  PreviewPaxusClick = "preview_paxus_click",
+  MoreProductsClick = "more_products_click",
+  SwitchEnClick = "switch_en_click",
+  SwitchRuClick = "switch_ru_click",
+}

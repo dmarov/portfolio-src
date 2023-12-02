@@ -1,3 +1,8 @@
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
+
 export abstract class Tracking {
-  public abstract sendEvent(eventName: string, data: object): Promise<void>;
+  public abstract sendCustomEvent(
+    eventName: CustomTrackingEvent,
+    data: object,
+  ): Promise<void>;
 }

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 
 @Component({
   selector: "app-kemerovo-website",
@@ -12,6 +12,9 @@ import { TrackingEvents } from "@/app/models/tracking-events.enum";
 })
 export class KemerovoWebsiteComponent {
   public onVisitClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.VisitKemerovoWebsiteClick, {});
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.VisitKemerovoWebsiteClick,
+      {},
+    );
   }
 }

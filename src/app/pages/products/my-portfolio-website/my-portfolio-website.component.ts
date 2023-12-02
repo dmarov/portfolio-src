@@ -8,7 +8,7 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import ResizeObserver from "resize-observer-polyfill";
-import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 
 @Component({
   selector: "app-my-portfolio-website",
@@ -39,15 +39,15 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
   }
 
   public onVisitClick(): void {
-    window.userTracking.sendEvent(
-      TrackingEvents.VisitMyPortfolioWebsiteClick,
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.VisitMyPortfolioWebsiteClick,
       {},
     );
   }
 
   public onRepoVisitClick(): void {
-    window.userTracking.sendEvent(
-      TrackingEvents.VisitMyPortfolioRepositoryClick,
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.VisitMyPortfolioRepositoryClick,
       {},
     );
   }

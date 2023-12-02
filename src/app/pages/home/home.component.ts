@@ -9,7 +9,7 @@ import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { RoutePath } from "@/app/models/route-path.enum";
 import { environment } from "@/environments/environment";
-import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 
 @Component({
   selector: "app-home",
@@ -39,22 +39,37 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   public onPreviewRobotsClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.PreviewRobotsClick, {});
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.PreviewRobotsClick,
+      {},
+    );
   }
 
   public onPreviewRivertvClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.PreviewRivertvClick, {});
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.PreviewRivertvClick,
+      {},
+    );
   }
 
   public onPreviewVmediaClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.PreviewVmediaClick, {});
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.PreviewVmediaClick,
+      {},
+    );
   }
 
   public onPreviewPaxusClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.PreviewPaxusClick, {});
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.PreviewPaxusClick,
+      {},
+    );
   }
 
   public onMoreProductsClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.MoreProductsClick, {});
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.MoreProductsClick,
+      {},
+    );
   }
 }

@@ -9,7 +9,7 @@ import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
 import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
-import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 import { Lang } from "@/app/models/lang.enum";
 
 @Component({
@@ -28,7 +28,10 @@ export class LangComponent implements OnInit, OnDestroy {
       url: "/en",
       text: "EN",
       onClick(): void {
-        window.userTracking.sendEvent(TrackingEvents.SwitchEnClick, {});
+        window.userTracking.sendCustomEvent(
+          CustomTrackingEvent.SwitchEnClick,
+          {},
+        );
       },
     },
     {
@@ -36,7 +39,10 @@ export class LangComponent implements OnInit, OnDestroy {
       url: "/ru",
       text: "RU",
       onClick(): void {
-        window.userTracking.sendEvent(TrackingEvents.SwitchRuClick, {});
+        window.userTracking.sendCustomEvent(
+          CustomTrackingEvent.SwitchRuClick,
+          {},
+        );
       },
     },
   ];

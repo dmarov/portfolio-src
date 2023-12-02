@@ -1,10 +1,14 @@
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 import { environment } from "@/environments/environment";
 import { Tracking } from "../tracking";
 
 export class GoogleAnalyticsTracking extends Tracking {
   private readonly timeout = environment.trackingEventTimeout;
 
-  public sendEvent(eventName: string, data: object): Promise<void> {
+  public sendCustomEvent(
+    eventName: CustomTrackingEvent,
+    data: object,
+  ): Promise<void> {
     return new Promise((res) => {
       window.gtag("event", eventName, {
         ...data,
