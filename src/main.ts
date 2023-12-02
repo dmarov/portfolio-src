@@ -8,11 +8,13 @@ import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
 import { GoogleAnalyticsTracking } from "./app/shared/utils/tracking/impl/google-analytics-tracking";
-
-window.userTracking = new GoogleAnalyticsTracking();
+import { DebugTracking } from "./app/shared/utils/tracking/impl/debug-tracking";
 
 if (environment.production) {
+  window.userTracking = new GoogleAnalyticsTracking();
   enableProdMode();
+} else {
+  window.userTracking = new DebugTracking();
 }
 
 bootstrapApplication(AppComponent, {
