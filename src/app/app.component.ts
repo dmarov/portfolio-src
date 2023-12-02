@@ -1,4 +1,5 @@
 import { CommonModule } from "@angular/common";
+import { filter } from "rxjs/operators";
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Router, NavigationEnd, RouterModule } from "@angular/router";
 import { HeaderComponent } from "./shared/components/header/header.component";
@@ -15,32 +16,40 @@ export class AppComponent implements OnInit {
   public constructor(private readonly router: Router) {}
 
   public ngOnInit(): void {
-    this.router.events.subscribe((s) => {
-      if (s instanceof NavigationEnd) {
-        const { hash } = window.location;
+    this.router.events
+      .pipe(filter((s) => s instanceof NavigationEnd))
+      .subscribe(() => {
+        this.autoScroll();
+      });
+  }
 
-        if (window.self !== window.top) {
-          return;
-        }
+  private autoScroll(): void {
+    const { hash } = window.location;
+    const isIframe = window.self !== window.top;
 
-        if (hash) {
-          const id = hash.replace(/#/, "");
+    if (isIframe) {
+      return;
+    }
 
-          setTimeout(() => {
-            const target = document.getElementById(id);
-            if (target) {
-              target.scrollIntoView({ behavior: "smooth" });
-            }
-          }, 300);
-        } else {
-          setTimeout(() => {
-            const target = document.getElementById("top-pivot");
-            if (target) {
-              target.scrollIntoView({ behavior: "smooth" });
-            }
-          }, 300);
-        }
+    if (hash) {
+      const id = hash.replace(/#/, "");
+
+      setTimeout(() => {
+        this.scrollToId(id);
+      }, 300);
+    } else {
+      setTimeout(() => {
+        this.scrollToId("top-pivot");
+      }, 300);
+    }
+  }
+
+  private scrollToId(id: string): void {
+    setTimeout(() => {
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
       }
-    });
+    }, 300);
   }
 }
