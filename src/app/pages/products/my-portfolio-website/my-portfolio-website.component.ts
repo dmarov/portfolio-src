@@ -39,7 +39,10 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
   }
 
   public onVisitClick(): void {
-    window.userTracking.sendEvent(TrackingEvents.VisitMyPortfolioWebsiteClick, {});
+    window.userTracking.sendEvent(
+      TrackingEvents.VisitMyPortfolioWebsiteClick,
+      {},
+    );
   }
 
   public onRepoVisitClick(): void {
