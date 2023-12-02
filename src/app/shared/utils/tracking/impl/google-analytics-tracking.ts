@@ -10,7 +10,7 @@ export class GoogleAnalyticsTracking extends Tracking {
     data: object,
   ): Promise<void> {
     return new Promise((res) => {
-      window.gtag("event", eventName, {
+      window.gtag("event", `custom_${eventName}`, {
         ...data,
         event_callback: () => {
           res();
