@@ -6,4 +6,8 @@ export enum TrackingEvents {
   VisitKemerovoWebsiteClick = "VisitKemerovoWebsiteClick",
   VisitMyPortfolioWebsiteClick = "VisitMyPortfolioWebsiteClick",
   VisitMyPortfolioRepositoryClick = "VisitMyPortfolioRepositoryClick",
+  PreviewRobotsClick = "PreviewRobotsClick",
+  PreviewRivertvClick = "PreviewRivertvClick",
+  PreviewVmediaClick = "PreviewVmediaClick",
+  PreviewPaxusClick = "PreviewPaxusClick",
 }
