@@ -10,7 +10,6 @@ import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { RoutePath } from "@/app/models/route-path.enum";
 import { environment } from "@/environments/environment";
 import { TrackingEvents } from "@/app/models/tracking-events.enum";
-import { GoogleAnalytics } from "@/app/shared/utils/tracking/google-analytics";
 
 @Component({
   selector: "app-home",
@@ -40,22 +39,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   public onPreviewRobotsClick(): void {
-    GoogleAnalytics.sendEvent(TrackingEvents.PreviewRobotsClick, {});
+    window.tracking.sendEvent(TrackingEvents.PreviewRobotsClick, {});
   }
 
   public onPreviewRivertvClick(): void {
-    GoogleAnalytics.sendEvent(TrackingEvents.PreviewRivertvClick, {});
+    window.tracking.sendEvent(TrackingEvents.PreviewRivertvClick, {});
   }
 
   public onPreviewVmediaClick(): void {
-    GoogleAnalytics.sendEvent(TrackingEvents.PreviewVmediaClick, {});
+    window.tracking.sendEvent(TrackingEvents.PreviewVmediaClick, {});
   }
 
   public onPreviewPaxusClick(): void {
-    GoogleAnalytics.sendEvent(TrackingEvents.PreviewPaxusClick, {});
+    window.tracking.sendEvent(TrackingEvents.PreviewPaxusClick, {});
   }
 
   public onMoreProductsClick(): void {
-    GoogleAnalytics.sendEvent(TrackingEvents.MoreProductsClick, {});
+    window.tracking.sendEvent(TrackingEvents.MoreProductsClick, {});
   }
 }

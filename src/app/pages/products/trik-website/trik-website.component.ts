@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { TrackingEvents } from "@/app/models/tracking-events.enum";
-import { GoogleAnalytics } from "@/app/shared/utils/tracking/google-analytics";
 
 @Component({
   selector: "app-trik-website",
@@ -13,6 +12,6 @@ import { GoogleAnalytics } from "@/app/shared/utils/tracking/google-analytics";
 })
 export class TrikWebsiteComponent {
   public onVisitClick(): void {
-    GoogleAnalytics.sendEvent(TrackingEvents.VisitTrikWebsiteClick, {});
+    window.tracking.sendEvent(TrackingEvents.VisitTrikWebsiteClick, {});
   }
 }

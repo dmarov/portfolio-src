@@ -1,12 +1,10 @@
 import { environment } from "@/environments/environment";
+import { Tracking } from "../tracking";
 
-export class GoogleAnalytics {
-  private static timeout = environment.trackingEventTimeout;
+export class GoogleAnalytics extends Tracking {
+  private readonly timeout = environment.trackingEventTimeout;
 
-  public static async sendEvent(
-    eventName: string,
-    data: object,
-  ): Promise<void> {
+  public sendEvent(eventName: string, data: object): Promise<void> {
     return new Promise((res) => {
       window.gtag("event", eventName, {
         ...data,

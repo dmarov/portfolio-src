@@ -11,7 +11,6 @@ import { Subscription } from "rxjs";
 import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
 import { TrackingEvents } from "@/app/models/tracking-events.enum";
 import { Lang } from "@/app/models/lang.enum";
-import { GoogleAnalytics } from "../../utils/tracking/google-analytics";
 
 @Component({
   selector: "app-lang",
@@ -29,7 +28,7 @@ export class LangComponent implements OnInit, OnDestroy {
       url: "/en",
       text: "EN",
       onClick(): void {
-        GoogleAnalytics.sendEvent(TrackingEvents.SwitchEnClick, {});
+        window.tracking.sendEvent(TrackingEvents.SwitchEnClick, {});
       },
     },
     {
@@ -37,7 +36,7 @@ export class LangComponent implements OnInit, OnDestroy {
       url: "/ru",
       text: "RU",
       onClick(): void {
-        GoogleAnalytics.sendEvent(TrackingEvents.SwitchRuClick, {});
+        window.tracking.sendEvent(TrackingEvents.SwitchRuClick, {});
       },
     },
   ];

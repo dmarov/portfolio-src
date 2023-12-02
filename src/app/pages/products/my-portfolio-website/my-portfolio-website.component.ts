@@ -9,7 +9,6 @@ import {
 import { CommonModule } from "@angular/common";
 import ResizeObserver from "resize-observer-polyfill";
 import { TrackingEvents } from "@/app/models/tracking-events.enum";
-import { GoogleAnalytics } from "@/app/shared/utils/tracking/google-analytics";
 
 @Component({
   selector: "app-my-portfolio-website",
@@ -40,11 +39,11 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
   }
 
   public onVisitClick(): void {
-    GoogleAnalytics.sendEvent(TrackingEvents.VisitMyPortfolioWebsiteClick, {});
+    window.tracking.sendEvent(TrackingEvents.VisitMyPortfolioWebsiteClick, {});
   }
 
   public onRepoVisitClick(): void {
-    GoogleAnalytics.sendEvent(
+    window.tracking.sendEvent(
       TrackingEvents.VisitMyPortfolioRepositoryClick,
       {},
     );
