@@ -1,7 +1,7 @@
 import { environment } from "@/environments/environment";
 import { Tracking } from "../tracking";
 
-export class GoogleAnalytics extends Tracking {
+export class GoogleAnalyticsTracking extends Tracking {
   private readonly timeout = environment.trackingEventTimeout;
 
   public sendEvent(eventName: string, data: object): Promise<void> {

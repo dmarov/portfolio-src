@@ -7,9 +7,9 @@ import { AppComponent } from "@/app/app.component";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
-import { GoogleAnalytics } from "./app/shared/utils/tracking/impl/google-analytics";
+import { GoogleAnalyticsTracking } from "./app/shared/utils/tracking/impl/google-analytics-tracking";
 
-window.tracking = new GoogleAnalytics();
+window.tracking = new GoogleAnalyticsTracking();
 
 if (environment.production) {
   enableProdMode();
