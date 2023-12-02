@@ -9,8 +9,8 @@ import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { RoutePath } from "@/app/models/route-path.enum";
 import { environment } from "@/environments/environment";
-import { GoogleAnalytics } from "@/app/shared/utils/google-analytics/google-analytics";
 import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { GoogleAnalytics } from "@/app/shared/utils/tracking/google-analytics";
 
 @Component({
   selector: "app-home",

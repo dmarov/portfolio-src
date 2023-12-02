@@ -8,8 +8,8 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import ResizeObserver from "resize-observer-polyfill";
-import { GoogleAnalytics } from "@/app/shared/utils/google-analytics/google-analytics";
 import { TrackingEvents } from "@/app/models/tracking-events.enum";
+import { GoogleAnalytics } from "@/app/shared/utils/tracking/google-analytics";
 
 @Component({
   selector: "app-my-portfolio-website",

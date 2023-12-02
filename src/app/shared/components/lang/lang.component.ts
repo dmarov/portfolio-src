@@ -9,9 +9,9 @@ import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
 import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
-import { GoogleAnalytics } from "../../utils/google-analytics/google-analytics";
 import { TrackingEvents } from "@/app/models/tracking-events.enum";
 import { Lang } from "@/app/models/lang.enum";
+import { GoogleAnalytics } from "../../utils/tracking/google-analytics";
 
 @Component({
   selector: "app-lang",
