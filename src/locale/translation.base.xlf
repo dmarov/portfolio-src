@@ -51,7 +51,7 @@
         <note priority="1" from="description">career micro services</note>
       </trans-unit>
       <trans-unit id="CAREER_SERVICES_USEFUL" datatype="html">
-        <source> These services was very useful for each new website. </source>
+        <source> These services were very useful for each new website. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
           <context context-type="linenumber">71,73</context>
