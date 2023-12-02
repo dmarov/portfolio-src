@@ -13,4 +13,6 @@ export enum CustomTrackingEvent {
   MoreProductsClick = "more_products_click",
   SwitchEnClick = "switch_en_click",
   SwitchRuClick = "switch_ru_click",
+  VisitGithubHeaderClick = "visit_github_header_click",
+  VisitGithubFooterClick = "visit_github_footer_click",
 }

@@ -3,6 +3,7 @@ import { filter } from "rxjs/operators";
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Router, NavigationEnd, RouterModule } from "@angular/router";
 import { HeaderComponent } from "./shared/components/header/header.component";
+import { CustomTrackingEvent } from "./models/custom-tracking-event.enum";
 
 @Component({
   selector: "app-root",
@@ -21,6 +22,13 @@ export class AppComponent implements OnInit {
       .subscribe(() => {
         this.autoScroll();
       });
+  }
+
+  public onVisitGithubFooterClick(): void {
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.VisitGithubFooterClick,
+      {},
+    );
   }
 
   private autoScroll(): void {

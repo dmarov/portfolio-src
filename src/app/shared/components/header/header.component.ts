@@ -6,6 +6,7 @@ import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { MenuComponent } from "../menu/menu.component";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
+import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 
 @Component({
   selector: "app-header",
@@ -28,5 +29,12 @@ export class HeaderComponent implements OnInit {
 
   public toggleMenuOpened(): void {
     this.menuService.toggle();
+  }
+
+  public onVisitGithubHeaderClick(): void {
+    window.userTracking.sendCustomEvent(
+      CustomTrackingEvent.VisitGithubHeaderClick,
+      {},
+    );
   }
 }
