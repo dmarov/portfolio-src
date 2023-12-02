@@ -8,10 +8,9 @@ export class GoogleAnalytics {
     data: object,
   ): Promise<void> {
     return new Promise((res) => {
-      window.dataLayer.push({
+      window.gtag("event", eventName, {
         ...data,
-        event: eventName,
-        eventCallback: () => {
+        event_callback: () => {
           res();
         },
       });
