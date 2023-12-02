@@ -12,6 +12,6 @@ import { TrackingEvents } from "@/app/models/tracking-events.enum";
 })
 export class RivertvWebsiteComponent {
   public onVisitClick(): void {
-    window.tracking.sendEvent(TrackingEvents.VisitRiverTvWebsiteClick, {});
+    window.userTracking.sendEvent(TrackingEvents.VisitRiverTvWebsiteClick, {});
   }
 }

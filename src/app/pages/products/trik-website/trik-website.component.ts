@@ -12,6 +12,6 @@ import { TrackingEvents } from "@/app/models/tracking-events.enum";
 })
 export class TrikWebsiteComponent {
   public onVisitClick(): void {
-    window.tracking.sendEvent(TrackingEvents.VisitTrikWebsiteClick, {});
+    window.userTracking.sendEvent(TrackingEvents.VisitTrikWebsiteClick, {});
   }
 }

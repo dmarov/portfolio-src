@@ -9,7 +9,7 @@ import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
 import { GoogleAnalyticsTracking } from "./app/shared/utils/tracking/impl/google-analytics-tracking";
 
-window.tracking = new GoogleAnalyticsTracking();
+window.userTracking = new GoogleAnalyticsTracking();
 
 if (environment.production) {
   enableProdMode();

@@ -28,7 +28,7 @@ export class LangComponent implements OnInit, OnDestroy {
       url: "/en",
       text: "EN",
       onClick(): void {
-        window.tracking.sendEvent(TrackingEvents.SwitchEnClick, {});
+        window.userTracking.sendEvent(TrackingEvents.SwitchEnClick, {});
       },
     },
     {
@@ -36,7 +36,7 @@ export class LangComponent implements OnInit, OnDestroy {
       url: "/ru",
       text: "RU",
       onClick(): void {
-        window.tracking.sendEvent(TrackingEvents.SwitchRuClick, {});
+        window.userTracking.sendEvent(TrackingEvents.SwitchRuClick, {});
       },
     },
   ];

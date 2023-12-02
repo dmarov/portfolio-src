@@ -12,6 +12,6 @@ import { TrackingEvents } from "@/app/models/tracking-events.enum";
 })
 export class VmediaWebsiteComponent {
   public onVisitClick(): void {
-    window.tracking.sendEvent(TrackingEvents.VisitVmediaWebsiteClick, {});
+    window.userTracking.sendEvent(TrackingEvents.VisitVmediaWebsiteClick, {});
   }
 }

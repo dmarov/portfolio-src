@@ -39,22 +39,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   public onPreviewRobotsClick(): void {
-    window.tracking.sendEvent(TrackingEvents.PreviewRobotsClick, {});
+    window.userTracking.sendEvent(TrackingEvents.PreviewRobotsClick, {});
   }
 
   public onPreviewRivertvClick(): void {
-    window.tracking.sendEvent(TrackingEvents.PreviewRivertvClick, {});
+    window.userTracking.sendEvent(TrackingEvents.PreviewRivertvClick, {});
   }
 
   public onPreviewVmediaClick(): void {
-    window.tracking.sendEvent(TrackingEvents.PreviewVmediaClick, {});
+    window.userTracking.sendEvent(TrackingEvents.PreviewVmediaClick, {});
   }
 
   public onPreviewPaxusClick(): void {
-    window.tracking.sendEvent(TrackingEvents.PreviewPaxusClick, {});
+    window.userTracking.sendEvent(TrackingEvents.PreviewPaxusClick, {});
   }
 
   public onMoreProductsClick(): void {
-    window.tracking.sendEvent(TrackingEvents.MoreProductsClick, {});
+    window.userTracking.sendEvent(TrackingEvents.MoreProductsClick, {});
   }
 }

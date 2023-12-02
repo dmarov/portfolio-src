@@ -5,6 +5,6 @@ export {};
 declare global {
   interface Window {
     gtag: Function;
-    tracking: Tracking;
+    userTracking: Tracking;
   }
 }

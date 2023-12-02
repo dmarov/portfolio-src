@@ -12,6 +12,6 @@ import { TrackingEvents } from "@/app/models/tracking-events.enum";
 })
 export class KemerovoWebsiteComponent {
   public onVisitClick(): void {
-    window.tracking.sendEvent(TrackingEvents.VisitKemerovoWebsiteClick, {});
+    window.userTracking.sendEvent(TrackingEvents.VisitKemerovoWebsiteClick, {});
   }
 }

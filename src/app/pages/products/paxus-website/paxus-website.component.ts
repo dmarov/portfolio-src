@@ -12,6 +12,6 @@ import { TrackingEvents } from "@/app/models/tracking-events.enum";
 })
 export class PaxusWebsiteComponent {
   public onVisitClick(): void {
-    window.tracking.sendEvent(TrackingEvents.VisitPaxusWebsiteClick, {});
+    window.userTracking.sendEvent(TrackingEvents.VisitPaxusWebsiteClick, {});
   }
 }
