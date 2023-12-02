@@ -10,66 +10,6 @@
   position: relative;
   transition: transform 0.3s linear;
 
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    transition: opacity 0.3s linear;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
-    opacity: 0;
-    background: linear-gradient(
-      to bottom,
-      rgb(0 0 0 / 90%),
-      rgb(0 0 0 / 50%) 10%,
-      rgb(0 0 0 / 0%) 20%
-    );
-  }
-
-  &__overlay-link {
-    margin: auto auto 10px;
-    padding: 10px 20px;
-    background-color: rgba($col-black, 0.85);
-    border-radius: 5px;
-    font-weight: bold;
-    border: 1px solid $col-barelywhite;
-    text-transform: uppercase;
-    pointer-events: auto;
-    position: relative;
-
-    &,
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: $col-green;
-    }
-
-    &::after {
-      z-index: 10;
-      pointer-events: none;
-      content: "";
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transition: opacity 0.3s linear;
-    }
-
-    &:hover {
-      &::after {
-        opacity: 1;
-      }
-    }
-  }
-
-  &__overlay-title {
-    margin: 0 auto auto;
-    padding: 10px 20px;
-    font-weight: bold;
-    color: $col-orange;
-  }
-
   &__link {
     cursor: pointer;
   }

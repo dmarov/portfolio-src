@@ -9,6 +9,8 @@ import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { RoutePath } from "@/app/models/route-path.enum";
 import { environment } from "@/environments/environment";
+import { GoogleAnalytics } from "@/app/shared/utils/google-analytics/google-analytics";
+import { TrackingEvents } from "@/app/models/tracking-events.enum";
 
 @Component({
   selector: "app-home",
@@ -35,5 +37,21 @@ export class HomeComponent implements OnInit, AfterViewInit {
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
     InViewEffect.init();
+  }
+
+  public onPreviewRobotsClick(): void {
+    GoogleAnalytics.sendEvent(TrackingEvents.PreviewRobotsClick, {});
+  }
+
+  public onPreviewRivertvClick(): void {
+    GoogleAnalytics.sendEvent(TrackingEvents.PreviewRivertvClick, {});
+  }
+
+  public onPreviewVmediaClick(): void {
+    GoogleAnalytics.sendEvent(TrackingEvents.PreviewVmediaClick, {});
+  }
+
+  public onPreviewPaxusClick(): void {
+    GoogleAnalytics.sendEvent(TrackingEvents.PreviewPaxusClick, {});
   }
 }
