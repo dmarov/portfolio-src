@@ -9,9 +9,15 @@ import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
 import { GoogleAnalyticsTracking } from "./app/shared/utils/tracking/impl/google-analytics-tracking";
 import { DebugTracking } from "./app/shared/utils/tracking/impl/debug-tracking";
+import { CompositeTracking } from "./app/shared/utils/tracking/impl/composite-tracking";
+import { YandexMetrikaTracking } from "./app/shared/utils/tracking/impl/yandex-metrika-tracking";
 
 if (environment.production) {
-  window.userTracking = new GoogleAnalyticsTracking();
+  window.userTracking = new CompositeTracking([
+    new GoogleAnalyticsTracking(),
+    new YandexMetrikaTracking(),
+  ]);
+
   enableProdMode();
 } else {
   window.userTracking = new DebugTracking();
