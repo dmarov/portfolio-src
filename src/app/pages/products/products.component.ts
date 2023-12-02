@@ -4,8 +4,8 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { InViewEffect } from "@/app/shared/utils/inview-effect";
-import { UnfoldEffect } from "@/app/shared/utils/unfold-effect";
+import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
+import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { RobotsMangoOfficeComponent } from "./robots-mango-office/robots-mango-office.component";
 import { RivertvWebsiteComponent } from "./rivertv-website/rivertv-website.component";
 import { VmediaWebsiteComponent } from "./vmedia-website/vmedia-website.component";

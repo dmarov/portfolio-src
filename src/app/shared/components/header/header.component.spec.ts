@@ -2,7 +2,8 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
-import { MenuService } from "../../services/menu.service";
+import { MenuService } from "../../services/menu/menu.service";
+import { MenuServiceMock } from "../../services/menu/menu.service.mock";
 import { HeaderComponent } from "./header.component";
 
 @Component({
@@ -10,7 +11,6 @@ import { HeaderComponent } from "./header.component";
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [HeaderComponent],
-  providers: [MenuService],
   template: `<app-header></app-header>`,
 })
 export class HeaderTestComponent {}
@@ -20,6 +20,12 @@ describe("HeaderComponent", () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, NoopAnimationsModule],
+      providers: [
+        {
+          provide: MenuService,
+          useClass: MenuServiceMock,
+        },
+      ],
     });
 
     fixture = TestBed.createComponent(HeaderTestComponent);

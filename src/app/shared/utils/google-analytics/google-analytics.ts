@@ -1,5 +1,7 @@
+import { environment } from "@/environments/environment";
+
 export class GoogleAnalytics {
-  private static timeout = 1000;
+  private static timeout = environment.trackingEventTimeout;
 
   public static async sendEvent(
     eventName: string,

@@ -5,8 +5,8 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { InViewEffect } from "@/app/shared/utils/inview-effect";
-import { UnfoldEffect } from "@/app/shared/utils/unfold-effect";
+import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
+import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { RoutePath } from "@/app/models/route-path.enum";
 import { environment } from "@/environments/environment";
 

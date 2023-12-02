@@ -3,8 +3,8 @@ import {
   AfterViewInit,
   ChangeDetectionStrategy,
 } from "@angular/core";
-import { InViewEffect } from "@/app/shared/utils/inview-effect";
-import { UnfoldEffect } from "@/app/shared/utils/unfold-effect";
+import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
+import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 
 @Component({
   selector: "app-about-me",

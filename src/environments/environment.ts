@@ -8,6 +8,7 @@ export const environment: AppEnvironment = {
   production: false,
   multilang: false,
   dateBeginning: "June 17, 2017 00:00:00",
+  trackingEventTimeout: 1000,
 };
 
 /*
