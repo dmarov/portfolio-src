@@ -1,5 +1,7 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { GoogleAnalytics } from "@/app/shared/utils/google-analytics/google-analytics";
+import { TrackingEvents } from "@/app/models/tracking-events.enum";
 
 @Component({
   selector: "app-vmedia-website",
@@ -9,4 +11,8 @@ import { CommonModule } from "@angular/common";
   styleUrls: ["./vmedia-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class VmediaWebsiteComponent {}
+export class VmediaWebsiteComponent {
+  public onVisitClick(): void {
+    GoogleAnalytics.sendEvent(TrackingEvents.VisitVmediaWebsiteClick, {});
+  }
+}

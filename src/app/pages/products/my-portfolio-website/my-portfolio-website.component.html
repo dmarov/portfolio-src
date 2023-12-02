@@ -40,6 +40,7 @@
       class="product-about__visit-btn"
       href="/"
       target="_blank"
+      (click)="onVisitClick()"
     >
       Visit
     </a>
@@ -70,7 +71,11 @@
     class="content-block__p"
   >
     Source code for this project can be viewed in
-    <a href="https://github.com/dmarov/portfolio-src" target="_blank">
+    <a
+      href="https://github.com/dmarov/portfolio-src"
+      target="_blank"
+      (click)="onRepoVisitClick()"
+    >
       project repository
     </a>
     .

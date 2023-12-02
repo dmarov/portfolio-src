@@ -1,5 +1,7 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { GoogleAnalytics } from "@/app/shared/utils/google-analytics/google-analytics";
+import { TrackingEvents } from "@/app/models/tracking-events.enum";
 
 @Component({
   selector: "app-kemerovo-website",
@@ -9,4 +11,8 @@ import { CommonModule } from "@angular/common";
   styleUrls: ["./kemerovo-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class KemerovoWebsiteComponent {}
+export class KemerovoWebsiteComponent {
+  public onVisitClick(): void {
+    GoogleAnalytics.sendEvent(TrackingEvents.VisitKemerovoWebsiteClick, {});
+  }
+}
