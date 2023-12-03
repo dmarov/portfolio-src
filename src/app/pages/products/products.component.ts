@@ -22,17 +22,7 @@ import { Product } from "@/app/models/products/product.interface";
   styleUrls: ["./products.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [
-    CommonModule,
-    RobotsMangoOfficeComponent,
-    RivertvWebsiteComponent,
-    VmediaWebsiteComponent,
-    ScarlettAndMonarchCmsComponent,
-    TrikWebsiteComponent,
-    PaxusWebsiteComponent,
-    KemerovoWebsiteComponent,
-    MyPortfolioWebsiteComponent,
-  ],
+  imports: [CommonModule],
 })
 export class ProductsComponent implements AfterViewInit {
   public colors = ["green", "orange", "white"];
