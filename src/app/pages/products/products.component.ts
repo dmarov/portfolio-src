@@ -2,7 +2,6 @@ import {
   Component,
   AfterViewInit,
   ChangeDetectionStrategy,
-  Type,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
