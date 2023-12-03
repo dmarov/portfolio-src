@@ -24,7 +24,7 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
 
   public styleTransform = "";
 
-  public constructor(private readonly cdr: ChangeDetectorRef) { }
+  public constructor(private readonly cdr: ChangeDetectorRef) {}
 
   public ngAfterViewInit(): void {
     setTimeout(() => {
