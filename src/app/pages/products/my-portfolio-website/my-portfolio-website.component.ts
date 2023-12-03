@@ -24,7 +24,7 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
 
   public styleTransform = "";
 
-  public constructor(private readonly cdr: ChangeDetectorRef) {}
+  public constructor(private readonly cdr: ChangeDetectorRef) { }
 
   public ngAfterViewInit(): void {
     setTimeout(() => {
@@ -36,13 +36,6 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
 
       observer.observe(this.container.nativeElement);
     });
-  }
-
-  public onVisitClick(): void {
-    window.userTracking.sendCustomEvent(
-      CustomTrackingEvent.VisitMyPortfolioWebsiteClick,
-      {},
-    );
   }
 
   public onRepoVisitClick(): void {

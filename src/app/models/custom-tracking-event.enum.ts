@@ -4,7 +4,6 @@ export enum CustomTrackingEvent {
   VisitPaxusWebsiteClick = "visit_paxus_website_click",
   VisitTrikWebsiteClick = "visit_trik_website_click",
   VisitKemerovoWebsiteClick = "visit_kemerovo_website_click",
-  VisitMyPortfolioWebsiteClick = "visit_my_portfolio_website_click",
   VisitMyPortfolioRepositoryClick = "visit_my_portfolio_repository_click",
   PreviewRobotsClick = "preview_robots_click",
   PreviewRivertvClick = "preview_rivertv_click",
