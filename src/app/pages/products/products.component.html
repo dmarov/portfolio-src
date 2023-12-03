@@ -1,89 +1,16 @@
 <div class="products" data-test="products">
-  <div class="fragment" id="robots"></div>
-  <div class="content-wrapper">
+  <div
+    class="content-wrapper"
+    *ngFor="let product of products; let index = index"
+  >
+    <div class="fragment" [id]="product.id"></div>
     <div class="content">
       <section
-        class="content-block content-block_theme_green unfold unfold_hidden inview inview_not"
+        [ngClass]="'content-block_theme_' + colors[index % 3]"
+        class="content-block unfold unfold_hidden inview inview_not"
       >
-        <app-robots-mango-office></app-robots-mango-office>
+        <ng-container *ngComponentOutlet="product.component"></ng-container>
       </section>
-    </div>
-  </div>
-
-  <div class="fragment" id="rivertv"></div>
-  <div class="content-wrapper">
-    <div class="content">
-      <section
-        class="content-block content-block_theme_orange unfold unfold_hidden inview inview_not"
-      >
-        <app-rivertv-website></app-rivertv-website>
-      </section>
-    </div>
-  </div>
-
-  <div class="fragment" id="vmedia"></div>
-  <div class="content-wrapper">
-    <div class="content">
-      <section
-        class="content-block content-block_theme_white unfold unfold_hidden inview inview_not"
-      >
-        <app-vmedia-website></app-vmedia-website>
-      </section>
-    </div>
-  </div>
-
-  <div class="fragment" id="paxus"></div>
-  <div class="content-wrapper">
-    <div class="content">
-      <article
-        class="content-block content-block_theme_green unfold unfold_hidden inview inview_not"
-      >
-        <app-paxus-website></app-paxus-website>
-      </article>
-    </div>
-  </div>
-
-  <div class="fragment" id="sm-cms"></div>
-  <div class="content-wrapper">
-    <div class="content">
-      <section
-        class="content-block content-block_theme_orange unfold unfold_hidden inview inview_not"
-      >
-        <app-scarlett-and-monarch-cms></app-scarlett-and-monarch-cms>
-      </section>
-    </div>
-  </div>
-
-  <div class="fragment" id="trik"></div>
-  <div class="content-wrapper">
-    <div class="content">
-      <article
-        class="content-block content-block_theme_white unfold unfold_hidden inview inview_not"
-      >
-        <app-trik-website></app-trik-website>
-      </article>
-    </div>
-  </div>
-
-  <div class="fragment" id="kemerovo"></div>
-  <div class="content-wrapper">
-    <div class="content">
-      <article
-        class="content-block content-block_theme_green unfold unfold_hidden inview inview_not"
-      >
-        <app-kemerovo-website></app-kemerovo-website>
-      </article>
-    </div>
-  </div>
-
-  <div class="fragment" id="my-portfolio"></div>
-  <div class="content-wrapper">
-    <div class="content">
-      <article
-        class="content-block content-block_theme_orange unfold unfold_hidden inview inview_not"
-      >
-        <app-my-portfolio-website></app-my-portfolio-website>
-      </article>
     </div>
   </div>
 </div>
