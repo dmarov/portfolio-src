@@ -178,8 +178,8 @@
         
         <note priority="1" from="description">robot purpose</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit><trans-unit id="VIRTUAL_ASSISTANT_SCRIPT_CONSTRUCTOR" datatype="html">
-        <source> Script constructor enables major possibilities for scripting with conditions, cycles, SMS and email notifications, handling user input and lots of other features used to automate routine. </source><target state="translated"> Конструктор скриптов создаёт
-        множество возможностей для создания сценариев с ветвлениями, циклами, отправкой SMS и email уведомлений, обработкой действий пользователя и множеством других возможностей, используемых для автоматизации шаблонных действий.</target>
+        <source> Script constructor enables major possibilities for scripting with conditions, cycles, SMS and email notifications, handling user input and lots of other features used to automate routine. </source><target state="translated"> Конструктор скриптов предоставляет
+        широкий инструментарий для создания сценариев с ветвлениями, циклами, отправкой SMS и email уведомлений, обработкой пользовательского ввода и множеством других действий, используемых для автоматизации рутинных процессов.</target>
         
         <note priority="1" from="description">robots script constructor</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">36</context></context-group></trans-unit><trans-unit id="PROJECT_ROBOTS_MY_RESPONSIBILITIES" datatype="html">
