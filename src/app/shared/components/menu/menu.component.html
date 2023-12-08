@@ -1,8 +1,17 @@
 <ul class="header-menu" data-test="menu">
-  <li *ngFor="let menuEntry of menuEntries" class="header-menu__entry" routerLinkActive="header-menu__entry_active"
-    #rla="routerLinkActive" [routerLinkActiveOptions]="{ exact: menuEntry.exact }"
-    [@slideInOut]="rla.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'">
-    <a class="header-menu__link" [routerLink]="menuEntry.href" (click)="rla.isActive ? toggleMenu() : closeMenu()">
+  <li
+    *ngFor="let menuEntry of menuEntries"
+    class="header-menu__entry"
+    routerLinkActive="header-menu__entry_active"
+    #rla="routerLinkActive"
+    [routerLinkActiveOptions]="{ exact: menuEntry.exact }"
+    [@slideInOut]="rla.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'"
+  >
+    <a
+      class="header-menu__link"
+      [routerLink]="menuEntry.href"
+      (click)="rla.isActive ? toggleMenu() : closeMenu()"
+    >
       {{ menuEntry.title }}
     </a>
   </li>
