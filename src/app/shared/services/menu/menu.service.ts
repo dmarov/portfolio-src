@@ -5,7 +5,7 @@ export abstract class MenuService {
 
   public abstract toggle(): void;
 
-  public abstract show(): void;
+  public abstract open(): void;
 
-  public abstract hide(): void;
+  public abstract close(): void;
 }

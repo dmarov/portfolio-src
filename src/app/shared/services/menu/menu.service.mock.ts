@@ -12,11 +12,11 @@ export class MenuServiceMock extends MenuService {
     // this method intended to be empty
   }
 
-  public show(): void {
+  public open(): void {
     // this method intended to be empty
   }
 
-  public hide(): void {
+  public close(): void {
     // this method intended to be empty
   }
 }

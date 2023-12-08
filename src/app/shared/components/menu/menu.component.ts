@@ -39,14 +39,14 @@ export class MenuComponent implements OnInit {
     },
   ];
 
-  public constructor(private readonly menuService: MenuService) {}
+  public constructor(private readonly menuService: MenuService) { }
 
   public ngOnInit(): void {
     this.isMenuOpen$ = this.menuService.menuVisible$;
   }
 
   public closeMenu(): void {
-    this.menuService.hide();
+    this.menuService.close();
   }
 
   public toggleMenu(): void {

@@ -8,9 +8,22 @@
     [@slideInOut]="rla.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'"
   >
     <a
+      [ngClass]="{
+        'header-menu__link_visible': (isMenuOpen$ | async) && !rla.isActive
+      }"
       class="header-menu__link"
       [routerLink]="menuEntry.href"
-      (click)="rla.isActive ? toggleMenu() : closeMenu()"
+      (click)="closeMenu()"
+    >
+      {{ menuEntry.title }}
+    </a>
+    <a
+      [ngClass]="{
+        'header-menu__link_visible': !((isMenuOpen$ | async) && !rla.isActive)
+      }"
+      href="javascript:void(0)"
+      class="header-menu__link"
+      (click)="toggleMenu()"
     >
       {{ menuEntry.title }}
     </a>

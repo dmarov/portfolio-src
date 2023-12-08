@@ -17,7 +17,6 @@
   }
 
   &__link {
-    display: block;
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px 20px;
@@ -26,6 +25,7 @@
     text-align: center;
     transition: color 0.3s linear;
     line-height: 1;
+    display: none;
 
     @include respond-to("small") {
       font-size: 30px;
@@ -39,6 +39,10 @@
 
     &:hover {
       color: $col-blazeoragne;
+    }
+
+    &_visible {
+      display: block;
     }
   }
 

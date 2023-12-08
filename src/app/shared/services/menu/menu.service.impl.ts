@@ -15,11 +15,11 @@ export class MenuServiceImpl extends MenuService {
     this.menuVisibleInner$.next(!this.menuVisibleInner$.getValue());
   }
 
-  public show(): void {
+  public open(): void {
     this.menuVisibleInner$.next(true);
   }
 
-  public hide(): void {
+  public close(): void {
     this.menuVisibleInner$.next(false);
   }
 }

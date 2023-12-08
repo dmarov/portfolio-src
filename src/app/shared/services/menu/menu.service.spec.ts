@@ -24,7 +24,7 @@ describe("MenuService", () => {
       expect(values).toEqual([false, true]);
     });
 
-    service.show();
+    service.open();
   });
 
   it("should emit false after menu closed", () => {
@@ -32,8 +32,8 @@ describe("MenuService", () => {
       expect(values).toEqual([false, true, false]);
     });
 
-    service.show();
-    service.hide();
+    service.open();
+    service.close();
   });
 
   it("should emit opposite value after menu toggle", () => {
