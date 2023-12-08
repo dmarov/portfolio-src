@@ -1,6 +1,5 @@
 ## TODO:
 
-- prevent header link folow for folded state
 - fix scroll delay
 - add "My Skills" list
 - add preview title on hover, and touch
