@@ -1,74 +1,9 @@
-<ul
-  class="header-menu"
-  data-test="menu"
-  [ngClass]="{ 'header-menu--mobile--open': isMenuOpen$ | async }"
->
-  <li
-    class="header-menu__entry"
-    routerLinkActive="header-menu__entry_active"
-    [@slideInOut]="home.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'"
-    [routerLinkActiveOptions]="{ exact: true }"
-  >
-    <input
-      type="hidden"
-      [routerLinkActiveOptions]="{ exact: true }"
-      [routerLink]="routePath.Home"
-      routerLinkActive
-      #home="routerLinkActive"
-    />
-    <a
-      i18n="go to home page|link to land on home page@@HOME_PAGE_LINK"
-      class="header-menu__link"
-      [routerLink]="routePath.Home"
-      (click)="home.isActive ? toggleMenu() : closeMenu()"
-    >
-      Home
-    </a>
-  </li>
-  <li
-    class="header-menu__entry"
-    [@slideInOut]="
-      products.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'
-    "
-    routerLinkActive="header-menu__entry_active"
-  >
-    <input
-      type="hidden"
-      [routerLink]="routePath.Products"
-      routerLinkActive
-      #products="routerLinkActive"
-    />
-    <a
-      i18n="
-        go to projects page|link to land on projects page@@PROJECTS_PAGE_LINK"
-      class="header-menu__link"
-      [routerLink]="routePath.Products"
-      (click)="products.isActive ? toggleMenu() : closeMenu()"
-    >
-      Products
-    </a>
-  </li>
-  <li
-    class="header-menu__entry"
-    [@slideInOut]="
-      aboutme.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'
-    "
-    routerLinkActive="header-menu__entry_active"
-  >
-    <input
-      type="hidden"
-      [routerLink]="routePath.AboutMe"
-      routerLinkActive
-      #aboutme="routerLinkActive"
-    />
-    <a
-      i18n="
-        go to about me page|link to land on about me page@@ABOUT_ME_PAGE_LINK"
-      class="header-menu__link"
-      [routerLink]="routePath.AboutMe"
-      (click)="aboutme.isActive ? toggleMenu() : closeMenu()"
-    >
-      About Me
+<ul class="header-menu" data-test="menu">
+  <li *ngFor="let menuEntry of menuEntries" class="header-menu__entry" routerLinkActive="header-menu__entry_active"
+    #rla="routerLinkActive" [routerLinkActiveOptions]="{ exact: menuEntry.exact }"
+    [@slideInOut]="rla.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'">
+    <a class="header-menu__link" [routerLink]="menuEntry.href" (click)="rla.isActive ? toggleMenu() : closeMenu()">
+      {{ menuEntry.title }}
     </a>
   </li>
 </ul>

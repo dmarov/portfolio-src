@@ -3,28 +3,30 @@
   <file source-language="en" target-language="ru" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="HOME_PAGE_LINK" datatype="html">
-        <source> Home </source>
+        <source>Home</source>
         <target> Главная </target>
         <note priority="1" from="description">link to land on home page</note>
         <note priority="1" from="meaning">go to home page</note>
 
         <note priority="1" from="description">Home page of website</note>
         <note priority="1" from="meaning">home page</note>
-      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit>
-      <trans-unit id="PROJECTS_PAGE_LINK" datatype="html">
-        <source> Products </source>
-        <target> Продукты </target>
-        <note priority="1" from="description">link to land on projects page</note>
-        <note priority="1" from="meaning">go to projects page</note>
-
-      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.html</context><context context-type="linenumber">47</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context><context context-type="linenumber">33</context></context-group></trans-unit><trans-unit id="PRODUCTS_PAGE_LINK" datatype="html">
+        <source>Products</source><target>Продукты</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">link to land on products page</note>
+        <note priority="1" from="meaning">go to products page</note>
+      </trans-unit>
+      
       <trans-unit id="ABOUT_ME_PAGE_LINK" datatype="html">
-        <source> About Me </source>
+        <source>About Me</source>
         <target> Обо мне </target>
         <note priority="1" from="description">link to land on about me page</note>
         <note priority="1" from="meaning">go to about me page</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.html</context><context context-type="linenumber">70</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context><context context-type="linenumber">43</context></context-group></trans-unit>
       <trans-unit id="CAREER_PAGE_HEADER" datatype="html">
         <source> Career </source>
         <target> Карьера </target>
