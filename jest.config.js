@@ -7,7 +7,6 @@ const { compilerOptions } = require("./tsconfig");
 module.exports = {
   preset: "jest-preset-angular",
   setupFilesAfterEnv: ["<rootDir>/setup-jest.ts"],
-  globalSetup: "jest-preset-angular/global-setup",
   roots: ["<rootDir>"],
   modulePaths: [compilerOptions.baseUrl],
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
