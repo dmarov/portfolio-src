@@ -4,8 +4,8 @@ import { RouterModule } from "@angular/router";
 import { Observable } from "rxjs";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { height } from "@/app/shared/animations/height";
-import { RoutePath } from "@/app/models/route-path.enum";
 import { MenuEntry } from "@/app/models/menu/menu-entry.interface";
+import { RoutePath } from "@/app/models/routing/route-path.enum";
 
 @Component({
   selector: "app-menu",
@@ -18,8 +18,6 @@ import { MenuEntry } from "@/app/models/menu/menu-entry.interface";
 })
 export class MenuComponent implements OnInit {
   public isMenuOpen$!: Observable<boolean>;
-
-  public routePath = RoutePath;
 
   public menuEntries: ReadonlyArray<MenuEntry> = [
     {
@@ -39,7 +37,7 @@ export class MenuComponent implements OnInit {
     },
   ];
 
-  public constructor(private readonly menuService: MenuService) {}
+  public constructor(private readonly menuService: MenuService) { }
 
   public ngOnInit(): void {
     this.isMenuOpen$ = this.menuService.menuVisible$;

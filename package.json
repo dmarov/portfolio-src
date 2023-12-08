@@ -10,6 +10,7 @@
     "start:prod:ru": "ng serve --configuration=production,ru",
     "build": "ng build",
     "build:prod": "ng build --configuration=production && node ./scripts/copy-index.js",
+    "build:dev": "ng build && node ./scripts/copy-index.js",
     "build:prod:en": "ng build --configuration=production,en",
     "build:prod:ru": "ng build --configuration=production,ru",
     "lint": "ng lint",
@@ -18,7 +19,7 @@
     "prettier": "prettier . -c",
     "prettier:fix": "prettier . --write",
     "extract-i18n": "ng extract-i18n --output-path src/locale --out-file translation.base.xlf && xliffmerge --profile xliffmerge.json ru-RU",
-    "serve:prod": "http-server ./dist/portfolio",
+    "serve:http": "http-server ./dist/portfolio",
     "deploy": "node --unhandled-rejections=strict ./scripts/deploy.js"
   },
   "private": true,

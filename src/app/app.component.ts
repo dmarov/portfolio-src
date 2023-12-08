@@ -3,7 +3,7 @@ import { filter } from "rxjs/operators";
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Router, NavigationEnd, RouterModule } from "@angular/router";
 import { HeaderComponent } from "./shared/components/header/header.component";
-import { CustomTrackingEvent } from "./models/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-root",
@@ -14,7 +14,7 @@ import { CustomTrackingEvent } from "./models/custom-tracking-event.enum";
   imports: [RouterModule, CommonModule, HeaderComponent],
 })
 export class AppComponent implements OnInit {
-  public constructor(private readonly router: Router) {}
+  public constructor(private readonly router: Router) { }
 
   public ngOnInit(): void {
     this.router.events

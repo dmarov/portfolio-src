@@ -9,8 +9,8 @@ import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
 import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
-import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
 import { Lang } from "@/app/models/lang.enum";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-lang",
@@ -61,7 +61,7 @@ export class LangComponent implements OnInit, OnDestroy {
     private readonly router: Router,
     private readonly cdr: ChangeDetectorRef,
     private readonly i18nUrl: I18nUrl,
-  ) {}
+  ) { }
 
   public ngOnInit(): void {
     this.subscription.add(

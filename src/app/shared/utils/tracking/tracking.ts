@@ -1,4 +1,4 @@
-import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 export abstract class Tracking {
   public abstract sendCustomEvent(

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-vmedia-website",

@@ -6,7 +6,7 @@ import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { MenuComponent } from "../menu/menu.component";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
-import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-header",
@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
   public isMenuOpened$!: Observable<boolean>;
 
-  public constructor(private readonly menuService: MenuService) {}
+  public constructor(private readonly menuService: MenuService) { }
 
   public ngOnInit(): void {
     this.isMenuOpened$ = this.menuService.menuVisible$;

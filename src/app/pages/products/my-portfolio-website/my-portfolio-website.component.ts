@@ -8,7 +8,7 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import ResizeObserver from "resize-observer-polyfill";
-import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-my-portfolio-website",
@@ -24,7 +24,7 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
 
   public styleTransform = "";
 
-  public constructor(private readonly cdr: ChangeDetectorRef) {}
+  public constructor(private readonly cdr: ChangeDetectorRef) { }
 
   public ngAfterViewInit(): void {
     setTimeout(() => {

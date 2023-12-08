@@ -7,9 +7,9 @@ import {
 import { RouterModule } from "@angular/router";
 import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
-import { RoutePath } from "@/app/models/route-path.enum";
 import { environment } from "@/environments/environment";
-import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { RoutePath } from "@/app/models/routing/route-path.enum";
 
 @Component({
   selector: "app-home",

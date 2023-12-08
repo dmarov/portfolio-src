@@ -2,7 +2,21 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" target-language="ru" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="HOME_PAGE_LINK" datatype="html">
+      <trans-unit id="EDUCATION_PAGE_HEADER" datatype="html">
+        <source> Education </source><target state="translated">Образование</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+        <note priority="1" from="description">education page header</note>
+      </trans-unit><trans-unit id="EDUCATION_ABOUT" datatype="html">
+        <source> Before beginning of my career as a software developer I've got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>NARFU "Applied Mathematics and Computer Science"<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. At that time I participated in math and programming olympiads. As my base programming language I regarded <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> but also I learned and worked with C, Java, Python, Assembly. I've graduated in 2017. </source><target state="translated"> Перед тем как начать свою карьеру разработчика я получил высшее образование по специальности <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>"Прикладная математика и информатика"<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> в САФУ. В то время я активно учавствовал в олимпиадах по программированию. Своим основным языком программирования я считал <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> но, также, изучал другие языки, такие как C, Java, Python, Assembly. Я закончил университет в 2017. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">13,21</context>
+        </context-group>
+        <note priority="1" from="description">about education</note>
+      </trans-unit><trans-unit id="HOME_PAGE_LINK" datatype="html">
         <source>Home</source>
         <target> Главная </target>
         <note priority="1" from="description">link to land on home page</note>
@@ -10,15 +24,12 @@
 
         <note priority="1" from="description">Home page of website</note>
         <note priority="1" from="meaning">home page</note>
-      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context><context context-type="linenumber">33</context></context-group></trans-unit><trans-unit id="PRODUCTS_PAGE_LINK" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context><context context-type="linenumber">25</context></context-group></trans-unit><trans-unit id="PRODUCTS_PAGE_LINK" datatype="html">
         <source>Products</source><target>Продукты</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context>
-          <context context-type="linenumber">38</context>
-        </context-group>
+        
         <note priority="1" from="description">link to land on products page</note>
         <note priority="1" from="meaning">go to products page</note>
-      </trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context><context context-type="linenumber">30</context></context-group></trans-unit>
       
       <trans-unit id="ABOUT_ME_PAGE_LINK" datatype="html">
         <source>About Me</source>
@@ -26,61 +37,154 @@
         <note priority="1" from="description">link to land on about me page</note>
         <note priority="1" from="meaning">go to about me page</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context><context context-type="linenumber">43</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/shared/components/menu/menu.component.ts</context><context context-type="linenumber">35</context></context-group></trans-unit>
       <trans-unit id="CAREER_PAGE_HEADER" datatype="html">
         <source> Career </source>
         <target> Карьера </target>
         <note priority="1" from="description">carier page header</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">10</context></context-group></trans-unit>
-      <trans-unit id="CAREER_BEGINNING" datatype="html">
-        <source> In order to start my career as a software developer I've got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>NARFU "Applied Mathematics and Computer Science"<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. At that time I participated in math and programming olympiads. As my base programming language I regarded <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> but also I learned and worked with C, Java, Python, Assembly. I've graduated in 2017. </source>
-        <target> Перед тем как начать свою карьеру разработчика я получил высшее образование по специальности <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>"Прикладная математика и информатика"<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> в САФУ. В то время я активно учавствовал в олимпиадах по программированию. Своим основным языком программирования я считал <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> но, также, изучал другие языки, такие как C, Java, Python, Assembly. Я закончил университет в 2017. </target>
-        <note priority="1" from="description">career beginning</note>
-
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">13</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">34</context></context-group></trans-unit>
+      
       <trans-unit id="CAREER_BEGINNING_COMMERCIAL" datatype="html">
-        <source> Short after that I've started my career as backend developer. It was my first experience of commercial software development and that's when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, as well as frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </source>
-        <target> Затем я начал свою карьеру в качестве бэкэнд разработчика. Это был мой первый опыт коммерческой разработки программного обеспечения и тогда я ознакомился с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, а так же с фронтэнд технологиями, такими как <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </target>
+        <source> I've started my career as a backend developer in 2017. It was my first experience of commercial software development and that's when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. At the same time I took a grasp on frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </source>
+        <target state="translated">Я начал свою карьеру в качестве бэкэнд разработчика в 2017 году. Это был мой первый опыт коммерческой разработки программного обеспечения и тогда я ознакомился с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, а так же с фронтэнд технологиями, такими как <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </target>
         <note priority="1" from="description">career beginning commercial</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">26</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">40</context></context-group></trans-unit>
       <trans-unit id="CARRIER_FRONTEND_FRAMEWORK" datatype="html">
         <source> The time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That's when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> framework which payed out later. </source>
         <target> Вскоре настало время когда одного Javascript стало не достаточно для того чтобы реализовывать сложные решения эффективным способом. Тогда я принял решение изучить фреймворк <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, что оправдало себя позже. </target>
         <note priority="1" from="description">career frontend framework</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">37</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">51</context></context-group></trans-unit>
       <trans-unit id="CAREER_INFRASTRUCTURE" datatype="html">
         <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> In order to resolve some of existed problems I've implemented microservices. There are some of them: </source>
         <target> Дальнейшее развитие приводило к необходимости решать более сложные проблемы, относящиеся к монолитной легаси инфраструктуре, которую было сложно поддерживать. Имея опыт использования <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> для решения существующих проблем я реализовывал микросервисы. Вот некоторые из них: </target>
         <note priority="1" from="description">career infrastructure</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">46</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">60</context></context-group></trans-unit>
       <trans-unit id="CAREER_MICRO_SERVICES" datatype="html">
         <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to send SMS notifications using GSM gateway <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to convert HTML page to PDF (useful for printing invoices, and not just that) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API to generate JWT token pairs (useful for authorization) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></source>
         <target><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>шлюз для отправки SMS<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для отправки SMS сообщений с использованием GSM модема <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PDF генератор<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для конвертации HTML страницы в PDF (полезно для печати инвойсов и не только) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>JWT генератор<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> - REST API для генерации пар JWT токенов (используются для авторизации) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/></target>
         <note priority="1" from="description">career micro services</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">54</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">68</context></context-group></trans-unit>
       <trans-unit id="CAREER_SERVICES_USEFUL" datatype="html">
         <source> These services were very useful for each new website. </source>
         <target> Эти сервисы были полезны и использовались при последующей разработке веб-сайтов. </target>
         <note priority="1" from="description">career servies useful</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">71</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">85</context></context-group></trans-unit>
       <trans-unit id="CAREER_ADMINISTERING" datatype="html">
         <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> operating system, so it was time to apply this knowledge in practice. </source>
         <target> Так как каждый сервис требовал изолированного окружения, то администрирование требовало значительных затрат и усилий. Администрирование также было моей обязанностью. У меня уже было достаточно знаний об операционной системе <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, поэтому настало время чтобы применить эти знания на практике. </target>
         <note priority="1" from="description">career administering</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">78</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">92</context></context-group></trans-unit>
       <trans-unit id="CAREER_FRONTEND" datatype="html">
-        <source> Then I decided to specialize in frontend and move to big projects. That's when I've learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing end-to-end tests, pixel perfect markup, cross browser development, accessibility - this is what I'm most focused on at work. </source>
+        <source> Then I decided to specialize in frontend and move to bigger projects. That's when I've learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing end-to-end tests, pixel perfect markup, cross browser development, accessibility - this is what I'm most focused on at work. </source>
         <target> Затем я решил специализироваться на фронтэнде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> которые стали частью моего основного технологического стека до настоящего времени. Такие аспекты как оптимизация для поисковых движков (SEO), реализация end-to-end тестов, вёрстка с точностью до пикселя (pixel perfect), кросс-браузерная разработка, досупность (accessibility) - на этом я сосредоточен во время работы. </target>
         <note priority="1" from="description">career frontend</note>
 
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">85</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">99</context></context-group></trans-unit><trans-unit id="WHAT_I_STAND_FOR_PAGE_HEADER" datatype="html">
+        <source> What I stand for </source><target state="translated"> Что я отстаиваю </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">119,121</context>
+        </context-group>
+        <note priority="1" from="description">what I stand for page header</note>
+      </trans-unit><trans-unit id="WHAT_I_STAND_FOR_ABOUT" datatype="html">
+        <source> At present I realize that I've experienced a lot and can formulate what kind of developer I am: </source><target state="translated"> В настоящее время я понимаю, что накопил огромный опыт и могу сформулировать какой именно я разработчик </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">125,128</context>
+        </context-group>
+        <note priority="1" from="description">about what I stand for</note>
+      </trans-unit><trans-unit id="PRINCIPLE_CODE_REFACTORING" datatype="html">
+        <source> I am huge advocate for code quality in long term products, because it allowes to reduce future work for other developers and reduces amount of potential bugs </source><target state="translated">Я защитник качества кода в долгосрочных продуктах, потому что это позволяет снизить количество работы в будущем в том числе и для других разработчиков, а так же снижает количество потенциальных багов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">130,134</context>
+        </context-group>
+        <note priority="1" from="description">code formatting principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_CODE_FORMATTING" datatype="html">
+        <source> I am huge advocate for uniform code formatting, because it reduces distractions and helps to focus on code design </source><target state="translated">Я защитник унифицированного форматирования кода, потому что отличия отвлекают от того что действительно важно - дизайн кода</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">135,138</context>
+        </context-group>
+        <note priority="1" from="description">code formatting principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_ASKING_QUESTIONS" datatype="html">
+        <source> I consider that ability to ask correct questions is the most valuable skill a developer can have </source><target state="translated">Я считаю что умение задавать правильные вопросы это самый ценный скилл, который может быть у разработчика</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">139,142</context>
+        </context-group>
+        <note priority="1" from="description">asking questions principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_ARGUMENTATION" datatype="html">
+        <source> I consider that every significant consideration should have valid argumentation in order to be legit </source><target state="translated"> Я считаю что любой тезиз, который влияет на что-либо важное должен сопровождаться аргументацией</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">143,146</context>
+        </context-group>
+        <note priority="1" from="description">argumentation principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_ACTIONS_BASE" datatype="html">
+        <source> I consider that actions of software developer should be based on principles </source><target state="translated"> Я считаю что действия разработчика должны быть основаны на принципах</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">147,150</context>
+        </context-group>
+        <note priority="1" from="description">actions base principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_REFACTORING" datatype="html">
+        <source> I consider that refactoring should be regarded as a part of a task rather than a a separate process </source><target state="translated">Я считаю что рефакторинг следует считать частью задачи, а не отдельным процессом</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">151,154</context>
+        </context-group>
+        <note priority="1" from="description">refactoring principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_SPECIALIZATION" datatype="html">
+        <source> I consider that developer should not be locked into narrow specialization, but have opportunities to learn adjacent domains from colleagues </source><target state="translated"> Я считаю что разработчик не должен быть изолирован в своей специализации, но иметь возможность принимать участие в смежных областях и учиться у своих коллег</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">155,159</context>
+        </context-group>
+        <note priority="1" from="description">specialization principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_CODE_INTEGRATION" datatype="html">
+        <source> I am huge advocate for fast code integration such as "trunk based flow" because it reduces bugs due to complicated conflicts for a coast of releasing incomplete features </source><target state="translated"> Я защитник быстрой интеграции кода, такой как "trunk based flow"  потому что это помогает предотвратить баги, появляющиеся из-за решения сложных конфликтов ценой выкатывания не полностью готовых фич</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">160,164</context>
+        </context-group>
+        <note priority="1" from="description">code integration principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_BUGS_PRIORITY" datatype="html">
+        <source> I consider that fixing bugs should be topmost priority, because released feature is done when it's working, and it's working when it has no bugs </source><target state="translated">Я считаю что исправление багов должно быть приоритетом №1, потому что выпущенная фича завершена тогда, когда она работает, а работает она тогда, когда в ней нет багов</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">165,169</context>
+        </context-group>
+        <note priority="1" from="description">bugs priority principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_AGILE" datatype="html">
+        <source> I consider that Agile is the best framework for software development process so far, mainly because it allows to provide fast feedback. Agile is not a solution for every problem and has disadvantages, but I think that advantages outweight disadvantages considerably </source><target state="translated"> Я считаю что Agile - наилучший фреймворк для процесса разработки програмного обеспечения который есть до сих пор, в основном потому, что позволяет предоставлять быстрый фидбэк. Agile - это не решение всех проблем и в нём есть недостатки, но я считаю, что достоинства перевешивают недостатки в значительной степени</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">170,175</context>
+        </context-group>
+        <note priority="1" from="description">agile principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_BDD" datatype="html">
+        <source> I consider that long term product should be developed using <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>BDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> (Behavior Driven Development) process. Writing test after the fact results in poor test quality and poor code design. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>TDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> (Test Driven Development) a good approach as well but it has gone completely wrong in a sense of when should developer write a test. BDD is the best approach I've experienced so far. I don't think it is necessary to follow BDD principles in order to get good software design, but it's very handy to have extra verification for correctness of behavior </source><target state="translated"> Я считаю что долгосрочные продукты следует разрабатывать с использованием <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>BDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> (Behavior Driven Development) принципов. Написание тестов после написания реализации приводит к низкому качеству тестов и низкому качеству реализации. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>TDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> (Test Driven Development) тоже хороший подход, но он заблуждаетcя в том, для чего разработчик должен начать писать тест. BDD - лучший подход из тех что я имел опыт использовать. Я не считаю что следование BDD принципам необходимо, чтобы получить дизайн кода высокого качества, но очень полезно иметь дополнительное подтверждение корректности поведения</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">176,187</context>
+        </context-group>
+        <note priority="1" from="description">BDD principle</note>
+      </trans-unit><trans-unit id="PRINCIPLE_NAMING" datatype="html">
+        <source> I agree that <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/> "There are only two hard things in Computer Science: cache invalidation and naming things." <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/></source><target state="translated">Я согласен что <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/> "В компьютерных науках есть только две сложные проблемы – аннулирование кэша и придумывание названий" <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">188,193</context>
+        </context-group>
+        <note priority="1" from="description">naming principle</note>
+      </trans-unit>
       <trans-unit id="BANNER_WELCOME" datatype="html">
         <source> Welcome! </source>
         <target> Добро пожаловать! </target>
@@ -219,11 +323,7 @@
         
         <note priority="1" from="description">My Portfolio does</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit><trans-unit id="PROJECT_MY_PORTFOLIO_SOURCE_CODE" datatype="html">
-        <source> Source code for this project can be viewed in <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-      href=&quot;https://github.com/dmarov/portfolio-src&quot;
-      target=&quot;_blank&quot;
-      (click)=&quot;onRepoVisitClick()&quot;
-    >"/> project repository <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> . </source><target state="translated">Исходный код этого проекта можно посмтореть в<x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dmarov/portfolio-src&quot; target=&quot;_blank&quot;>"/> репозитории проекта <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/>.</target>
+        <source> Source code for this project can be viewed in <x id="START_LINK" ctype="x-a" equiv-text="&lt;a       href=&quot;https://github.com/dmarov/portfolio-src&quot;       target=&quot;_blank&quot;       (click)=&quot;onRepoVisitClick()&quot;     >"/> project repository <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> . </source><target state="translated">Исходный код этого проекта можно посмтореть в<x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dmarov/portfolio-src&quot; target=&quot;_blank&quot;>"/> репозитории проекта <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/>.</target>
         
         <note priority="1" from="description">My Portfolio source code</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context><context context-type="linenumber">60</context></context-group></trans-unit><trans-unit id="PROJECT_PAXUS_TITLE" datatype="html">

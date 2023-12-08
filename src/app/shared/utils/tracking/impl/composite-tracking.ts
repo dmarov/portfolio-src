@@ -1,4 +1,4 @@
-import { CustomTrackingEvent } from "@/app/models/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { Tracking } from "../tracking";
 
 export class CompositeTracking extends Tracking {
