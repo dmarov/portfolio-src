@@ -1,6 +1,5 @@
 ## TODO:
 
-- fix scroll delay
 - add "My Skills" list
 - add preview title on hover, and touch
 - add skills (bdd, patterns, refactoring)
