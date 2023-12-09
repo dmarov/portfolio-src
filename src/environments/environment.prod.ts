@@ -5,4 +5,7 @@ export const environment: AppEnvironment = {
   multilang: true,
   dateBeginning: "June 17, 2017 00:00:00",
   trackingEventTimeout: 1000,
+  features: {
+    showWhatIStandFor: false,
+  },
 };
