@@ -6,7 +6,7 @@
         <source> Education </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">10,12</context>
+          <context context-type="linenumber">5,7</context>
         </context-group>
         <note priority="1" from="description">education page header</note>
       </trans-unit>
@@ -14,7 +14,7 @@
         <source> Before beginning of my career as a software developer I&apos;ve got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>NARFU &quot;Applied Mathematics and Computer Science&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. At that time I participated in math and programming olympiads. As my base programming language I regarded <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> but also I learned and worked with C, Java, Python, Assembly. I&apos;ve graduated in 2017. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">13,21</context>
+          <context context-type="linenumber">8,16</context>
         </context-group>
         <note priority="1" from="description">about education</note>
       </trans-unit>
@@ -22,7 +22,7 @@
         <source> Career </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">34,36</context>
+          <context context-type="linenumber">24,26</context>
         </context-group>
         <note priority="1" from="description">carier page header</note>
       </trans-unit>
@@ -30,7 +30,7 @@
         <source> I&apos;ve started my career as a backend developer in 2017. It was my first experience of commercial software development and that&apos;s when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. At the same time I took a grasp on frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">40,46</context>
+          <context context-type="linenumber">27,33</context>
         </context-group>
         <note priority="1" from="description">career beginning commercial</note>
       </trans-unit>
@@ -38,7 +38,7 @@
         <source> The time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That&apos;s when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> framework which payed out later. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">51,55</context>
+          <context context-type="linenumber">35,39</context>
         </context-group>
         <note priority="1" from="description">career frontend framework</note>
       </trans-unit>
@@ -46,7 +46,7 @@
         <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> In order to resolve some of existed problems I&apos;ve implemented microservices. There are some of them: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">60,65</context>
+          <context context-type="linenumber">41,46</context>
         </context-group>
         <note priority="1" from="description">career infrastructure</note>
       </trans-unit>
@@ -54,7 +54,7 @@
         <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to send SMS notifications using GSM gateway <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to convert HTML page to PDF (useful for printing invoices, and not just that) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to generate JWT token pairs (useful for authorization) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">68,79</context>
+          <context context-type="linenumber">49,60</context>
         </context-group>
         <note priority="1" from="description">career micro services</note>
       </trans-unit>
@@ -62,7 +62,7 @@
         <source> These services were very useful for each new website. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">85,87</context>
+          <context context-type="linenumber">63,65</context>
         </context-group>
         <note priority="1" from="description">career servies useful</note>
       </trans-unit>
@@ -70,7 +70,7 @@
         <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> operating system, so it was time to apply this knowledge in practice. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">92,97</context>
+          <context context-type="linenumber">67,72</context>
         </context-group>
         <note priority="1" from="description">career administering</note>
       </trans-unit>
@@ -78,7 +78,7 @@
         <source> Then I decided to specialize in frontend and move to bigger projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing end-to-end tests, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">99,106</context>
+          <context context-type="linenumber">74,81</context>
         </context-group>
         <note priority="1" from="description">career frontend</note>
       </trans-unit>
@@ -86,7 +86,7 @@
         <source> What I stand for </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">119,121</context>
+          <context context-type="linenumber">89,91</context>
         </context-group>
         <note priority="1" from="description">what I stand for page header</note>
       </trans-unit>
@@ -94,7 +94,7 @@
         <source> At present I realize that I&apos;ve experienced a lot and can formulate what kind of developer I am: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">125,128</context>
+          <context context-type="linenumber">92,95</context>
         </context-group>
         <note priority="1" from="description">about what I stand for</note>
       </trans-unit>
@@ -102,7 +102,7 @@
         <source> I am huge advocate for code quality in long term products, because it allows to reduce future work as well for other developers and reduces amount of potential bugs </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">130,134</context>
+          <context context-type="linenumber">97,101</context>
         </context-group>
         <note priority="1" from="description">code formatting principle</note>
       </trans-unit>
@@ -110,7 +110,7 @@
         <source> I am huge advocate for uniform code formatting, because it reduces distractions and helps to focus on application architecture </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">135,138</context>
+          <context context-type="linenumber">102,105</context>
         </context-group>
         <note priority="1" from="description">code formatting principle</note>
       </trans-unit>
@@ -118,7 +118,7 @@
         <source> I consider that ability to ask correct questions is the most valuable skill a developer can have </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">139,142</context>
+          <context context-type="linenumber">106,109</context>
         </context-group>
         <note priority="1" from="description">asking questions principle</note>
       </trans-unit>
@@ -126,7 +126,7 @@
         <source> I consider that every significant consideration should have valid argumentation in order to be legit </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">143,146</context>
+          <context context-type="linenumber">110,113</context>
         </context-group>
         <note priority="1" from="description">argumentation principle</note>
       </trans-unit>
@@ -134,7 +134,7 @@
         <source> I consider that actions of software developer should be based on principles </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">147,150</context>
+          <context context-type="linenumber">114,117</context>
         </context-group>
         <note priority="1" from="description">actions base principle</note>
       </trans-unit>
@@ -142,7 +142,7 @@
         <source> I consider that refactoring should be regarded as a part of a task rather than a a separate process </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">151,154</context>
+          <context context-type="linenumber">118,121</context>
         </context-group>
         <note priority="1" from="description">refactoring principle</note>
       </trans-unit>
@@ -150,7 +150,7 @@
         <source> I consider that developer should not be locked into narrow specialization, but have opportunities to learn adjacent domains from colleagues </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">155,159</context>
+          <context context-type="linenumber">122,126</context>
         </context-group>
         <note priority="1" from="description">specialization principle</note>
       </trans-unit>
@@ -158,7 +158,7 @@
         <source> I am huge advocate for fast code integration such as &quot;trunk based flow&quot;, because it reduces bugs due to complicated conflicts for a coast of releasing incomplete features </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">160,164</context>
+          <context context-type="linenumber">127,131</context>
         </context-group>
         <note priority="1" from="description">code integration principle</note>
       </trans-unit>
@@ -166,15 +166,15 @@
         <source> I consider that fixing bugs should be topmost priority, because released feature is done when it&apos;s working, and it&apos;s working when it has no bugs </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">165,169</context>
+          <context context-type="linenumber">132,136</context>
         </context-group>
         <note priority="1" from="description">bugs priority principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_AGILE" datatype="html">
-        <source> I consider that Agile is the best framework for software development process so far, mainly because it allows to provide fast feedback. Agile is not a solution for every problem and has disadvantages, but I think that advantages outweight disadvantages considerably </source>
+        <source> I consider that Agile principles for software development are worth following, mainly because it allows to provide fast feedback. Agile is not a solution for every problem and has disadvantages, but I think that advantages outweight disadvantages considerably </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">170,175</context>
+          <context context-type="linenumber">137,142</context>
         </context-group>
         <note priority="1" from="description">agile principle</note>
       </trans-unit>
@@ -182,7 +182,7 @@
         <source> I consider that long term product should be developed using <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>BDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Behavior Driven Development) process. Writing test after the fact results in poor test quality and poor code design. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>TDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Test Driven Development) is a good approach as well but it has gone completely wrong in a sense of what for developer should write a test. BDD is the best approach I&apos;ve experienced so far. I don&apos;t think it is necessary to follow BDD principles in order to get good software design, but it&apos;s very handy to have extra verification for correctness of behavior </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">176,187</context>
+          <context context-type="linenumber">143,154</context>
         </context-group>
         <note priority="1" from="description">BDD principle</note>
       </trans-unit>
@@ -190,7 +190,7 @@
         <source> I think that naming is the hardest part of development process, as once was said <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/> &quot;There are only two hard things in Computer Science: cache invalidation and naming things.&quot; <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">188,194</context>
+          <context context-type="linenumber">155,161</context>
         </context-group>
         <note priority="1" from="description">naming principle</note>
       </trans-unit>
