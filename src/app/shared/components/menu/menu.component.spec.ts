@@ -6,6 +6,7 @@ import { mockIntersectionObserver } from "jsdom-testing-mocks";
 import { MenuService } from "../../services/menu/menu.service";
 import { MenuServiceMock } from "../../services/menu/menu.service.mock";
 import { MenuComponent } from "./menu.component";
+import "@angular/localize/init";
 
 @Component({
   selector: "app-menu-test",
@@ -14,7 +15,7 @@ import { MenuComponent } from "./menu.component";
   template: "<app-menu></app-menu>",
   imports: [MenuComponent],
 })
-export class MenuTestComponent {}
+export class MenuTestComponent { }
 
 describe("MenuComponent", () => {
   let fixture: ComponentFixture<MenuTestComponent>;
