@@ -99,7 +99,7 @@
         <note priority="1" from="description">about what I stand for</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_CODE_REFACTORING" datatype="html">
-        <source> I am huge advocate for code quality in long term products, because it allowes to reduce future work for other developers and reduces amount of potential bugs </source>
+        <source> I am huge advocate for code quality in long term products, because it allows to reduce future work as well for other developers and reduces amount of potential bugs </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
           <context context-type="linenumber">130,134</context>
@@ -179,7 +179,7 @@
         <note priority="1" from="description">agile principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_BDD" datatype="html">
-        <source> I consider that long term product should be developed using <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>BDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Behavior Driven Development) process. Writing test after the fact results in poor test quality and poor code design. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>TDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Test Driven Development) a good approach as well but it has gone completely wrong in a sense of when should developer write a test. BDD is the best approach I&apos;ve experienced so far. I don&apos;t think it is necessary to follow BDD principles in order to get good software design, but it&apos;s very handy to have extra verification for correctness of behavior </source>
+        <source> I consider that long term product should be developed using <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>BDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Behavior Driven Development) process. Writing test after the fact results in poor test quality and poor code design. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>TDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Test Driven Development) is a good approach as well but it has gone completely wrong in a sense of what for developer should write a test. BDD is the best approach I&apos;ve experienced so far. I don&apos;t think it is necessary to follow BDD principles in order to get good software design, but it&apos;s very handy to have extra verification for correctness of behavior </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
           <context context-type="linenumber">176,187</context>
@@ -212,12 +212,20 @@
         <note priority="1" from="description">introduction</note>
       </trans-unit>
       <trans-unit id="BANNER_WHO_AM_I" datatype="html">
-        <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> years of experience in web development. </source>
+        <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> <x id="ICU" equiv-text="{years, plural,
+          =0{years} one{year} other{years}}"/> of experience in web development. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">26,29</context>
         </context-group>
         <note priority="1" from="description">who am i</note>
+      </trans-unit>
+      <trans-unit id="9411ef7bcf832b31f73dec1b6ab9b089f7eaccc4" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {years} one {year} other {years}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="BANNER_MY_GOALS" datatype="html">
         <source> I&apos;m interested in technology and how to use it to make life better. </source>
