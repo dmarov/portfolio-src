@@ -15,7 +15,7 @@ import "@angular/localize/init";
   template: "<app-menu></app-menu>",
   imports: [MenuComponent],
 })
-export class MenuTestComponent { }
+export class MenuTestComponent {}
 
 describe("MenuComponent", () => {
   let fixture: ComponentFixture<MenuTestComponent>;
