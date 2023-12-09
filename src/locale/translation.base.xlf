@@ -187,10 +187,10 @@
         <note priority="1" from="description">BDD principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_NAMING" datatype="html">
-        <source> I agree that <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/> &quot;There are only two hard things in Computer Science: cache invalidation and naming things.&quot; <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <source> I think that naming is the hardest part of development process, as once was said <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/> &quot;There are only two hard things in Computer Science: cache invalidation and naming things.&quot; <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">188,193</context>
+          <context context-type="linenumber">188,194</context>
         </context-group>
         <note priority="1" from="description">naming principle</note>
       </trans-unit>

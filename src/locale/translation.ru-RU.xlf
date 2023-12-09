@@ -87,7 +87,7 @@
         <note priority="1" from="description">career frontend</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">99</context></context-group></trans-unit><trans-unit id="WHAT_I_STAND_FOR_PAGE_HEADER" datatype="html">
-        <source> What I stand for </source><target state="translated"> Что я отстаиваю </target>
+        <source> What I stand for </source><target state="translated"> Мои принцыпы </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
           <context context-type="linenumber">119,121</context>
@@ -178,7 +178,7 @@
         </context-group>
         <note priority="1" from="description">BDD principle</note>
       </trans-unit><trans-unit id="PRINCIPLE_NAMING" datatype="html">
-        <source> I agree that <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/> "There are only two hard things in Computer Science: cache invalidation and naming things." <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/></source><target state="translated"> Я согласен что <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/> "В компьютерных науках есть только две сложные проблемы – аннулирование кэша и придумывание названий" <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/></target>
+        <source> I think that naming is the hardest part of development process, as once was said <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/> "There are only two hard things in Computer Science: cache invalidation and naming things." <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/></source><target state="translated"> Я считаю, что придумывание названий, вероятно, самое сложное в разработке, как было сказано <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/> "В компьютерных науках есть только две сложные проблемы – аннулирование кэша и придумывание названий" <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
           <context context-type="linenumber">188,193</context>
