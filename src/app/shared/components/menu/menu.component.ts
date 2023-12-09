@@ -37,7 +37,7 @@ export class MenuComponent implements OnInit {
     },
   ];
 
-  public constructor(private readonly menuService: MenuService) { }
+  public constructor(private readonly menuService: MenuService) {}
 
   public ngOnInit(): void {
     this.isMenuOpen$ = this.menuService.menuVisible$;

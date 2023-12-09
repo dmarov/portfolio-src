@@ -61,7 +61,7 @@ export class LangComponent implements OnInit, OnDestroy {
     private readonly router: Router,
     private readonly cdr: ChangeDetectorRef,
     private readonly i18nUrl: I18nUrl,
-  ) { }
+  ) {}
 
   public ngOnInit(): void {
     this.subscription.add(

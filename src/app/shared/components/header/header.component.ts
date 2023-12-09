@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
   public isMenuOpened$!: Observable<boolean>;
 
-  public constructor(private readonly menuService: MenuService) { }
+  public constructor(private readonly menuService: MenuService) {}
 
   public ngOnInit(): void {
     this.isMenuOpened$ = this.menuService.menuVisible$;
