@@ -150,7 +150,7 @@
         </context-group>
         <note priority="1" from="description">specialization principle</note>
       </trans-unit><trans-unit id="PRINCIPLE_CODE_INTEGRATION" datatype="html">
-        <source> I am huge advocate for fast code integration such as "trunk based flow" because it reduces bugs due to complicated conflicts for a coast of releasing incomplete features </source><target state="translated">  Я сторонник быстрой интеграции кода, такой как "trunk based flow"  потому что это помогает предотвратить баги, появляющиеся из-за решения сложных конфликтов ценой выкатывания не полностью готовых фич </target>
+        <source> I am huge advocate for fast code integration such as "trunk based flow", because it reduces bugs due to complicated conflicts for a coast of releasing incomplete features </source><target state="translated">  Я сторонник быстрой интеграции кода, такой как "trunk based flow", потому что это помогает предотвратить баги, появляющиеся из-за решения сложных конфликтов ценой выкатывания не полностью готовых фич </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
           <context context-type="linenumber">160,164</context>
