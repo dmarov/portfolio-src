@@ -25,9 +25,9 @@ import { Product } from "@/app/models/products/product.interface";
   imports: [CommonModule],
 })
 export class ProductsComponent implements AfterViewInit {
-  public colors = ["green", "orange", "white"];
+  public readonly colors = ["green", "orange", "white"];
 
-  public products: ReadonlyArray<Product> = [
+  public readonly products: ReadonlyArray<Product> = [
     {
       id: "robots",
       component: RobotsMangoOfficeComponent,

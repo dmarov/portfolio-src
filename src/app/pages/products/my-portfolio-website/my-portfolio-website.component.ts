@@ -20,7 +20,7 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
 })
 export class MyPortfolioWebsiteComponent implements AfterViewInit {
   @ViewChild("container", { static: true })
-  public container!: ElementRef<HTMLTextAreaElement>;
+  public readonly container!: ElementRef<HTMLTextAreaElement>;
 
   public styleTransform = "";
 

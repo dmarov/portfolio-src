@@ -11,6 +11,7 @@ import { GoogleAnalyticsTracking } from "./app/shared/utils/tracking/impl/google
 import { DebugTracking } from "./app/shared/utils/tracking/impl/debug-tracking";
 import { CompositeTracking } from "./app/shared/utils/tracking/impl/composite-tracking";
 import { YandexMetrikaTracking } from "./app/shared/utils/tracking/impl/yandex-metrika-tracking";
+import { KeyboardService } from "./app/shared/services/keyboard/keyboard.service";
 
 if (environment.production) {
   window.userTracking = new CompositeTracking([
@@ -29,6 +30,7 @@ bootstrapApplication(AppComponent, {
       provide: MenuService,
       useClass: MenuServiceImpl,
     },
+    KeyboardService,
     provideRouter(routes),
     importProvidersFrom([BrowserAnimationsModule]),
   ],

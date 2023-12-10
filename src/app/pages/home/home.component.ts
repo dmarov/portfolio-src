@@ -10,6 +10,7 @@ import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { environment } from "@/environments/environment";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { RoutePath } from "@/app/models/routing/route-path.enum";
+import { msInYear } from "@/app/shared/const/ms-in-year.const";
 
 @Component({
   selector: "app-home",
@@ -20,14 +21,13 @@ import { RoutePath } from "@/app/models/routing/route-path.enum";
   imports: [RouterModule],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  public routePath = RoutePath;
-
-  private startDate = new Date(environment.dateBeginning);
+  public readonly routePath = RoutePath;
 
   public years = 0;
 
+  private readonly startDate = new Date(environment.dateBeginning);
+
   public ngOnInit(): void {
-    const msInYear = 1000 * 60 * 60 * 24 * 365;
     const years = (Date.now() - this.startDate.getTime()) / msInYear;
 
     this.years = Math.floor(years);

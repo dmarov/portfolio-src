@@ -19,7 +19,7 @@ import { RoutePath } from "@/app/models/routing/route-path.enum";
 export class MenuComponent implements OnInit {
   public isMenuOpen$!: Observable<boolean>;
 
-  public menuEntries: ReadonlyArray<MenuEntry> = [
+  public readonly menuEntries: ReadonlyArray<MenuEntry> = [
     {
       href: RoutePath.Home,
       title: $localize`:go to home page|link to land on home page@@HOME_PAGE_LINK:Home`,

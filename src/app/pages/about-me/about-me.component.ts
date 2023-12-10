@@ -17,7 +17,7 @@ import { environment } from "@/environments/environment";
   imports: [CommonModule],
 })
 export class AboutMeComponent implements AfterViewInit {
-  public showWhatIStandFor = environment.features.showWhatIStandFor;
+  public readonly showWhatIStandFor = environment.features.showWhatIStandFor;
 
   public ngAfterViewInit(): void {
     UnfoldEffect.init();

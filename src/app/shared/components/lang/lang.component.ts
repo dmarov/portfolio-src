@@ -51,7 +51,7 @@ export class LangComponent implements OnInit, OnDestroy {
     window.location.pathname.startsWith(l.url),
   );
 
-  public activeLang = this.activeMatch ?? null;
+  public readonly activeLang = this.activeMatch ?? null;
 
   private readonly subscription = new Subscription();
 

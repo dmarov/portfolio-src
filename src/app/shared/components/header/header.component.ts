@@ -17,7 +17,7 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  public isMultilang = environment.multilang;
+  public readonly isMultilang = environment.multilang;
 
   public isMenuOpened$!: Observable<boolean>;
 
