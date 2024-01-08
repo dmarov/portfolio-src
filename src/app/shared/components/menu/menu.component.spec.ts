@@ -34,7 +34,7 @@ describe("MenuComponent", () => {
     fixture.detectChanges();
   });
 
-  it.skip("should have test attribute", () => {
+  it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="menu"]',
     ) as HTMLInputElement;
