@@ -209,6 +209,7 @@
           <ul class="home-products__items">
             <li class="home-products__item">
               <a
+                data-test="home-preview-robots"
                 class="home-product"
                 [routerLink]="routePath.Products"
                 fragment="robots"
@@ -226,6 +227,7 @@
             </li>
             <li class="home-products__item">
               <a
+                data-test="home-preview-rivertv"
                 class="home-product"
                 [routerLink]="routePath.Products"
                 fragment="rivertv"
@@ -245,6 +247,7 @@
             </li>
             <li class="home-products__item">
               <a
+                data-test="home-preview-vmedia"
                 class="home-product"
                 [routerLink]="routePath.Products"
                 fragment="vmedia"
@@ -264,6 +267,7 @@
             </li>
             <li class="home-products__item">
               <a
+                data-test="home-preview-paxus"
                 class="home-product"
                 [routerLink]="routePath.Products"
                 fragment="paxus"
@@ -285,6 +289,7 @@
         </div>
         <p class="home__projects-line content-block__p content-block__p_center">
           <a
+            data-test="home-more-products-link"
             i18n="more products@@MORE_PRODUCTS"
             [routerLink]="routePath.Products"
             (click)="onMoreProductsClick()"

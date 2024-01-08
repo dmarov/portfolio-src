@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { TrikWebsiteComponent } from "./trik-website.component";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-trik-website-test",
@@ -35,5 +36,22 @@ describe("TrikWebsiteComponent", () => {
       '[data-test="trik-website"]',
     ) as HTMLElement;
     expect(input).toBeTruthy();
+  });
+
+  it("should emit VisitTrikWebsiteClick event on link click", () => {
+    const tracking = TestBed.inject(TrackingService);
+
+    const spy = jest.spyOn(tracking, "sendCustomEvent");
+
+    const el = document.querySelector(
+      "[data-test='trik-website-link']",
+    ) as HTMLElement;
+
+    el.click();
+
+    expect(spy).toHaveBeenCalledWith(
+      CustomTrackingEvent.VisitTrikWebsiteClick,
+      {},
+    );
   });
 });

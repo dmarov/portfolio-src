@@ -6,4 +6,5 @@ export interface AppEnvironment {
   features: {
     showWhatIStandFor: boolean;
   };
+  featuresUrl: string;
 }

@@ -12,6 +12,8 @@ export const environment: AppEnvironment = {
   features: {
     showWhatIStandFor: true,
   },
+  featuresUrl:
+    "https://gist.githubusercontent.com/dmarov/865906fdd48c581b931f6e2c23954787/raw/dmarov-features.json",
 };
 
 /*

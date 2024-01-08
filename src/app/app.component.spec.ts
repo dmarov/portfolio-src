@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
+import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
 import { KeyboardService } from "./shared/services/keyboard/keyboard.service";
 import { MenuService } from "./shared/services/menu/menu.service";
 import { MenuServiceMock } from "./shared/services/menu/menu.service.mock";
@@ -43,5 +44,22 @@ describe("AppComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector('[data-test="app"]') as HTMLElement;
     expect(input).toBeTruthy();
+  });
+
+  it("should emit VisitGithubFooterClick event on more products link click", () => {
+    const tracking = TestBed.inject(TrackingService);
+
+    const spy = jest.spyOn(tracking, "sendCustomEvent");
+
+    const el = document.querySelector(
+      "[data-test='visit-github-footer-link']",
+    ) as HTMLElement;
+
+    el.click();
+
+    expect(spy).toHaveBeenCalledWith(
+      CustomTrackingEvent.VisitGithubFooterClick,
+      {},
+    );
   });
 });

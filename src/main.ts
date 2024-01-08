@@ -29,6 +29,13 @@ if (environment.production) {
   enableProdMode();
 }
 
+// fetch(environment.featuresUrl).then(
+//   (res) => {
+//     const features = res;
+//   },
+//   (error) => {},
+// );
+
 bootstrapApplication(AppComponent, {
   providers: [
     {

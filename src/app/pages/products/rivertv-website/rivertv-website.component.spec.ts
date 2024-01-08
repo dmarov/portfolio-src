@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RivertvWebsiteComponent } from "./rivertv-website.component";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-rivertv-website-test",
@@ -34,5 +35,22 @@ describe("RivertvWebsiteComponent", () => {
       '[data-test="rivertv-website"]',
     ) as HTMLElement;
     expect(input).toBeTruthy();
+  });
+
+  it("should emit VisitRiverTvWebsiteClick event on link click", () => {
+    const tracking = TestBed.inject(TrackingService);
+
+    const spy = jest.spyOn(tracking, "sendCustomEvent");
+
+    const el = document.querySelector(
+      "[data-test='rivertv-website-link']",
+    ) as HTMLElement;
+
+    el.click();
+
+    expect(spy).toHaveBeenCalledWith(
+      CustomTrackingEvent.VisitRiverTvWebsiteClick,
+      {},
+    );
   });
 });

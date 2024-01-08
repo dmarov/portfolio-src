@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { MyPortfolioWebsiteComponent } from "./my-portfolio-website.component";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-kemerovo-website-test",
@@ -34,5 +35,22 @@ describe("MyPortfolioWebsiteComponent", () => {
       '[data-test="my-portfolio-website"]',
     ) as HTMLElement;
     expect(input).toBeTruthy();
+  });
+
+  it("should emit VisitMyPortfolioRepositoryClick event on repository link click", () => {
+    const tracking = TestBed.inject(TrackingService);
+
+    const spy = jest.spyOn(tracking, "sendCustomEvent");
+
+    const el = document.querySelector(
+      "[data-test='my-portfolio-repository-link']",
+    ) as HTMLElement;
+
+    el.click();
+
+    expect(spy).toHaveBeenCalledWith(
+      CustomTrackingEvent.VisitMyPortfolioRepositoryClick,
+      {},
+    );
   });
 });
