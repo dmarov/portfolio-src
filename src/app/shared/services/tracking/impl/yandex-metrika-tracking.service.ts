@@ -5,12 +5,19 @@ import { TrackingService } from "../tracking.service";
 export class YandexMetrikaTrackingService extends TrackingService {
   private readonly timeout = environment.trackingEventTimeout;
 
+  public constructor(
+    private readonly ym: Function,
+    private readonly ymCounterId: number,
+  ) {
+    super();
+  }
+
   public sendCustomEvent(
     eventName: CustomTrackingEvent,
     data: object,
   ): Promise<void> {
     return new Promise((res) => {
-      window.ym(window.ym_counter_id, "reachGoal", `custom_${eventName}`, {
+      this.ym(this.ymCounterId, "reachGoal", `custom_${eventName}`, {
         ...data,
         callback: () => {
           res();

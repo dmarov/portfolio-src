@@ -20,8 +20,8 @@ let tracking = new DebugTrackingService();
 
 if (environment.production) {
   tracking = new CompositeTrackingService([
-    new GoogleAnalyticsTrackingService(),
-    new YandexMetrikaTrackingService(),
+    new GoogleAnalyticsTrackingService(window.gtag),
+    new YandexMetrikaTrackingService(window.ym, window.ym_counter_id),
   ]);
 
   enableProdMode();

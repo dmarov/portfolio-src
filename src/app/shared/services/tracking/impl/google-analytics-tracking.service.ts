@@ -5,12 +5,16 @@ import { TrackingService } from "../tracking.service";
 export class GoogleAnalyticsTrackingService extends TrackingService {
   private readonly timeout = environment.trackingEventTimeout;
 
+  public constructor(private readonly gtag: Function) {
+    super();
+  }
+
   public sendCustomEvent(
     eventName: CustomTrackingEvent,
     data: object,
   ): Promise<void> {
     return new Promise((res) => {
-      window.gtag("event", `custom_${eventName}`, {
+      this.gtag("event", `custom_${eventName}`, {
         ...data,
         event_callback: () => {
           res();
