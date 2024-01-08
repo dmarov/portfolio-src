@@ -32,7 +32,7 @@ describe("MyPortfolioWebsiteComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="my-portfolio-website"]',
-    ) as HTMLInputElement;
+    ) as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

@@ -34,7 +34,7 @@ describe("ProductsComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="products"]',
-    ) as HTMLInputElement;
+    ) as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

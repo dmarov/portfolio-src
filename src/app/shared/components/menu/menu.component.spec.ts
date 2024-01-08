@@ -41,9 +41,7 @@ describe("MenuComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector(
-      '[data-test="menu"]',
-    ) as HTMLInputElement;
+    const input = document.querySelector('[data-test="menu"]') as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

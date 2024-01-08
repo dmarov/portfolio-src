@@ -33,7 +33,7 @@ describe("TrikWebsiteComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="trik-website"]',
-    ) as HTMLInputElement;
+    ) as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

@@ -28,7 +28,7 @@ describe("NotFoundComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="not-found"]',
-    ) as HTMLInputElement;
+    ) as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

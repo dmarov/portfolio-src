@@ -23,7 +23,7 @@ describe("ScarlettAndMonarchCmsComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="scarlett-and-monarch-cms"]',
-    ) as HTMLInputElement;
+    ) as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

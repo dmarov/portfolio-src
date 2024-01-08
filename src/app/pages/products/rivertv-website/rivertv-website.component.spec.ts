@@ -32,7 +32,7 @@ describe("RivertvWebsiteComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="rivertv-website"]',
-    ) as HTMLInputElement;
+    ) as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

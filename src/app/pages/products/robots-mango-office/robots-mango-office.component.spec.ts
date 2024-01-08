@@ -23,7 +23,7 @@ describe("RobotsMangoOfficeComponent", () => {
   it("should have test attribute", () => {
     const input = document.querySelector(
       '[data-test="robots-mango-office"]',
-    ) as HTMLInputElement;
+    ) as HTMLElement;
     expect(input).toBeTruthy();
   });
 });

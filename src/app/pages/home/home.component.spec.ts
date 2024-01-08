@@ -34,9 +34,7 @@ describe("HomeComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector(
-      '[data-test="home"]',
-    ) as HTMLInputElement;
+    const input = document.querySelector('[data-test="home"]') as HTMLElement;
     expect(input).toBeTruthy();
   });
 });
