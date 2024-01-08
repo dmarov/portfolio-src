@@ -4,6 +4,8 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { MenuService } from "../../services/menu/menu.service";
 import { MenuServiceMock } from "../../services/menu/menu.service.mock";
+import { TrackingService } from "../../services/tracking/tracking.service";
+import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { HeaderComponent } from "./header.component";
 
 @Component({
@@ -24,6 +26,10 @@ describe("HeaderComponent", () => {
         {
           provide: MenuService,
           useClass: MenuServiceMock,
+        },
+        {
+          provide: TrackingService,
+          useClass: TrackingServiceMock,
         },
       ],
     });

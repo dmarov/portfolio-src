@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { TrikWebsiteComponent } from "./trik-website.component";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 
 @Component({
   selector: "app-trik-website-test",
@@ -17,6 +19,12 @@ describe("TrikWebsiteComponent", () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [TrikWebsiteComponent],
+      providers: [
+        {
+          provide: TrackingService,
+          useClass: TrackingServiceMock,
+        },
+      ],
     });
     fixture = TestBed.createComponent(TrikWebsiteTestComponent);
     fixture.detectChanges();

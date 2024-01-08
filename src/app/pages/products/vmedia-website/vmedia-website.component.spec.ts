@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { VmediaWebsiteComponent } from "./vmedia-website.component";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 
 @Component({
   selector: "app-vmedia-website-test",
@@ -17,6 +19,12 @@ describe("VmediaWebsiteComponent", () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [VmediaWebsiteComponent],
+      providers: [
+        {
+          provide: TrackingService,
+          useClass: TrackingServiceMock,
+        },
+      ],
     });
     fixture = TestBed.createComponent(VmediaWebsiteTestComponent);
     fixture.detectChanges();

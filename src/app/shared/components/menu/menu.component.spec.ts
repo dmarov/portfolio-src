@@ -5,6 +5,8 @@ import { RouterTestingModule } from "@angular/router/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
 import { MenuService } from "../../services/menu/menu.service";
 import { MenuServiceMock } from "../../services/menu/menu.service.mock";
+import { TrackingService } from "../../services/tracking/tracking.service";
+import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { MenuComponent } from "./menu.component";
 
 @Component({
@@ -26,6 +28,10 @@ describe("MenuComponent", () => {
         {
           provide: MenuService,
           useClass: MenuServiceMock,
+        },
+        {
+          provide: TrackingService,
+          useClass: TrackingServiceMock,
         },
       ],
       imports: [NoopAnimationsModule, RouterTestingModule],

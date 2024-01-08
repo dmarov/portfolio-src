@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { MyPortfolioWebsiteComponent } from "./my-portfolio-website.component";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 
 @Component({
   selector: "app-kemerovo-website-test",
@@ -15,7 +17,14 @@ describe("MyPortfolioWebsiteComponent", () => {
   let fixture: ComponentFixture<MyPortfolioWebsiteTestComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [
+        {
+          provide: TrackingService,
+          useClass: TrackingServiceMock,
+        },
+      ],
+    });
     fixture = TestBed.createComponent(MyPortfolioWebsiteTestComponent);
     fixture.detectChanges();
   });

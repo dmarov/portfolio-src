@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
+import { TrackingService } from "../../services/tracking/tracking.service";
+import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { LangComponent } from "./lang.component";
 
 @Component({
@@ -17,7 +19,14 @@ describe("LangComponent", () => {
   mockIntersectionObserver();
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [
+        {
+          provide: TrackingService,
+          useClass: TrackingServiceMock,
+        },
+      ],
+    });
     fixture = TestBed.createComponent(LangTestComponent);
     fixture.detectChanges();
   });
