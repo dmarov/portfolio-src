@@ -1,13 +1,11 @@
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { environment } from "@/environments/environment";
 import { TrackingService } from "../tracking.service";
 
 export class YandexMetrikaTrackingService extends TrackingService {
-  private readonly timeout = environment.trackingEventTimeout;
-
   public constructor(
     private readonly ym: Function,
     private readonly ymCounterId: number,
+    private readonly timeout: number,
   ) {
     super();
   }

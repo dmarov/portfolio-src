@@ -19,9 +19,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 let tracking = new DebugTrackingService();
 
 if (environment.production) {
+  const timeout = environment.trackingEventTimeout;
+
   tracking = new CompositeTrackingService([
-    new GoogleAnalyticsTrackingService(window.gtag),
-    new YandexMetrikaTrackingService(window.ym, window.ym_counter_id),
+    new GoogleAnalyticsTrackingService(window.gtag, timeout),
+    new YandexMetrikaTrackingService(window.ym, window.ym_counter_id, timeout),
   ]);
 
   enableProdMode();
