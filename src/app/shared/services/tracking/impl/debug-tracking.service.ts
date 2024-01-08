@@ -1,7 +1,7 @@
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { Tracking } from "../tracking";
+import { TrackingService } from "../tracking.service";
 
-export class DebugTracking extends Tracking {
+export class DebugTrackingService extends TrackingService {
   public sendCustomEvent(
     eventName: CustomTrackingEvent,
     data: object,

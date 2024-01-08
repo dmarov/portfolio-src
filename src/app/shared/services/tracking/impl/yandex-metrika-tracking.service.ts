@@ -1,8 +1,8 @@
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { environment } from "@/environments/environment";
-import { Tracking } from "../tracking";
+import { TrackingService } from "../tracking.service";
 
-export class YandexMetrikaTracking extends Tracking {
+export class YandexMetrikaTrackingService extends TrackingService {
   private readonly timeout = environment.trackingEventTimeout;
 
   public sendCustomEvent(

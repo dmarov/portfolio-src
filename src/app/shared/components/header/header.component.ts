@@ -7,6 +7,7 @@ import { MenuComponent } from "../menu/menu.component";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 
 @Component({
   selector: "app-header",
@@ -21,7 +22,10 @@ export class HeaderComponent implements OnInit {
 
   public isMenuOpened$!: Observable<boolean>;
 
-  public constructor(private readonly menuService: MenuService) {}
+  public constructor(
+    private readonly menuService: MenuService,
+    private readonly tracking: TrackingService,
+  ) {}
 
   public ngOnInit(): void {
     this.isMenuOpened$ = this.menuService.menuVisible$;
@@ -32,7 +36,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public onVisitGithubHeaderClick(): void {
-    window.userTracking.sendCustomEvent(
+    this.tracking.sendCustomEvent(
       CustomTrackingEvent.VisitGithubHeaderClick,
       {},
     );

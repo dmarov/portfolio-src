@@ -1,5 +1,3 @@
-import { Tracking } from "./shared/utils/tracking/tracking";
-
 export {};
 
 declare global {
@@ -7,6 +5,5 @@ declare global {
     gtag: Function;
     ym: Function;
     ym_counter_id: number;
-    userTracking: Tracking;
   }
 }

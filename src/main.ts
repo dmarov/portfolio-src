@@ -9,21 +9,22 @@ import { AppComponent } from "@/app/app.component";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
-import { GoogleAnalyticsTracking } from "./app/shared/utils/tracking/impl/google-analytics-tracking";
-import { DebugTracking } from "./app/shared/utils/tracking/impl/debug-tracking";
-import { CompositeTracking } from "./app/shared/utils/tracking/impl/composite-tracking";
-import { YandexMetrikaTracking } from "./app/shared/utils/tracking/impl/yandex-metrika-tracking";
+import { GoogleAnalyticsTrackingService } from "./app/shared/services/tracking/impl/google-analytics-tracking.service";
+import { DebugTrackingService } from "./app/shared/services/tracking/impl/debug-tracking.service";
+import { CompositeTrackingService } from "./app/shared/services/tracking/impl/composite-tracking.service";
+import { YandexMetrikaTrackingService } from "./app/shared/services/tracking/impl/yandex-metrika-tracking.service";
 import { KeyboardService } from "./app/shared/services/keyboard/keyboard.service";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+
+let tracking = new DebugTrackingService();
 
 if (environment.production) {
-  window.userTracking = new CompositeTracking([
-    new GoogleAnalyticsTracking(),
-    new YandexMetrikaTracking(),
+  tracking = new CompositeTrackingService([
+    new GoogleAnalyticsTrackingService(),
+    new YandexMetrikaTrackingService(),
   ]);
 
   enableProdMode();
-} else {
-  window.userTracking = new DebugTracking();
 }
 
 bootstrapApplication(AppComponent, {
@@ -31,6 +32,10 @@ bootstrapApplication(AppComponent, {
     {
       provide: MenuService,
       useClass: MenuServiceImpl,
+    },
+    {
+      provide: TrackingService,
+      useValue: tracking,
     },
     KeyboardService,
     provideRouter(routes),

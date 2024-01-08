@@ -11,6 +11,7 @@ import { environment } from "@/environments/environment";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { RoutePath } from "@/app/models/routing/route-path.enum";
 import { msInYear } from "@/app/shared/const/ms-in-year.const";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 
 @Component({
   selector: "app-home",
@@ -27,6 +28,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private readonly startDate = new Date(environment.dateBeginning);
 
+  public constructor(private readonly tracking: TrackingService) {}
+
   public ngOnInit(): void {
     const years = (Date.now() - this.startDate.getTime()) / msInYear;
 
@@ -39,37 +42,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   public onPreviewRobotsClick(): void {
-    window.userTracking.sendCustomEvent(
-      CustomTrackingEvent.PreviewRobotsClick,
-      {},
-    );
+    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewRobotsClick, {});
   }
 
   public onPreviewRivertvClick(): void {
-    window.userTracking.sendCustomEvent(
-      CustomTrackingEvent.PreviewRivertvClick,
-      {},
-    );
+    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewRivertvClick, {});
   }
 
   public onPreviewVmediaClick(): void {
-    window.userTracking.sendCustomEvent(
-      CustomTrackingEvent.PreviewVmediaClick,
-      {},
-    );
+    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewVmediaClick, {});
   }
 
   public onPreviewPaxusClick(): void {
-    window.userTracking.sendCustomEvent(
-      CustomTrackingEvent.PreviewPaxusClick,
-      {},
-    );
+    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewPaxusClick, {});
   }
 
   public onMoreProductsClick(): void {
-    window.userTracking.sendCustomEvent(
-      CustomTrackingEvent.MoreProductsClick,
-      {},
-    );
+    this.tracking.sendCustomEvent(CustomTrackingEvent.MoreProductsClick, {});
   }
 }

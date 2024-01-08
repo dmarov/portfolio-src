@@ -11,6 +11,7 @@ import { Subscription } from "rxjs";
 import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
 import { Lang } from "@/app/models/lang.enum";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 
 @Component({
   selector: "app-lang",
@@ -27,22 +28,16 @@ export class LangComponent implements OnInit, OnDestroy {
       type: Lang.English,
       url: "/en",
       text: "EN",
-      onClick(): void {
-        window.userTracking.sendCustomEvent(
-          CustomTrackingEvent.SwitchEnClick,
-          {},
-        );
+      onClick: (): void => {
+        this.tracking.sendCustomEvent(CustomTrackingEvent.SwitchEnClick, {});
       },
     },
     {
       type: Lang.Russian,
       url: "/ru",
       text: "RU",
-      onClick(): void {
-        window.userTracking.sendCustomEvent(
-          CustomTrackingEvent.SwitchRuClick,
-          {},
-        );
+      onClick: (): void => {
+        this.tracking.sendCustomEvent(CustomTrackingEvent.SwitchRuClick, {});
       },
     },
   ];
@@ -61,6 +56,7 @@ export class LangComponent implements OnInit, OnDestroy {
     private readonly router: Router,
     private readonly cdr: ChangeDetectorRef,
     private readonly i18nUrl: I18nUrl,
+    private readonly tracking: TrackingService,
   ) {}
 
   public ngOnInit(): void {

@@ -9,6 +9,7 @@ import {
 import { CommonModule } from "@angular/common";
 import ResizeObserver from "resize-observer-polyfill";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 
 @Component({
   selector: "app-my-portfolio-website",
@@ -24,7 +25,10 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
 
   public styleTransform = "";
 
-  public constructor(private readonly cdr: ChangeDetectorRef) {}
+  public constructor(
+    private readonly cdr: ChangeDetectorRef,
+    private readonly tracking: TrackingService,
+  ) {}
 
   public ngAfterViewInit(): void {
     setTimeout(() => {
@@ -39,7 +43,7 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
   }
 
   public onRepoVisitClick(): void {
-    window.userTracking.sendCustomEvent(
+    this.tracking.sendCustomEvent(
       CustomTrackingEvent.VisitMyPortfolioRepositoryClick,
       {},
     );

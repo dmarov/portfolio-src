@@ -1,8 +1,10 @@
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { Tracking } from "../tracking";
+import { TrackingService } from "../tracking.service";
 
-export class CompositeTracking extends Tracking {
-  public constructor(private readonly trackings: ReadonlyArray<Tracking>) {
+export class CompositeTrackingService extends TrackingService {
+  public constructor(
+    private readonly trackings: ReadonlyArray<TrackingService>,
+  ) {
     super();
   }
 

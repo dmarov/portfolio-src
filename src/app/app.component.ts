@@ -6,6 +6,7 @@ import { HeaderComponent } from "./shared/components/header/header.component";
 import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
 import { KeyboardService } from "./shared/services/keyboard/keyboard.service";
 import { Key } from "./models/keyboard/key.enum";
+import { TrackingService } from "./shared/services/tracking/tracking.service";
 
 @Component({
   selector: "app-root",
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
   public constructor(
     private readonly router: Router,
     private readonly keyboard: KeyboardService,
+    private readonly tracking: TrackingService,
   ) {}
 
   public ngOnInit(): void {
@@ -42,7 +44,7 @@ export class AppComponent implements OnInit {
   }
 
   public onVisitGithubFooterClick(): void {
-    window.userTracking.sendCustomEvent(
+    this.tracking.sendCustomEvent(
       CustomTrackingEvent.VisitGithubFooterClick,
       {},
     );
