@@ -6,8 +6,9 @@ export async function fetchFeatures(): Promise<Features> {
   try {
     const response = await fetch(environment.featuresUrl);
     const result = await response.text();
+    const features = JSON.parse(result);
 
-    return JSON.parse(result);
+    return { ...fallbackFeatures, ...features };
   } catch (e) {
     return fallbackFeatures;
   }
