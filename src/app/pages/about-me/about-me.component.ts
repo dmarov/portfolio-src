@@ -6,7 +6,7 @@ import {
 import { CommonModule } from "@angular/common";
 import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
-import { environment } from "@/environments/environment";
+import { Features } from "@/app/models/features/features.class";
 
 @Component({
   selector: "app-about-me",
@@ -17,7 +17,9 @@ import { environment } from "@/environments/environment";
   imports: [CommonModule],
 })
 export class AboutMeComponent implements AfterViewInit {
-  public readonly showWhatIStandFor = environment.features.showWhatIStandFor;
+  public readonly showWhatIStandFor = this.features.showWhatIStandFor;
+
+  public constructor(private readonly features: Features) {}
 
   public ngAfterViewInit(): void {
     UnfoldEffect.init();

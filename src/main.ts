@@ -15,6 +15,8 @@ import { CompositeTrackingService } from "./app/shared/services/tracking/impl/co
 import { YandexMetrikaTrackingService } from "./app/shared/services/tracking/impl/yandex-metrika-tracking.service";
 import { KeyboardService } from "./app/shared/services/keyboard/keyboard.service";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { fallbackFeatures } from "./app/shared/const/fallback-features.const";
+import { Features } from "./app/models/features/features.class";
 
 let tracking = new DebugTrackingService();
 
@@ -29,25 +31,39 @@ if (environment.production) {
   enableProdMode();
 }
 
-// fetch(environment.featuresUrl).then(
-//   (res) => {
-//     const features = res;
-//   },
-//   (error) => {},
-// );
+async function fetchFeatures(): Promise<Features> {
+  try {
+    const response = await fetch(environment.featuresUrl);
+    const result = await response.text();
 
-bootstrapApplication(AppComponent, {
-  providers: [
-    {
-      provide: MenuService,
-      useClass: MenuServiceImpl,
-    },
-    {
-      provide: TrackingService,
-      useValue: tracking,
-    },
-    KeyboardService,
-    provideRouter(routes),
-    importProvidersFrom([BrowserAnimationsModule]),
-  ],
-});
+    return JSON.parse(result);
+  } catch (e) {
+    return fallbackFeatures;
+  }
+}
+
+async function bootstrap(): Promise<void> {
+  const features = await fetchFeatures();
+
+  bootstrapApplication(AppComponent, {
+    providers: [
+      {
+        provide: MenuService,
+        useClass: MenuServiceImpl,
+      },
+      {
+        provide: TrackingService,
+        useValue: tracking,
+      },
+      {
+        provide: Features,
+        useValue: Object.freeze(features),
+      },
+      KeyboardService,
+      provideRouter(routes),
+      importProvidersFrom([BrowserAnimationsModule]),
+    ],
+  });
+}
+
+bootstrap();

@@ -5,9 +5,6 @@ export const environment: AppEnvironment = {
   multilang: true,
   dateBeginning: "June 17, 2017 00:00:00",
   trackingEventTimeout: 1000,
-  features: {
-    showWhatIStandFor: false,
-  },
   featuresUrl:
     "https://gist.githubusercontent.com/dmarov/865906fdd48c581b931f6e2c23954787/raw/dmarov-features.json",
 };
