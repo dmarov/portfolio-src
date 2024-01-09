@@ -35,8 +35,8 @@ describe("HomeComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector('[data-test="home"]') as HTMLElement;
-    expect(input).toBeTruthy();
+    const el = document.querySelector('[data-test="home"]') as HTMLElement;
+    expect(el).toBeTruthy();
   });
 
   it("should emit PreviewRobotsClick event on preview robots click", () => {

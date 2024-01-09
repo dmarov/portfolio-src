@@ -32,7 +32,7 @@ describe("LangComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector('[data-test="lang"]') as HTMLElement;
-    expect(input).toBeTruthy();
+    const el = document.querySelector('[data-test="lang"]') as HTMLElement;
+    expect(el).toBeTruthy();
   });
 });

@@ -42,11 +42,11 @@ describe("AppComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector('[data-test="app"]') as HTMLElement;
-    expect(input).toBeTruthy();
+    const el = document.querySelector('[data-test="app"]') as HTMLElement;
+    expect(el).toBeTruthy();
   });
 
-  it("should emit VisitGithubFooterClick event on more products link click", () => {
+  it("should emit VisitGithubFooterClick event on github footer link click", () => {
     const tracking = TestBed.inject(TrackingService);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");

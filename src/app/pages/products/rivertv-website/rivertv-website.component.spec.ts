@@ -31,10 +31,10 @@ describe("RivertvWebsiteComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector(
+    const el = document.querySelector(
       '[data-test="rivertv-website"]',
     ) as HTMLElement;
-    expect(input).toBeTruthy();
+    expect(el).toBeTruthy();
   });
 
   it("should emit VisitRiverTvWebsiteClick event on link click", () => {

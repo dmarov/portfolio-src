@@ -32,10 +32,10 @@ describe("VmediaWebsiteComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector(
+    const el = document.querySelector(
       '[data-test="vmedia-website"]',
     ) as HTMLElement;
-    expect(input).toBeTruthy();
+    expect(el).toBeTruthy();
   });
 
   it("should emit VisitVmediaWebsiteClick event on link click", () => {

@@ -31,10 +31,10 @@ describe("KemerovoWebsiteComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const input = document.querySelector(
+    const el = document.querySelector(
       '[data-test="kemerovo-website"]',
     ) as HTMLElement;
-    expect(input).toBeTruthy();
+    expect(el).toBeTruthy();
   });
 
   it("should emit VisitKemerovoWebsiteClick event on link click", () => {
