@@ -15,8 +15,8 @@ import { CompositeTrackingService } from "./app/shared/services/tracking/impl/co
 import { YandexMetrikaTrackingService } from "./app/shared/services/tracking/impl/yandex-metrika-tracking.service";
 import { KeyboardService } from "./app/shared/services/keyboard/keyboard.service";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
-import { fallbackFeatures } from "./app/shared/const/fallback-features.const";
 import { Features } from "./app/models/features/features.class";
+import { fetchFeatures } from "./app/shared/utils/fetch-features/fetch-features.util";
 
 let tracking = new DebugTrackingService();
 
@@ -29,17 +29,6 @@ if (environment.production) {
   ]);
 
   enableProdMode();
-}
-
-async function fetchFeatures(): Promise<Features> {
-  try {
-    const response = await fetch(environment.featuresUrl);
-    const result = await response.text();
-
-    return JSON.parse(result);
-  } catch (e) {
-    return fallbackFeatures;
-  }
 }
 
 async function bootstrap(): Promise<void> {
