@@ -18,7 +18,7 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 import { Features } from "./app/models/features/features.class";
 import { fetchFeatures } from "./app/shared/utils/fetch-features/fetch-features.util";
 
-let tracking = new DebugTrackingService();
+let tracking: TrackingService = new DebugTrackingService();
 
 if (environment.production) {
   const timeout = environment.trackingEventTimeout;
