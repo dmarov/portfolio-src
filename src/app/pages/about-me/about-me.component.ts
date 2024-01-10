@@ -17,7 +17,7 @@ import { Features } from "@/app/models/features/features.class";
   imports: [CommonModule],
 })
 export class AboutMeComponent implements AfterViewInit {
-  public readonly showWhatIStandFor = this.features.showWhatIStandFor;
+  public readonly showWhatIStandFor = this.features.SHOW_WHAT_I_STAND_FOR;
 
   public constructor(private readonly features: Features) {}
 

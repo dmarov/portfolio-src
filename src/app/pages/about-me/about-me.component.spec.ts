@@ -18,7 +18,7 @@ describe("AboutMeComponent", () => {
   mockIntersectionObserver();
 
   const mockFeatures: Features = {
-    showWhatIStandFor: true,
+    SHOW_WHAT_I_STAND_FOR: true,
   };
 
   beforeEach(() => {

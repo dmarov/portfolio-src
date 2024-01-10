@@ -1,3 +1,3 @@
 export abstract class Features {
-  public abstract showWhatIStandFor: boolean;
+  public abstract SHOW_WHAT_I_STAND_FOR: boolean;
 }
