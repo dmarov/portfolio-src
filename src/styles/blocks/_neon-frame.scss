@@ -1,0 +1,61 @@
+@import "../shared/colors";
+@import "../shared/mixins";
+
+.neon-frame {
+  --radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: col("content-background");
+  color: col("neon-white");
+  padding: 20px;
+  flex-grow: 1;
+  border-radius: var(--radius);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: var(--radius);
+    opacity: 1;
+  }
+
+  &.inview {
+    &::after {
+      transition: opacity 1s ease-in;
+    }
+  }
+
+  &.inview_not {
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &_theme {
+    position: relative;
+
+    &_green {
+      &::after {
+        box-shadow: 0 0 5px col("neon-green");
+        border: 1px solid col("neon-green");
+      }
+    }
+
+    &_orange {
+      &::after {
+        box-shadow: 0 0 5px col("neon-orange");
+        border: 1px solid col("neon-orange");
+      }
+    }
+
+    &_white {
+      &::after {
+        box-shadow: 0 0 5px col("neon-white");
+        border: 1px solid col("neon-white");
+      }
+    }
+  }
+}

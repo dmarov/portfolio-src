@@ -1,6 +1,6 @@
 .home-title {
   font-size: 11px;
-  color: $col-dwhite;
+  color: col("text");
 
   @include respond-to("small") {
     font-size: 13px;
@@ -24,7 +24,6 @@
     &_welcome {
       margin: 0;
       font-size: 35px;
-      color: $col-dwhite;
 
       @include respond-to("small") {
         font-size: 45px;

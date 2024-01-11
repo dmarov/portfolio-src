@@ -6,8 +6,8 @@
     <div class="fragment" [id]="product.id"></div>
     <div class="content">
       <section
-        [ngClass]="'content-block_theme_' + colors[index % 3]"
-        class="content-block unfold unfold_hidden inview inview_not"
+        [ngClass]="'neon-frame_theme_' + colors[index % 3]"
+        class="neon-frame unfold unfold_hidden inview inview_not"
       >
         <ng-container *ngComponentOutlet="product.component"></ng-container>
       </section>

@@ -2,62 +2,8 @@
 @import "../shared/mixins";
 
 .content-block {
-  --radius: 10px;
-
-  background-color: $col-grey;
-  color: $col-dwhite;
-  padding: 20px;
-  flex-grow: 1;
-  border-radius: var(--radius);
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    border-radius: var(--radius);
-    opacity: 1;
-  }
-
-  &.inview {
-    &::after {
-      transition: opacity 1s ease-in;
-    }
-  }
-
-  &.inview_not {
-    &::after {
-      opacity: 0;
-    }
-  }
-
-  &_theme {
-    position: relative;
-
-    &_green {
-      &::after {
-        box-shadow: 0 0 5px $col-green;
-        border: 1px solid $col-green;
-      }
-    }
-
-    &_orange {
-      &::after {
-        box-shadow: 0 0 5px $col-orange;
-        border: 1px solid $col-orange;
-      }
-    }
-
-    &_white {
-      &::after {
-        box-shadow: 0 0 5px $col-dwhite;
-        border: 1px solid $col-dwhite;
-      }
-    }
-  }
-
-  &__title {
+  h1,
+  h2 {
     text-align: center;
     font-size: 30px;
 
@@ -70,25 +16,15 @@
     }
   }
 
-  &_less-content {
-    display: flex;
-    flex-direction: column;
+  ul {
+    padding-left: 16px;
   }
 
-  &__li {
-    &::marker {
-      color: $col-green;
-    }
+  li::marker {
+    color: col("text");
   }
 
-  &__a {
-    &:link,
-    &:visited {
-      color: $col-green;
-    }
-  }
-
-  &__p {
+  p {
     font-size: 1.2rem;
 
     &_center {
@@ -96,7 +32,7 @@
     }
   }
 
-  &__img {
+  img {
     display: block;
     width: 100%;
     height: auto;

@@ -1,5 +1,8 @@
 ## TODO:
 
+- fix scrollbar color for chrome
+- images lazy loading
+- prepare for color themes
 - add "My Skills" list
 - add preview title on hover, and touch
 - add skills (bdd, patterns, refactoring)

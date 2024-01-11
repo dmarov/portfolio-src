@@ -1,0 +1,24 @@
+<div class="preview-products" data-test="preview-products">
+  <ul class="preview-products__items">
+    <li *ngFor="let product of products" class="preview-products__item">
+      <a
+        [attr.data-test]="'preview-products-' + product.testAttr"
+        class="preview-product"
+        [routerLink]="routePath.Products"
+        [fragment]="product.fragment"
+        (click)="onPreviewClick(product.trackingEvent)"
+      >
+        <div class="preview-product__link">
+          <img
+            class="preview-product__img"
+            [alt]="product.alt"
+            [src]="'assets/images/project-thumbnails/t1/' + product.image"
+            [srcset]="
+              'assets/images/project-thumbnails/t2/' + product.image + ' 2x'
+            "
+          />
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

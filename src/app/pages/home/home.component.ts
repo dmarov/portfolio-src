@@ -12,6 +12,8 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
 import { RoutePath } from "@/app/models/routing/route-path.enum";
 import { msInYear } from "@/app/shared/const/ms-in-year.const";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { TechListComponent } from "./tech-list/tech-list.component";
+import { PreviewProductsComponent } from "./preview-products/preview-products.component";
 
 @Component({
   selector: "app-home",
@@ -19,7 +21,7 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
   styleUrls: ["./home.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, TechListComponent, PreviewProductsComponent],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   public readonly routePath = RoutePath;
@@ -28,7 +30,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private readonly startDate = new Date(environment.dateBeginning);
 
-  public constructor(private readonly tracking: TrackingService) {}
+  public constructor(private readonly tracking: TrackingService) { }
 
   public ngOnInit(): void {
     const years = (Date.now() - this.startDate.getTime()) / msInYear;
@@ -39,22 +41,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
     InViewEffect.init();
-  }
-
-  public onPreviewRobotsClick(): void {
-    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewRobotsClick, {});
-  }
-
-  public onPreviewRivertvClick(): void {
-    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewRivertvClick, {});
-  }
-
-  public onPreviewVmediaClick(): void {
-    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewVmediaClick, {});
-  }
-
-  public onPreviewPaxusClick(): void {
-    this.tracking.sendCustomEvent(CustomTrackingEvent.PreviewPaxusClick, {});
   }
 
   public onMoreProductsClick(): void {

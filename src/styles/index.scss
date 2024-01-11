@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "theme";
 @import "shared/colors";
 
 html {
@@ -8,7 +9,8 @@ html {
 }
 
 body {
-  background: $col-black;
+  background: col("background");
+  color: col("text");
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -26,14 +28,14 @@ a {
 a,
 a:link,
 a:visited {
-  color: $col-link;
+  color: col("link");
 }
 
 a:hover {
-  color: $col-link-hover;
+  color: col("link-hover");
   text-decoration: underline;
 }
 
 a:active {
-  color: $col-link-active;
+  color: col("link-active");
 }

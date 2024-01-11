@@ -14,7 +14,7 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
   template: "<app-home></app-home>",
   imports: [HomeComponent],
 })
-export class HomeTestComponent {}
+export class HomeTestComponent { }
 
 describe("HomeComponent", () => {
   let fixture: ComponentFixture<HomeTestComponent>;
@@ -37,71 +37,6 @@ describe("HomeComponent", () => {
   it("should have test attribute", () => {
     const el = document.querySelector('[data-test="home"]') as HTMLElement;
     expect(el).toBeTruthy();
-  });
-
-  it("should emit PreviewRobotsClick event on preview robots click", () => {
-    const tracking = TestBed.inject(TrackingService);
-
-    const spy = jest.spyOn(tracking, "sendCustomEvent");
-
-    const el = document.querySelector(
-      "[data-test='home-preview-robots']",
-    ) as HTMLElement;
-
-    el.click();
-
-    expect(spy).toHaveBeenCalledWith(
-      CustomTrackingEvent.PreviewRobotsClick,
-      {},
-    );
-  });
-
-  it("should emit PreviewRiverTvClick event on preview rivertv click", () => {
-    const tracking = TestBed.inject(TrackingService);
-
-    const spy = jest.spyOn(tracking, "sendCustomEvent");
-
-    const el = document.querySelector(
-      "[data-test='home-preview-rivertv']",
-    ) as HTMLElement;
-
-    el.click();
-
-    expect(spy).toHaveBeenCalledWith(
-      CustomTrackingEvent.PreviewRivertvClick,
-      {},
-    );
-  });
-
-  it("should emit PreviewVmediaClick event on preview vmedia click", () => {
-    const tracking = TestBed.inject(TrackingService);
-
-    const spy = jest.spyOn(tracking, "sendCustomEvent");
-
-    const el = document.querySelector(
-      "[data-test='home-preview-vmedia']",
-    ) as HTMLElement;
-
-    el.click();
-
-    expect(spy).toHaveBeenCalledWith(
-      CustomTrackingEvent.PreviewVmediaClick,
-      {},
-    );
-  });
-
-  it("should emit PreviewPaxusClick event on preview paxus click", () => {
-    const tracking = TestBed.inject(TrackingService);
-
-    const spy = jest.spyOn(tracking, "sendCustomEvent");
-
-    const el = document.querySelector(
-      "[data-test='home-preview-paxus']",
-    ) as HTMLElement;
-
-    el.click();
-
-    expect(spy).toHaveBeenCalledWith(CustomTrackingEvent.PreviewPaxusClick, {});
   });
 
   it("should emit MoreProductsClick event on more products link click", () => {

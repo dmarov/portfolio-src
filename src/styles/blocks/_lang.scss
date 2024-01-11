@@ -19,11 +19,11 @@
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color: $col-white;
+    color: col("text");
     transition: color 0.3s linear;
 
     &:hover {
-      color: $col-orange;
+      color: col("inactive-route-hover-link");
     }
   }
 }

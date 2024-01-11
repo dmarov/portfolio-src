@@ -6,7 +6,7 @@
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
       <article
-        class="home-title content-block content-block_theme_white unfold unfold_hidden inview inview_not"
+        class="home-title neon-frame neon-frame_theme_white unfold unfold_hidden inview inview_not"
       >
         <h1
           i18n="welcome|Home page welcome@@BANNER_WELCOME"
@@ -40,254 +40,26 @@
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
       <article
-        class="content-block content-block_theme_green unfold unfold_hidden inview inview_not"
+        class="neon-frame neon-frame_theme_green unfold unfold_hidden inview inview_not content-block"
       >
-        <h2
-          i18n="technology stack@@MY_TECHNOLOGY_STACK"
-          class="content-block__title"
-        >
+        <h2 i18n="technology stack@@MY_TECHNOLOGY_STACK">
           My Technology Stack
         </h2>
-        <div class="home__tech tech-list">
-          <ul class="tech-list__items">
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_angular"
-                    src="assets/images/tech-logos/angular.svg"
-                    alt="Angular"
-                    title="Angular"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_typescript"
-                    src="assets/images/tech-logos/typescript.svg"
-                    alt="Typescript"
-                    title="Typescript"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_angular-material"
-                    src="assets/images/tech-logos/angular-material.png"
-                    alt="Angular Material"
-                    title="Angular Material"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_ngrx"
-                    src="assets/images/tech-logos/ngrx.svg"
-                    alt="NgRx"
-                    title="NgRx"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_docker"
-                    src="assets/images/tech-logos/docker.png"
-                    alt="Docker"
-                    title="Docker"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_nodejs"
-                    src="assets/images/tech-logos/nodejs.png"
-                    alt="Nodejs"
-                    title="Nodejs"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_socketio"
-                    src="assets/images/tech-logos/socketio.png"
-                    alt="socketio"
-                    title="socketio"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_webpack"
-                    src="assets/images/tech-logos/webpack.svg"
-                    alt="Webpack"
-                    title="Webpack"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_gulp"
-                    src="assets/images/tech-logos/gulp.svg"
-                    alt="Gulp"
-                    title="Gulp"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_nginx"
-                    src="assets/images/tech-logos/nginx.png"
-                    alt="nginx"
-                    title="nginx"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_vue"
-                    src="assets/images/tech-logos/vue.png"
-                    alt="Vue"
-                    title="Vue"
-                  />
-                </div>
-              </div>
-            </li>
-            <li class="tech-list__item">
-              <div class="tech-logo">
-                <div class="tech-logo__img-wrapper">
-                  <img
-                    class="tech-logo__img tech-logo__img_unix"
-                    src="assets/images/tech-logos/unix.png"
-                    alt="Unix"
-                    title="Unix"
-                  />
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div class="home__tech">
+          <app-tech-list></app-tech-list>
         </div>
       </article>
     </div>
   </div>
+
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
       <article
-        class="content-block content-block_theme_orange unfold unfold_hidden inview inview_not"
+        class="neon-frame neon-frame_theme_orange unfold unfold_hidden inview inview_not content-block"
       >
-        <h2 i18n="projects@@PRODUCTS" class="content-block__title">Products</h2>
-        <div class="home-products">
-          <ul class="home-products__items">
-            <li class="home-products__item">
-              <a
-                data-test="home-preview-robots"
-                class="home-product"
-                [routerLink]="routePath.Products"
-                fragment="robots"
-                (click)="onPreviewRobotsClick()"
-              >
-                <div class="home-product__link">
-                  <img
-                    class="home-product__img"
-                    alt="Robots"
-                    src="assets/images/project-thumbnails/t1/robots.png"
-                    srcset="assets/images/project-thumbnails/t2/robots.png 2x"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="home-products__item">
-              <a
-                data-test="home-preview-rivertv"
-                class="home-product"
-                [routerLink]="routePath.Products"
-                fragment="rivertv"
-                (click)="onPreviewRivertvClick()"
-              >
-                <div class="home-product__link">
-                  <img
-                    class="home-product__img"
-                    alt="RiverTV"
-                    src="assets/images/project-thumbnails/t1/rivertv.png?v=2"
-                    srcset="
-                      assets/images/project-thumbnails/t2/rivertv.png?v=2 2x
-                    "
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="home-products__item">
-              <a
-                data-test="home-preview-vmedia"
-                class="home-product"
-                [routerLink]="routePath.Products"
-                fragment="vmedia"
-                (click)="onPreviewVmediaClick()"
-              >
-                <div class="home-product__link">
-                  <img
-                    class="home-product__img"
-                    alt="VMedia"
-                    src="assets/images/project-thumbnails/t1/vmedia.png?v=2"
-                    srcset="
-                      assets/images/project-thumbnails/t2/vmedia.png?v=2 2x
-                    "
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="home-products__item">
-              <a
-                data-test="home-preview-paxus"
-                class="home-product"
-                [routerLink]="routePath.Products"
-                fragment="paxus"
-                (click)="onPreviewPaxusClick()"
-              >
-                <div class="home-product__link">
-                  <img
-                    class="home-product__img"
-                    alt="Paxus"
-                    src="assets/images/project-thumbnails/t1/paxus.png?v=1"
-                    srcset="
-                      assets/images/project-thumbnails/t2/paxus.png?v=1 2x
-                    "
-                  />
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p class="home__projects-line content-block__p content-block__p_center">
+        <h2 i18n="projects@@PRODUCTS">Products</h2>
+        <app-preview-products></app-preview-products>
+        <p class="home__more-products">
           <a
             data-test="home-more-products-link"
             i18n="more products@@MORE_PRODUCTS"

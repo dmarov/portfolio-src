@@ -3,13 +3,12 @@
 
 .header {
   display: flex;
-  color: $col-black;
   transition: background-color linear 0.3s;
-  border-bottom: $col-grey 3px solid;
+  border-bottom: col("content-background") 3px solid;
   align-items: flex-start;
 
   &:hover {
-    background-color: $col-grey;
+    background-color: col("content-background");
   }
 
   &__content {

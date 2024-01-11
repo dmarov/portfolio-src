@@ -1,23 +1,13 @@
-$col-green: #98ce00;
-$col-ddgreen: #000500;
-$col-white: #e9f1f7;
-$col-dwhite: #e0e0e0;
-$col-black: #000;
-$col-lblack: #1e212b;
-$col-dblue: #1b0075;
-$col-ddblue: #090026;
-$col-orange: #fbb02d;
-$col-llblue: #bfd1e5;
-$col-blue: #006992;
-$col-ddblue: #00010c;
-$col-ghostwhite: #f0eff4;
-$col-blazeoragne: #f96900;
-$col-barelywhite: #d7d7d7;
-$col-grey: #101010;
-$col-lgrey: #e7ecef;
-$col-dgrey: #788585;
-$col-heligrey: #a69cac;
-$col-red: #570000;
-$col-link: #24d4f2;
-$col-link-hover: #24f0f2;
-$col-link-active: #24fff2;
+@use "sass:list";
+
+$available-colors: "active-route-link", "text", "background",
+  "inactive-route-hover-link", "content-background", "link", "link-hover",
+  "link-active", "neon-green", "neon-orange", "neon-white", "shadow-hover";
+
+@function col($token) {
+  @if not list.index($available-colors, $token) {
+    @error 'ERROR: color not exist';
+  }
+
+  @return var(--app-color-#{$token});
+}

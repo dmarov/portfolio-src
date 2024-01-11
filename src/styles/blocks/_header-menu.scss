@@ -34,11 +34,11 @@
     &:link,
     &:active,
     &:visited {
-      color: $col-white;
+      color: col("text");
     }
 
     &:hover {
-      color: $col-blazeoragne;
+      color: col("inactive-route-hover-link");
     }
 
     &_visible {
@@ -57,7 +57,7 @@
         &:link,
         &:active,
         &:visited {
-          color: $col-green;
+          color: col("active-route-link");
         }
       }
     }
