@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private readonly startDate = new Date(environment.dateBeginning);
 
-  public constructor(private readonly tracking: TrackingService) { }
+  public constructor(private readonly tracking: TrackingService) {}
 
   public ngOnInit(): void {
     const years = (Date.now() - this.startDate.getTime()) / msInYear;

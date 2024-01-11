@@ -14,7 +14,7 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
   template: "<app-home></app-home>",
   imports: [HomeComponent],
 })
-export class HomeTestComponent { }
+export class HomeTestComponent {}
 
 describe("HomeComponent", () => {
   let fixture: ComponentFixture<HomeTestComponent>;

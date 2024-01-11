@@ -10,7 +10,7 @@ import { TechListComponent } from "./tech-list.component";
   template: "<app-tech-list></app-tech-list>",
   imports: [TechListComponent],
 })
-export class TechListTestComponent { }
+export class TechListTestComponent {}
 
 describe("TechListComponent", () => {
   let fixture: ComponentFixture<TechListTestComponent>;
