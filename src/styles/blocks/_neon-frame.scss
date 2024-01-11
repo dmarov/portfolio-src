@@ -1,13 +1,12 @@
-@import "../shared/colors";
-@import "../shared/mixins";
+@use "../shared/colors";
 
 .neon-frame {
   --radius: 10px;
 
   display: flex;
   flex-direction: column;
-  background-color: col("content-background");
-  color: col("text");
+  background-color: colors.col("content-background");
+  color: colors.col("text");
   padding: 20px;
   flex-grow: 1;
   border-radius: var(--radius);
@@ -39,22 +38,22 @@
 
     &_green {
       &::after {
-        box-shadow: 0 0 5px col("neon-green");
-        border: 1px solid col("neon-green");
+        box-shadow: 0 0 5px colors.col("neon-green");
+        border: 1px solid colors.col("neon-green");
       }
     }
 
     &_orange {
       &::after {
-        box-shadow: 0 0 5px col("neon-orange");
-        border: 1px solid col("neon-orange");
+        box-shadow: 0 0 5px colors.col("neon-orange");
+        border: 1px solid colors.col("neon-orange");
       }
     }
 
     &_white {
       &::after {
-        box-shadow: 0 0 5px col("neon-white");
-        border: 1px solid col("neon-white");
+        box-shadow: 0 0 5px colors.col("neon-white");
+        border: 1px solid colors.col("neon-white");
       }
     }
   }

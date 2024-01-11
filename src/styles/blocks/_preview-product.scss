@@ -1,4 +1,4 @@
-@import "shared/colors";
+@use "shared/colors";
 
 .preview-product {
   --hover-time: 0.3s;
@@ -27,7 +27,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    box-shadow: 0 0 20px 20px col("shadow-hover");
+    box-shadow: 0 0 20px 20px colors.col("shadow-hover");
     opacity: 0;
   }
 

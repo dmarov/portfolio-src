@@ -25,6 +25,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.8",
+    "@angular/cdk": "^16.1.8",
     "@angular/common": "^16.1.8",
     "@angular/compiler": "^16.1.8",
     "@angular/core": "^16.1.8",
@@ -35,9 +36,10 @@
     "@angular/router": "^16.1.8",
     "intersection-observer": "^0.12.0",
     "jsdom-testing-mocks": "^1.11.0",
+    "ngx-scrollbar": "^13.0.3",
     "normalize.css": "^8.0.1",
     "resize-observer-polyfill": "^1.5.1",
-    "rxjs": "~6.5.4",
+    "rxjs": "~7.4.0",
     "swiper": "^6.3.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.13.0"

@@ -1,5 +1,7 @@
+@use "shared/mixins";
+
 :root {
-  &[data-theme="dark"] {
+  @include mixins.theme("dark") {
     --app-color-active-route-link: #98ce00;
     --app-color-text: #e0e0e0;
     --app-color-background: #000;
@@ -13,5 +15,8 @@
     --app-color-neon-orange: #fbb02d;
     --app-color-neon-white: #e0e0e0;
     --app-color-shadow-hover: #000;
+    --app-color-scrollbar-thumb: #222;
+    --app-color-scrollbar-thumb-hover: #444;
+    --app-color-header: rgb(0 0 0 / 90%);
   }
 }

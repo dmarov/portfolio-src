@@ -1,4 +1,4 @@
-@import "../shared/mixins";
+@use "../shared/mixins";
 
 .tech-list {
   --perline: 4;
@@ -16,7 +16,7 @@
     flex-basis: calc(100% / var(--perline));
   }
 
-  @include respond-to("small") {
+  @include mixins.respond-to("small") {
     --perline: 6;
   }
 }

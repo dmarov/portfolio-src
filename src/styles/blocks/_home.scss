@@ -1,4 +1,4 @@
-@import "../shared/mixins";
+@use "../shared/mixins";
 
 .home {
   &__img-wrapper {
@@ -10,15 +10,15 @@
     justify-content: center;
     margin-top: 20px;
 
-    @include respond-to("small") {
+    @include mixins.respond-to("small") {
       margin-top: 30px;
     }
 
-    @include respond-to("medium") {
+    @include mixins.respond-to("medium") {
       margin-top: 40px;
     }
 
-    @include respond-to("large") {
+    @include mixins.respond-to("large") {
       margin-top: 70px;
     }
 

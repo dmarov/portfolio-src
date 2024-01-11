@@ -1,3 +1,5 @@
+@use "sass:list";
+
 $breakpoints: (
   "small": 767px,
   "medium": 992px,
@@ -23,6 +25,18 @@ $breakpoints: (
 @mixin retina() {
   @media only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+$available-themes: "dark";
+
+@mixin theme($theme) {
+  @if not list.index($available-themes, $theme) {
+    @error 'ERROR: theme not exist';
+  }
+
+  &[data-theme="#{$theme}"] {
     @content;
   }
 }

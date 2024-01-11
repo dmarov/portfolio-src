@@ -1,29 +1,23 @@
 <div class="app" data-test="app">
-  <div id="top-pivot"></div>
-  <header class="app__header">
-    <app-header></app-header>
-  </header>
-  <main class="app__main">
-    <router-outlet></router-outlet>
-  </main>
-  <footer class="app__footer">
-    <div class="content-wrapper">
-      <div class="content content_footer">
-        <div class="footer">
-          <a
-            data-test="visit-github-footer-link"
-            href="https://github.com/dmarov"
-            target="_blank"
-            (click)="onVisitGithubFooterClick()"
-          >
-            <img
-              class="footer__github"
-              src="assets/images/github.png?v=1"
-              alt="Github"
-            />
-          </a>
+  <ng-scrollbar class="app-scrollbar">
+    <div id="top-pivot"></div>
+    <header class="app__header">
+      <app-header></app-header>
+    </header>
+    <main class="app__main">
+      <router-outlet></router-outlet>
+    </main>
+    <footer class="app__footer">
+      <div class="content-wrapper">
+        <div class="content content_footer">
+          <div class="footer">
+            <a data-test="visit-github-footer-link" href="https://github.com/dmarov" target="_blank"
+              (click)="onVisitGithubFooterClick()">
+              <img class="footer__github" src="assets/images/github.png?v=1" alt="Github" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </ng-scrollbar>
 </div>

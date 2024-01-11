@@ -1,12 +1,15 @@
+@use "../shared/colors";
+@use "../shared/mixins";
+
 .home-title {
   font-size: 11px;
-  color: col("text");
+  color: colors.col("text");
 
-  @include respond-to("small") {
+  @include mixins.respond-to("small") {
     font-size: 13px;
   }
 
-  @include respond-to("medium") {
+  @include mixins.respond-to("medium") {
     font-size: 15px;
   }
 
@@ -25,11 +28,11 @@
       margin: 0;
       font-size: 35px;
 
-      @include respond-to("small") {
+      @include mixins.respond-to("small") {
         font-size: 45px;
       }
 
-      @include respond-to("medium") {
+      @include mixins.respond-to("medium") {
         font-size: 55px;
       }
     }

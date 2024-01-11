@@ -1,5 +1,5 @@
-@import "../shared/colors";
-@import "../shared/mixins";
+@use "../shared/colors";
+@use "../shared/mixins";
 
 .header-menu {
   list-style-type: none;
@@ -12,7 +12,7 @@
   flex-grow: 1;
   padding-top: 6px;
 
-  @include respond-to("small") {
+  @include mixins.respond-to("small") {
     padding-top: 0;
   }
 
@@ -27,18 +27,18 @@
     line-height: 1;
     display: none;
 
-    @include respond-to("small") {
+    @include mixins.respond-to("small") {
       font-size: 30px;
     }
 
     &:link,
     &:active,
     &:visited {
-      color: col("text");
+      color: colors.col("text");
     }
 
     &:hover {
-      color: col("inactive-route-hover-link");
+      color: colors.col("inactive-route-hover-link");
     }
 
     &_visible {
@@ -54,10 +54,11 @@
 
     &_active {
       .header-menu__link {
+
         &:link,
         &:active,
         &:visited {
-          color: col("active-route-link");
+          color: colors.col("active-route-link");
         }
       }
     }

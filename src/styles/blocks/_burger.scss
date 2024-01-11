@@ -1,4 +1,4 @@
-@import "../shared/colors";
+@use "../shared/colors";
 
 .burger {
   width: 40px;
@@ -21,7 +21,7 @@
     height: 2px;
     left: 0;
     right: 0;
-    background: col("text");
+    background: colors.col("text");
     top: 50%;
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 1;

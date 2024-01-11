@@ -2,7 +2,8 @@
 
 $available-colors: "active-route-link", "text", "background",
   "inactive-route-hover-link", "content-background", "link", "link-hover",
-  "link-active", "neon-green", "neon-orange", "neon-white", "shadow-hover";
+  "link-active", "neon-green", "neon-orange", "neon-white", "shadow-hover",
+  "scrollbar-thumb", "scrollbar-thumb-hover", "header";
 
 @function col($token) {
   @if not list.index($available-colors, $token) {

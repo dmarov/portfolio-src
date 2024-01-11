@@ -1,6 +1,6 @@
+@use "shared/colors";
 @import "normalize.css";
-@import "theme";
-@import "shared/colors";
+@import "themes/dark";
 
 html {
   height: 100%;
@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background: col("background");
-  color: col("text");
+  background: colors.col("background");
+  color: colors.col("text");
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -18,6 +18,10 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.app-root {
+  height: 100%;
 }
 
 a {
@@ -28,14 +32,14 @@ a {
 a,
 a:link,
 a:visited {
-  color: col("link");
+  color: colors.col("link");
 }
 
 a:hover {
-  color: col("link-hover");
+  color: colors.col("link-hover");
   text-decoration: underline;
 }
 
 a:active {
-  color: col("link-active");
+  color: colors.col("link-active");
 }

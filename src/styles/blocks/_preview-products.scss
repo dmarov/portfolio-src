@@ -1,10 +1,10 @@
-@import "../shared/mixins";
+@use "../shared/mixins";
 
 .preview-products {
   --offset: 10px;
   --perline: 1;
 
-  @include respond-to("small") {
+  @include mixins.respond-to("small") {
     --perline: 2;
   }
 
