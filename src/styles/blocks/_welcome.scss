@@ -1,0 +1,49 @@
+@use "../shared/colors";
+@use "../shared/mixins";
+
+.welcome {
+  color: colors.col("text");
+
+  &__text {
+    text-align: center;
+
+    &_primary {
+      margin: 10px 0 0;
+      font-size: 1.4rem;
+
+      @include mixins.respond-to("small") {
+        font-size: 1.7rem;
+      }
+
+      @include mixins.respond-to("medium") {
+        font-size: 2rem;
+      }
+    }
+
+    &_secondary {
+      margin: 15px 0 0;
+      font-size: 1rem;
+
+      @include mixins.respond-to("small") {
+        font-size: 1.2rem;
+      }
+
+      @include mixins.respond-to("medium") {
+        font-size: 1.5rem;
+      }
+    }
+
+    &_welcome {
+      margin: 0;
+      font-size: 2rem;
+
+      @include mixins.respond-to("small") {
+        font-size: 3rem;
+      }
+
+      @include mixins.respond-to("medium") {
+        font-size: 4rem;
+      }
+    }
+  }
+}

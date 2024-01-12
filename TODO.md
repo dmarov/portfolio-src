@@ -1,8 +1,9 @@
 ## TODO:
 
-- fix scrollbar color for chrome
+- fold menu on click outside
 - improve loading display
 - images lazy loading
+- images scale for mobile
 - add "My Skills" list
 - add preview title on hover, and touch
 - add skills (bdd, patterns, refactoring)

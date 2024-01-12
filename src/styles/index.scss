@@ -1,11 +1,11 @@
 @use "shared/colors";
 @import "normalize.css";
 @import "themes/dark";
+@import "fonts";
 
 html {
   height: 100%;
   overflow-x: hidden;
-  line-height: 1.45;
 }
 
 body {

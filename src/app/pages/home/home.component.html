@@ -5,43 +5,15 @@
 
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
-      <article
-        class="home-title neon-frame neon-frame_theme_white unfold unfold_hidden inview inview_not"
-      >
-        <h1
-          i18n="welcome|Home page welcome@@BANNER_WELCOME"
-          class="home-title__text home-title__text_welcome"
-        >
-          Welcome!
-        </h1>
-        <h1
-          i18n="introduction@@BANNER_INTRODUCTION"
-          class="home-title__text home-title__text_primary"
-        >
-          My name is Dmitry, and this is my portfolio.
-        </h1>
-        <h2
-          i18n="who am i@@BANNER_WHO_AM_I"
-          class="home-title__text home-title__text_secondary"
-        >
-          I am software developer with over {{ years }} {years, plural,
-          =0{years} one{year} other{years}} of experience in web development.
-        </h2>
-        <h2
-          i18n="my goals@@BANNER_MY_GOALS"
-          class="home-title__text home-title__text_secondary"
-        >
-          I'm interested in technology and how to use it to make life better.
-        </h2>
+      <article class="neon-frame neon-frame_theme_white unfold unfold_hidden inview inview_not">
+        <app-welcome></app-welcome>
       </article>
     </div>
   </div>
 
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
-      <article
-        class="neon-frame neon-frame_theme_green unfold unfold_hidden inview inview_not content-block"
-      >
+      <article class="neon-frame neon-frame_theme_green unfold unfold_hidden inview inview_not content-block">
         <h2 i18n="technology stack@@MY_TECHNOLOGY_STACK">
           My Technology Stack
         </h2>
@@ -54,18 +26,12 @@
 
   <div class="content-wrapper content-wrapper_no-extend">
     <div class="content">
-      <article
-        class="neon-frame neon-frame_theme_orange unfold unfold_hidden inview inview_not content-block"
-      >
+      <article class="neon-frame neon-frame_theme_orange unfold unfold_hidden inview inview_not content-block">
         <h2 i18n="projects@@PRODUCTS">Products</h2>
         <app-preview-products></app-preview-products>
         <p class="home__more-products">
-          <a
-            data-test="home-more-products-link"
-            i18n="more products@@MORE_PRODUCTS"
-            [routerLink]="routePath.Products"
-            (click)="onMoreProductsClick()"
-          >
+          <a data-test="home-more-products-link" i18n="more products@@MORE_PRODUCTS" [routerLink]="routePath.Products"
+            (click)="onMoreProductsClick()">
             more products
           </a>
         </p>
