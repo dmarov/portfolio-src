@@ -1,7 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { filter } from "rxjs/operators";
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   OnInit,
@@ -28,14 +27,18 @@ export class AppComponent implements OnInit {
   public constructor(
     private readonly router: Router,
     private readonly tracking: TrackingService,
-  ) { }
+  ) {}
 
   public ngOnInit(): void {
-    this.router.events
-      .pipe(filter((s) => s instanceof NavigationEnd))
-      .subscribe(() => {
-        this.autoScroll();
-      });
+    setTimeout(() => {
+      this.autoScroll();
+
+      this.router.events
+        .pipe(filter((s) => s instanceof NavigationEnd))
+        .subscribe(() => {
+          this.autoScroll();
+        });
+    }, 100);
   }
 
   public onVisitGithubFooterClick(): void {
