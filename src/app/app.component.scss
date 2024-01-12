@@ -12,6 +12,9 @@
 .app-scrollbar {
   --scrollbar-thumb-color: #{colors.col("scrollbar-thumb")};
   --scrollbar-thumb-hover-color: #{colors.col("scrollbar-thumb-hover")};
+
+  // unit is required here due to scrollbar API
+  /* stylelint-disable-next-line length-zero-no-unit */
   --scrollbar-padding: 0px;
   --scrollbar-size: 7px;
 }
