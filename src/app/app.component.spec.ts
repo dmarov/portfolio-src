@@ -4,7 +4,6 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
 import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
-import { KeyboardService } from "./shared/services/keyboard/keyboard.service";
 import { MenuService } from "./shared/services/menu/menu.service";
 import { MenuServiceMock } from "./shared/services/menu/menu.service.mock";
 import { TrackingService } from "./shared/services/tracking/tracking.service";
@@ -34,7 +33,6 @@ describe("AppComponent", () => {
           provide: MenuService,
           useClass: MenuServiceMock,
         },
-        KeyboardService,
       ],
     });
     fixture = TestBed.createComponent(AppTestComponent);
