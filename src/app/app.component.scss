@@ -1,4 +1,5 @@
 @use "shared/colors";
+@use "shared/mixins";
 @import "blocks/app";
 @import "blocks/content-wrapper";
 @import "blocks/content";
@@ -16,5 +17,9 @@
   // unit is required here due to scrollbar API
   /* stylelint-disable-next-line length-zero-no-unit */
   --scrollbar-padding: 0px;
-  --scrollbar-size: 7px;
+  --scrollbar-size: 3px;
+
+  @include mixins.respond-to("small") {
+    --scrollbar-size: 7px;
+  }
 }
