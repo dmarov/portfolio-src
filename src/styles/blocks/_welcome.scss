@@ -45,5 +45,18 @@
         font-size: 4rem;
       }
     }
+
+    &_extra {
+      margin: 15px 0 0;
+      font-size: 0.9rem;
+
+      @include mixins.respond-to("small") {
+        font-size: 1rem;
+      }
+
+      @include mixins.respond-to("medium") {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
