@@ -3,12 +3,6 @@
 .neon-frame {
   --radius: 10px;
 
-  display: flex;
-  flex-direction: column;
-  background-color: colors.col("content-background");
-  color: colors.col("text");
-  padding: 20px;
-  flex-grow: 1;
   border-radius: var(--radius);
   position: relative;
 
@@ -34,8 +28,6 @@
   }
 
   &_theme {
-    position: relative;
-
     &_green {
       &::after {
         box-shadow: 0 0 5px colors.col("neon-green");

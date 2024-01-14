@@ -53,7 +53,6 @@ async function bootstrap(): Promise<void> {
       {
         provide: NG_SCROLLBAR_OPTIONS,
         useValue: {
-          autoHeightDisabled: false,
           appearance: "standard",
         },
       },
