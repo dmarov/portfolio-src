@@ -19,7 +19,7 @@
   --scrollbar-padding: 0px;
   --scrollbar-size: 3px;
 
-  @include mixins.respond-to("small") {
+  @include mixins.respond-to("xsmall") {
     --scrollbar-size: 7px;
   }
 }
