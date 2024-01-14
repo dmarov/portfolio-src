@@ -1,5 +1,5 @@
-@use "../shared/colors";
-@use "../shared/mixins";
+@use "shared/colors";
+@use "shared/mixins";
 
 .welcome {
   color: colors.col("text");

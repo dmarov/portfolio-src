@@ -1,18 +1,19 @@
 @use "shared/mixins";
 
 .home-img {
-  width: 100%;
+  position: relative;
   height: 150px;
-  background-image: url("../../assets/images/home-banner.png");
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
 
   @include mixins.respond-to("small") {
     height: 200px;
   }
 
-  @include mixins.retina {
-    background-image: url("../../assets/images/home-banner-2x.png");
+  img {
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
   }
 }

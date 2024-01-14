@@ -1,5 +1,5 @@
-@use "../shared/colors";
-@use "../shared/mixins";
+@use "shared/colors";
+@use "shared/mixins";
 
 .header-menu {
   list-style-type: none;
@@ -54,6 +54,7 @@
 
     &_active {
       .header-menu__link {
+
         &:link,
         &:active,
         &:visited {

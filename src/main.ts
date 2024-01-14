@@ -18,21 +18,23 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 import { Features } from "./app/models/features/features.class";
 import { fetchFeatures } from "./app/shared/utils/fetch-features/fetch-features.util";
 
-let tracking: TrackingService = new DebugTrackingService();
+fetchFeatures().then((features) => {
+  let tracking: TrackingService = new DebugTrackingService();
 
-if (environment.production) {
-  const timeout = environment.trackingEventTimeout;
+  if (environment.production) {
+    const timeout = environment.trackingEventTimeout;
 
-  tracking = new CompositeTrackingService([
-    new GoogleAnalyticsTrackingService(window.gtag, timeout),
-    new YandexMetrikaTrackingService(window.ym, window.ym_counter_id, timeout),
-  ]);
+    tracking = new CompositeTrackingService([
+      new GoogleAnalyticsTrackingService(window.gtag, timeout),
+      new YandexMetrikaTrackingService(
+        window.ym,
+        window.ym_counter_id,
+        timeout,
+      ),
+    ]);
 
-  enableProdMode();
-}
-
-async function bootstrap(): Promise<void> {
-  const features = await fetchFeatures();
+    enableProdMode();
+  }
 
   bootstrapApplication(AppComponent, {
     providers: [
@@ -58,6 +60,4 @@ async function bootstrap(): Promise<void> {
       },
     ],
   });
-}
-
-bootstrap();
+});
