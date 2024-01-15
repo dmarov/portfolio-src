@@ -45,7 +45,6 @@ overrides:
         - { ts: never, "": never }
       "@typescript-eslint/explicit-function-return-type": error
       "@typescript-eslint/explicit-member-accessibility": error
-      "@angular-eslint/use-component-view-encapsulation": off
       "@angular-eslint/component-max-inline-declarations":
         - error
         - animations: 20
