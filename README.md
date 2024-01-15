@@ -5,10 +5,10 @@
 1. [optional] Create `.env` file and set default variables:
 
 ```
-SERVER_PORT=4200 # (4200 by default) angular server port
+SERVER_PORT_EN=4200 # (4200 by default) angular server port for english version
+SERVER_PORT_RU=4201 # (4201 by default) angular server port for russian version
 HOST_USER_ID=1000 # (1000 by default) host user id to fix file permissions issue
 HOST_GROUP_ID=1000 # (1000 by default) host group id to fix file permissions issue
-APP_LANG=en ('en' by default) language of application to serve
 ```
 
 2. `docker compose up [--build]` - to run development container [and rebuild]. Press `Ctrl+C` to stop container.
