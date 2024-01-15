@@ -12,6 +12,7 @@ import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
 import { Lang } from "@/app/models/lang.enum";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { environment } from "@/environments/environment";
 
 @Component({
   selector: "app-lang",
@@ -26,7 +27,7 @@ export class LangComponent implements OnInit, OnDestroy {
   public readonly languages = [
     {
       type: Lang.English,
-      url: "/en",
+      url: environment.languageRefs.en,
       text: "EN",
       onClick: (): void => {
         this.tracking.sendCustomEvent(CustomTrackingEvent.SwitchEnClick, {});
@@ -34,7 +35,7 @@ export class LangComponent implements OnInit, OnDestroy {
     },
     {
       type: Lang.Russian,
-      url: "/ru",
+      url: environment.languageRefs.ru,
       text: "RU",
       onClick: (): void => {
         this.tracking.sendCustomEvent(CustomTrackingEvent.SwitchRuClick, {});
@@ -42,8 +43,10 @@ export class LangComponent implements OnInit, OnDestroy {
     },
   ];
 
-  private readonly activeMatch = this.languages.find((l) =>
-    window.location.pathname.startsWith(l.url),
+  private readonly activeMatch = this.languages.find(
+    (l) =>
+      (l.url.startsWith("/") && window.location.pathname.startsWith(l.url)) ||
+      (l.url.startsWith("http") && window.location.origin.startsWith(l.url)),
   );
 
   public readonly activeLang = this.activeMatch ?? null;
@@ -57,7 +60,7 @@ export class LangComponent implements OnInit, OnDestroy {
     private readonly cdr: ChangeDetectorRef,
     private readonly i18nUrl: I18nUrl,
     private readonly tracking: TrackingService,
-  ) {}
+  ) { }
 
   public ngOnInit(): void {
     this.subscription.add(

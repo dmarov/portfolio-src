@@ -1,6 +1,9 @@
 export interface AppEnvironment {
   production: boolean;
-  multilang: boolean;
+  languageRefs: {
+    en: string;
+    ru: string;
+  };
   dateBeginning: string;
   trackingEventTimeout: number;
   featuresUrl: string;
