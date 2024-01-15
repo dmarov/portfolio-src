@@ -60,7 +60,7 @@ export class LangComponent implements OnInit, OnDestroy {
     private readonly cdr: ChangeDetectorRef,
     private readonly i18nUrl: I18nUrl,
     private readonly tracking: TrackingService,
-  ) { }
+  ) {}
 
   public ngOnInit(): void {
     this.subscription.add(

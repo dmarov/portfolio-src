@@ -3,14 +3,26 @@
     <div class="content">
       <div class="header__content">
         <div class="header__side header__side_logo">
-          <a data-test="header-github-icon" href="https://github.com/dmarov" target="_blank"
-            class="header__github-wrapper" (click)="onVisitGithubHeaderClick()">
-            <img class="header__github" alt="Github" src="assets/images/github.png?v=1" />
+          <a
+            data-test="header-github-icon"
+            href="https://github.com/dmarov"
+            target="_blank"
+            class="header__github-wrapper"
+            (click)="onVisitGithubHeaderClick()"
+          >
+            <img
+              class="header__github"
+              alt="Github"
+              src="assets/images/github.png?v=1"
+            />
           </a>
         </div>
         <app-menu class="header__menu"></app-menu>
         <div class="header__side">
-          <app-burger [opened]="isMenuOpened$ | async" (openedChange)="toggleMenuOpened()"></app-burger>
+          <app-burger
+            [opened]="isMenuOpened$ | async"
+            (openedChange)="toggleMenuOpened()"
+          ></app-burger>
           <app-lang></app-lang>
         </div>
       </div>
