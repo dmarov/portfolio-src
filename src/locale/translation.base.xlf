@@ -3,10 +3,10 @@
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="EDUCATION_PAGE_HEADER" datatype="html">
-        <source> Education </source>
+        <source>Education</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">8</context>
         </context-group>
         <note priority="1" from="description">education page header</note>
       </trans-unit>
@@ -14,15 +14,15 @@
         <source> Before beginning of my career as a software developer I&apos;ve got solid math and computer science background in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>NARFU &quot;Applied Mathematics and Computer Science&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. At that time I participated in math and programming olympiads. As my base programming language I regarded <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>C++<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> but also I learned and worked with C, Java, Python, Assembly. I&apos;ve graduated in 2017. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">8,16</context>
+          <context context-type="linenumber">9,17</context>
         </context-group>
         <note priority="1" from="description">about education</note>
       </trans-unit>
       <trans-unit id="CAREER_PAGE_HEADER" datatype="html">
-        <source> Career </source>
+        <source>Career</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">24,26</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="description">carier page header</note>
       </trans-unit>
@@ -30,7 +30,7 @@
         <source> I&apos;ve started my career as a backend developer in 2017. It was my first experience of commercial software development and that&apos;s when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. At the same time I took a grasp on frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">27,33</context>
+          <context context-type="linenumber">30,36</context>
         </context-group>
         <note priority="1" from="description">career beginning commercial</note>
       </trans-unit>
@@ -38,7 +38,7 @@
         <source> The time has come when native Javascript was not enough in order to keep implementing complex solutions in efficient way. That&apos;s when I made decision to learn <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Vue<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> framework which payed out later. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">35,39</context>
+          <context context-type="linenumber">38,42</context>
         </context-group>
         <note priority="1" from="description">career frontend framework</note>
       </trans-unit>
@@ -46,7 +46,7 @@
         <source> Path lead to resolve more complex problems related to outdated and unmaintainable infrastructure. Being experienced with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Node.js<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> In order to resolve some of existed problems I&apos;ve implemented microservices. There are some of them: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">41,46</context>
+          <context context-type="linenumber">44,49</context>
         </context-group>
         <note priority="1" from="description">career infrastructure</note>
       </trans-unit>
@@ -54,7 +54,7 @@
         <source><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>SMS sending gateway<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to send SMS notifications using GSM gateway <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>PDF generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to convert HTML page to PDF (useful for printing invoices, and not just that) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>JWT token generator<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - REST API to generate JWT token pairs (useful for authorization) <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">49,60</context>
+          <context context-type="linenumber">52,63</context>
         </context-group>
         <note priority="1" from="description">career micro services</note>
       </trans-unit>
@@ -62,7 +62,7 @@
         <source> These services were very useful for each new website. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">63,65</context>
+          <context context-type="linenumber">66,68</context>
         </context-group>
         <note priority="1" from="description">career servies useful</note>
       </trans-unit>
@@ -70,7 +70,7 @@
         <source> Since each service required separate environnment it required a lot of administering efforts, which I was also responsible for. I already had a lot knowledge about <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>FreeBSD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> operating system, so it was time to apply this knowledge in practice. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">67,72</context>
+          <context context-type="linenumber">70,75</context>
         </context-group>
         <note priority="1" from="description">career administering</note>
       </trans-unit>
@@ -78,168 +78,127 @@
         <source> Then I decided to specialize in frontend and move to bigger projects. That&apos;s when I&apos;ve learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing end-to-end tests, pixel perfect markup, cross browser development, accessibility - this is what I&apos;m most focused on at work. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">74,81</context>
+          <context context-type="linenumber">77,85</context>
         </context-group>
         <note priority="1" from="description">career frontend</note>
       </trans-unit>
       <trans-unit id="WHAT_I_STAND_FOR_PAGE_HEADER" datatype="html">
-        <source> What I stand for </source>
+        <source> My principles </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">89,91</context>
+          <context context-type="linenumber">97,99</context>
         </context-group>
         <note priority="1" from="description">what I stand for page header</note>
       </trans-unit>
-      <trans-unit id="WHAT_I_STAND_FOR_ABOUT" datatype="html">
-        <source> At present I realize that I&apos;ve experienced a lot and can formulate what kind of developer I am: </source>
+      <trans-unit id="ABOUT_PRINCIPLES" datatype="html">
+        <source> At present I realize what I&apos;ve understood a lot from my experience: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">92,95</context>
+          <context context-type="linenumber">100,102</context>
         </context-group>
-        <note priority="1" from="description">about what I stand for</note>
+        <note priority="1" from="description">about principles</note>
       </trans-unit>
-      <trans-unit id="PRINCIPLE_CODE_REFACTORING" datatype="html">
-        <source> I am huge advocate for code quality in long term products, because it allows to reduce future work as well for other developers and reduces amount of potential bugs </source>
+      <trans-unit id="PRINCIPLE_BDD" datatype="html">
+        <source> I consider that development should start with interfaces rather than implementations. Behavior-Driven Development (BDD) is an effective method to help accomplish this goal. In contrast to forced unit testing, where tests are written after the fact in order to test existing code, BDD advocates writing tests before implementation. This approach leads to better code design and ensures that testing focuses on behavior rather than code itself. Writing tests after the fact typically results in low-quality tests and suboptimal code design. Test-Driven Development (TDD) is also a valuable methodology, but it can be misinterpreted as implying that development is a purely mechanical process when it&apos;s not </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">97,101</context>
+          <context context-type="linenumber">104,117</context>
         </context-group>
-        <note priority="1" from="description">code formatting principle</note>
+        <note priority="1" from="description">BDD principle</note>
       </trans-unit>
-      <trans-unit id="PRINCIPLE_CODE_FORMATTING" datatype="html">
-        <source> I am huge advocate for uniform code formatting, because it reduces distractions and helps to focus on application architecture </source>
+      <trans-unit id="PRINCIPLE_SOLID" datatype="html">
+        <source> I consider that it&apos;s worth following SOLID principles. The most important ones are &quot;Single Responsibility&quot; and &quot;Open-Closed&quot; principles, as well as encapsulation. Quality code &quot;does one thing well&quot; </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">102,105</context>
+          <context context-type="linenumber">119,124</context>
         </context-group>
-        <note priority="1" from="description">code formatting principle</note>
+        <note priority="1" from="description">SOLID principles</note>
+      </trans-unit>
+      <trans-unit id="PRINCIPLE_INHERITANCE" datatype="html">
+        <source> I consider that the usefulness of inheritance is often overrated. It is appropriate in some cases, but most of the time, object composition is preferable. The main downside of inheritance is that it creates tight coupling to the parent class </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">126,131</context>
+        </context-group>
+        <note priority="1" from="description">inheritance</note>
+      </trans-unit>
+      <trans-unit id="PRINCIPLE_COMPLEXITY" datatype="html">
+        <source> I consider the most elegant solution is the simplest one. There&apos;s not much we can do with essential complexity, but reducing accidental complexity is a job that has to be done well. Polymorphism is one of the most useful tools for decreasing complexity </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">133,139</context>
+        </context-group>
+        <note priority="1" from="description">complexity</note>
+      </trans-unit>
+      <trans-unit id="PRINCIPLE_REFACTORING" datatype="html">
+        <source> I consider that refactoring should be regarded as part of a task rather than a separate process </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">141,144</context>
+        </context-group>
+        <note priority="1" from="description">refactoring principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_ASKING_QUESTIONS" datatype="html">
-        <source> I consider that ability to ask correct questions is the most valuable skill a developer can have </source>
+        <source> I consider the ability to ask correct questions is the most valuable skill a developer can have </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">106,109</context>
+          <context context-type="linenumber">146,149</context>
         </context-group>
         <note priority="1" from="description">asking questions principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_ARGUMENTATION" datatype="html">
-        <source> I consider that every significant consideration should have valid argumentation in order to be legit </source>
+        <source> I consider that every significant consideration ought to be based on valid argumentation to be accepted </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">110,113</context>
+          <context context-type="linenumber">151,154</context>
         </context-group>
         <note priority="1" from="description">argumentation principle</note>
       </trans-unit>
-      <trans-unit id="PRINCIPLE_ACTIONS_BASE" datatype="html">
-        <source> I consider that actions of software developer should be based on principles </source>
+      <trans-unit id="PRINCIPLE_CODE_FORMATTING" datatype="html">
+        <source> I am a strong advocate for uniform code formatting, because it reduces distractions and helps us focus on what&apos;s essential, which is software architecture </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">114,117</context>
+          <context context-type="linenumber">156,160</context>
         </context-group>
-        <note priority="1" from="description">actions base principle</note>
-      </trans-unit>
-      <trans-unit id="PRINCIPLE_REFACTORING" datatype="html">
-        <source> I consider that refactoring should be regarded as a part of a task rather than a a separate process </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">118,121</context>
-        </context-group>
-        <note priority="1" from="description">refactoring principle</note>
-      </trans-unit>
-      <trans-unit id="PRINCIPLE_SPECIALIZATION" datatype="html">
-        <source> I consider that developer should not be locked into narrow specialization, but have opportunities to learn adjacent domains from colleagues </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">122,126</context>
-        </context-group>
-        <note priority="1" from="description">specialization principle</note>
+        <note priority="1" from="description">code formatting principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_CODE_INTEGRATION" datatype="html">
-        <source> I am huge advocate for fast code integration such as &quot;trunk based flow&quot;, because it reduces bugs due to complicated conflicts for a coast of releasing incomplete features </source>
+        <source> I am a strong advocate for fast code integration methods like trunk-based development, as it significantly reduces bugs caused by intricate conflicts </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">127,131</context>
+          <context context-type="linenumber">162,166</context>
         </context-group>
         <note priority="1" from="description">code integration principle</note>
       </trans-unit>
-      <trans-unit id="PRINCIPLE_BUGS_PRIORITY" datatype="html">
-        <source> I consider that fixing bugs should be topmost priority, because released feature is done when it&apos;s working, and it&apos;s working when it has no bugs </source>
+      <trans-unit id="PRINCIPLE_SMALL_STEPS" datatype="html">
+        <source> I consider it&apos;s important to progress with small steps and obtain fast feedback from users at the end of each step in order to avoid wasting time and money on features that users do not need </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">132,136</context>
+          <context context-type="linenumber">168,172</context>
         </context-group>
-        <note priority="1" from="description">bugs priority principle</note>
-      </trans-unit>
-      <trans-unit id="PRINCIPLE_AGILE" datatype="html">
-        <source> I consider that Agile principles for software development are worth following, mainly because it allows to provide fast feedback. Agile is not a solution for every problem and has disadvantages, but I think that advantages outweight disadvantages considerably </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">137,142</context>
-        </context-group>
-        <note priority="1" from="description">agile principle</note>
-      </trans-unit>
-      <trans-unit id="PRINCIPLE_BDD" datatype="html">
-        <source> I consider that long term product should be developed using <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>BDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Behavior Driven Development) process. Writing test after the fact results in poor test quality and poor code design. <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>TDD<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> (Test Driven Development) is a good approach as well but it has gone completely wrong in a sense of what for developer should write a test. BDD is the best approach I&apos;ve experienced so far. I don&apos;t think it is necessary to follow BDD principles in order to get good software design, but it&apos;s very handy to have extra verification for correctness of behavior </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">143,154</context>
-        </context-group>
-        <note priority="1" from="description">BDD principle</note>
+        <note priority="1" from="description">small steps</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_NAMING" datatype="html">
-        <source> I think that naming is the hardest part of development process, as once was said <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/> &quot;There are only two hard things in Computer Science: cache invalidation and naming things.&quot; <x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <source> I consider the importance of appropriate naming to be significantly underrated in general. It is the hardest part in software development and yet receives insufficient attention </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">155,161</context>
+          <context context-type="linenumber">174,178</context>
         </context-group>
-        <note priority="1" from="description">naming principle</note>
+        <note priority="1" from="description">naming</note>
       </trans-unit>
-      <trans-unit id="BANNER_WELCOME" datatype="html">
-        <source> Welcome! </source>
+      <trans-unit id="PRINCIPLE_TRADEOFF" datatype="html">
+        <source> I consider that every decision in software development is a trade-off. It&apos;s a challenge to weigh the pros and cons of each decision and make correct one </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">14,16</context>
+          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
+          <context context-type="linenumber">180,184</context>
         </context-group>
-        <note priority="1" from="description">Home page welcome</note>
-        <note priority="1" from="meaning">welcome</note>
-      </trans-unit>
-      <trans-unit id="BANNER_INTRODUCTION" datatype="html">
-        <source> My name is Dmitry, and this is my portfolio. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">20,22</context>
-        </context-group>
-        <note priority="1" from="description">introduction</note>
-      </trans-unit>
-      <trans-unit id="BANNER_WHO_AM_I" datatype="html">
-        <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> <x id="ICU" equiv-text="{years, plural,
-          =0{years} one{year} other{years}}"/> of experience in web development. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">26,29</context>
-        </context-group>
-        <note priority="1" from="description">who am i</note>
-      </trans-unit>
-      <trans-unit id="9411ef7bcf832b31f73dec1b6ab9b089f7eaccc4" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {years} one {year} other {years}}</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">27,28</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="BANNER_MY_GOALS" datatype="html">
-        <source> I&apos;m interested in technology and how to use it to make life better. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">33,35</context>
-        </context-group>
-        <note priority="1" from="description">my goals</note>
+        <note priority="1" from="description">tradeoff</note>
       </trans-unit>
       <trans-unit id="MY_TECHNOLOGY_STACK" datatype="html">
         <source> My Technology Stack </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">48,50</context>
+          <context context-type="linenumber">36,38</context>
         </context-group>
         <note priority="1" from="description">technology stack</note>
       </trans-unit>
@@ -247,7 +206,7 @@
         <source>Products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">207</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <note priority="1" from="description">projects</note>
       </trans-unit>
@@ -255,9 +214,42 @@
         <source> more products </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">291,293</context>
+          <context context-type="linenumber">59,61</context>
         </context-group>
         <note priority="1" from="description">more products</note>
+      </trans-unit>
+      <trans-unit id="BANNER_WELCOME" datatype="html">
+        <source> Welcome! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/welcome/welcome.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+        <note priority="1" from="description">Home page welcome</note>
+        <note priority="1" from="meaning">welcome</note>
+      </trans-unit>
+      <trans-unit id="BANNER_INTRODUCTION" datatype="html">
+        <source> My name is Dmitry, and this is my portfolio. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/welcome/welcome.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+        <note priority="1" from="description">introduction</note>
+      </trans-unit>
+      <trans-unit id="BANNER_WHO_AM_I" datatype="html">
+        <source> I am software developer with over <x id="INTERPOLATION" equiv-text="{{ years }}"/> <x id="ICU" equiv-text="{years, plural, =0{years}
+    one{year} other{years}}"/> of experience in web development. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/welcome/welcome.component.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+        <note priority="1" from="description">who am i</note>
+      </trans-unit>
+      <trans-unit id="9411ef7bcf832b31f73dec1b6ab9b089f7eaccc4" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {years} one {year} other {years}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/welcome/welcome.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="PAGE_DOES_NOT_EXIST" datatype="html">
         <source> This page doesn&apos;t exist </source>
@@ -276,10 +268,10 @@
         <note priority="1" from="description">return to home page</note>
       </trans-unit>
       <trans-unit id="PROJECT_KEMEROVO_TITLE" datatype="html">
-        <source> Kemerovo Website </source>
+        <source>Kemerovo Website</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">2</context>
         </context-group>
         <note priority="1" from="description">Kemerovo title</note>
       </trans-unit>
@@ -287,7 +279,7 @@
         <source> Administration of Kemerovo, Russian Federation, ordered a web site to post relevent information related to business of Kemerovo city. The website has news lines, search, feedback and CMS to manage it all. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context>
-          <context context-type="linenumber">8,12</context>
+          <context context-type="linenumber">3,7</context>
         </context-group>
         <note priority="1" from="description">Kemerovo is</note>
       </trans-unit>
@@ -295,23 +287,23 @@
         <source> Visit </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context>
-          <context context-type="linenumber">26,28</context>
+          <context context-type="linenumber">21,23</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
-          <context context-type="linenumber">23,25</context>
+          <context context-type="linenumber">21,23</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context>
-          <context context-type="linenumber">26,28</context>
+          <context context-type="linenumber">24,26</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context>
-          <context context-type="linenumber">22,24</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context>
-          <context context-type="linenumber">26,28</context>
+          <context context-type="linenumber">20,22</context>
         </context-group>
         <note priority="1" from="description">visit</note>
       </trans-unit>
@@ -319,43 +311,43 @@
         <source> I developed backend. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context>
-          <context context-type="linenumber">33,35</context>
+          <context context-type="linenumber">25,27</context>
         </context-group>
         <note priority="1" from="description">Kemerovo what i did</note>
       </trans-unit>
       <trans-unit id="TECHNOLOGIES_I_USED" datatype="html">
-        <source> Technologies I used: </source>
+        <source>Technologies I used:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">40,42</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
-          <context context-type="linenumber">38,40</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">49,51</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context>
-          <context context-type="linenumber">39,41</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context>
-          <context context-type="linenumber">37,39</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">Kemerovo technologies</note>
       </trans-unit>
@@ -363,7 +355,7 @@
         <source> My Portfolio Website </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">8,10</context>
+          <context context-type="linenumber">5,7</context>
         </context-group>
         <note priority="1" from="description">My Portfolio title</note>
       </trans-unit>
@@ -371,7 +363,7 @@
         <source> Dmitry Marov is an awesome software developer from Russian Federation. He decided that it is a good idea to make such website, which will display all the awesome projects he was involved in during his career. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">12,16</context>
+          <context context-type="linenumber">9,13</context>
         </context-group>
         <note priority="1" from="description">My Portfolio is</note>
       </trans-unit>
@@ -379,27 +371,28 @@
         <source> He hopes that this website will provide all the information in which potential employer might be interested in. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">21,24</context>
+          <context context-type="linenumber">15,18</context>
         </context-group>
         <note priority="1" from="description">My Portfolio does</note>
       </trans-unit>
       <trans-unit id="PROJECT_MY_PORTFOLIO_SOURCE_CODE" datatype="html">
         <source> Source code for this project can be viewed in <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+      data-test=&quot;my-portfolio-repository-link&quot;
       href=&quot;https://github.com/dmarov/portfolio-src&quot;
       target=&quot;_blank&quot;
       (click)=&quot;onRepoVisitClick()&quot;
     &gt;"/> project repository <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> . </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">60,70</context>
+          <context context-type="linenumber">48,59</context>
         </context-group>
         <note priority="1" from="description">My Portfolio source code</note>
       </trans-unit>
       <trans-unit id="PROJECT_PAXUS_TITLE" datatype="html">
-        <source> Paxus Website </source>
+        <source>Paxus Website</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
-          <context context-type="linenumber">2,4</context>
+          <context context-type="linenumber">2</context>
         </context-group>
         <note priority="1" from="description">Kemerovo title</note>
       </trans-unit>
@@ -407,7 +400,7 @@
         <source> Paxus is a company from Archangelsk, Russian Federation. It constructs and sells offroad vehicles, which can be customized depending on customer&apos;s needs. The website is an online shop + CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
-          <context context-type="linenumber">5,9</context>
+          <context context-type="linenumber">3,7</context>
         </context-group>
         <note priority="1" from="description">Paxus is</note>
       </trans-unit>
@@ -415,7 +408,7 @@
         <source> Catalog includes product constructor where customer can customize vehicle parts such as engine, color, features, etc. Available customization for product can be assigned in CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
-          <context context-type="linenumber">27,31</context>
+          <context context-type="linenumber">25,29</context>
         </context-group>
         <note priority="1" from="description">Paxus about</note>
       </trans-unit>
@@ -423,15 +416,15 @@
         <source> I developed backend and Implemented most complex parts of frontend logic. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
-          <context context-type="linenumber">35,37</context>
+          <context context-type="linenumber">30,32</context>
         </context-group>
         <note priority="1" from="description">Paxus my responsibilities</note>
       </trans-unit>
       <trans-unit id="PROJECT_RIVERTV_TITLE" datatype="html">
-        <source> RiverTV Website </source>
+        <source>RiverTV Website</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context>
-          <context context-type="linenumber">2,4</context>
+          <context context-type="linenumber">2</context>
         </context-group>
         <note priority="1" from="description">Kemerovo title</note>
       </trans-unit>
@@ -439,7 +432,7 @@
         <source> RiverTV is a video streaming service provided by RiverTV Inc. from Canada. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">3,5</context>
         </context-group>
         <note priority="1" from="description">RiverTV is</note>
       </trans-unit>
@@ -447,7 +440,7 @@
         <source> RiverTV offers streaming of live channels and on-demand content. The website is an online shop and streaming web app where RiverTV package and addons can be acquired, managed and watched. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context>
-          <context context-type="linenumber">8,12</context>
+          <context context-type="linenumber">6,10</context>
         </context-group>
         <note priority="1" from="description">RiverTV does</note>
       </trans-unit>
@@ -455,7 +448,7 @@
         <source> I developed frontend part. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context>
-          <context context-type="linenumber">33,35</context>
+          <context context-type="linenumber">28,30</context>
         </context-group>
         <note priority="1" from="description">RiverTV what i did</note>
       </trans-unit>
@@ -496,7 +489,7 @@
         <source> Script constructor enables major possibilities for scripting with conditions, cycles, SMS and email notifications, handling user input and lots of other features used to automate routine. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">36,40</context>
+          <context context-type="linenumber">28,32</context>
         </context-group>
         <note priority="1" from="description">robots script constructor</note>
       </trans-unit>
@@ -504,7 +497,7 @@
         <source> I developed frontend. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context>
-          <context context-type="linenumber">45,47</context>
+          <context context-type="linenumber">34,36</context>
         </context-group>
         <note priority="1" from="description">virtual assistant what i did</note>
       </trans-unit>
@@ -512,7 +505,7 @@
         <source> &quot;Scarlett &amp; Monarch&quot; CMS </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">2,4</context>
         </context-group>
         <note priority="1" from="description">Scarlett and Monarch CMS</note>
       </trans-unit>
@@ -520,7 +513,7 @@
         <source> &quot;Scarlett &amp; Monarch&quot; is a company of commercial website development and hosting. Content management sytem of &quot;Scarlett &amp; Monarch&quot; is used for each and every website project of company. Each customer has their own requirements. CMS evolved with each new requirement. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context>
-          <context context-type="linenumber">8,13</context>
+          <context context-type="linenumber">5,10</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS is used for</note>
       </trans-unit>
@@ -528,7 +521,7 @@
         <source> I developed backend and frontend, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context>
-          <context context-type="linenumber">23,26</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS what I did</note>
       </trans-unit>
@@ -536,15 +529,15 @@
         <source> One of the most advanced modules is <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>, which allows binding arbitrary properties to product. It allows bind arbitrary properties such as array of products, array of images, text, number, boolean, array of strings or even arbitrary structure if all the previous was not enough. API of web site allows to create advanced search by this properties. Orders module allows to create flexible orders, which change its&apos; structure with every new project. Order has standard properties such as full name and phone number, but also can have any other property which will be displayed and can be modified. This module also allows to modify orders&apos; content, adding, removing and modifying products. Orders&apos; sum recalculates automatically, including discounts. It also allows to notify client via SMS or email about order status. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context>
-          <context context-type="linenumber">28,41</context>
+          <context context-type="linenumber">17,30</context>
         </context-group>
         <note priority="1" from="description">S&amp;M CMS about</note>
       </trans-unit>
       <trans-unit id="PROJECT_TRIK_TITLE" datatype="html">
-        <source> Trik Website </source>
+        <source>Trik Website</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context>
-          <context context-type="linenumber">2,4</context>
+          <context context-type="linenumber">2</context>
         </context-group>
         <note priority="1" from="description">Kemerovo title</note>
       </trans-unit>
@@ -552,7 +545,7 @@
         <source> Trik is a pharmacy network from Krasnodar, Russian Federation. The website is an online shop + CMS. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context>
-          <context context-type="linenumber">5,8</context>
+          <context context-type="linenumber">3,6</context>
         </context-group>
         <note priority="1" from="description">Trik is</note>
       </trans-unit>
@@ -560,7 +553,7 @@
         <source> Trik needed web store that would serve their 5 pharmacies. It required to create custom logic for catalog, cart and orders. Their site has complicated search by dynamically assignable properties tags, and any logical expression which can be constructed from any of properties or tags. Search result can be filtered by dynamically assignable properties. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context>
-          <context context-type="linenumber">26,32</context>
+          <context context-type="linenumber">20,26</context>
         </context-group>
         <note priority="1" from="description">Trik about</note>
       </trans-unit>
@@ -568,15 +561,15 @@
         <source> I developed backend and frontend. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">27,29</context>
         </context-group>
         <note priority="1" from="description">Trik what I did</note>
       </trans-unit>
       <trans-unit id="PROJECT_VMEDIA_TITLE" datatype="html">
-        <source> VMedia Website </source>
+        <source>VMedia Website</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context>
-          <context context-type="linenumber">2,4</context>
+          <context context-type="linenumber">2</context>
         </context-group>
         <note priority="1" from="description">Kemerovo title</note>
       </trans-unit>
@@ -584,7 +577,7 @@
         <source> VMedia is an internet service provider from Canada. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">3,5</context>
         </context-group>
         <note priority="1" from="description">VMedia is</note>
       </trans-unit>
@@ -592,7 +585,7 @@
         <source> Apart from internet it also offers services such as cable-free TV, home phone and home security. The website is online shop where such services can acquired and managed. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context>
-          <context context-type="linenumber">8,12</context>
+          <context context-type="linenumber">6,10</context>
         </context-group>
         <note priority="1" from="description">VMedia does</note>
       </trans-unit>
@@ -600,7 +593,7 @@
         <source> I refactored frontend, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context>
-          <context context-type="linenumber">33,36</context>
+          <context context-type="linenumber">24,27</context>
         </context-group>
         <note priority="1" from="description">VMedia what I did</note>
       </trans-unit>

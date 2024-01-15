@@ -1,5 +1,6 @@
 ## TODO:
 
+- make localhost language switch
 - fold menu on click outside
 - improve loading display
 - images lazy loading

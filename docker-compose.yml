@@ -7,8 +7,8 @@ services:
       args:
         HOST_USER_ID: ${HOST_USER_ID:-1000}
         HOST_GROUP_ID: ${HOST_GROUP_ID:-1000}
-    command: /bin/sh -c "npm install && ng serve --host=0.0.0.0 --port=4200 --configuration=${APP_LANG:-'en'} --disable-host-check"
     ports:
-      - ${SERVER_PORT:-4200}:4200
+      - ${SERVER_PORT_EN:-4200}:4200
+      - ${SERVER_PORT_RU:-4201}:4201
     volumes:
       - ./:/app
