@@ -41,7 +41,7 @@
 
       <trans-unit id="CAREER_BEGINNING_COMMERCIAL" datatype="html">
         <source> I've started my career as a backend developer in 2017. It was my first experience of commercial software development and that's when I got acquainted with <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. At the same time I took a grasp on frontend technologies such as <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </source>
-        <target state="translated"> Я начал свою карьеру в роли бэкэнд разработчика в 2017 году. Это был мой первый опыт коммерческой разработки программного обеспечения и тогда я ознакомился с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, а так же с фронтэнд технологиями, такими как <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </target>
+        <target state="translated"> Я начал свою карьеру в роли бэкенд разработчика в 2017 году. Это был мой первый опыт коммерческой разработки программного обеспечения и тогда я ознакомился с <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>PHP<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>MySQL<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, а так же с фронтенд технологиями, такими как <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Gulp<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Webpack<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Sass<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Babel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/>. </target>
         <note priority="1" from="description">career beginning commercial</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">30</context></context-group></trans-unit>
@@ -77,7 +77,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">70</context></context-group></trans-unit>
       <trans-unit id="CAREER_FRONTEND" datatype="html">
         <source> Then I decided to specialize in frontend and move to bigger projects. That's when I've learned <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> which became part of my main technology stack till current day. Such aspects as Search Engine Optimization (SEO), implementing end-to-end tests, pixel perfect markup, cross browser development, accessibility - this is what I'm most focused on at work. </source>
-        <target> Затем я решил специализироваться на фронтэнде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> которые стали частью моего основного технологического стека до настоящего времени. Такие аспекты как оптимизация для поисковых движков (SEO), реализация end-to-end тестов, вёрстка с точностью до пикселя (pixel perfect), кросс-браузерная разработка, досупность (accessibility) - на этом я сосредоточен во время работы. </target>
+        <target> Затем я решил специализироваться на фронтенде и перейти на крупные проекты. Тогда я изучил <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Typescript<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> и <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>"/> которые стали частью моего основного технологического стека до настоящего времени. Такие аспекты как оптимизация для поисковых движков (SEO), реализация end-to-end тестов, вёрстка с точностью до пикселя (pixel perfect), кросс-браузерная разработка, досупность (accessibility) - на этом я сосредоточен во время работы. </target>
         <note priority="1" from="description">career frontend</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">77</context></context-group></trans-unit><trans-unit id="WHAT_I_STAND_FOR_PAGE_HEADER" datatype="html">
@@ -211,7 +211,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit>
       <trans-unit id="PROJECT_RIVERTV_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed frontend part. </source>
-        <target> Я разрабатывал фронтэнд часть. </target>
+        <target> Я разрабатывал фронтенд часть. </target>
         <note priority="1" from="description">RiverTV what i did</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/rivertv-website/rivertv-website.component.html</context><context context-type="linenumber">28</context></context-group></trans-unit><trans-unit id="ROBOTS" datatype="html">
@@ -236,7 +236,7 @@
 
         <note priority="1" from="description">robots script constructor</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">28</context></context-group></trans-unit><trans-unit id="PROJECT_ROBOTS_MY_RESPONSIBILITIES" datatype="html">
-        <source> I developed frontend. </source><target state="translated"> Я разрабатывал фронтэнд часть. </target>
+        <source> I developed frontend. </source><target state="translated"> Я разрабатывал фронтенд часть. </target>
 
         <note priority="1" from="description">virtual assistant what i did</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">34</context></context-group></trans-unit><trans-unit id="PROJECT_SNM_TITLE" datatype="html">
@@ -302,7 +302,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit>
       <trans-unit id="PROJECT_VMEDIA_MY_RESPONSIBILITIES" datatype="html">
         <source> I refactored frontend, implemented new features, fixed bugs, upgraded a lot of legacy code. </source>
-        <target> Я рефакторил фронтэнд код, реализовывал новые фичи, исправлял баги, обновлял легаси код. </target>
+        <target> Я рефакторил фронтенд код, реализовывал новые фичи, исправлял баги, обновлял легаси код. </target>
         <note priority="1" from="description">VMedia what I did</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit>
@@ -315,7 +315,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit>
       <trans-unit id="PROJECT_SNM_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed backend and frontend, updated legacy code, developed new modules such as <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>catalog editor<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>feedback<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>orders management<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </source>
-        <target> Я разрабатывал бэкенд и фронтэнд, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>управление заказами<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </target>
+        <target> Я разрабатывал бэкенд и фронтенд, обновлял легаси код, разрабатывал новые модули, такие как <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>редактор каталога<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>обратная связь<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>, <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>"/>управление заказами<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>"/>. </target>
         <note priority="1" from="description">S&amp;M CMS what I did</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">12</context></context-group></trans-unit>
@@ -346,7 +346,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit>
       <trans-unit id="PROJECT_TRIK_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed backend and frontend. </source>
-        <target> Я разрабатывал бэкенд и фронтэнд. </target>
+        <target> Я разрабатывал бэкенд и фронтенд. </target>
         <note priority="1" from="description">Trik what I did</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/trik-website/trik-website.component.html</context><context context-type="linenumber">27</context></context-group></trans-unit><trans-unit id="PROJECT_VMEDIA_TITLE" datatype="html">
@@ -371,7 +371,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">25</context></context-group></trans-unit>
       <trans-unit id="PROJECT_PAXUS_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed backend and Implemented most complex parts of frontend logic. </source>
-        <target> Я разрабатывал бэкенд и реализовывал наиболее сложную часть фронтэнд логики. </target>
+        <target> Я разрабатывал бэкенд и реализовывал наиболее сложную часть фронтенд логики. </target>
         <note priority="1" from="description">Paxus my responsibilities</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context><context context-type="linenumber">30</context></context-group></trans-unit><trans-unit id="PROJECT_RIVERTV_TITLE" datatype="html">

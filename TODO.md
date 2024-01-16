@@ -6,6 +6,7 @@
 - images lazy loading
 - images scale for mobile
 - add "My Skills" list
+- add "Why Angular?"
 - add preview title on hover, and touch
 - add skills (bdd, patterns, refactoring)
 - add scroll up button
