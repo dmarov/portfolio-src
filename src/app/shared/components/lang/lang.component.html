@@ -4,8 +4,8 @@
     class="lang__entry"
     [ngClass]="{ lang__entry_active: lang === activeLang }"
   >
-    <a class="lang__link" [href]="lang.url + path" (click)="lang.onClick()">{{
-      lang.text
-    }}</a>
+    <a class="lang__link" [href]="lang.url + path" (click)="lang.onClick()">
+      {{ lang.text }}
+    </a>
   </li>
 </ul>

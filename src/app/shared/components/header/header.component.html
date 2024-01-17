@@ -17,12 +17,15 @@
             />
           </a>
         </div>
+
         <app-menu class="header__menu"></app-menu>
+
         <div class="header__side">
           <app-burger
             [opened]="isMenuOpened$ | async"
             (openedChange)="toggleMenuOpened()"
           ></app-burger>
+
           <app-lang></app-lang>
         </div>
       </div>

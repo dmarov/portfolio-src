@@ -17,6 +17,7 @@
     >
       {{ menuEntry.title }}
     </a>
+
     <a
       [ngClass]="{
         'header-menu__link_visible': !((isMenuOpen$ | async) && !rla.isActive)

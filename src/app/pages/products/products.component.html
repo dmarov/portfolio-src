@@ -4,6 +4,7 @@
     *ngFor="let product of products; let index = index"
   >
     <div class="fragment" [id]="product.id"></div>
+
     <div class="content">
       <section
         [ngClass]="'neon-frame_theme_' + colors[index % 3]"
