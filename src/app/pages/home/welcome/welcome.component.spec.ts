@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
+import { VISIT_TIME } from "@/app/shared/const/injection-tokens.const";
 import { WelcomeComponent } from "./welcome.component";
 
 @Component({
@@ -17,7 +18,15 @@ describe("WelcomeComponent", () => {
   mockIntersectionObserver();
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [
+        {
+          provide: VISIT_TIME,
+          useValue: new Date("Jan 18 2024").getTime(),
+        },
+      ],
+    });
+
     fixture = TestBed.createComponent(WelcomeTestComponent);
     fixture.detectChanges();
   });

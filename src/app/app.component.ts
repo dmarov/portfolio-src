@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, DOCUMENT } from "@angular/common";
 import { filter } from "rxjs/operators";
 import {
   ChangeDetectionStrategy,
@@ -31,6 +31,8 @@ export class AppComponent implements OnInit {
     private readonly tracking: TrackingService,
     @Inject(WINDOW)
     private readonly window: Window,
+    @Inject(DOCUMENT)
+    private readonly document: Document,
   ) {}
 
   public ngOnInit(): void {
@@ -71,7 +73,7 @@ export class AppComponent implements OnInit {
 
   private scrollToId(id: string): void {
     setTimeout(() => {
-      const target = document.getElementById(id);
+      const target = this.document.getElementById(id);
       if (target) {
         target.scrollIntoView();
       }

@@ -6,6 +6,7 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { HomeComponent } from "./home.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { VISIT_TIME } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-home-test",
@@ -14,7 +15,7 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
   template: "<app-home></app-home>",
   imports: [HomeComponent],
 })
-export class HomeTestComponent {}
+export class HomeTestComponent { }
 
 describe("HomeComponent", () => {
   let fixture: ComponentFixture<HomeTestComponent>;
@@ -27,6 +28,10 @@ describe("HomeComponent", () => {
         {
           provide: TrackingService,
           useClass: TrackingServiceMock,
+        },
+        {
+          provide: VISIT_TIME,
+          useValue: new Date("Jan 18 2024").getTime(),
         },
       ],
     });
