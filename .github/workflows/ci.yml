@@ -1,0 +1,9 @@
+name: CI
+run-name: Performing continuous integration...
+on: [push]
+jobs:
+  run-unit-tests:
+    runs-on: node:18-alpine
+    steps:
+      - run: npm ci
+      - run: test:ci
