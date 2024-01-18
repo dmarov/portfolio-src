@@ -17,8 +17,6 @@ import { RoutePath } from "@/app/models/routing/route-path.enum";
 export class PreviewProductsComponent {
   public readonly routePath = RoutePath;
 
-  public constructor(private readonly tracking: TrackingService) {}
-
   public readonly products: ReadonlyArray<ProductEntry> = [
     {
       testAttr: "robots",
@@ -49,6 +47,8 @@ export class PreviewProductsComponent {
       image: "paxus.png",
     },
   ];
+
+  public constructor(private readonly tracking: TrackingService) { }
 
   public onPreviewClick(event: CustomTrackingEvent): void {
     this.tracking.sendCustomEvent(event, {});

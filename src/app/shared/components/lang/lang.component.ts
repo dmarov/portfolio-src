@@ -41,18 +41,13 @@ export class LangComponent implements OnInit, OnDestroy {
     },
   ];
 
-  private readonly activeMatch = this.languages.find((l) =>
-    this.languageSwitch.isActive(
-      new URL(this.window.location.href).toString(),
-      l.type,
-    ),
-  );
+  public readonly activeLang: Language | null;
 
-  public readonly activeLang: Language | null = this.activeMatch ?? null;
+  public path = "/";
 
   private readonly subscription = new Subscription();
 
-  public path = "/";
+  private readonly activeMatch: Language | undefined;
 
   public constructor(
     private readonly router: Router,
@@ -61,7 +56,16 @@ export class LangComponent implements OnInit, OnDestroy {
     private readonly languageSwitch: LanguageSwitchService,
     @Inject(WINDOW)
     private readonly window: Window,
-  ) {}
+  ) {
+    this.activeMatch = this.languages.find((l) =>
+      this.languageSwitch.isActive(
+        new URL(this.window.location.href).toString(),
+        l.type,
+      ),
+    );
+
+    this.activeLang = this.activeMatch ?? null;
+  }
 
   public ngOnInit(): void {
     this.subscription.add(
