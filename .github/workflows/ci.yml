@@ -1,5 +1,5 @@
 name: CI
-run-name: Performing continuous integration...
+run-name: Continuous Integration
 on: [push]
 jobs:
   run-unit-tests:
