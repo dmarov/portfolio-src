@@ -8,9 +8,9 @@
     [@slideInOut]="rla.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'"
   >
     <a class="header-menu__link" [routerLink]="menuEntry.href">
-      <span (click)="onLinkClick($event, rla.isActive)">
+      <div (click)="onLinkClick($event, rla.isActive)">
         {{ menuEntry.title }}
-      </span>
+      </div>
     </a>
   </li>
 </ul>
