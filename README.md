@@ -1,5 +1,7 @@
 # Portfolio
 
+![Portfolio](https://github.com/dmarov/portfolio-src/actions/workflows/ci.yml/badge.svg?branch=master)
+
 ## Development with Docker
 
 1. [optional] Create `.env` file and set default variables:
