@@ -323,7 +323,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">31,33</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
@@ -349,7 +349,7 @@
           <context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
-        <note priority="1" from="description">Kemerovo technologies</note>
+        <note priority="1" from="description">used technologies</note>
       </trans-unit>
       <trans-unit id="PROJECT_MY_PORTFOLIO_TITLE" datatype="html">
         <source> My Portfolio Website </source>
@@ -384,7 +384,7 @@
     &gt;"/> project repository <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> . </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context>
-          <context context-type="linenumber">48,59</context>
+          <context context-type="linenumber">46,57</context>
         </context-group>
         <note priority="1" from="description">My Portfolio source code</note>
       </trans-unit>

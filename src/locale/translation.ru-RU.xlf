@@ -248,7 +248,7 @@
       <trans-unit id="TECHNOLOGIES_I_USED" datatype="html">
         <source>Technologies I used:</source>
         <target state="translated">Технологии которые я использовал:</target>
-        <note priority="1" from="description">Kemerovo technologies</note>
+        <note priority="1" from="description">used technologies</note>
 
 
 
@@ -276,7 +276,7 @@
     >"/> project repository <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> . </source><target state="translated"> Исходный код этого проекта можно посмотреть в<x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/dmarov/portfolio-src&quot; target=&quot;_blank&quot;>"/> репозитории проекта <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/>. </target>
 
         <note priority="1" from="description">My Portfolio source code</note>
-      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context><context context-type="linenumber">48</context></context-group></trans-unit><trans-unit id="PROJECT_PAXUS_TITLE" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/my-portfolio-website/my-portfolio-website.component.html</context><context context-type="linenumber">46</context></context-group></trans-unit><trans-unit id="PROJECT_PAXUS_TITLE" datatype="html">
         <source>Paxus Website</source><target state="translated">Вебсайт Paxus</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/paxus-website/paxus-website.component.html</context>
