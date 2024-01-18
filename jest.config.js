@@ -13,4 +13,5 @@ module.exports = {
     ...pathsToModuleNameMapper(compilerOptions.paths),
     rxjs: "<rootDir>/node_modules/rxjs/dist/bundles/rxjs.umd.js",
   },
+  coverageReporters: ["text", "text-summary"],
 };
