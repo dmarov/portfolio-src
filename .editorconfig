@@ -12,6 +12,9 @@ max_line_length = 80
 [*.ts]
 quote_type = double
 
+[*.yml]
+max_line_length = off
+
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false

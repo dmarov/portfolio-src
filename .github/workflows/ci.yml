@@ -14,4 +14,5 @@ jobs:
       - run: npm run lint
       - run: npm run lint:styles
       - run: npm run test:ci
+      - run: cp ./src/environments/environment.example.ts ./scr/environments/environment.ts
       - run: npm run build:prod
