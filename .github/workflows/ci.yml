@@ -2,7 +2,7 @@ name: CI
 run-name: Continuous Integration (${{ github.actor }})
 on: [push]
 jobs:
-  run-unit-tests:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -10,4 +10,8 @@ jobs:
         with:
           node-version: "18"
       - run: npm ci
+      - run: npm run prettier
+      - run: npm run lint
+      - run: npm run lint:styles
       - run: npm run test:ci
+      - run: npm run build:prod
