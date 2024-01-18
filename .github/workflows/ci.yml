@@ -9,10 +9,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-      - run: npm ci
-      - run: npm run prettier
-      - run: npm run lint
-      - run: npm run lint:styles
-      - run: npm run test:ci
-      - run: cp ./src/environments/environment.example.ts ./src/environments/environment.ts
-      - run: npm run build:prod
+      - name: Install packages
+        run: npm ci
+      - name: Run prettier
+        run: npm run prettier
+      - name: Lint code
+        run: npm run lint
+      - name: Lint styles
+        run: npm run lint:styles
+      - name: Run unit tests
+        run: npm run test:ci
+      - name: Create default config
+        run: cp ./src/environments/environment.example.ts ./src/environments/environment.ts
+      - name: Build production bundle
+        run: npm run build:prod
