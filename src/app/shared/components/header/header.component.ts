@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   public constructor(
     private readonly menuService: MenuService,
     private readonly tracking: TrackingService,
-  ) { }
+  ) {}
 
   public ngOnInit(): void {
     this.isMenuOpened$ = this.menuService.menuVisible$;
