@@ -6,7 +6,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { HomeComponent } from "./home.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { VISIT_TIME } from "@/app/shared/const/injection-tokens.const";
+import {
+  ENVIRONMENT,
+  VISIT_TIME,
+} from "@/app/shared/const/injection-tokens.const";
+import { mockEnvironment } from "@/environments/environment.mock";
 
 @Component({
   selector: "app-home-test",
@@ -32,6 +36,10 @@ describe("HomeComponent", () => {
         {
           provide: VISIT_TIME,
           useValue: new Date("Jan 18 2024").getTime(),
+        },
+        {
+          provide: ENVIRONMENT,
+          useValue: mockEnvironment,
         },
       ],
     });

@@ -1,8 +1,11 @@
 import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
-import { environment } from "@/environments/environment";
 import { RoutePath } from "@/app/models/routing/route-path.enum";
 import { msInYear } from "@/app/shared/const/ms-in-year.const";
-import { VISIT_TIME } from "@/app/shared/const/injection-tokens.const";
+import {
+  ENVIRONMENT,
+  VISIT_TIME,
+} from "@/app/shared/const/injection-tokens.const";
+import { AppEnvironment } from "@/app/models/app-environment.interface";
 
 @Component({
   selector: "app-welcome",
@@ -16,11 +19,13 @@ export class WelcomeComponent {
 
   public readonly years: number;
 
-  private readonly startDate = new Date(environment.dateBeginning);
+  private readonly startDate = new Date(this.environment.dateBeginning);
 
   public constructor(
     @Inject(VISIT_TIME)
     private readonly visitTime: number,
+    @Inject(ENVIRONMENT)
+    private readonly environment: AppEnvironment,
   ) {
     const years = (this.visitTime - this.startDate.getTime()) / msInYear;
 

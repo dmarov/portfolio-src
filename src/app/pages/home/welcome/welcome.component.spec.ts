@@ -1,8 +1,12 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { VISIT_TIME } from "@/app/shared/const/injection-tokens.const";
+import {
+  ENVIRONMENT,
+  VISIT_TIME,
+} from "@/app/shared/const/injection-tokens.const";
 import { WelcomeComponent } from "./welcome.component";
+import { mockEnvironment } from "@/environments/environment.mock";
 
 @Component({
   selector: "app-welcome-test",
@@ -23,6 +27,10 @@ describe("WelcomeComponent", () => {
         {
           provide: VISIT_TIME,
           useValue: new Date("Jan 18 2024").getTime(),
+        },
+        {
+          provide: ENVIRONMENT,
+          useValue: mockEnvironment,
         },
       ],
     });
