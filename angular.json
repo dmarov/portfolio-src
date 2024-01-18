@@ -120,6 +120,12 @@
           "options": {
             "configPath": "./jest.config.js",
             "tsConfig": "./tsconfig.spec.json"
+          },
+          "configurations": {
+            "ci": {
+              "configPath": "jest.config.ci.js",
+              "cache": false
+            }
           }
         }
       },
