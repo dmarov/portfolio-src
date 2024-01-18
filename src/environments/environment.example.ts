@@ -6,9 +6,11 @@ import { AppEnvironment } from "@/app/models/app-environment.interface";
 
 export const environment: AppEnvironment = {
   production: false,
-  languageRefs: {
-    en: "http://localhost:4200",
-    ru: "http://localhost:4201",
+  debugTracking: true,
+  languages: {
+    isMultiOrigin: true,
+    enOrigin: "http://localhost:4200",
+    ruOrigin: "http://localhost:4201",
   },
   dateBeginning: "June 17, 2017 00:00:00",
   trackingEventTimeout: 1000,

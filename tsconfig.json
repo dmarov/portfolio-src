@@ -11,7 +11,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
-    "lib": ["es2018", "dom"],
+    "lib": ["es2019", "dom"],
     "paths": {
       "@/*": ["src/*"]
     },
@@ -20,7 +20,7 @@
     "skipLibCheck": true
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
+    "strictTemplates": true,
     "strictInjectionParameters": true
   }
 }

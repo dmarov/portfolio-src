@@ -8,6 +8,9 @@ import { MenuServiceMock } from "../../services/menu/menu.service.mock";
 import { TrackingService } from "../../services/tracking/tracking.service";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { HeaderComponent } from "./header.component";
+import { LanguageSwitchService } from "../../services/language-switch/language-switch.service";
+import { LanguageSwitchServiceMock } from "../../services/language-switch/language-switch.service.mock";
+import { WINDOW } from "../../const/injection-tokens.const";
 
 @Component({
   selector: "app-header-test",
@@ -31,6 +34,14 @@ describe("HeaderComponent", () => {
         {
           provide: TrackingService,
           useClass: TrackingServiceMock,
+        },
+        {
+          provide: LanguageSwitchService,
+          useClass: LanguageSwitchServiceMock,
+        },
+        {
+          provide: WINDOW,
+          useValue: window,
         },
       ],
     });

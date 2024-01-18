@@ -2,17 +2,20 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  Inject,
   OnDestroy,
   OnInit,
 } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { Subscription } from "rxjs";
-import { I18nUrl } from "@/app/shared/utils/i18n-url/i18n-url.util";
-import { Lang } from "@/app/models/lang.enum";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { filter } from "rxjs/operators";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
-import { environment } from "@/environments/environment";
+import { Language } from "@/app/models/lang/language.interface";
+import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { LanguageType } from "@/app/models/lang/language-type.enum";
+import { LanguageSwitchService } from "../../services/language-switch/language-switch.service";
+import { WINDOW } from "../../const/injection-tokens.const";
 
 @Component({
   selector: "app-lang",
@@ -21,35 +24,31 @@ import { environment } from "@/environments/environment";
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CommonModule],
-  providers: [I18nUrl],
 })
 export class LangComponent implements OnInit, OnDestroy {
-  public readonly languages = [
+  public readonly languages: ReadonlyArray<Language> = [
     {
-      type: Lang.English,
-      url: environment.languageRefs.en,
+      type: LanguageType.English,
+      url: this.languageSwitch.getPrefix(LanguageType.English),
       text: "EN",
-      onClick: (): void => {
-        this.tracking.sendCustomEvent(CustomTrackingEvent.SwitchEnClick, {});
-      },
+      trackingEvent: CustomTrackingEvent.SwitchEnClick,
     },
     {
-      type: Lang.Russian,
-      url: environment.languageRefs.ru,
+      type: LanguageType.Russian,
+      url: this.languageSwitch.getPrefix(LanguageType.Russian),
       text: "RU",
-      onClick: (): void => {
-        this.tracking.sendCustomEvent(CustomTrackingEvent.SwitchRuClick, {});
-      },
+      trackingEvent: CustomTrackingEvent.SwitchRuClick,
     },
   ];
 
-  private readonly activeMatch = this.languages.find(
-    (l) =>
-      (l.url.startsWith("/") && window.location.pathname.startsWith(l.url)) ||
-      (l.url.startsWith("http") && window.location.origin.startsWith(l.url)),
+  private readonly activeMatch = this.languages.find((l) =>
+    this.languageSwitch.isActive(
+      new URL(this.window.location.href).toString(),
+      l.type,
+    ),
   );
 
-  public readonly activeLang = this.activeMatch ?? null;
+  public readonly activeLang: Language | null = this.activeMatch ?? null;
 
   private readonly subscription = new Subscription();
 
@@ -58,28 +57,32 @@ export class LangComponent implements OnInit, OnDestroy {
   public constructor(
     private readonly router: Router,
     private readonly cdr: ChangeDetectorRef,
-    private readonly i18nUrl: I18nUrl,
     private readonly tracking: TrackingService,
+    private readonly languageSwitch: LanguageSwitchService,
+    @Inject(WINDOW)
+    private readonly window: Window,
   ) {}
 
   public ngOnInit(): void {
     this.subscription.add(
-      this.router.events.subscribe((s) => {
-        if (s instanceof NavigationEnd) {
-          const relPath =
-            window.location.pathname +
-            window.location.search +
-            window.location.hash;
+      this.router.events
+        .pipe(filter((e) => e instanceof NavigationEnd))
+        .subscribe(() => {
+          const url = new URL(this.window.location.href).toString();
+          this.path = this.languageSwitch.getEssentialUrl(url);
 
-          if (this.activeLang === null) {
-            return;
-          }
-
-          this.path = this.i18nUrl.getPagePath(relPath);
           this.cdr.detectChanges();
-        }
-      }),
+        }),
     );
+  }
+
+  public async onLanguageSwitchClick(
+    event: Event,
+    lang: Language,
+  ): Promise<void> {
+    event.preventDefault();
+    await this.tracking.sendCustomEvent(lang.trackingEvent, {});
+    this.window.location.href = (event.target as HTMLAnchorElement).href;
   }
 
   public ngOnDestroy(): void {

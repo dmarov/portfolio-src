@@ -10,32 +10,19 @@ import { AppComponent } from "@/app/app.component";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
-import { GoogleAnalyticsTrackingService } from "./app/shared/services/tracking/impl/google-analytics-tracking.service";
-import { DebugTrackingService } from "./app/shared/services/tracking/impl/debug-tracking.service";
-import { CompositeTrackingService } from "./app/shared/services/tracking/impl/composite-tracking.service";
-import { YandexMetrikaTrackingService } from "./app/shared/services/tracking/impl/yandex-metrika-tracking.service";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { Features } from "./app/models/features/features.class";
 import { fetchFeatures } from "./app/shared/utils/fetch-features/fetch-features.util";
+import { LanguageSwitchService } from "./app/shared/services/language-switch/language-switch.service";
+import { WINDOW } from "./app/shared/const/injection-tokens.const";
+import { languageSwitchServiceFactory } from "./app/shared/factories/language-switch-service.factory";
+import { trackingServiceFactory } from "./app/shared/factories/tracking-service.factory";
+
+if (environment.production) {
+  enableProdMode();
+}
 
 fetchFeatures().then((features) => {
-  let tracking: TrackingService = new DebugTrackingService();
-
-  if (environment.production) {
-    const timeout = environment.trackingEventTimeout;
-
-    tracking = new CompositeTrackingService([
-      new GoogleAnalyticsTrackingService(window.gtag, timeout),
-      new YandexMetrikaTrackingService(
-        window.ym,
-        window.ym_counter_id,
-        timeout,
-      ),
-    ]);
-
-    enableProdMode();
-  }
-
   bootstrapApplication(AppComponent, {
     providers: [
       {
@@ -44,11 +31,19 @@ fetchFeatures().then((features) => {
       },
       {
         provide: TrackingService,
-        useValue: tracking,
+        useFactory: trackingServiceFactory,
       },
       {
         provide: Features,
         useValue: Object.freeze(features),
+      },
+      {
+        provide: LanguageSwitchService,
+        useFactory: languageSwitchServiceFactory,
+      },
+      {
+        provide: WINDOW,
+        useValue: window,
       },
       provideRouter(routes),
       importProvidersFrom([BrowserAnimationsModule]),

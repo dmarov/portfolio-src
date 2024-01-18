@@ -1,9 +1,8 @@
 ## TODO:
 
-- make localhost language switch
+- images lazy loading
 - fold menu on click outside
 - improve loading display
-- images lazy loading
 - images scale for mobile
 - add "My Skills" list
 - add "Why Angular?"

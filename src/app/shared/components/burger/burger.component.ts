@@ -17,7 +17,7 @@ import { CommonModule } from "@angular/common";
 })
 export class BurgerComponent {
   @Input()
-  public readonly opened = false;
+  public readonly opened: boolean = false;
 
   @Output()
   public readonly openedChange = new EventEmitter<void>();

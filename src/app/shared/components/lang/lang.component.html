@@ -4,7 +4,11 @@
     class="lang__entry"
     [ngClass]="{ lang__entry_active: lang === activeLang }"
   >
-    <a class="lang__link" [href]="lang.url + path" (click)="lang.onClick()">
+    <a
+      class="lang__link"
+      [href]="lang.url + path"
+      (click)="onLanguageSwitchClick($event, lang)"
+    >
       {{ lang.text }}
     </a>
   </li>

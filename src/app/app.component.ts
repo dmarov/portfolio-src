@@ -3,6 +3,7 @@ import { filter } from "rxjs/operators";
 import {
   ChangeDetectionStrategy,
   Component,
+  Inject,
   OnInit,
   ViewChild,
 } from "@angular/core";
@@ -11,6 +12,7 @@ import { NgScrollbar, NgScrollbarModule } from "ngx-scrollbar";
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
 import { TrackingService } from "./shared/services/tracking/tracking.service";
+import { WINDOW } from "./shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-root",
@@ -27,6 +29,8 @@ export class AppComponent implements OnInit {
   public constructor(
     private readonly router: Router,
     private readonly tracking: TrackingService,
+    @Inject(WINDOW)
+    private readonly window: Window,
   ) {}
 
   public ngOnInit(): void {
@@ -49,8 +53,8 @@ export class AppComponent implements OnInit {
   }
 
   private autoScroll(): void {
-    const { hash } = window.location;
-    const isIframe = window.self !== window.top;
+    const { hash } = this.window.location;
+    const isIframe = this.window.self !== window.top;
 
     if (isIframe) {
       return;

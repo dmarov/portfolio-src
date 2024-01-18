@@ -1,23 +1,22 @@
-import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import { Observable } from "rxjs";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { height } from "@/app/shared/animations/height";
 import { MenuEntry } from "@/app/models/menu/menu-entry.interface";
 import { RoutePath } from "@/app/models/routing/route-path.enum";
 
 @Component({
-  selector: "app-menu",
-  templateUrl: "./menu.component.html",
-  styleUrls: ["./menu.component.scss"],
+  selector: "app-header-menu",
+  templateUrl: "./header-menu.component.html",
+  styleUrls: ["./header-menu.component.scss"],
   animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CommonModule, RouterModule],
 })
-export class MenuComponent implements OnInit {
-  public isMenuOpen$!: Observable<boolean>;
+export class HeaderMenuComponent {
+  public readonly isMenuOpen$ = this.menuService.menuVisible$;
 
   public readonly menuEntries: ReadonlyArray<MenuEntry> = [
     {
@@ -39,15 +38,12 @@ export class MenuComponent implements OnInit {
 
   public constructor(private readonly menuService: MenuService) {}
 
-  public ngOnInit(): void {
-    this.isMenuOpen$ = this.menuService.menuVisible$;
-  }
+  public onLinkClick(event: Event, isActive: boolean): void {
+    if (isActive) {
+      event.stopPropagation();
+      event.preventDefault();
+    }
 
-  public closeMenu(): void {
-    this.menuService.close();
-  }
-
-  public toggleMenu(): void {
     this.menuService.toggle();
   }
 }

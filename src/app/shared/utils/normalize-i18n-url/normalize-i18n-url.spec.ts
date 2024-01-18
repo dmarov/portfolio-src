@@ -1,16 +1,10 @@
-import { I18nUrl } from "./i18n-url.util";
+import { normalizeI18nUrl } from "./normalize-i18n-url";
 
 describe("I18nUrl", () => {
-  let langUrl: I18nUrl;
-
-  beforeEach(() => {
-    langUrl = new I18nUrl();
-  });
-
   it('should map "/en" to "/"', () => {
     const fullPath = "/en";
 
-    const pagePath = langUrl.getPagePath(fullPath);
+    const pagePath = normalizeI18nUrl(fullPath);
 
     expect(pagePath).toEqual("/");
   });
@@ -18,7 +12,7 @@ describe("I18nUrl", () => {
   it('should map "/en/products" to "/products"', () => {
     const fullPath = "/en/products";
 
-    const pagePath = langUrl.getPagePath(fullPath);
+    const pagePath = normalizeI18nUrl(fullPath);
 
     expect(pagePath).toEqual("/products");
   });

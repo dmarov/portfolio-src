@@ -3,18 +3,19 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
+import { WINDOW } from "../../const/injection-tokens.const";
 import { MenuService } from "../../services/menu/menu.service";
 import { MenuServiceMock } from "../../services/menu/menu.service.mock";
 import { TrackingService } from "../../services/tracking/tracking.service";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
-import { MenuComponent } from "./menu.component";
+import { HeaderMenuComponent } from "./header-menu.component";
 
 @Component({
   selector: "app-menu-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: "<app-menu></app-menu>",
-  imports: [MenuComponent],
+  template: "<app-header-menu></app-header-menu>",
+  imports: [HeaderMenuComponent],
 })
 export class MenuTestComponent {}
 
@@ -33,6 +34,10 @@ describe("MenuComponent", () => {
           provide: TrackingService,
           useClass: TrackingServiceMock,
         },
+        {
+          provide: WINDOW,
+          useValue: window,
+        },
       ],
       imports: [NoopAnimationsModule, RouterTestingModule],
     });
@@ -41,7 +46,9 @@ describe("MenuComponent", () => {
   });
 
   it("should have test attribute", () => {
-    const el = document.querySelector('[data-test="menu"]') as HTMLElement;
+    const el = document.querySelector(
+      '[data-test="header-menu"]',
+    ) as HTMLElement;
     expect(el).toBeTruthy();
   });
 });

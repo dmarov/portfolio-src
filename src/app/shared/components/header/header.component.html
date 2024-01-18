@@ -18,11 +18,11 @@
           </a>
         </div>
 
-        <app-menu class="header__menu"></app-menu>
+        <app-header-menu class="header__menu"></app-header-menu>
 
         <div class="header__side">
           <app-burger
-            [opened]="isMenuOpened$ | async"
+            [opened]="(isMenuOpened$ | async) ?? false"
             (openedChange)="toggleMenuOpened()"
           ></app-burger>
 
