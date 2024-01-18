@@ -48,7 +48,7 @@ export class PreviewProductsComponent {
     },
   ];
 
-  public constructor(private readonly tracking: TrackingService) { }
+  public constructor(private readonly tracking: TrackingService) {}
 
   public onPreviewClick(event: CustomTrackingEvent): void {
     this.tracking.sendCustomEvent(event, {});
