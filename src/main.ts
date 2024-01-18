@@ -14,7 +14,7 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 import { Features } from "./app/models/features/features.class";
 import { fetchFeatures } from "./app/shared/utils/fetch-features/fetch-features.util";
 import { LanguageSwitchService } from "./app/shared/services/language-switch/language-switch.service";
-import { WINDOW } from "./app/shared/const/injection-tokens.const";
+import { ENVIRONMENT, WINDOW } from "./app/shared/const/injection-tokens.const";
 import { languageSwitchServiceFactory } from "./app/shared/factories/language-switch-service.factory";
 import { trackingServiceFactory } from "./app/shared/factories/tracking-service.factory";
 
@@ -32,6 +32,7 @@ fetchFeatures().then((features) => {
       {
         provide: TrackingService,
         useFactory: trackingServiceFactory,
+        deps: [WINDOW, ENVIRONMENT],
       },
       {
         provide: Features,
@@ -40,10 +41,15 @@ fetchFeatures().then((features) => {
       {
         provide: LanguageSwitchService,
         useFactory: languageSwitchServiceFactory,
+        deps: [ENVIRONMENT],
       },
       {
         provide: WINDOW,
         useValue: window,
+      },
+      {
+        provide: ENVIRONMENT,
+        useValue: environment,
       },
       provideRouter(routes),
       importProvidersFrom([BrowserAnimationsModule]),
