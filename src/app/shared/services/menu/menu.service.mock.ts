@@ -11,12 +11,4 @@ export class MenuServiceMock extends MenuService {
   public toggle(): void {
     // this method intended to be empty
   }
-
-  public open(): void {
-    // this method intended to be empty
-  }
-
-  public close(): void {
-    // this method intended to be empty
-  }
 }

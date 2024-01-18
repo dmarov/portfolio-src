@@ -14,12 +14,4 @@ export class MenuServiceImpl extends MenuService {
   public toggle(): void {
     this.menuVisibleInner$.next(!this.menuVisibleInner$.getValue());
   }
-
-  public open(): void {
-    this.menuVisibleInner$.next(true);
-  }
-
-  public close(): void {
-    this.menuVisibleInner$.next(false);
-  }
 }

@@ -19,23 +19,6 @@ describe("MenuService", () => {
     service = TestBed.inject(MenuService);
   });
 
-  it("should emit true after menu open", () => {
-    service.menuVisible$.pipe(take(2), toArray()).subscribe((values) => {
-      expect(values).toEqual([false, true]);
-    });
-
-    service.open();
-  });
-
-  it("should emit false after menu closed", () => {
-    service.menuVisible$.pipe(take(3), toArray()).subscribe((values) => {
-      expect(values).toEqual([false, true, false]);
-    });
-
-    service.open();
-    service.close();
-  });
-
   it("should emit opposite value after menu toggle", () => {
     service.menuVisible$.pipe(take(3), toArray()).subscribe((values) => {
       expect(values).toEqual([false, true, false]);
