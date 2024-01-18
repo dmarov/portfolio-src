@@ -19,7 +19,7 @@ import { mockEnvironment } from "@/environments/environment.mock";
   template: "<app-home></app-home>",
   imports: [HomeComponent],
 })
-export class HomeTestComponent { }
+export class HomeTestComponent {}
 
 describe("HomeComponent", () => {
   let fixture: ComponentFixture<HomeTestComponent>;
