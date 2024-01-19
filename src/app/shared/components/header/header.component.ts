@@ -10,11 +10,11 @@ import { HeaderMenuComponent } from "../header-menu/header-menu.component";
 
 @Component({
   selector: "app-header",
-  standalone: true,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CommonModule, HeaderMenuComponent, LangComponent, BurgerComponent],
   templateUrl: "./header.component.html",
   styleUrls: ["./header.component.scss"],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule, HeaderMenuComponent, LangComponent, BurgerComponent],
 })
 export class HeaderComponent implements OnInit {
   public isMenuOpened$!: Observable<boolean>;

@@ -5,11 +5,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 
 @Component({
   selector: "app-paxus-website",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./paxus-website.component.html",
   styleUrls: ["./paxus-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class PaxusWebsiteComponent {
   public constructor(private readonly tracking: TrackingService) {}

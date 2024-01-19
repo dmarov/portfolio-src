@@ -5,11 +5,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 
 @Component({
   selector: "app-rivertv-website",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./rivertv-website.component.html",
   styleUrls: ["./rivertv-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class RivertvWebsiteComponent {
   public constructor(private readonly tracking: TrackingService) {}

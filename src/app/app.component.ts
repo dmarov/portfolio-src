@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
 
   private autoScroll(): void {
     const { hash } = this.window.location;
-    const isIframe = this.window.self !== window.top;
+    const isIframe = this.window.self !== this.window.top;
 
     if (isIframe) {
       return;

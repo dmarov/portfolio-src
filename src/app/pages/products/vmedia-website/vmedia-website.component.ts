@@ -5,11 +5,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 
 @Component({
   selector: "app-vmedia-website",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./vmedia-website.component.html",
   styleUrls: ["./vmedia-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class VmediaWebsiteComponent {
   public constructor(private readonly tracking: TrackingService) {}

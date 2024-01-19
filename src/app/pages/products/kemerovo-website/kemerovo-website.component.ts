@@ -5,11 +5,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 
 @Component({
   selector: "app-kemerovo-website",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./kemerovo-website.component.html",
   styleUrls: ["./kemerovo-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class KemerovoWebsiteComponent {
   public constructor(private readonly tracking: TrackingService) {}

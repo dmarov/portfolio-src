@@ -13,11 +13,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 
 @Component({
   selector: "app-my-portfolio-website",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./my-portfolio-website.component.html",
   styleUrls: ["./my-portfolio-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class MyPortfolioWebsiteComponent implements AfterViewInit {
   @ViewChild("container", { static: true })

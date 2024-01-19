@@ -9,11 +9,11 @@ import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-burger",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./burger.component.html",
   styleUrls: ["./burger.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class BurgerComponent {
   @Input()

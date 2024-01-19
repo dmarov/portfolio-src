@@ -5,11 +5,11 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 
 @Component({
   selector: "app-trik-website",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./trik-website.component.html",
   styleUrls: ["./trik-website.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class TrikWebsiteComponent {
   public constructor(private readonly tracking: TrackingService) {}

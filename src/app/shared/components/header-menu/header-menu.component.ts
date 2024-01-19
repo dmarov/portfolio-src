@@ -10,10 +10,10 @@ import { RoutePath } from "@/app/models/routing/route-path.enum";
   selector: "app-header-menu",
   templateUrl: "./header-menu.component.html",
   styleUrls: ["./header-menu.component.scss"],
-  animations: [height],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CommonModule, RouterModule],
+  animations: [height],
 })
 export class HeaderMenuComponent {
   public readonly isMenuOpen$ = this.menuService.menuVisible$;

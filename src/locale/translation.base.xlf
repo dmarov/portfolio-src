@@ -91,50 +91,42 @@
         <note priority="1" from="description">what I stand for page header</note>
       </trans-unit>
       <trans-unit id="ABOUT_PRINCIPLES" datatype="html">
-        <source> At present I realize what I&apos;ve understood a lot from my experience: </source>
+        <source> At present I realize what I&apos;ve understood a lot from my experience and would like to formulate it in a list of principles: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">105,107</context>
+          <context context-type="linenumber">105,108</context>
         </context-group>
         <note priority="1" from="description">about principles</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_BDD" datatype="html">
-        <source> I consider that development should start with interfaces rather than implementations. Behavior-Driven Development (BDD) is an effective method to help accomplish this goal. In contrast to forced unit testing, where tests are written after the fact in order to test existing code, BDD advocates writing tests before implementation. This approach leads to better code design and ensures that testing focuses on behavior rather than code itself. Writing tests after the fact typically results in low-quality tests and suboptimal code design. Test-Driven Development (TDD) is also a valuable methodology, but it can be misinterpreted as implying that development is a purely mechanical process when it&apos;s not </source>
+        <source> I consider that development should start with interface rather than implementation, because the main challenge of development is to control complexity, and thought through interface manages to do so. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">110,123</context>
+          <context context-type="linenumber">111,116</context>
         </context-group>
         <note priority="1" from="description">BDD principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_SOLID" datatype="html">
-        <source> I consider that it&apos;s worth following SOLID principles. The most important ones are &quot;Single Responsibility&quot; and &quot;Open-Closed&quot; principles, as well as encapsulation. Quality code &quot;does one thing well&quot; </source>
+        <source> I consider that it&apos;s worth following SOLID principles, because it helps to write reliable and reusable code. The most important ones I consider &quot;Single Responsibility&quot; and &quot;Open-Closed&quot; principles. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">125,130</context>
+          <context context-type="linenumber">118,122</context>
         </context-group>
         <note priority="1" from="description">SOLID principles</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_INHERITANCE" datatype="html">
-        <source> I consider that the usefulness of inheritance is often overrated. It is appropriate in some cases, but most of the time, object composition is preferable. The main downside of inheritance is that it creates tight coupling to the parent class </source>
+        <source> I consider that the usefulness of inheritance is often overrated. It is appropriate in some cases, but most of the time, object composition is preferable, because inheritance creates the tightest coupling </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">132,137</context>
+          <context context-type="linenumber">124,129</context>
         </context-group>
         <note priority="1" from="description">inheritance</note>
       </trans-unit>
-      <trans-unit id="PRINCIPLE_COMPLEXITY" datatype="html">
-        <source> I consider the most elegant solution is the simplest one. There&apos;s not much we can do with essential complexity, but reducing accidental complexity is a job that has to be done well. Polymorphism is one of the most useful tools for decreasing complexity </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">139,145</context>
-        </context-group>
-        <note priority="1" from="description">complexity</note>
-      </trans-unit>
       <trans-unit id="PRINCIPLE_REFACTORING" datatype="html">
-        <source> I consider that refactoring should be regarded as part of a task rather than a separate process </source>
+        <source> I consider that refactoring should be regarded as a part of a task rather than a separate process </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">147,150</context>
+          <context context-type="linenumber">131,134</context>
         </context-group>
         <note priority="1" from="description">refactoring principle</note>
       </trans-unit>
@@ -142,23 +134,15 @@
         <source> I consider the ability to ask correct questions is the most valuable skill a developer can have </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">152,155</context>
+          <context context-type="linenumber">136,139</context>
         </context-group>
         <note priority="1" from="description">asking questions principle</note>
-      </trans-unit>
-      <trans-unit id="PRINCIPLE_ARGUMENTATION" datatype="html">
-        <source> I consider that every significant consideration ought to be based on valid argumentation to be accepted </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">157,160</context>
-        </context-group>
-        <note priority="1" from="description">argumentation principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_CODE_FORMATTING" datatype="html">
         <source> I am a strong advocate for uniform code formatting, because it reduces distractions and helps us focus on what&apos;s essential, which is software architecture </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">162,166</context>
+          <context context-type="linenumber">141,145</context>
         </context-group>
         <note priority="1" from="description">code formatting principle</note>
       </trans-unit>
@@ -166,15 +150,15 @@
         <source> I am a strong advocate for fast code integration methods like trunk-based development, as it significantly reduces bugs caused by intricate conflicts </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">168,172</context>
+          <context context-type="linenumber">147,151</context>
         </context-group>
         <note priority="1" from="description">code integration principle</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_SMALL_STEPS" datatype="html">
-        <source> I consider it&apos;s important to progress with small steps and obtain fast feedback from users at the end of each step in order to avoid wasting time and money on features that users do not need </source>
+        <source> I consider it&apos;s important to progress in small steps and obtain fast feedback at the end of each step in order to avoid wasting time and money on features, which are not needed </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">174,178</context>
+          <context context-type="linenumber">153,157</context>
         </context-group>
         <note priority="1" from="description">small steps</note>
       </trans-unit>
@@ -182,15 +166,15 @@
         <source> I consider the importance of appropriate naming to be significantly underrated in general. It is the hardest part in software development and yet receives insufficient attention </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">180,184</context>
+          <context context-type="linenumber">159,163</context>
         </context-group>
         <note priority="1" from="description">naming</note>
       </trans-unit>
       <trans-unit id="PRINCIPLE_TRADEOFF" datatype="html">
-        <source> I consider that every decision in software development is a trade-off. It&apos;s a challenge to weigh the pros and cons of each decision and make correct one </source>
+        <source> I consider that every decision in software development is a trade-off </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context>
-          <context context-type="linenumber">186,190</context>
+          <context context-type="linenumber">165,168</context>
         </context-group>
         <note priority="1" from="description">tradeoff</note>
       </trans-unit>
