@@ -85,8 +85,11 @@
 
         <note priority="1" from="description">what I stand for page header</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">101</context></context-group></trans-unit><trans-unit id="ABOUT_PRINCIPLES" datatype="html">
-        <source> At present I realize what I've understood a lot from my experience and would like to formulate it in a list of principles: </source><target state="translated"> В настоящее время я осознаю, что многое понял на основании своего опыта, и хотел бы сформулировать это следующих принципах: </target>
-        
+        <source> At present I realize what I've understood a lot from my
+          experience and would like to formulate it in a list of principles:
+      </source><target state="translated"> В настоящее время я осознаю, что
+        многое понял на основании своего опыта, и хотел бы сформулировать это в следующих принципах: </target>
+
         <note priority="1" from="description">about principles</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">105</context></context-group></trans-unit><trans-unit id="PRINCIPLE_CODE_FORMATTING" datatype="html">
         <source> I am a strong advocate for uniform code formatting, because it reduces distractions and helps us focus on what's essential, which is software architecture </source><target state="translated"> Я сторонник унифицированного форматирования кода, потому что отличия отвлекают от того что действительно важно - архитектуры приложения </target>
@@ -107,7 +110,7 @@
         <note priority="1" from="description">code integration principle</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">147</context></context-group></trans-unit><trans-unit id="PRINCIPLE_SMALL_STEPS" datatype="html">
         <source> I consider it's important to progress in small steps and obtain fast feedback at the end of each step in order to avoid wasting time and money on features, which are not needed </source><target state="translated"> Я считаю что важно продвигаться небольшими шагами и быстро получать обратную связь в конце каждого шага чтобы избежать потери времени и денег на фичи, которые не нужны </target>
-        
+
         <note priority="1" from="description">small steps</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">153</context></context-group></trans-unit><trans-unit id="PRINCIPLE_BDD" datatype="html">
         <source> I consider that development should start with interface rather than implementation, because the main challenge of development is to control complexity, and thought through interface manages to do so. </source><target state="translated"> Я считаю, что разработку следует начинать с интерфейсов, а не с реализации, потому что основная проблема разработки - это контролирование сложности, и продуманный интерфейс скрывает её</target>
@@ -115,11 +118,11 @@
         <note priority="1" from="description">BDD principle</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">111</context></context-group></trans-unit><trans-unit id="PRINCIPLE_SOLID" datatype="html">
         <source> I consider that it's worth following SOLID principles, because it helps to write reliable and reusable code. The most important ones I consider "Single Responsibility" and "Open-Closed" principles. </source><target state="translated"> Я считаю что SOLID принципов стоит придерживаться. Самые важные из них я считаю принципы "Единственной ответственности" и "Открытости-закрытости"</target>
-        
+
         <note priority="1" from="description">SOLID principles</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">118</context></context-group></trans-unit><trans-unit id="PRINCIPLE_INHERITANCE" datatype="html">
         <source> I consider that the usefulness of inheritance is often overrated. It is appropriate in some cases, but most of the time, object composition is preferable, because inheritance creates the tightest coupling </source><target state="translated"> Я считаю что полезность наследования часто переоценивается. Оно уместно в некоторых случаях, но чаще всего object composition предпочтительнее. Основной недостаток наследования в том, что оно создаёт самую сильную связь </target>
-        
+
         <note priority="1" from="description">inheritance</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">124</context></context-group></trans-unit><trans-unit id="PRINCIPLE_NAMING" datatype="html">
         <source> I consider the importance of appropriate naming to be significantly underrated in general. It is the hardest part in software development and yet receives insufficient attention </source><target state="translated"> Я считаю, что важность корректного наименования сильно недооценивается. Это самая сложная часть в разработке программного обеспечения, и тем не менее ей уделяется так мало внимания </target>
@@ -127,7 +130,7 @@
         <note priority="1" from="description">naming</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">159</context></context-group></trans-unit><trans-unit id="PRINCIPLE_TRADEOFF" datatype="html">
         <source> I consider that every decision in software development is a trade-off </source><target state="translated"> Я считаю что любое решение в разработке программного обеспечения является компромиссом </target>
-        
+
         <note priority="1" from="description">tradeoff</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">165</context></context-group></trans-unit>
       <trans-unit id="BANNER_WELCOME" datatype="html">
@@ -151,9 +154,9 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/welcome/welcome.component.html</context><context context-type="linenumber">19</context></context-group></trans-unit><trans-unit id="9411ef7bcf832b31f73dec1b6ab9b089f7eaccc4" datatype="html">
       <source>{VAR_PLURAL, plural, =0 {years} one {year} other {years}}</source>
       <target>{VAR_PLURAL, plural, =0 {лет} one {годом} few {годом} other {годами}}</target>
-        
+
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/home/welcome/welcome.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit>
-      
+
       <trans-unit id="MY_TECHNOLOGY_STACK" datatype="html">
         <source> My Technology Stack </source>
         <target> Мой технологический стек </target>
@@ -187,7 +190,7 @@
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context><context context-type="linenumber">19</context></context-group></trans-unit><trans-unit id="PROJECT_KEMEROVO_TITLE" datatype="html">
         <source>Kemerovo Website</source><target state="translated">Вебсайт "Кемерово"</target>
-        
+
         <note priority="1" from="description">Kemerovo title</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">2</context></context-group></trans-unit>
       <trans-unit id="PROJECT_RIVERTV_IS" datatype="html">
@@ -234,7 +237,7 @@
         <note priority="1" from="description">virtual assistant what i did</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/robots-mango-office/robots-mango-office.component.html</context><context context-type="linenumber">34</context></context-group></trans-unit><trans-unit id="PROJECT_SNM_TITLE" datatype="html">
         <source> "Scarlett &amp; Monarch" CMS </source><target state="translated"> CMS "Скарлетт и Монарх" </target>
-        
+
         <note priority="1" from="description">Scarlett and Monarch CMS</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/scarlett-and-monarch-cms/scarlett-and-monarch-cms.component.html</context><context context-type="linenumber">2</context></context-group></trans-unit>
       <trans-unit id="TECHNOLOGIES_I_USED" datatype="html">
