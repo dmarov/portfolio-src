@@ -56,9 +56,7 @@ describe("MultiOriginLanguageSwitchService", () => {
   });
 
   it("should return essential path without prefix for other pages", () => {
-    const res = service.getEssentialUrl(
-      "https://en.origin.com/en/path-to-page",
-    );
+    const res = service.getEssentialUrl("https://origin.com/en/path-to-page");
 
     expect(res).toEqual("/path-to-page");
   });

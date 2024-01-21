@@ -46,7 +46,7 @@ describe("MultiOriginLanguageSwitchService", () => {
     expect(res).toEqual("/path-to-page");
   });
 
-  it("should return essential path same as provided path", () => {
+  it("should return essential path with search query", () => {
     const res = service.getEssentialUrl(
       "https://en.origin.com/path-to-page?q=1",
     );
@@ -54,7 +54,7 @@ describe("MultiOriginLanguageSwitchService", () => {
     expect(res).toEqual("/path-to-page?q=1");
   });
 
-  it("should return essential path same as provided path", () => {
+  it("should return essential path with hash", () => {
     const res = service.getEssentialUrl(
       "https://en.origin.com/path-to-page#hash",
     );

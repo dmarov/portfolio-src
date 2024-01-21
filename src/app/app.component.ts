@@ -30,10 +30,10 @@ export class AppComponent implements OnInit {
     private readonly router: Router,
     private readonly tracking: TrackingService,
     @Inject(WINDOW)
-    private readonly window: Window,
+    private readonly win: Window,
     @Inject(DOCUMENT)
     private readonly document: Document,
-  ) {}
+  ) { }
 
   public ngOnInit(): void {
     setTimeout(() => {
@@ -55,15 +55,15 @@ export class AppComponent implements OnInit {
   }
 
   private autoScroll(): void {
-    const { hash } = this.window.location;
-    const isIframe = this.window.self !== this.window.top;
+    const { hash } = this.win.location;
+    const isIframe = this.win.self !== this.win.top;
 
     if (isIframe) {
       return;
     }
 
     if (hash) {
-      const id = hash.replace(/#/, "");
+      const id = hash.replace(/^#/, "");
 
       this.scrollToId(id);
     } else {

@@ -6,7 +6,7 @@ import { YandexMetrikaTrackingService } from "../services/tracking/impl/yandex-m
 import { TrackingService } from "../services/tracking/tracking.service";
 
 export const trackingServiceFactory = (
-  window: Window,
+  win: Window,
   environment: AppEnvironment,
 ): TrackingService => {
   if (environment.debugTracking) {
@@ -16,7 +16,7 @@ export const trackingServiceFactory = (
   const timeout = environment.trackingEventTimeout;
 
   return new CompositeTrackingService([
-    new GoogleAnalyticsTrackingService(window.gtag, timeout),
-    new YandexMetrikaTrackingService(window.ym, window.ym_counter_id, timeout),
+    new GoogleAnalyticsTrackingService(win.gtag, timeout),
+    new YandexMetrikaTrackingService(win.ym, win.ym_counter_id, timeout),
   ]);
 };

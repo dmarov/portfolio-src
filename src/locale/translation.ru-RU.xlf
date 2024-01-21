@@ -3,7 +3,7 @@
   <file source-language="en" target-language="ru" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="EDUCATION_PAGE_HEADER" datatype="html">
-        <source>Education</source><target state="translated">Образование </target>
+        <source>Education</source><target state="translated">Образование</target>
 
         <note priority="1" from="description">education page header</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">8</context></context-group></trans-unit><trans-unit id="EDUCATION_ABOUT" datatype="html">
@@ -85,10 +85,7 @@
 
         <note priority="1" from="description">what I stand for page header</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">101</context></context-group></trans-unit><trans-unit id="ABOUT_PRINCIPLES" datatype="html">
-        <source> At present I realize what I've understood a lot from my
-          experience and would like to formulate it in a list of principles:
-      </source><target state="translated"> В настоящее время я осознаю, что
-        многое понял на основании своего опыта, и хотел бы сформулировать это в следующих принципах: </target>
+        <source> At present I realize what I've understood a lot from my experience and would like to formulate it in a list of principles: </source><target state="translated"> В настоящее время я осознаю, что многое понял на основании своего опыта, и хотел бы сформулировать это в следующих принципах: </target>
 
         <note priority="1" from="description">about principles</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">105</context></context-group></trans-unit><trans-unit id="PRINCIPLE_CODE_FORMATTING" datatype="html">
@@ -100,8 +97,7 @@
 
         <note priority="1" from="description">asking questions principle</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">136</context></context-group></trans-unit><trans-unit id="PRINCIPLE_REFACTORING" datatype="html">
-        <source> I consider that refactoring should be regarded as a part of a task rather than a separate process </source><target state="translated">
- Я считаю, что рефакторинг следует считать частью задачи, а не отдельным процессом </target>
+        <source> I consider that refactoring should be regarded as a part of a task rather than a separate process </source><target state="translated"> Я считаю, что рефакторинг следует считать частью задачи, а не отдельным процессом </target>
 
         <note priority="1" from="description">refactoring principle</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">131</context></context-group></trans-unit><trans-unit id="PRINCIPLE_CODE_INTEGRATION" datatype="html">
@@ -113,11 +109,11 @@
 
         <note priority="1" from="description">small steps</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">153</context></context-group></trans-unit><trans-unit id="PRINCIPLE_BDD" datatype="html">
-        <source> I consider that development should start with interface rather than implementation, because the main challenge of development is to control complexity, and thought through interface manages to do so. </source><target state="translated"> Я считаю, что разработку следует начинать с интерфейсов, а не с реализации, потому что основная проблема разработки - это контролирование сложности, и продуманный интерфейс скрывает её</target>
+        <source> I consider that development should start with interface rather than implementation, because the main challenge of development is to control complexity, and thought through interface manages to do so. </source><target state="translated"> Я считаю, что разработку следует начинать с интерфейсов, а не с реализации, потому что основная проблема разработки - это контролирование сложности, и продуманный интерфейс скрывает её </target>
 
         <note priority="1" from="description">BDD principle</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">111</context></context-group></trans-unit><trans-unit id="PRINCIPLE_SOLID" datatype="html">
-        <source> I consider that it's worth following SOLID principles, because it helps to write reliable and reusable code. The most important ones I consider "Single Responsibility" and "Open-Closed" principles. </source><target state="translated"> Я считаю что SOLID принципов стоит придерживаться. Самые важные из них я считаю принципы "Единственной ответственности" и "Открытости-закрытости"</target>
+        <source> I consider that it's worth following SOLID principles, because it helps to write reliable and reusable code. The most important ones I consider "Single Responsibility" and "Open-Closed" principles. </source><target state="translated"> Я считаю что SOLID принципов стоит придерживаться. Самые важные из них я считаю принципы "Единственной ответственности" и "Открытости-закрытости" </target>
 
         <note priority="1" from="description">SOLID principles</note>
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/about-me/about-me.component.html</context><context context-type="linenumber">118</context></context-group></trans-unit><trans-unit id="PRINCIPLE_INHERITANCE" datatype="html">
