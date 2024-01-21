@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     private readonly win: Window,
     @Inject(DOCUMENT)
     private readonly document: Document,
-  ) { }
+  ) {}
 
   public ngOnInit(): void {
     setTimeout(() => {

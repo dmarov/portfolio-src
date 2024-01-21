@@ -382,7 +382,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit>
       <trans-unit id="PROJECT_KEMEROVO_MY_RESPONSIBILITIES" datatype="html">
         <source> I developed backend. </source>
-        <target> Я разрабатывал бэк-енд. </target>
+        <target state="translated"> Я разрабатывал бэкенд. </target>
         <note priority="1" from="description">Kemerovo what i did</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/kemerovo-website/kemerovo-website.component.html</context><context context-type="linenumber">29</context></context-group></trans-unit>
