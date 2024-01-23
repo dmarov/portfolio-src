@@ -24,6 +24,7 @@ describe("ScarlettAndMonarchCmsComponent", () => {
     const el = document.querySelector(
       '[data-test="scarlett-and-monarch-cms"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 });

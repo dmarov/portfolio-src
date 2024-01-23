@@ -27,6 +27,7 @@ describe("VmediaWebsiteComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(VmediaWebsiteTestComponent);
     fixture.detectChanges();
   });
@@ -35,6 +36,7 @@ describe("VmediaWebsiteComponent", () => {
     const el = document.querySelector(
       '[data-test="vmedia-website"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 

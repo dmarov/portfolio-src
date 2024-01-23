@@ -12,4 +12,8 @@ export class LanguageSwitchServiceMock extends LanguageSwitchService {
   public getPrefix(): string {
     return "";
   }
+
+  public getFullUrl(): string {
+    return "";
+  }
 }

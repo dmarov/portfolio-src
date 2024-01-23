@@ -30,12 +30,14 @@ describe("AboutMeComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(AboutMeTestComponent);
     fixture.detectChanges();
   });
 
   it("should have test attribute", () => {
     const el = document.querySelector('[data-test="about-me"]') as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 });

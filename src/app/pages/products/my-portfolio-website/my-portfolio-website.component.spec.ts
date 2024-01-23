@@ -26,6 +26,7 @@ describe("MyPortfolioWebsiteComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(MyPortfolioWebsiteTestComponent);
     fixture.detectChanges();
   });
@@ -34,6 +35,7 @@ describe("MyPortfolioWebsiteComponent", () => {
     const el = document.querySelector(
       '[data-test="my-portfolio-website"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 

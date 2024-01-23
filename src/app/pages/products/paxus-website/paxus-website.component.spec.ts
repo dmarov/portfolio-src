@@ -26,6 +26,7 @@ describe("PaxusWebsiteComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(PaxusWebsiteTestComponent);
     fixture.detectChanges();
   });
@@ -34,6 +35,7 @@ describe("PaxusWebsiteComponent", () => {
     const el = document.querySelector(
       '[data-test="paxus-website"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 

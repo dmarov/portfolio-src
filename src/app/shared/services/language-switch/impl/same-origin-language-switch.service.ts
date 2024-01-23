@@ -26,6 +26,10 @@ export class SameOriginLanguageSwitchService extends LanguageSwitchService {
     return this.mapping[language];
   }
 
+  public getFullUrl(language: LanguageType, essentialPath: string): string {
+    return `${this.mapping[language]}${essentialPath}`;
+  }
+
   private getEssentialPath(path: string): string {
     const pos = path.replace(/^\//, "").indexOf("/");
 

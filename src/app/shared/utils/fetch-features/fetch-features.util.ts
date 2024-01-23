@@ -8,8 +8,8 @@ export async function fetchFeatures(): Promise<Features> {
     const result = await response.text();
     const features = JSON.parse(result);
 
-    return { ...fallbackFeatures, ...features };
+    return Object.freeze({ ...fallbackFeatures, ...features });
   } catch (e) {
-    return fallbackFeatures;
+    return Object.freeze(fallbackFeatures);
   }
 }

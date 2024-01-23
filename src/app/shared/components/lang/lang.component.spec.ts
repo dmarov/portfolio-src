@@ -45,6 +45,7 @@ describe("LangComponent", () => {
 
   it("should have test attribute", () => {
     const el = document.querySelector('[data-test="lang"]') as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 });

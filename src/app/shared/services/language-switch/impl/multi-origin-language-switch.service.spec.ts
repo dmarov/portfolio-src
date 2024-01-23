@@ -61,4 +61,10 @@ describe("MultiOriginLanguageSwitchService", () => {
 
     expect(res).toEqual("/path-to-page#hash");
   });
+
+  it("should return full path", () => {
+    const res = service.getFullUrl(LanguageType.English, "/path-to-page");
+
+    expect(res).toEqual("https://en.origin.com/path-to-page");
+  });
 });

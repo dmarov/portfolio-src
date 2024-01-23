@@ -43,12 +43,14 @@ describe("HomeComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(HomeTestComponent);
     fixture.detectChanges();
   });
 
   it("should have test attribute", () => {
     const el = document.querySelector('[data-test="home"]') as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 

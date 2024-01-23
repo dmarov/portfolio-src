@@ -6,4 +6,9 @@ export abstract class LanguageSwitchService {
   public abstract getEssentialUrl(fullPath: string): string;
 
   public abstract getPrefix(language: LanguageType): string;
+
+  public abstract getFullUrl(
+    language: LanguageType,
+    essentialPath: string,
+  ): string;
 }

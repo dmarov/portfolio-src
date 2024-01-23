@@ -21,12 +21,14 @@ describe("NotFoundComponent", () => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
     });
+
     fixture = TestBed.createComponent(NotFoundTestComponent);
     fixture.detectChanges();
   });
 
   it("should have test attribute", () => {
     const el = document.querySelector('[data-test="not-found"]') as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 });

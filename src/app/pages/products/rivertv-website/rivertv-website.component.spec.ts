@@ -26,6 +26,7 @@ describe("RivertvWebsiteComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(RivertvWebsiteTestComponent);
     fixture.detectChanges();
   });
@@ -34,6 +35,7 @@ describe("RivertvWebsiteComponent", () => {
     const el = document.querySelector(
       '[data-test="rivertv-website"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 

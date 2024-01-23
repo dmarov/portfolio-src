@@ -26,6 +26,7 @@ describe("KemerovoWebsiteComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(KemerovoWebsiteTestComponent);
     fixture.detectChanges();
   });
@@ -34,6 +35,7 @@ describe("KemerovoWebsiteComponent", () => {
     const el = document.querySelector(
       '[data-test="kemerovo-website"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 

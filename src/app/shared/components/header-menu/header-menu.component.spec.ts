@@ -41,6 +41,7 @@ describe("MenuComponent", () => {
       ],
       imports: [NoopAnimationsModule, RouterTestingModule],
     });
+
     fixture = TestBed.createComponent(MenuTestComponent);
     fixture.detectChanges();
   });
@@ -49,6 +50,7 @@ describe("MenuComponent", () => {
     const el = document.querySelector(
       '[data-test="header-menu"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 });

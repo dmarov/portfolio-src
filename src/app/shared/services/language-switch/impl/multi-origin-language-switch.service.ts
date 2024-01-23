@@ -23,4 +23,8 @@ export class MultiOriginLanguageSwitchService extends LanguageSwitchService {
   public getPrefix(language: LanguageType): string {
     return this.mapping[language];
   }
+
+  public getFullUrl(language: LanguageType, essentialPath: string): string {
+    return `${this.mapping[language]}${essentialPath}`;
+  }
 }

@@ -11,16 +11,16 @@ import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
-import { Features } from "./app/models/features/features.class";
-import { fetchFeatures } from "./app/shared/utils/fetch-features/fetch-features.util";
-import { LanguageSwitchService } from "./app/shared/services/language-switch/language-switch.service";
+import { Features } from "@/app/models/features/features.class";
+import { fetchFeatures } from "@/app/shared/utils/fetch-features/fetch-features.util";
+import { LanguageSwitchService } from "@/app/shared/services/language-switch/language-switch.service";
 import {
   ENVIRONMENT,
   VISIT_TIME,
   WINDOW,
-} from "./app/shared/const/injection-tokens.const";
-import { languageSwitchServiceFactory } from "./app/shared/factories/language-switch-service.factory";
-import { trackingServiceFactory } from "./app/shared/factories/tracking-service.factory";
+} from "@/app/shared/const/injection-tokens.const";
+import { languageSwitchServiceFactory } from "@/app/shared/factories/language-switch-service.factory";
+import { trackingServiceFactory } from "@/app/shared/factories/tracking-service.factory";
 
 if (environment.production) {
   enableProdMode();
@@ -29,18 +29,18 @@ if (environment.production) {
 fetchFeatures().then((features) => {
   bootstrapApplication(AppComponent, {
     providers: [
+      provideRouter(routes),
+      importProvidersFrom([BrowserAnimationsModule]),
       {
-        provide: MenuService,
-        useClass: MenuServiceImpl,
+        provide: NG_SCROLLBAR_OPTIONS,
+        useValue: {
+          appearance: "standard",
+        },
       },
       {
         provide: TrackingService,
         useFactory: trackingServiceFactory,
         deps: [WINDOW, ENVIRONMENT],
-      },
-      {
-        provide: Features,
-        useValue: Object.freeze(features),
       },
       {
         provide: LanguageSwitchService,
@@ -56,16 +56,16 @@ fetchFeatures().then((features) => {
         useValue: environment,
       },
       {
+        provide: Features,
+        useValue: features,
+      },
+      {
+        provide: MenuService,
+        useClass: MenuServiceImpl,
+      },
+      {
         provide: VISIT_TIME,
         useValue: Date.now(),
-      },
-      provideRouter(routes),
-      importProvidersFrom([BrowserAnimationsModule]),
-      {
-        provide: NG_SCROLLBAR_OPTIONS,
-        useValue: {
-          appearance: "standard",
-        },
       },
     ],
   });

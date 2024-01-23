@@ -24,6 +24,7 @@ describe("RobotsMangoOfficeComponent", () => {
     const el = document.querySelector(
       '[data-test="robots-mango-office"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 });

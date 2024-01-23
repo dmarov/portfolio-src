@@ -46,12 +46,14 @@ describe("AppComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(AppTestComponent);
     fixture.detectChanges();
   });
 
   it("should have test attribute", () => {
     const el = document.querySelector('[data-test="app"]') as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 

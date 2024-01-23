@@ -27,6 +27,7 @@ describe("TrikWebsiteComponent", () => {
         },
       ],
     });
+
     fixture = TestBed.createComponent(TrikWebsiteTestComponent);
     fixture.detectChanges();
   });
@@ -35,6 +36,7 @@ describe("TrikWebsiteComponent", () => {
     const el = document.querySelector(
       '[data-test="trik-website"]',
     ) as HTMLElement;
+
     expect(el).toBeTruthy();
   });
 
