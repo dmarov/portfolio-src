@@ -19,7 +19,14 @@ import { WINDOW } from "../../const/injection-tokens.const";
   imports: [CommonModule],
 })
 export class LangComponent {
-  public readonly essentialUrl$: Observable<string>;
+  public readonly essentialUrl$ = this.router.events.pipe(
+    filter((e) => e instanceof NavigationEnd),
+    map(() => {
+      const url = new URL(this.window.location.href).toString();
+
+      return this.languageSwitchService.getEssentialUrl(url);
+    }),
+  );
 
   public readonly languages: ReadonlyArray<Language>;
 
@@ -30,44 +37,17 @@ export class LangComponent {
     @Inject(WINDOW)
     private readonly window: Window,
   ) {
-    this.essentialUrl$ = this.router.events.pipe(
-      filter((e) => e instanceof NavigationEnd),
-      map(() => {
-        const url = new URL(this.window.location.href).toString();
-
-        return this.languageSwitchService.getEssentialUrl(url);
-      }),
-    );
-
-    const initialFullUrl = new URL(this.window.location.href).toString();
-
     this.languages = [
-      {
-        text: "EN",
-        isActive: this.languageSwitchService.isActive(
-          initialFullUrl,
-          LanguageType.English,
-        ),
-        url$: this.essentialUrl$.pipe(
-          map((url) =>
-            this.languageSwitchService.getFullUrl(LanguageType.English, url),
-          ),
-        ),
-        trackingEvent: CustomTrackingEvent.SwitchEnClick,
-      },
-      {
-        text: "RU",
-        isActive: this.languageSwitchService.isActive(
-          initialFullUrl,
-          LanguageType.Russian,
-        ),
-        url$: this.essentialUrl$.pipe(
-          map((url) =>
-            this.languageSwitchService.getFullUrl(LanguageType.Russian, url),
-          ),
-        ),
-        trackingEvent: CustomTrackingEvent.SwitchRuClick,
-      },
+      this.createLanguage(
+        "EN",
+        LanguageType.English,
+        CustomTrackingEvent.SwitchEnClick,
+      ),
+      this.createLanguage(
+        "RU",
+        LanguageType.Russian,
+        CustomTrackingEvent.SwitchRuClick,
+      ),
     ];
   }
 
@@ -78,5 +58,22 @@ export class LangComponent {
     event.preventDefault();
     await this.tracking.sendCustomEvent(lang.trackingEvent, {});
     this.window.location.href = (event.target as HTMLAnchorElement).href;
+  }
+
+  private createLanguage(
+    name: string,
+    type: LanguageType,
+    event: CustomTrackingEvent,
+  ): Language {
+    const initialFullUrl = new URL(this.window.location.href).toString();
+
+    return {
+      text: name,
+      isActive: this.languageSwitchService.isActive(initialFullUrl, type),
+      url$: this.essentialUrl$.pipe(
+        map((url) => this.languageSwitchService.getFullUrl(type, url)),
+      ),
+      trackingEvent: event,
+    };
   }
 }
