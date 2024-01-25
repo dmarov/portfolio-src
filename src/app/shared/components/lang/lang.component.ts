@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
-import { Observable } from "rxjs";
 import { filter, map } from "rxjs/operators";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { Language } from "@/app/models/lang/language.interface";
