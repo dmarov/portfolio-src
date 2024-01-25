@@ -27,7 +27,18 @@ export class LangComponent {
     }),
   );
 
-  public readonly languages: ReadonlyArray<Language>;
+  public readonly languages: ReadonlyArray<Language> = [
+    this.createLanguage(
+      "EN",
+      LanguageType.English,
+      CustomTrackingEvent.SwitchEnClick,
+    ),
+    this.createLanguage(
+      "RU",
+      LanguageType.Russian,
+      CustomTrackingEvent.SwitchRuClick,
+    ),
+  ];
 
   public constructor(
     private readonly router: Router,
@@ -35,20 +46,7 @@ export class LangComponent {
     private readonly languageSwitchService: LanguageSwitchService,
     @Inject(WINDOW)
     private readonly window: Window,
-  ) {
-    this.languages = [
-      this.createLanguage(
-        "EN",
-        LanguageType.English,
-        CustomTrackingEvent.SwitchEnClick,
-      ),
-      this.createLanguage(
-        "RU",
-        LanguageType.Russian,
-        CustomTrackingEvent.SwitchRuClick,
-      ),
-    ];
-  }
+  ) {}
 
   public async onLanguageSwitchClick(
     event: Event,
