@@ -19,58 +19,56 @@ import { WINDOW } from "../../const/injection-tokens.const";
   imports: [CommonModule],
 })
 export class LangComponent {
+  public readonly essentialUrl$: Observable<string>;
+
   public readonly languages: ReadonlyArray<Language>;
-
-  public readonly activeLang: Language | null;
-
-  public readonly path$: Observable<string>;
 
   public constructor(
     private readonly router: Router,
     private readonly tracking: TrackingService,
-    private readonly languageSwitch: LanguageSwitchService,
+    private readonly languageSwitchService: LanguageSwitchService,
     @Inject(WINDOW)
     private readonly window: Window,
   ) {
-    this.path$ = this.router.events.pipe(
+    this.essentialUrl$ = this.router.events.pipe(
       filter((e) => e instanceof NavigationEnd),
       map(() => {
         const url = new URL(this.window.location.href).toString();
 
-        return this.languageSwitch.getEssentialUrl(url);
+        return this.languageSwitchService.getEssentialUrl(url);
       }),
     );
 
+    const initialFullUrl = new URL(this.window.location.href).toString();
+
     this.languages = [
       {
-        type: LanguageType.English,
-        url$: this.path$.pipe(
-          map((path) =>
-            this.languageSwitch.getFullUrl(LanguageType.English, path),
+        text: "EN",
+        isActive: this.languageSwitchService.isActive(
+          initialFullUrl,
+          LanguageType.English,
+        ),
+        url$: this.essentialUrl$.pipe(
+          map((url) =>
+            this.languageSwitchService.getFullUrl(LanguageType.English, url),
           ),
         ),
-        text: "EN",
         trackingEvent: CustomTrackingEvent.SwitchEnClick,
       },
       {
-        type: LanguageType.Russian,
-        url$: this.path$.pipe(
-          map((path) =>
-            this.languageSwitch.getFullUrl(LanguageType.Russian, path),
+        text: "RU",
+        isActive: this.languageSwitchService.isActive(
+          initialFullUrl,
+          LanguageType.Russian,
+        ),
+        url$: this.essentialUrl$.pipe(
+          map((url) =>
+            this.languageSwitchService.getFullUrl(LanguageType.Russian, url),
           ),
         ),
-        text: "RU",
         trackingEvent: CustomTrackingEvent.SwitchRuClick,
       },
     ];
-
-    const fullUrl = new URL(this.window.location.href).toString();
-
-    const activeMatch = this.languages.find((l) =>
-      this.languageSwitch.isActive(fullUrl, l.type),
-    );
-
-    this.activeLang = activeMatch ?? null;
   }
 
   public async onLanguageSwitchClick(

@@ -2,7 +2,7 @@
   <li
     *ngFor="let lang of languages"
     class="lang__entry"
-    [ngClass]="{ lang__entry_active: lang === activeLang }"
+    [ngClass]="{ lang__entry_active: lang.isActive }"
   >
     <a
       class="lang__link"

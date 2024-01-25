@@ -22,8 +22,8 @@ export class SameOriginLanguageSwitchService extends LanguageSwitchService {
     return `${path}${url.search}${url.hash}`;
   }
 
-  public getFullUrl(language: LanguageType, essentialPath: string): string {
-    return `${this.mapping[language]}${essentialPath}`;
+  public getFullUrl(language: LanguageType, essentialUrl: string): string {
+    return `${this.mapping[language]}${essentialUrl}`;
   }
 
   private getEssentialPath(path: string): string {
