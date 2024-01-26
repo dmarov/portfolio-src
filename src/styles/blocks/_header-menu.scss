@@ -1,13 +1,13 @@
 @use "shared/colors";
 @use "shared/mixins";
 
-.header-mobile-menu {
+.header-menu {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: stretch;
   flex-grow: 1;
   padding-top: 6px;
@@ -49,7 +49,7 @@
     justify-content: stretch;
 
     &_active {
-      .header-mobile-menu__link {
+      .header-menu__link {
 
         &:link,
         &:active,

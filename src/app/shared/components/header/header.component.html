@@ -18,10 +18,19 @@
           </a>
         </div>
 
-        <app-header-mobile-menu class="header__menu"></app-header-mobile-menu>
+        <app-header-mobile-menu
+          *ngIf="(isDesktop$ | async) === false; else desktopBlock"
+          class="header__menu"
+        ></app-header-mobile-menu>
+        <ng-template #desktopBlock>
+          <app-header-desktop-menu
+            class="header__menu"
+          ></app-header-desktop-menu>
+        </ng-template>
 
         <div class="header__side">
           <app-burger
+            *ngIf="(isDesktop$ | async) === false"
             [opened]="(isMenuOpened$ | async) ?? false"
             (openedChange)="toggleMenuOpened()"
           ></app-burger>

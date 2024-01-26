@@ -1,12 +1,12 @@
-import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { Observable } from "rxjs";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { HeaderMobileMenuComponent } from "../header-mobile-menu/header-mobile-menu.component";
+import { HeaderDesktopMenuComponent } from "../header-desktop-menu/header-desktop-menu.component";
 
 @Component({
   selector: "app-header",
@@ -17,21 +17,20 @@ import { HeaderMobileMenuComponent } from "../header-mobile-menu/header-mobile-m
   imports: [
     CommonModule,
     HeaderMobileMenuComponent,
+    HeaderDesktopMenuComponent,
     LangComponent,
     BurgerComponent,
   ],
 })
-export class HeaderComponent implements OnInit {
-  public isMenuOpened$!: Observable<boolean>;
+export class HeaderComponent {
+  public readonly isMenuOpened$ = this.menuService.menuVisible$;
+
+  public readonly isDesktop$ = this.menuService.isDesktop$;
 
   public constructor(
     private readonly menuService: MenuService,
     private readonly tracking: TrackingService,
   ) { }
-
-  public ngOnInit(): void {
-    this.isMenuOpened$ = this.menuService.menuVisible$;
-  }
 
   public toggleMenuOpened(): void {
     this.menuService.toggle();

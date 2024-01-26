@@ -11,7 +11,7 @@ import { AboutMeComponent } from "./about-me.component";
   template: "<app-about-me></app-about-me>",
   imports: [AboutMeComponent],
 })
-export class AboutMeTestComponent {}
+export class AboutMeTestComponent { }
 
 describe("AboutMeComponent", () => {
   let fixture: ComponentFixture<AboutMeTestComponent>;
@@ -19,6 +19,7 @@ describe("AboutMeComponent", () => {
 
   const mockFeatures: Features = {
     SHOW_WHAT_I_STAND_FOR: true,
+    RESPONSIVE_MENU_ENABLED: false,
   };
 
   beforeEach(() => {

@@ -17,10 +17,10 @@ import { HeaderMobileMenuComponent } from "./header-mobile-menu.component";
   template: "<app-header-mobile-menu></app-header-mobile-menu>",
   imports: [HeaderMobileMenuComponent],
 })
-export class MenuTestComponent { }
+export class HeaderMobileMenuTestComponent { }
 
-describe("MenuComponent", () => {
-  let fixture: ComponentFixture<MenuTestComponent>;
+describe("HeaderMobileMenuComponent", () => {
+  let fixture: ComponentFixture<HeaderMobileMenuTestComponent>;
   mockIntersectionObserver();
 
   beforeEach(() => {
@@ -42,7 +42,7 @@ describe("MenuComponent", () => {
       imports: [NoopAnimationsModule, RouterTestingModule],
     });
 
-    fixture = TestBed.createComponent(MenuTestComponent);
+    fixture = TestBed.createComponent(HeaderMobileMenuTestComponent);
     fixture.detectChanges();
   });
 

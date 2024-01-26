@@ -3,6 +3,7 @@ import { filter } from "rxjs/operators";
 import {
   ChangeDetectionStrategy,
   Component,
+  HostListener,
   Inject,
   OnInit,
   ViewChild,
@@ -13,6 +14,7 @@ import { HeaderComponent } from "./shared/components/header/header.component";
 import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
 import { TrackingService } from "./shared/services/tracking/tracking.service";
 import { WINDOW } from "./shared/const/injection-tokens.const";
+import { MenuService } from "./shared/services/menu/menu.service";
 
 @Component({
   selector: "app-root",
@@ -33,9 +35,17 @@ export class AppComponent implements OnInit {
     private readonly win: Window,
     @Inject(DOCUMENT)
     private readonly document: Document,
-  ) {}
+    private readonly menuService: MenuService,
+  ) { }
+
+  @HostListener("window:resize", ["$event"])
+  public onResize(event: Event): void {
+    this.setWindowWidth(event.target as Window);
+  }
 
   public ngOnInit(): void {
+    this.setWindowWidth(this.win);
+
     setTimeout(() => {
       this.autoScroll();
 
@@ -78,5 +88,9 @@ export class AppComponent implements OnInit {
         target.scrollIntoView();
       }
     });
+  }
+
+  private setWindowWidth(win: Window): void {
+    this.menuService.setWindowWidth(win.innerWidth);
   }
 }
