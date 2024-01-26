@@ -21,14 +21,14 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
 })
 export class MyPortfolioWebsiteComponent implements AfterViewInit {
   @ViewChild("container", { static: true })
-  public readonly container!: ElementRef<HTMLTextAreaElement>;
+  public readonly container!: ElementRef<HTMLDivElement>;
 
   public styleTransform = "";
 
   public constructor(
     private readonly cdr: ChangeDetectorRef,
     private readonly tracking: TrackingService,
-  ) {}
+  ) { }
 
   public ngAfterViewInit(): void {
     setTimeout(() => {

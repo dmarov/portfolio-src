@@ -6,7 +6,7 @@ import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
-import { HeaderMenuComponent } from "../header-menu/header-menu.component";
+import { HeaderMobileMenuComponent } from "../header-mobile-menu/header-mobile-menu.component";
 
 @Component({
   selector: "app-header",
@@ -14,7 +14,12 @@ import { HeaderMenuComponent } from "../header-menu/header-menu.component";
   styleUrls: ["./header.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [CommonModule, HeaderMenuComponent, LangComponent, BurgerComponent],
+  imports: [
+    CommonModule,
+    HeaderMobileMenuComponent,
+    LangComponent,
+    BurgerComponent,
+  ],
 })
 export class HeaderComponent implements OnInit {
   public isMenuOpened$!: Observable<boolean>;
@@ -22,7 +27,7 @@ export class HeaderComponent implements OnInit {
   public constructor(
     private readonly menuService: MenuService,
     private readonly tracking: TrackingService,
-  ) {}
+  ) { }
 
   public ngOnInit(): void {
     this.isMenuOpened$ = this.menuService.menuVisible$;

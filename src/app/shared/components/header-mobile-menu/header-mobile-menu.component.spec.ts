@@ -8,16 +8,16 @@ import { MenuService } from "../../services/menu/menu.service";
 import { MenuServiceMock } from "../../services/menu/menu.service.mock";
 import { TrackingService } from "../../services/tracking/tracking.service";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
-import { HeaderMenuComponent } from "./header-menu.component";
+import { HeaderMobileMenuComponent } from "./header-mobile-menu.component";
 
 @Component({
-  selector: "app-menu-test",
+  selector: "app-header-mobile-menu-test",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: "<app-header-menu></app-header-menu>",
-  imports: [HeaderMenuComponent],
+  template: "<app-header-mobile-menu></app-header-mobile-menu>",
+  imports: [HeaderMobileMenuComponent],
 })
-export class MenuTestComponent {}
+export class MenuTestComponent { }
 
 describe("MenuComponent", () => {
   let fixture: ComponentFixture<MenuTestComponent>;
@@ -48,7 +48,7 @@ describe("MenuComponent", () => {
 
   it("should have test attribute", () => {
     const el = document.querySelector(
-      '[data-test="header-menu"]',
+      '[data-test="header-mobile-menu"]',
     ) as HTMLElement;
 
     expect(el).toBeTruthy();

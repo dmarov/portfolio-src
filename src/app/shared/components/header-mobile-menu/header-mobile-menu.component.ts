@@ -2,20 +2,20 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
-import { height } from "@/app/shared/animations/height";
+import { heightAnimation } from "@/app/shared/animations/height.animation";
 import { MenuEntry } from "@/app/models/menu/menu-entry.interface";
 import { RoutePath } from "@/app/models/routing/route-path.enum";
 
 @Component({
-  selector: "app-header-menu",
-  templateUrl: "./header-menu.component.html",
-  styleUrls: ["./header-menu.component.scss"],
+  selector: "app-header-mobile-menu",
+  templateUrl: "./header-mobile-menu.component.html",
+  styleUrls: ["./header-mobile-menu.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CommonModule, RouterModule],
-  animations: [height],
+  animations: [heightAnimation],
 })
-export class HeaderMenuComponent {
+export class HeaderMobileMenuComponent {
   public readonly isMenuOpen$ = this.menuService.menuVisible$;
 
   public readonly menuEntries: ReadonlyArray<MenuEntry> = [
@@ -36,7 +36,7 @@ export class HeaderMenuComponent {
     },
   ];
 
-  public constructor(private readonly menuService: MenuService) {}
+  public constructor(private readonly menuService: MenuService) { }
 
   public onLinkClick(event: Event, isActive: boolean): void {
     if (isActive) {

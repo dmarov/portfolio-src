@@ -1,0 +1,18 @@
+<ul class="header-mobile-menu" data-test="header-mobile-menu">
+  <li
+    *ngFor="let menuEntry of menuEntries"
+    class="header-mobile-menu__entry"
+    routerLinkActive="header-mobile-menu__entry_active"
+    #rla="routerLinkActive"
+    [routerLinkActiveOptions]="{ exact: menuEntry.exact }"
+    [@heightAnimation]="
+      rla.isActive ? 'in' : (isMenuOpen$ | async) ? 'in' : 'out'
+    "
+  >
+    <a class="header-mobile-menu__link" [routerLink]="menuEntry.href">
+      <div (click)="onLinkClick($event, rla.isActive)">
+        {{ menuEntry.title }}
+      </div>
+    </a>
+  </li>
+</ul>

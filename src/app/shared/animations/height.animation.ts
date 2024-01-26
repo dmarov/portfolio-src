@@ -6,7 +6,7 @@ import {
   transition,
 } from "@angular/animations";
 
-export const height = trigger("slideInOut", [
+export const heightAnimation = trigger("heightAnimation", [
   state(
     "in",
     style({
