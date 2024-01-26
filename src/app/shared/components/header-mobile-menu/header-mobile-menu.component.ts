@@ -19,7 +19,7 @@ export class HeaderMobileMenuComponent {
 
   public readonly menuEntries = menuEntries;
 
-  public constructor(private readonly menuService: MenuService) { }
+  public constructor(private readonly menuService: MenuService) {}
 
   public onLinkClick(event: Event, isActive: boolean): void {
     if (isActive) {

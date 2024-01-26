@@ -11,7 +11,7 @@ import { AboutMeComponent } from "./about-me.component";
   template: "<app-about-me></app-about-me>",
   imports: [AboutMeComponent],
 })
-export class AboutMeTestComponent { }
+export class AboutMeTestComponent {}
 
 describe("AboutMeComponent", () => {
   let fixture: ComponentFixture<AboutMeTestComponent>;

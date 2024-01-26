@@ -30,7 +30,7 @@ export class HeaderComponent {
   public constructor(
     private readonly menuService: MenuService,
     private readonly tracking: TrackingService,
-  ) { }
+  ) {}
 
   public toggleMenuOpened(): void {
     this.menuService.toggle();

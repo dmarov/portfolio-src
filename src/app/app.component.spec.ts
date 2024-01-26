@@ -19,7 +19,7 @@ import { TrackingServiceMock } from "./shared/services/tracking/tracking.service
   template: "<app-root></app-root>",
   imports: [AppComponent],
 })
-export class AppTestComponent { }
+export class AppTestComponent {}
 
 describe("AppComponent", () => {
   let fixture: ComponentFixture<AppTestComponent>;

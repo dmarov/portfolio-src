@@ -11,7 +11,7 @@ import { HeaderDesktopMenuComponent } from "./header-desktop-menu.component";
   template: "<app-header-desktop-menu></app-header-desktop-menu>",
   imports: [HeaderDesktopMenuComponent],
 })
-export class HeaderDesktopMenuTestComponent { }
+export class HeaderDesktopMenuTestComponent {}
 
 describe("HeaderDesktopMenuComponent", () => {
   let fixture: ComponentFixture<HeaderDesktopMenuTestComponent>;

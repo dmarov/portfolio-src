@@ -19,7 +19,7 @@ import { WINDOW } from "../../const/injection-tokens.const";
   imports: [HeaderComponent],
   template: `<app-header></app-header>`,
 })
-export class HeaderTestComponent { }
+export class HeaderTestComponent {}
 describe("HeaderComponent", () => {
   let fixture: ComponentFixture<HeaderTestComponent>;
 

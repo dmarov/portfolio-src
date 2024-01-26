@@ -17,7 +17,7 @@ import { HeaderMobileMenuComponent } from "./header-mobile-menu.component";
   template: "<app-header-mobile-menu></app-header-mobile-menu>",
   imports: [HeaderMobileMenuComponent],
 })
-export class HeaderMobileMenuTestComponent { }
+export class HeaderMobileMenuTestComponent {}
 
 describe("HeaderMobileMenuComponent", () => {
   let fixture: ComponentFixture<HeaderMobileMenuTestComponent>;

@@ -28,7 +28,7 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
   public constructor(
     private readonly cdr: ChangeDetectorRef,
     private readonly tracking: TrackingService,
-  ) { }
+  ) {}
 
   public ngAfterViewInit(): void {
     setTimeout(() => {

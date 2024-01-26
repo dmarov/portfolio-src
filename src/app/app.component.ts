@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     @Inject(DOCUMENT)
     private readonly document: Document,
     private readonly menuService: MenuService,
-  ) { }
+  ) {}
 
   @HostListener("window:resize", ["$event"])
   public onResize(event: Event): void {
