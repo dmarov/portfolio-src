@@ -288,7 +288,7 @@
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">4</context></context-group></trans-unit>
       <trans-unit id="PROJECT_VMEDIA_DOES" datatype="html">
         <source> Apart from internet it also offers services such as cable-free TV, home phone and home security. The website is online shop where such services can acquired and managed. </source>
-        <target> Кроме интернета также предоставляет сервисы такие как безпроводное TV, домашняя телефония и системы охраны дома. Вебсайт представляет собой онлайн магазин где эти сервисы можно купить и управлять ими. </target>
+        <target> Кроме интернета также предоставляет сервисы такие как беспроводное TV, домашняя телефония и системы охраны дома. Вебсайт представляет собой онлайн магазин где эти сервисы можно купить и управлять ими. </target>
         <note priority="1" from="description">VMedia does</note>
 
       <context-group purpose="location"><context context-type="sourcefile">src/app/pages/products/vmedia-website/vmedia-website.component.html</context><context context-type="linenumber">8</context></context-group></trans-unit>
