@@ -6,10 +6,6 @@
   border-bottom: colors.col("content-background") 3px solid;
   align-items: flex-start;
 
-  &:hover {
-    background-color: colors.col("content-background");
-  }
-
   &__content {
     flex-grow: 1;
     position: relative;

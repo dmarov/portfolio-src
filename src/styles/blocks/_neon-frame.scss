@@ -31,21 +31,18 @@
   &_theme {
     &_green {
       &::after {
-        box-shadow: 0 0 5px colors.col("neon-green");
         border: 1px solid colors.col("neon-green");
       }
     }
 
     &_orange {
       &::after {
-        box-shadow: 0 0 5px colors.col("neon-orange");
         border: 1px solid colors.col("neon-orange");
       }
     }
 
     &_white {
       &::after {
-        box-shadow: 0 0 5px colors.col("neon-white");
         border: 1px solid colors.col("neon-white");
       }
     }
