@@ -1,6 +1,7 @@
 ## TODO:
 
 - fix menu for desktop
+- feedback
 - add footer menu
 - images lazy loading
 - fold menu on click outside

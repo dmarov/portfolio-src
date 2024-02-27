@@ -22,6 +22,7 @@
           *ngIf="(isDesktop$ | async) === false; else desktopBlock"
           class="header__menu"
         ></app-header-mobile-menu>
+
         <ng-template #desktopBlock>
           <app-header-desktop-menu
             class="header__menu"
