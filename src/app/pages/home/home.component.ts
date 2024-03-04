@@ -4,7 +4,6 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { RoutePath } from "@/app/models/routing/route-path.enum";
@@ -33,7 +32,6 @@ export class HomeComponent implements AfterViewInit {
 
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
-    InViewEffect.init();
   }
 
   public onMoreProductsClick(): void {

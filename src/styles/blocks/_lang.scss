@@ -6,6 +6,7 @@
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
+  min-height: 40px;
 
   &__entry_active {
     display: none;
@@ -21,6 +22,8 @@
     text-transform: uppercase;
     color: colors.col("text");
     transition: color 0.3s linear;
+    display: block;
+    height: 100%;
 
     &:hover {
       color: colors.col("inactive-route-hover-link");

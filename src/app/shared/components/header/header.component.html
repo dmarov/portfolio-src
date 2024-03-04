@@ -2,7 +2,10 @@
   <div class="content-wrapper">
     <div class="content">
       <div class="header__content">
-        <div class="header__side header__side_logo">
+        <div
+          *ngIf="(isDesktop$ | async) === false"
+          class="header__side header__side_logo"
+        >
           <a
             data-test="header-github-icon"
             href="https://github.com/dmarov"
@@ -29,12 +32,31 @@
           ></app-header-desktop-menu>
         </ng-template>
 
-        <div class="header__side">
+        <div
+          class="header__side"
+          [ngClass]="{ header__side_desktop: (isDesktop$ | async) === true }"
+        >
           <app-burger
-            *ngIf="(isDesktop$ | async) === false"
+            *ngIf="(isDesktop$ | async) === false; else githubLogoBlock"
             [opened]="(isMenuOpened$ | async) ?? false"
             (openedChange)="toggleMenuOpened()"
           ></app-burger>
+
+          <ng-template #githubLogoBlock>
+            <a
+              data-test="header-github-icon"
+              href="https://github.com/dmarov"
+              target="_blank"
+              class="header__github-wrapper"
+              (click)="onVisitGithubHeaderClick()"
+            >
+              <img
+                class="header__github"
+                alt="Github"
+                src="assets/images/github.png?v=1"
+              />
+            </a>
+          </ng-template>
 
           <app-lang></app-lang>
         </div>

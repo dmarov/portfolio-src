@@ -4,7 +4,6 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { RobotsMangoOfficeComponent } from "./robots-mango-office/robots-mango-office.component";
 import { RivertvWebsiteComponent } from "./rivertv-website/rivertv-website.component";
@@ -25,8 +24,6 @@ import { Product } from "@/app/models/products/product.interface";
   imports: [CommonModule],
 })
 export class ProductsComponent implements AfterViewInit {
-  public readonly colors = ["green", "orange", "white"];
-
   public readonly products: ReadonlyArray<Product> = [
     {
       id: "robots",
@@ -64,6 +61,5 @@ export class ProductsComponent implements AfterViewInit {
 
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
-    InViewEffect.init();
   }
 }

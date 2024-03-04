@@ -4,7 +4,6 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { InViewEffect } from "@/app/shared/utils/inview-effect/inview-effect";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
 import { Features } from "@/app/models/features/features.class";
 
@@ -23,6 +22,5 @@ export class AboutMeComponent implements AfterViewInit {
 
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
-    InViewEffect.init();
   }
 }

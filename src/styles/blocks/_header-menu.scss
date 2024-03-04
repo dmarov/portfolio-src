@@ -12,6 +12,10 @@
   flex-grow: 1;
   padding-top: 6px;
 
+  &_desktop {
+    flex-flow: row;
+  }
+
   @include mixins.respond-to("small") {
     padding-top: 0;
   }
@@ -19,16 +23,16 @@
   &__link {
     text-decoration: none;
     text-transform: uppercase;
-    padding: 5px 20px;
     font-size: 1.25rem;
     flex-grow: 1;
     text-align: center;
-    transition: color 0.3s linear;
     line-height: 1;
     display: block;
+    padding: 5px 10px;
 
     @include mixins.respond-to("small") {
       font-size: 1.875rem;
+      padding: 5px 20px;
     }
 
     &:link,

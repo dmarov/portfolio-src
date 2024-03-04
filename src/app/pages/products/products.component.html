@@ -6,10 +6,7 @@
     <div class="fragment" [id]="product.id"></div>
 
     <div class="content">
-      <section
-        [ngClass]="'neon-frame_theme_' + colors[index % 3]"
-        class="neon-frame unfold unfold_hidden inview inview_not"
-      >
+      <section class="neon-frame unfold unfold_hidden">
         <ng-container *ngComponentOutlet="product.component"></ng-container>
       </section>
     </div>
