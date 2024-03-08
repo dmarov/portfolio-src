@@ -1,6 +1,7 @@
 import { CommonModule, DOCUMENT } from "@angular/common";
 import { filter } from "rxjs/operators";
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   HostListener,
@@ -24,7 +25,7 @@ import { MenuService } from "./shared/services/menu/menu.service";
   standalone: true,
   imports: [RouterModule, CommonModule, HeaderComponent, NgScrollbarModule],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild(NgScrollbar)
   public readonly scrollbarRef!: NgScrollbar;
 
@@ -38,14 +39,16 @@ export class AppComponent implements OnInit {
     private readonly menuService: MenuService,
   ) {}
 
-  @HostListener("window:resize", ["$event"])
-  public onResize(event: Event): void {
-    this.setWindowWidth(event.target as Window);
+  @HostListener("window:resize")
+  public onResize(): void {
+    this.setWindowWidth();
   }
 
   public ngOnInit(): void {
-    this.setWindowWidth(this.win);
+    this.setWindowWidth();
+  }
 
+  public ngAfterViewInit(): void {
     setTimeout(() => {
       this.autoScroll();
 
@@ -90,7 +93,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  private setWindowWidth(win: Window): void {
-    this.menuService.setWindowWidth(win.innerWidth);
+  private setWindowWidth(): void {
+    this.menuService.setWindowWidth(this.win.innerWidth);
   }
 }
