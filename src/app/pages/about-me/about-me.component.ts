@@ -5,7 +5,6 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
-import { Features } from "@/app/models/features/features.class";
 
 @Component({
   selector: "app-about-me",
@@ -16,10 +15,6 @@ import { Features } from "@/app/models/features/features.class";
   imports: [CommonModule],
 })
 export class AboutMeComponent implements AfterViewInit {
-  public readonly showWhatIStandFor = this.features.SHOW_WHAT_I_STAND_FOR;
-
-  public constructor(private readonly features: Features) {}
-
   public ngAfterViewInit(): void {
     UnfoldEffect.init();
   }
