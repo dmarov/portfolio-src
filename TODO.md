@@ -1,5 +1,7 @@
 ## TODO:
 
+- update robots
+- make scalable images
 - feedback
 - add footer menu
 - images lazy loading
