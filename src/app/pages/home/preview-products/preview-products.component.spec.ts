@@ -2,10 +2,10 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { PreviewProductsComponent } from "./preview-products.component";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-preview-products-test",
@@ -25,7 +25,7 @@ describe("PreviewProductsComponent", () => {
       imports: [RouterTestingModule],
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
       ],
@@ -42,7 +42,7 @@ describe("PreviewProductsComponent", () => {
   });
 
   it("should emit PreviewRobotsClick event on preview robots click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 
@@ -59,7 +59,7 @@ describe("PreviewProductsComponent", () => {
   });
 
   it("should emit PreviewRiverTvClick event on preview rivertv click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 
@@ -76,7 +76,7 @@ describe("PreviewProductsComponent", () => {
   });
 
   it("should emit PreviewVmediaClick event on preview vmedia click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 
@@ -93,7 +93,7 @@ describe("PreviewProductsComponent", () => {
   });
 
   it("should emit PreviewPaxusClick event on preview paxus click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 

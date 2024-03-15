@@ -10,12 +10,12 @@ import { AppComponent } from "@/app/app.component";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
 import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { Features } from "@/app/models/features/features.class";
 import { fetchFeatures } from "@/app/shared/utils/fetch-features/fetch-features.util";
-import { LanguageSwitchService } from "@/app/shared/services/language-switch/language-switch.service";
 import {
   ENVIRONMENT,
+  LANGUAGE_SWITCH,
+  TRACKING,
   VISIT_TIME,
   WINDOW,
 } from "@/app/shared/const/injection-tokens.const";
@@ -38,12 +38,12 @@ fetchFeatures().then((features) => {
         },
       },
       {
-        provide: TrackingService,
+        provide: TRACKING,
         useFactory: trackingServiceFactory,
         deps: [WINDOW, ENVIRONMENT],
       },
       {
-        provide: LanguageSwitchService,
+        provide: LANGUAGE_SWITCH,
         useFactory: languageSwitchServiceFactory,
         deps: [ENVIRONMENT],
       },

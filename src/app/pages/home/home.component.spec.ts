@@ -2,12 +2,12 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { HomeComponent } from "./home.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import {
   ENVIRONMENT,
+  TRACKING,
   VISIT_TIME,
 } from "@/app/shared/const/injection-tokens.const";
 import { mockEnvironment } from "@/environments/environment.mock";
@@ -30,7 +30,7 @@ describe("HomeComponent", () => {
       imports: [RouterTestingModule],
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
         {
@@ -55,7 +55,7 @@ describe("HomeComponent", () => {
   });
 
   it("should emit MoreProductsClick event on more products link click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 

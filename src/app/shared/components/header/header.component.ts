@@ -1,12 +1,13 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { HeaderMobileMenuComponent } from "../header-mobile-menu/header-mobile-menu.component";
 import { HeaderDesktopMenuComponent } from "../header-desktop-menu/header-desktop-menu.component";
+import { TRACKING } from "../../const/injection-tokens.const";
+import { TrackingInterface } from "../../services/tracking/tracking.interface";
 
 @Component({
   selector: "app-header",
@@ -29,7 +30,8 @@ export class HeaderComponent {
 
   public constructor(
     private readonly menuService: MenuService,
-    private readonly tracking: TrackingService,
+    @Inject(TRACKING)
+    private readonly tracking: TrackingInterface,
   ) {}
 
   public toggleMenuOpened(): void {

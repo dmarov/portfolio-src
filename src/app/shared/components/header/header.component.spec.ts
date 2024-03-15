@@ -5,12 +5,14 @@ import { RouterTestingModule } from "@angular/router/testing";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { MenuService } from "../../services/menu/menu.service";
 import { MenuServiceMock } from "../../services/menu/menu.service.mock";
-import { TrackingService } from "../../services/tracking/tracking.service";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { HeaderComponent } from "./header.component";
-import { LanguageSwitchService } from "../../services/language-switch/language-switch.service";
 import { LanguageSwitchServiceMock } from "../../services/language-switch/language-switch.service.mock";
-import { WINDOW } from "../../const/injection-tokens.const";
+import {
+  LANGUAGE_SWITCH,
+  TRACKING,
+  WINDOW,
+} from "../../const/injection-tokens.const";
 
 @Component({
   selector: "app-header-test",
@@ -32,11 +34,11 @@ describe("HeaderComponent", () => {
           useClass: MenuServiceMock,
         },
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
         {
-          provide: LanguageSwitchService,
+          provide: LANGUAGE_SWITCH,
           useClass: LanguageSwitchServiceMock,
         },
         {
@@ -57,7 +59,7 @@ describe("HeaderComponent", () => {
   });
 
   it("should emit VisitGithubHeaderClick event on github icon click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 

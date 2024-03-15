@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { ProductsComponent } from "./products.component";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-products-test",
@@ -22,7 +22,7 @@ describe("ProductsComponent", () => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
       ],

@@ -1,12 +1,12 @@
 import { LanguageType } from "@/app/models/lang/language-type.enum";
-import { LanguageSwitchService } from "../language-switch.service";
+import { LanguageSwitchInterface } from "../language-switch.service";
 
 type PrefixMapping = { [key in LanguageType]: string };
 
-export class SameOriginLanguageSwitchService extends LanguageSwitchService {
-  public constructor(private readonly mapping: PrefixMapping) {
-    super();
-  }
+export class SameOriginLanguageSwitchService
+  implements LanguageSwitchInterface
+{
+  public constructor(private readonly mapping: PrefixMapping) {}
 
   public isActive(fullPath: string, language: LanguageType): boolean {
     const url = new URL(fullPath);

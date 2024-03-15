@@ -4,12 +4,14 @@ import {
   ChangeDetectorRef,
   Component,
   ElementRef,
+  Inject,
   ViewChild,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import ResizeObserver from "resize-observer-polyfill";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { TrackingInterface } from "@/app/shared/services/tracking/tracking.interface";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-my-portfolio-website",
@@ -27,7 +29,8 @@ export class MyPortfolioWebsiteComponent implements AfterViewInit {
 
   public constructor(
     private readonly cdr: ChangeDetectorRef,
-    private readonly tracking: TrackingService,
+    @Inject(TRACKING)
+    private readonly tracking: TrackingInterface,
   ) {}
 
   public ngAfterViewInit(): void {

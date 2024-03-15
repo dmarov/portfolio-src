@@ -1,14 +1,12 @@
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TrackingService } from "../tracking.service";
+import { TrackingInterface } from "./tracking.interface";
 
-export class YandexMetrikaTrackingService extends TrackingService {
+export class YandexMetrikaTrackingService implements TrackingInterface {
   public constructor(
     private readonly ym: Function,
     private readonly ymCounterId: number,
     private readonly timeout: number,
-  ) {
-    super();
-  }
+  ) {}
 
   public sendCustomEvent(
     eventName: CustomTrackingEvent,

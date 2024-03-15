@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { PaxusWebsiteComponent } from "./paxus-website.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-paxus-website-test",
@@ -21,7 +21,7 @@ describe("PaxusWebsiteComponent", () => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
       ],
@@ -40,7 +40,7 @@ describe("PaxusWebsiteComponent", () => {
   });
 
   it("should emit VisitPaxusWebsiteClick event on link click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 

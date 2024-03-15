@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RivertvWebsiteComponent } from "./rivertv-website.component";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-rivertv-website-test",
@@ -21,7 +21,7 @@ describe("RivertvWebsiteComponent", () => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
       ],
@@ -40,7 +40,7 @@ describe("RivertvWebsiteComponent", () => {
   });
 
   it("should emit VisitRiverTvWebsiteClick event on link click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 

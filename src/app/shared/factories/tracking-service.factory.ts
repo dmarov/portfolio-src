@@ -1,14 +1,14 @@
 import { AppEnvironment } from "@/app/models/app-environment.interface";
-import { CompositeTrackingService } from "../services/tracking/impl/composite-tracking.service";
-import { DebugTrackingService } from "../services/tracking/impl/debug-tracking.service";
-import { GoogleAnalyticsTrackingService } from "../services/tracking/impl/google-analytics-tracking.service";
-import { YandexMetrikaTrackingService } from "../services/tracking/impl/yandex-metrika-tracking.service";
-import { TrackingService } from "../services/tracking/tracking.service";
+import { CompositeTrackingService } from "../services/tracking/composite-tracking.service";
+import { DebugTrackingService } from "../services/tracking/debug-tracking.service";
+import { GoogleAnalyticsTrackingService } from "../services/tracking/google-analytics-tracking.service";
+import { TrackingInterface } from "../services/tracking/tracking.interface";
+import { YandexMetrikaTrackingService } from "../services/tracking/yandex-metrika-tracking.service";
 
 export const trackingServiceFactory = (
   win: Window,
   environment: AppEnvironment,
-): TrackingService => {
+): TrackingInterface => {
   if (environment.debugTracking) {
     return new DebugTrackingService();
   }

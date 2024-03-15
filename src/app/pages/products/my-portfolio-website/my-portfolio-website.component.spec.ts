@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { MyPortfolioWebsiteComponent } from "./my-portfolio-website.component";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-kemerovo-website-test",
@@ -21,7 +21,7 @@ describe("MyPortfolioWebsiteComponent", () => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
       ],
@@ -40,7 +40,7 @@ describe("MyPortfolioWebsiteComponent", () => {
   });
 
   it("should emit VisitMyPortfolioRepositoryClick event on repository link click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 

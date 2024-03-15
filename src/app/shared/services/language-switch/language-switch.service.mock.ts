@@ -1,6 +1,6 @@
-import { LanguageSwitchService } from "./language-switch.service";
+import { LanguageSwitchInterface } from "./language-switch.service";
 
-export class LanguageSwitchServiceMock extends LanguageSwitchService {
+export class LanguageSwitchServiceMock implements LanguageSwitchInterface {
   public isActive(): boolean {
     return true;
   }

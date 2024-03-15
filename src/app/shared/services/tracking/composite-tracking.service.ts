@@ -1,12 +1,10 @@
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TrackingService } from "../tracking.service";
+import { TrackingInterface } from "./tracking.interface";
 
-export class CompositeTrackingService extends TrackingService {
+export class CompositeTrackingService implements TrackingInterface {
   public constructor(
-    private readonly trackings: ReadonlyArray<TrackingService>,
-  ) {
-    super();
-  }
+    private readonly trackings: ReadonlyArray<TrackingInterface>,
+  ) {}
 
   public async sendCustomEvent(
     eventName: CustomTrackingEvent,

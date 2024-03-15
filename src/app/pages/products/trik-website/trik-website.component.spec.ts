@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { TrikWebsiteComponent } from "./trik-website.component";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-trik-website-test",
@@ -22,7 +22,7 @@ describe("TrikWebsiteComponent", () => {
       imports: [TrikWebsiteComponent],
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
       ],
@@ -41,7 +41,7 @@ describe("TrikWebsiteComponent", () => {
   });
 
   it("should emit VisitTrikWebsiteClick event on link click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 

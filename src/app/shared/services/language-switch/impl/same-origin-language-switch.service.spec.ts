@@ -1,16 +1,17 @@
 import { TestBed } from "@angular/core/testing";
 import { LanguageType } from "@/app/models/lang/language-type.enum";
-import { LanguageSwitchService } from "../language-switch.service";
+import { LanguageSwitchInterface } from "../language-switch.service";
 import { SameOriginLanguageSwitchService } from "./same-origin-language-switch.service";
+import { LANGUAGE_SWITCH } from "@/app/shared/const/injection-tokens.const";
 
 describe("MultiOriginLanguageSwitchService", () => {
-  let service: LanguageSwitchService;
+  let service: LanguageSwitchInterface;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: LanguageSwitchService,
+          provide: LANGUAGE_SWITCH,
           useValue: new SameOriginLanguageSwitchService({
             [LanguageType.English]: "/en",
             [LanguageType.Russian]: "/ru",
@@ -19,7 +20,7 @@ describe("MultiOriginLanguageSwitchService", () => {
       ],
     });
 
-    service = TestBed.inject(LanguageSwitchService);
+    service = TestBed.inject(LANGUAGE_SWITCH);
   });
 
   it("should return false if path doesn't match language", () => {

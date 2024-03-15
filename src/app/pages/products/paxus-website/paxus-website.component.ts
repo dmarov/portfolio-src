@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, Inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
+import { TrackingInterface } from "@/app/shared/services/tracking/tracking.interface";
 
 @Component({
   selector: "app-paxus-website",
@@ -12,7 +13,10 @@ import { TrackingService } from "@/app/shared/services/tracking/tracking.service
   imports: [CommonModule],
 })
 export class PaxusWebsiteComponent {
-  public constructor(private readonly tracking: TrackingService) {}
+  public constructor(
+    @Inject(TRACKING)
+    private readonly tracking: TrackingInterface,
+  ) {}
 
   public onVisitClick(): void {
     this.tracking.sendCustomEvent(

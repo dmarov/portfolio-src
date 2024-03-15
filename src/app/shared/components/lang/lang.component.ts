@@ -2,12 +2,16 @@ import { ChangeDetectionStrategy, Component, Inject } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { filter, map } from "rxjs/operators";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { Language } from "@/app/models/lang/language.interface";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { LanguageType } from "@/app/models/lang/language-type.enum";
-import { LanguageSwitchService } from "../../services/language-switch/language-switch.service";
-import { WINDOW } from "../../const/injection-tokens.const";
+import { LanguageSwitchInterface } from "../../services/language-switch/language-switch.service";
+import {
+  LANGUAGE_SWITCH,
+  TRACKING,
+  WINDOW,
+} from "../../const/injection-tokens.const";
+import { TrackingInterface } from "../../services/tracking/tracking.interface";
 
 @Component({
   selector: "app-lang",
@@ -42,8 +46,10 @@ export class LangComponent {
 
   public constructor(
     private readonly router: Router,
-    private readonly tracking: TrackingService,
-    private readonly languageSwitchService: LanguageSwitchService,
+    @Inject(TRACKING)
+    private readonly tracking: TrackingInterface,
+    @Inject(LANGUAGE_SWITCH)
+    private readonly languageSwitchService: LanguageSwitchInterface,
     @Inject(WINDOW)
     private readonly window: Window,
   ) {}

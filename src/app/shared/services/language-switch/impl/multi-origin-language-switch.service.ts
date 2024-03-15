@@ -1,12 +1,12 @@
 import { LanguageType } from "@/app/models/lang/language-type.enum";
-import { LanguageSwitchService } from "../language-switch.service";
+import { LanguageSwitchInterface } from "../language-switch.service";
 
 type OriginMapping = { [key in LanguageType]: string };
 
-export class MultiOriginLanguageSwitchService extends LanguageSwitchService {
-  public constructor(private readonly mapping: OriginMapping) {
-    super();
-  }
+export class MultiOriginLanguageSwitchService
+  implements LanguageSwitchInterface
+{
+  public constructor(private readonly mapping: OriginMapping) {}
 
   public isActive(fullPath: string, language: LanguageType): boolean {
     const url = new URL(fullPath);

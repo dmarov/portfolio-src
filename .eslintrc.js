@@ -40,14 +40,6 @@ module.exports = {
             allow: [""],
           },
         ],
-        "@typescript-eslint/indent": [
-          "error",
-          2,
-          {
-            ignoredNodes: ["PropertyDefinition[decorators]", "TSUnionType"],
-            SwitchCase: 1,
-          },
-        ],
         "class-methods-use-this": "off",
         "@typescript-eslint/no-explicit-any": "error",
         "import/extensions": [

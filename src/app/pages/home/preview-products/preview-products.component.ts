@@ -1,10 +1,11 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TrackingService } from "@/app/shared/services/tracking/tracking.service";
 import { ProductEntry } from "@/app/models/home/product-entry.interface";
 import { RoutePath } from "@/app/models/routing/route-path.enum";
+import { TRACKING } from "@/app/shared/const/injection-tokens.const";
+import { TrackingInterface } from "@/app/shared/services/tracking/tracking.interface";
 
 @Component({
   selector: "app-preview-products",
@@ -48,7 +49,10 @@ export class PreviewProductsComponent {
     },
   ];
 
-  public constructor(private readonly tracking: TrackingService) {}
+  public constructor(
+    @Inject(TRACKING)
+    private readonly tracking: TrackingInterface,
+  ) {}
 
   public onPreviewClick(event: CustomTrackingEvent): void {
     this.tracking.sendCustomEvent(event, {});

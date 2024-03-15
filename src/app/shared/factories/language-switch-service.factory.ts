@@ -2,11 +2,11 @@ import { AppEnvironment } from "@/app/models/app-environment.interface";
 import { LanguageType } from "@/app/models/lang/language-type.enum";
 import { MultiOriginLanguageSwitchService } from "../services/language-switch/impl/multi-origin-language-switch.service";
 import { SameOriginLanguageSwitchService } from "../services/language-switch/impl/same-origin-language-switch.service";
-import { LanguageSwitchService } from "../services/language-switch/language-switch.service";
+import { LanguageSwitchInterface } from "../services/language-switch/language-switch.service";
 
 export const languageSwitchServiceFactory = (
   environment: AppEnvironment,
-): LanguageSwitchService => {
+): LanguageSwitchInterface => {
   if (environment.languages.isMultiOrigin) {
     return new MultiOriginLanguageSwitchService({
       [LanguageType.English]: environment.languages.enOrigin,

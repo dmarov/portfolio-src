@@ -1,12 +1,9 @@
 import { LanguageType } from "@/app/models/lang/language-type.enum";
 
-export abstract class LanguageSwitchService {
-  public abstract isActive(fullPath: string, language: LanguageType): boolean;
+export interface LanguageSwitchInterface {
+  isActive(fullPath: string, language: LanguageType): boolean;
 
-  public abstract getEssentialUrl(fullPath: string): string;
+  getEssentialUrl(fullPath: string): string;
 
-  public abstract getFullUrl(
-    language: LanguageType,
-    essentialUrl: string,
-  ): string;
+  getFullUrl(language: LanguageType, essentialUrl: string): string;
 }

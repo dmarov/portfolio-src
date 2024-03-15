@@ -4,12 +4,14 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
 import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
-import { WINDOW } from "./shared/const/injection-tokens.const";
-import { LanguageSwitchService } from "./shared/services/language-switch/language-switch.service";
+import {
+  LANGUAGE_SWITCH,
+  TRACKING,
+  WINDOW,
+} from "./shared/const/injection-tokens.const";
 import { LanguageSwitchServiceMock } from "./shared/services/language-switch/language-switch.service.mock";
 import { MenuService } from "./shared/services/menu/menu.service";
 import { MenuServiceMock } from "./shared/services/menu/menu.service.mock";
-import { TrackingService } from "./shared/services/tracking/tracking.service";
 import { TrackingServiceMock } from "./shared/services/tracking/tracking.service.mock";
 
 @Component({
@@ -29,7 +31,7 @@ describe("AppComponent", () => {
       imports: [AppComponent, RouterTestingModule, NoopAnimationsModule],
       providers: [
         {
-          provide: TrackingService,
+          provide: TRACKING,
           useClass: TrackingServiceMock,
         },
         {
@@ -37,7 +39,7 @@ describe("AppComponent", () => {
           useClass: MenuServiceMock,
         },
         {
-          provide: LanguageSwitchService,
+          provide: LANGUAGE_SWITCH,
           useClass: LanguageSwitchServiceMock,
         },
         {
@@ -58,7 +60,7 @@ describe("AppComponent", () => {
   });
 
   it("should emit VisitGithubFooterClick event on github footer link click", () => {
-    const tracking = TestBed.inject(TrackingService);
+    const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
 
