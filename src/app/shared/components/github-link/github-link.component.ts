@@ -11,11 +11,11 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
 
 @Component({
   selector: "app-github-link",
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: "./github-link.component.html",
   styleUrls: ["./github-link.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class GithubLinkComponent {
   @Input({ required: true })

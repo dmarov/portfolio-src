@@ -11,17 +11,14 @@ import { TrackingServiceMock } from "../../services/tracking/tracking.service.mo
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [GithubLinkComponent],
   template: `
-    <app-github-link
-      [size]="40"
-      [clickTrackingEvent]="events.VisitGithubHeaderClick"
-    ></app-github-link>
+    <app-github-link [size]="40" [clickTrackingEvent]="event"></app-github-link>
   `,
 })
 export class GithubLinkTestComponent {
-  public readonly events = CustomTrackingEvent;
+  public readonly event = CustomTrackingEvent.VisitGithubHeaderClick;
 }
 describe("GithubLinkComponent", () => {
-  let fixture: ComponentFixture<GithubLinkComponent>;
+  let fixture: ComponentFixture<GithubLinkTestComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -33,7 +30,7 @@ describe("GithubLinkComponent", () => {
       ],
     });
 
-    fixture = TestBed.createComponent(GithubLinkComponent);
+    fixture = TestBed.createComponent(GithubLinkTestComponent);
     fixture.detectChanges();
   });
 
@@ -43,7 +40,7 @@ describe("GithubLinkComponent", () => {
     expect(el).toBeTruthy();
   });
 
-  it.skip("should emit VisitGithubHeaderClick event on github icon click", () => {
+  it("should emit VisitGithubHeaderClick event on github icon click", (done) => {
     const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
@@ -58,5 +55,7 @@ describe("GithubLinkComponent", () => {
       CustomTrackingEvent.VisitGithubHeaderClick,
       {},
     );
+
+    done();
   });
 });
