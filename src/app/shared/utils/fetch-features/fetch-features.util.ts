@@ -3,6 +3,10 @@ import { environment } from "@/environments/environment";
 import { fallbackFeatures } from "../../const/fallback-features.const";
 
 export async function fetchFeatures(): Promise<FeaturesInterface> {
+  if (Object.getOwnPropertyNames(fallbackFeatures).length === 0) {
+    return Promise.resolve(fallbackFeatures);
+  }
+
   try {
     const response = await fetch(environment.featuresUrl);
     const result = await response.text();
