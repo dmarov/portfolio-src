@@ -9,10 +9,10 @@ import { environment } from "@/environments/environment";
 import { AppComponent } from "@/app/app.component";
 import { routes } from "@/app/pages/routes.const";
 import { MenuStateService } from "./app/shared/services/menu/menu-state.service";
-import { Features } from "@/app/models/features/features.class";
 import { fetchFeatures } from "@/app/shared/utils/fetch-features/fetch-features.util";
 import {
   ENVIRONMENT,
+  FEATURES,
   LANGUAGE_SWITCH,
   MENU_STATE,
   TRACKING,
@@ -56,7 +56,7 @@ fetchFeatures().then((features) => {
         useValue: environment,
       },
       {
-        provide: Features,
+        provide: FEATURES,
         useValue: features,
       },
       {

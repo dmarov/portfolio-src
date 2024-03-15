@@ -3,6 +3,7 @@ import { AppEnvironment } from "@/app/models/app-environment.interface";
 import { TrackingInterface } from "../services/tracking/tracking.interface";
 import { LanguageSwitchInterface } from "../services/language-switch/language-switch.interface";
 import { MenuStateInterface } from "../services/menu/menu-state.interface";
+import { Features } from "@/app/models/features/features.class";
 
 export const WINDOW = new InjectionToken<Window>("window");
 
@@ -17,3 +18,5 @@ export const LANGUAGE_SWITCH = new InjectionToken<LanguageSwitchInterface>(
 );
 
 export const MENU_STATE = new InjectionToken<MenuStateInterface>("menu state");
+
+export const FEATURES = new InjectionToken<Features>("features");

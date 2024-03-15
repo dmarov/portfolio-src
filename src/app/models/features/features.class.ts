@@ -1,1 +1,1 @@
-export abstract class Features {}
+export interface Features {}

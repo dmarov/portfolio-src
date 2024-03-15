@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { Features } from "@/app/models/features/features.class";
 import { AboutMeComponent } from "./about-me.component";
 
 @Component({
@@ -17,20 +16,8 @@ describe("AboutMeComponent", () => {
   let fixture: ComponentFixture<AboutMeTestComponent>;
   mockIntersectionObserver();
 
-  const mockFeatures: Features = {
-    SHOW_WHAT_I_STAND_FOR: true,
-    RESPONSIVE_MENU_ENABLED: false,
-  };
-
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [
-        {
-          provide: Features,
-          useValue: mockFeatures,
-        },
-      ],
-    });
+    TestBed.configureTestingModule({});
 
     fixture = TestBed.createComponent(AboutMeTestComponent);
     fixture.detectChanges();
