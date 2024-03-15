@@ -1,14 +1,10 @@
 import { Observable, of } from "rxjs";
-import { MenuService } from "./menu.service";
+import { MenuStateInterface } from "./menu-state.interface";
 
-export class MenuServiceMock extends MenuService {
+export class MenuStateServiceMock implements MenuStateInterface {
   public readonly menuVisible$ = of(false);
 
   public readonly isDesktop$: Observable<boolean> = of(true);
-
-  public constructor() {
-    super();
-  }
 
   public toggle(): void {
     // this method intended to be empty

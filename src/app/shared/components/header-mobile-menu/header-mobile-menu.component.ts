@@ -1,9 +1,10 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import { MenuService } from "@/app/shared/services/menu/menu.service";
+import { MenuStateInterface } from "@/app/shared/services/menu/menu-state.interface";
 import { heightAnimation } from "@/app/shared/animations/height.animation";
 import { menuEntries } from "../../const/menu-entries.const";
+import { MENU_STATE } from "../../const/injection-tokens.const";
 
 @Component({
   selector: "app-header-mobile-menu",
@@ -19,7 +20,10 @@ export class HeaderMobileMenuComponent {
 
   public readonly menuEntries = menuEntries;
 
-  public constructor(private readonly menuService: MenuService) {}
+  public constructor(
+    @Inject(MENU_STATE)
+    private readonly menuService: MenuStateInterface,
+  ) {}
 
   public onLinkClick(event: Event, isActive: boolean): void {
     if (isActive) {

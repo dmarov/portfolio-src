@@ -13,8 +13,12 @@ import { Router, NavigationEnd, RouterModule } from "@angular/router";
 import { NgScrollbar, NgScrollbarModule } from "ngx-scrollbar";
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
-import { TRACKING, WINDOW } from "./shared/const/injection-tokens.const";
-import { MenuService } from "./shared/services/menu/menu.service";
+import {
+  MENU_STATE,
+  TRACKING,
+  WINDOW,
+} from "./shared/const/injection-tokens.const";
+import { MenuStateInterface } from "./shared/services/menu/menu-state.interface";
 import { TrackingInterface } from "./shared/services/tracking/tracking.interface";
 
 @Component({
@@ -37,7 +41,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     private readonly win: Window,
     @Inject(DOCUMENT)
     private readonly document: Document,
-    private readonly menuService: MenuService,
+    @Inject(MENU_STATE)
+    private readonly menuService: MenuStateInterface,
   ) {}
 
   @HostListener("window:resize")

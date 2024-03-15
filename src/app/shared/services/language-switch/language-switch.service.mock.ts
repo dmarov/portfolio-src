@@ -1,4 +1,4 @@
-import { LanguageSwitchInterface } from "./language-switch.service";
+import { LanguageSwitchInterface } from "./language-switch.interface";
 
 export class LanguageSwitchServiceMock implements LanguageSwitchInterface {
   public isActive(): boolean {

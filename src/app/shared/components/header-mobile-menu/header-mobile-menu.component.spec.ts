@@ -3,9 +3,12 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { TRACKING, WINDOW } from "../../const/injection-tokens.const";
-import { MenuService } from "../../services/menu/menu.service";
-import { MenuServiceMock } from "../../services/menu/menu.service.mock";
+import {
+  MENU_STATE,
+  TRACKING,
+  WINDOW,
+} from "../../const/injection-tokens.const";
+import { MenuStateServiceMock } from "../../services/menu/menu-state.service.mock";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { HeaderMobileMenuComponent } from "./header-mobile-menu.component";
 
@@ -26,8 +29,8 @@ describe("HeaderMobileMenuComponent", () => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: MenuService,
-          useClass: MenuServiceMock,
+          provide: MENU_STATE,
+          useClass: MenuStateServiceMock,
         },
         {
           provide: TRACKING,

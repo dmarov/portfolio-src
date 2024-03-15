@@ -1,12 +1,12 @@
 import { Injectable } from "@angular/core";
 import { BehaviorSubject, distinctUntilChanged, Observable } from "rxjs";
 import { map } from "rxjs/operators";
-import { MenuService } from "./menu.service";
+import { MenuStateInterface } from "./menu-state.interface";
 
 @Injectable({
   providedIn: "any",
 })
-export class MenuServiceImpl extends MenuService {
+export class MenuStateService implements MenuStateInterface {
   public readonly menuVisible$: Observable<boolean>;
 
   public readonly isDesktop$: Observable<boolean>;
@@ -16,7 +16,6 @@ export class MenuServiceImpl extends MenuService {
   private readonly windowWidthInner$ = new BehaviorSubject<number>(0);
 
   public constructor() {
-    super();
     this.menuVisible$ = this.menuVisibleInner$.asObservable();
 
     this.isDesktop$ = this.windowWidthInner$.pipe(

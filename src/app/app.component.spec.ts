@@ -6,12 +6,12 @@ import { AppComponent } from "./app.component";
 import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
 import {
   LANGUAGE_SWITCH,
+  MENU_STATE,
   TRACKING,
   WINDOW,
 } from "./shared/const/injection-tokens.const";
 import { LanguageSwitchServiceMock } from "./shared/services/language-switch/language-switch.service.mock";
-import { MenuService } from "./shared/services/menu/menu.service";
-import { MenuServiceMock } from "./shared/services/menu/menu.service.mock";
+import { MenuStateServiceMock } from "./shared/services/menu/menu-state.service.mock";
 import { TrackingServiceMock } from "./shared/services/tracking/tracking.service.mock";
 
 @Component({
@@ -35,8 +35,8 @@ describe("AppComponent", () => {
           useClass: TrackingServiceMock,
         },
         {
-          provide: MenuService,
-          useClass: MenuServiceMock,
+          provide: MENU_STATE,
+          useClass: MenuStateServiceMock,
         },
         {
           provide: LANGUAGE_SWITCH,

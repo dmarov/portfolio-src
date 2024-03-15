@@ -3,13 +3,13 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { MenuService } from "../../services/menu/menu.service";
-import { MenuServiceMock } from "../../services/menu/menu.service.mock";
+import { MenuStateServiceMock } from "../../services/menu/menu-state.service.mock";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { HeaderComponent } from "./header.component";
 import { LanguageSwitchServiceMock } from "../../services/language-switch/language-switch.service.mock";
 import {
   LANGUAGE_SWITCH,
+  MENU_STATE,
   TRACKING,
   WINDOW,
 } from "../../const/injection-tokens.const";
@@ -30,8 +30,8 @@ describe("HeaderComponent", () => {
       imports: [RouterTestingModule, NoopAnimationsModule],
       providers: [
         {
-          provide: MenuService,
-          useClass: MenuServiceMock,
+          provide: MENU_STATE,
+          useClass: MenuStateServiceMock,
         },
         {
           provide: TRACKING,

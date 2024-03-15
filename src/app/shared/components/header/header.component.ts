@@ -1,12 +1,12 @@
 import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { MenuService } from "@/app/shared/services/menu/menu.service";
+import { MenuStateInterface } from "@/app/shared/services/menu/menu-state.interface";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { HeaderMobileMenuComponent } from "../header-mobile-menu/header-mobile-menu.component";
 import { HeaderDesktopMenuComponent } from "../header-desktop-menu/header-desktop-menu.component";
-import { TRACKING } from "../../const/injection-tokens.const";
+import { MENU_STATE, TRACKING } from "../../const/injection-tokens.const";
 import { TrackingInterface } from "../../services/tracking/tracking.interface";
 
 @Component({
@@ -29,7 +29,8 @@ export class HeaderComponent {
   public readonly isDesktop$ = this.menuService.isDesktop$;
 
   public constructor(
-    private readonly menuService: MenuService,
+    @Inject(MENU_STATE)
+    private readonly menuService: MenuStateInterface,
     @Inject(TRACKING)
     private readonly tracking: TrackingInterface,
   ) {}

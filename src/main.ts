@@ -7,14 +7,14 @@ import { provideRouter } from "@angular/router";
 import { NG_SCROLLBAR_OPTIONS } from "ngx-scrollbar";
 import { environment } from "@/environments/environment";
 import { AppComponent } from "@/app/app.component";
-import { MenuService } from "@/app/shared/services/menu/menu.service";
 import { routes } from "@/app/pages/routes.const";
-import { MenuServiceImpl } from "./app/shared/services/menu/menu.service.impl";
+import { MenuStateService } from "./app/shared/services/menu/menu-state.service";
 import { Features } from "@/app/models/features/features.class";
 import { fetchFeatures } from "@/app/shared/utils/fetch-features/fetch-features.util";
 import {
   ENVIRONMENT,
   LANGUAGE_SWITCH,
+  MENU_STATE,
   TRACKING,
   VISIT_TIME,
   WINDOW,
@@ -60,8 +60,8 @@ fetchFeatures().then((features) => {
         useValue: features,
       },
       {
-        provide: MenuService,
-        useClass: MenuServiceImpl,
+        provide: MENU_STATE,
+        useClass: MenuStateService,
       },
       {
         provide: VISIT_TIME,

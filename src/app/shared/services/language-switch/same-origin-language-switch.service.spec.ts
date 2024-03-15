@@ -1,6 +1,6 @@
 import { TestBed } from "@angular/core/testing";
 import { LanguageType } from "@/app/models/lang/language-type.enum";
-import { LanguageSwitchInterface } from "../language-switch.service";
+import { LanguageSwitchInterface } from "./language-switch.interface";
 import { SameOriginLanguageSwitchService } from "./same-origin-language-switch.service";
 import { LANGUAGE_SWITCH } from "@/app/shared/const/injection-tokens.const";
 

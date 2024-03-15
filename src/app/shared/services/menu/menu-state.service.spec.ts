@@ -1,11 +1,12 @@
 import { TestBed } from "@angular/core/testing";
 import { take, toArray } from "rxjs/operators";
 import { Features } from "@/app/models/features/features.class";
-import { MenuService } from "./menu.service";
-import { MenuServiceImpl } from "./menu.service.impl";
+import { MenuStateInterface } from "./menu-state.interface";
+import { MenuStateService } from "./menu-state.service";
+import { MENU_STATE } from "../../const/injection-tokens.const";
 
-describe("MenuService", () => {
-  let service: MenuService;
+describe("MenuStateService", () => {
+  let service: MenuStateInterface;
 
   const mockFeatures: Features = {
     SHOW_WHAT_I_STAND_FOR: true,
@@ -15,8 +16,8 @@ describe("MenuService", () => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: MenuService,
-          useClass: MenuServiceImpl,
+          provide: MENU_STATE,
+          useClass: MenuStateService,
         },
         {
           provide: Features,
@@ -25,7 +26,7 @@ describe("MenuService", () => {
       ],
     });
 
-    service = TestBed.inject(MenuService);
+    service = TestBed.inject(MENU_STATE);
   });
 
   it("should emit opposite value after menu toggle", () => {
