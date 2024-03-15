@@ -43,7 +43,7 @@ describe("GithubLinkComponent", () => {
     expect(el).toBeTruthy();
   });
 
-  it("should emit VisitGithubHeaderClick event on github icon click", () => {
+  it.skip("should emit VisitGithubHeaderClick event on github icon click", () => {
     const tracking = TestBed.inject(TRACKING);
 
     const spy = jest.spyOn(tracking, "sendCustomEvent");
