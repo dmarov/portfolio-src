@@ -3,7 +3,6 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
-import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
 import {
   LANGUAGE_SWITCH,
   MENU_STATE,
@@ -57,22 +56,5 @@ describe("AppComponent", () => {
     const el = document.querySelector('[data-test="app"]') as HTMLElement;
 
     expect(el).toBeTruthy();
-  });
-
-  it("should emit VisitGithubFooterClick event on github footer link click", () => {
-    const tracking = TestBed.inject(TRACKING);
-
-    const spy = jest.spyOn(tracking, "sendCustomEvent");
-
-    const el = document.querySelector(
-      "[data-test='visit-github-footer-link']",
-    ) as HTMLElement;
-
-    el.click();
-
-    expect(spy).toHaveBeenCalledWith(
-      CustomTrackingEvent.VisitGithubFooterClick,
-      {},
-    );
   });
 });

@@ -2,7 +2,6 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { MenuStateServiceMock } from "../../services/menu/menu-state.service.mock";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";
 import { HeaderComponent } from "./header.component";
@@ -56,22 +55,5 @@ describe("HeaderComponent", () => {
     const el = document.querySelector("[data-test='header']");
 
     expect(el).toBeTruthy();
-  });
-
-  it("should emit VisitGithubHeaderClick event on github icon click", () => {
-    const tracking = TestBed.inject(TRACKING);
-
-    const spy = jest.spyOn(tracking, "sendCustomEvent");
-
-    const el = document.querySelector(
-      "[data-test='header-github-icon']",
-    ) as HTMLElement;
-
-    el.click();
-
-    expect(spy).toHaveBeenCalledWith(
-      CustomTrackingEvent.VisitGithubHeaderClick,
-      {},
-    );
   });
 });

@@ -14,20 +14,10 @@
       <div class="content-wrapper">
         <div class="content content_footer">
           <div class="footer">
-            <a
-              data-test="visit-github-footer-link"
-              href="https://github.com/dmarov"
-              target="_blank"
-              (click)="onVisitGithubFooterClick()"
-            >
-              <img
-                width="128"
-                height="128"
-                class="footer__github"
-                src="assets/images/github.png?v=1"
-                alt="Github"
-              />
-            </a>
+            <app-github-link
+              [size]="128"
+              [clickTrackingEvent]="events.VisitGithubFooterClick"
+            ></app-github-link>
           </div>
         </div>
       </div>

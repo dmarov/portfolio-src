@@ -6,19 +6,10 @@
           *ngIf="(isDesktop$ | async) === false"
           class="header__side header__side_logo"
         >
-          <a
-            data-test="header-github-icon"
-            href="https://github.com/dmarov"
-            target="_blank"
-            class="header__github-wrapper"
-            (click)="onVisitGithubHeaderClick()"
-          >
-            <img
-              class="header__github"
-              alt="Github"
-              src="assets/images/github.png?v=1"
-            />
-          </a>
+          <app-github-link
+            [size]="40"
+            [clickTrackingEvent]="events.VisitGithubHeaderClick"
+          ></app-github-link>
         </div>
 
         <app-header-mobile-menu
@@ -43,19 +34,10 @@
           ></app-burger>
 
           <ng-template #githubLogoBlock>
-            <a
-              data-test="header-github-icon"
-              href="https://github.com/dmarov"
-              target="_blank"
-              class="header__github-wrapper"
-              (click)="onVisitGithubHeaderClick()"
-            >
-              <img
-                class="header__github"
-                alt="Github"
-                src="assets/images/github.png?v=1"
-              />
-            </a>
+            <app-github-link
+              [size]="40"
+              [clickTrackingEvent]="events.VisitGithubHeaderClick"
+            ></app-github-link>
           </ng-template>
 
           <app-lang></app-lang>

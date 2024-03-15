@@ -20,6 +20,7 @@ import {
 } from "./shared/const/injection-tokens.const";
 import { MenuStateInterface } from "./shared/services/menu/menu-state.interface";
 import { TrackingInterface } from "./shared/services/tracking/tracking.interface";
+import { GithubLinkComponent } from "./shared/components/github-link/github-link.component";
 
 @Component({
   selector: "app-root",
@@ -27,11 +28,19 @@ import { TrackingInterface } from "./shared/services/tracking/tracking.interface
   styleUrls: ["./app.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [RouterModule, CommonModule, HeaderComponent, NgScrollbarModule],
+  imports: [
+    RouterModule,
+    CommonModule,
+    HeaderComponent,
+    NgScrollbarModule,
+    GithubLinkComponent,
+  ],
 })
 export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild(NgScrollbar)
   public readonly scrollbarRef!: NgScrollbar;
+
+  public readonly events = CustomTrackingEvent;
 
   public constructor(
     private readonly router: Router,
