@@ -1,7 +1,3 @@
-import { Features } from "@/app/models/features/features.class";
+import { FeaturesInterface } from "@/app/models/features/features.interface";
 
-export const fallbackFeatures: Features = {
-  SHOW_WHAT_I_STAND_FOR: false,
-
-  RESPONSIVE_MENU_ENABLED: false,
-};
+export const fallbackFeatures: FeaturesInterface = {};
