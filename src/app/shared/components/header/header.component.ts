@@ -25,9 +25,9 @@ import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event
   ],
 })
 export class HeaderComponent {
-  public readonly isMenuOpened$ = this.menuService.menuVisible$;
+  public readonly isMenuOpened$ = this.menuService.isMenuOpened$;
 
-  public readonly isDesktop$ = this.menuService.isDesktop$;
+  public readonly isDesktop$ = this.menuService.isDesktopMode$;
 
   public readonly events = CustomTrackingEvent;
 

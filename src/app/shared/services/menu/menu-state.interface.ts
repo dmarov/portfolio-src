@@ -1,9 +1,9 @@
 import { Observable } from "rxjs";
 
 export interface MenuStateInterface {
-  readonly menuVisible$: Observable<boolean>;
+  readonly isMenuOpened$: Observable<boolean>;
 
-  readonly isDesktop$: Observable<boolean>;
+  readonly isDesktopMode$: Observable<boolean>;
 
   toggle(): void;
 

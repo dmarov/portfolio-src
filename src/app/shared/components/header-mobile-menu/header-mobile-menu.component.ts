@@ -16,7 +16,7 @@ import { MENU_STATE } from "../../const/injection-tokens.const";
   animations: [heightAnimation],
 })
 export class HeaderMobileMenuComponent {
-  public readonly isMenuOpen$ = this.menuService.menuVisible$;
+  public readonly isMenuOpen$ = this.menuService.isMenuOpened$;
 
   public readonly menuEntries = menuEntries;
 

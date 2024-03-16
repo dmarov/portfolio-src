@@ -7,18 +7,18 @@ import { MenuStateInterface } from "./menu-state.interface";
   providedIn: "any",
 })
 export class MenuStateService implements MenuStateInterface {
-  public readonly menuVisible$: Observable<boolean>;
+  public readonly isMenuOpened$: Observable<boolean>;
 
-  public readonly isDesktop$: Observable<boolean>;
+  public readonly isDesktopMode$: Observable<boolean>;
 
   private readonly menuVisibleInner$ = new BehaviorSubject<boolean>(false);
 
   private readonly windowWidthInner$ = new BehaviorSubject<number>(0);
 
   public constructor() {
-    this.menuVisible$ = this.menuVisibleInner$.asObservable();
+    this.isMenuOpened$ = this.menuVisibleInner$.asObservable();
 
-    this.isDesktop$ = this.windowWidthInner$.pipe(
+    this.isDesktopMode$ = this.windowWidthInner$.pipe(
       distinctUntilChanged(),
       map((w) => w >= 600),
     );

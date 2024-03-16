@@ -21,7 +21,7 @@ describe("MenuStateService", () => {
   });
 
   it("should emit opposite value after menu toggle", () => {
-    service.menuVisible$.pipe(take(3), toArray()).subscribe((values) => {
+    service.isMenuOpened$.pipe(take(3), toArray()).subscribe((values) => {
       expect(values).toEqual([false, true, false]);
     });
 
