@@ -26,6 +26,8 @@ npm install {some package}
 
 4. `docker compose down [--volumes]` - to stop detached container [and clear volumes]
 
+5. `docker compose -f idle.docker-compose.yml up` - to start idle container (to upgrade angular and so on)
+
 ## Unit testing
 
 1. Use `ng test` to run unit tests once
