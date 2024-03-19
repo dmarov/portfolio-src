@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { RouterTestingModule } from "@angular/router/testing";
+import { RouterModule } from "@angular/router";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
 import { PreviewProductsComponent } from "./preview-products.component";
 import { TRACKING } from "@/app/shared/const/injection-tokens.const";
+import { RoutePath } from "@/app/models/routing/route-path.enum";
+import { ProductsComponent } from "../../products/products.component";
 
 @Component({
   selector: "app-preview-products-test",
@@ -22,7 +24,14 @@ describe("PreviewProductsComponent", () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [
+        RouterModule.forRoot([
+          {
+            path: RoutePath.Products,
+            component: ProductsComponent,
+          },
+        ]),
+      ],
       providers: [
         {
           provide: TRACKING,

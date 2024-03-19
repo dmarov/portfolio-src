@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { RouterTestingModule } from "@angular/router/testing";
+import { RouterModule } from "@angular/router";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
 import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
 import { HomeComponent } from "./home.component";
@@ -11,6 +11,8 @@ import {
   VISIT_TIME,
 } from "@/app/shared/const/injection-tokens.const";
 import { mockEnvironment } from "@/environments/environment.mock";
+import { ProductsComponent } from "../products/products.component";
+import { RoutePath } from "@/app/models/routing/route-path.enum";
 
 @Component({
   selector: "app-home-test",
@@ -27,7 +29,14 @@ describe("HomeComponent", () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [
+        RouterModule.forRoot([
+          {
+            path: RoutePath.Products,
+            component: ProductsComponent,
+          },
+        ]),
+      ],
       providers: [
         {
           provide: TRACKING,
