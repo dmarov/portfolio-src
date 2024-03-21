@@ -27,6 +27,8 @@
           class="header__side"
           [ngClass]="{ header__side_desktop: (isDesktop$ | async) === true }"
         >
+          <app-lang></app-lang>
+
           <app-burger
             *ngIf="(isDesktop$ | async) === false; else githubLogoBlock"
             [opened]="(isMenuOpened$ | async) ?? false"
@@ -39,8 +41,6 @@
               [clickTrackingEvent]="events.VisitGithubHeaderClick"
             ></app-github-link>
           </ng-template>
-
-          <app-lang></app-lang>
         </div>
       </div>
     </div>
