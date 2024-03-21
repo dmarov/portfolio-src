@@ -1,5 +1,5 @@
 import { Routes } from "@angular/router";
-import { RoutePath } from "../models/routing/route-path.enum";
+import { RoutePath } from "@/models/routing/route-path.enum";
 
 export const routes: Routes = [
   {

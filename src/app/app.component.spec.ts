@@ -2,16 +2,16 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterTestingModule } from "@angular/router/testing";
-import { AppComponent } from "./app.component";
+import { AppComponent } from "@/app.component";
 import {
   LANGUAGE_SWITCH,
   MENU_STATE,
   TRACKING,
   WINDOW,
-} from "./shared/const/injection-tokens.const";
-import { LanguageSwitchServiceMock } from "./shared/services/language-switch/language-switch.service.mock";
-import { MenuStateServiceMock } from "./shared/services/menu/menu-state.service.mock";
-import { TrackingServiceMock } from "./shared/services/tracking/tracking.service.mock";
+} from "@/shared/const/injection-tokens.const";
+import { LanguageSwitchServiceMock } from "@/shared/services/language-switch/language-switch.service.mock";
+import { MenuStateServiceMock } from "@/shared/services/menu/menu-state.service.mock";
+import { TrackingServiceMock } from "@/shared/services/tracking/tracking.service.mock";
 
 @Component({
   selector: "app-test",

@@ -11,16 +11,16 @@ import {
 } from "@angular/core";
 import { Router, NavigationEnd, RouterModule } from "@angular/router";
 import { NgScrollbar, NgScrollbarModule } from "ngx-scrollbar";
-import { HeaderComponent } from "./shared/components/header/header.component";
-import { CustomTrackingEvent } from "./models/tracking/custom-tracking-event.enum";
+import { HeaderComponent } from "@/shared/components/header/header.component";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 import {
   MENU_STATE,
   TRACKING,
   WINDOW,
-} from "./shared/const/injection-tokens.const";
-import { MenuStateInterface } from "./shared/services/menu/menu-state.interface";
-import { TrackingInterface } from "./shared/services/tracking/tracking.interface";
-import { GithubLinkComponent } from "./shared/components/github-link/github-link.component";
+} from "@/shared/const/injection-tokens.const";
+import { MenuStateInterface } from "@/shared/services/menu/menu-state.interface";
+import { TrackingInterface } from "@/shared/services/tracking/tracking.interface";
+import { GithubLinkComponent } from "@/shared/components/github-link/github-link.component";
 
 @Component({
   selector: "app-root",
