@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
-import { RouterTestingModule } from "@angular/router/testing";
+import { RouterModule } from "@angular/router";
 import { AppComponent } from "@/app.component";
 import {
   LANGUAGE_SWITCH,
@@ -27,7 +27,7 @@ describe("AppComponent", () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [AppComponent, RouterTestingModule, NoopAnimationsModule],
+      imports: [AppComponent, NoopAnimationsModule, RouterModule.forRoot([])],
       providers: [
         {
           provide: TRACKING,
