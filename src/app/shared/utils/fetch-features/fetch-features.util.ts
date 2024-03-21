@@ -1,5 +1,5 @@
+import { environment } from "@env/environment";
 import { FeaturesInterface } from "@/models/features/features.interface";
-import { environment } from "@/environments/environment";
 import { fallbackFeatures } from "../../const/fallback-features.const";
 
 export async function fetchFeatures(): Promise<FeaturesInterface> {
