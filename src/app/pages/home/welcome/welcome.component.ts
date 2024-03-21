@@ -1,10 +1,7 @@
 import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { RoutePath } from "@/models/routing/route-path.enum";
 import { msInYear } from "@/shared/const/ms-in-year.const";
-import {
-  ENVIRONMENT,
-  VISIT_TIME,
-} from "@/shared/const/injection-tokens.const";
+import { ENVIRONMENT, VISIT_TIME } from "@/shared/const/injection-tokens.const";
 import { AppEnvironment } from "@/models/app-environment.interface";
 
 @Component({

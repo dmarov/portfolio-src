@@ -11,17 +11,10 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
-    "lib": [
-      "es2019",
-      "dom"
-    ],
+    "lib": ["es2019", "dom"],
     "paths": {
-      "@/*": [
-        "src/app/*"
-      ],
-      "@env/*": [
-        "src/environments/*"
-      ]
+      "@/*": ["src/app/*"],
+      "@env/*": ["src/environments/*"]
     },
     "useDefineForClassFields": false,
     "strict": true,
