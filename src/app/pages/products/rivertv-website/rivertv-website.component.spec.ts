@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RivertvWebsiteComponent } from "./rivertv-website.component";
-import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TRACKING } from "@/app/shared/const/injection-tokens.const";
+import { TrackingServiceMock } from "@/shared/services/tracking/tracking.service.mock";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
+import { TRACKING } from "@/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-rivertv-website-test",

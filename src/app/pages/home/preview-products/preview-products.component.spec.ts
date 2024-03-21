@@ -2,11 +2,11 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterModule } from "@angular/router";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { TrackingServiceMock } from "@/shared/services/tracking/tracking.service.mock";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 import { PreviewProductsComponent } from "./preview-products.component";
-import { TRACKING } from "@/app/shared/const/injection-tokens.const";
-import { RoutePath } from "@/app/models/routing/route-path.enum";
+import { TRACKING } from "@/shared/const/injection-tokens.const";
+import { RoutePath } from "@/models/routing/route-path.enum";
 import { ProductsComponent } from "../../products/products.component";
 
 @Component({

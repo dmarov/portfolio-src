@@ -1,5 +1,5 @@
-import { MenuEntry } from "@/app/models/menu/menu-entry.interface";
-import { RoutePath } from "@/app/models/routing/route-path.enum";
+import { MenuEntry } from "@/models/menu/menu-entry.interface";
+import { RoutePath } from "@/models/routing/route-path.enum";
 
 export const menuEntries: ReadonlyArray<MenuEntry> = [
   {

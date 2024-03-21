@@ -1,4 +1,4 @@
-import { AppEnvironment } from "@/app/models/app-environment.interface";
+import { AppEnvironment } from "@/models/app-environment.interface";
 import { CompositeTrackingService } from "../services/tracking/composite-tracking.service";
 import { DebugTrackingService } from "../services/tracking/debug-tracking.service";
 import { GoogleAnalyticsTrackingService } from "../services/tracking/google-analytics-tracking.service";

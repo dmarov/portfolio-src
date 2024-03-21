@@ -5,11 +5,11 @@ import { bootstrapApplication } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { provideRouter } from "@angular/router";
 import { NG_SCROLLBAR_OPTIONS } from "ngx-scrollbar";
-import { environment } from "@/environments/environment";
-import { AppComponent } from "@/app/app.component";
-import { routes } from "@/app/pages/routes.const";
+import { environment } from "@env/environment";
+import { AppComponent } from "@/app.component";
+import { routes } from "@/pages/routes.const";
 import { MenuStateService } from "./app/shared/services/menu/menu-state.service";
-import { fetchFeatures } from "@/app/shared/utils/fetch-features/fetch-features.util";
+import { fetchFeatures } from "@/shared/utils/fetch-features/fetch-features.util";
 import {
   ENVIRONMENT,
   FEATURES,
@@ -18,9 +18,9 @@ import {
   TRACKING,
   VISIT_TIME,
   WINDOW,
-} from "@/app/shared/const/injection-tokens.const";
-import { languageSwitchServiceFactory } from "@/app/shared/factories/language-switch-service.factory";
-import { trackingServiceFactory } from "@/app/shared/factories/tracking-service.factory";
+} from "@/shared/const/injection-tokens.const";
+import { languageSwitchServiceFactory } from "@/shared/factories/language-switch-service.factory";
+import { trackingServiceFactory } from "@/shared/factories/tracking-service.factory";
 
 if (environment.production) {
   enableProdMode();

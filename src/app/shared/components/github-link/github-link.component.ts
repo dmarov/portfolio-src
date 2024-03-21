@@ -7,7 +7,7 @@ import {
 import { CommonModule } from "@angular/common";
 import { TRACKING } from "../../const/injection-tokens.const";
 import { TrackingInterface } from "../../services/tracking/tracking.interface";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-github-link",

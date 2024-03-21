@@ -1,11 +1,11 @@
 import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { ProductEntry } from "@/app/models/home/product-entry.interface";
-import { RoutePath } from "@/app/models/routing/route-path.enum";
-import { TRACKING } from "@/app/shared/const/injection-tokens.const";
-import { TrackingInterface } from "@/app/shared/services/tracking/tracking.interface";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
+import { ProductEntry } from "@/models/home/product-entry.interface";
+import { RoutePath } from "@/models/routing/route-path.enum";
+import { TRACKING } from "@/shared/const/injection-tokens.const";
+import { TrackingInterface } from "@/shared/services/tracking/tracking.interface";
 
 @Component({
   selector: "app-preview-products",

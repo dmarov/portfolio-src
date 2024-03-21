@@ -4,7 +4,7 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { UnfoldEffect } from "@/app/shared/utils/unfold-effect/unfold-effect";
+import { UnfoldEffect } from "@/shared/utils/unfold-effect/unfold-effect";
 
 @Component({
   selector: "app-about-me",

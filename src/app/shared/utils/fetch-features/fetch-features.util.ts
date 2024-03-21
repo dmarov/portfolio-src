@@ -1,4 +1,4 @@
-import { FeaturesInterface } from "@/app/models/features/features.interface";
+import { FeaturesInterface } from "@/models/features/features.interface";
 import { environment } from "@/environments/environment";
 import { fallbackFeatures } from "../../const/fallback-features.const";
 

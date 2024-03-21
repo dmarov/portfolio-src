@@ -1,4 +1,4 @@
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 import { TrackingInterface } from "./tracking.interface";
 
 export class DebugTrackingService implements TrackingInterface {

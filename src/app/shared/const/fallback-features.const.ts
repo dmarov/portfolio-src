@@ -1,3 +1,3 @@
-import { FeaturesInterface } from "@/app/models/features/features.interface";
+import { FeaturesInterface } from "@/models/features/features.interface";
 
 export const fallbackFeatures: FeaturesInterface = {};

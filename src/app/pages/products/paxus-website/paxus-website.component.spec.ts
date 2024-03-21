@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
+import { TrackingServiceMock } from "@/shared/services/tracking/tracking.service.mock";
 import { PaxusWebsiteComponent } from "./paxus-website.component";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TRACKING } from "@/app/shared/const/injection-tokens.const";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
+import { TRACKING } from "@/shared/const/injection-tokens.const";
 
 @Component({
   selector: "app-paxus-website-test",

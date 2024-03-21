@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, Inject } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { filter, map } from "rxjs/operators";
-import { Language } from "@/app/models/lang/language.interface";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { LanguageType } from "@/app/models/lang/language-type.enum";
+import { Language } from "@/models/lang/language.interface";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
+import { LanguageType } from "@/models/lang/language-type.enum";
 import { LanguageSwitchInterface } from "../../services/language-switch/language-switch.interface";
 import {
   LANGUAGE_SWITCH,

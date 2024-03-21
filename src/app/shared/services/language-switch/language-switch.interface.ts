@@ -1,4 +1,4 @@
-import { LanguageType } from "@/app/models/lang/language-type.enum";
+import { LanguageType } from "@/models/lang/language-type.enum";
 
 export interface LanguageSwitchInterface {
   isActive(fullPath: string, language: LanguageType): boolean;

@@ -1,13 +1,13 @@
 import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { MenuStateInterface } from "@/app/shared/services/menu/menu-state.interface";
+import { MenuStateInterface } from "@/shared/services/menu/menu-state.interface";
 import { LangComponent } from "../lang/lang.component";
 import { BurgerComponent } from "../burger/burger.component";
 import { HeaderMobileMenuComponent } from "../header-mobile-menu/header-mobile-menu.component";
 import { HeaderDesktopMenuComponent } from "../header-desktop-menu/header-desktop-menu.component";
 import { MENU_STATE } from "../../const/injection-tokens.const";
 import { GithubLinkComponent } from "../github-link/github-link.component";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 
 @Component({
   selector: "app-header",

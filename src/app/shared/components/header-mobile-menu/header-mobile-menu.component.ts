@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, Inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import { MenuStateInterface } from "@/app/shared/services/menu/menu-state.interface";
-import { heightAnimation } from "@/app/shared/animations/height.animation";
+import { MenuStateInterface } from "@/shared/services/menu/menu-state.interface";
+import { heightAnimation } from "@/shared/animations/height.animation";
 import { menuEntries } from "../../const/menu-entries.const";
 import { MENU_STATE } from "../../const/injection-tokens.const";
 

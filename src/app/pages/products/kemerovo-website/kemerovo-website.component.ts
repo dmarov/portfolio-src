@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, Inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
-import { TRACKING } from "@/app/shared/const/injection-tokens.const";
-import { TrackingInterface } from "@/app/shared/services/tracking/tracking.interface";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
+import { TRACKING } from "@/shared/const/injection-tokens.const";
+import { TrackingInterface } from "@/shared/services/tracking/tracking.interface";
 
 @Component({
   selector: "app-kemerovo-website",

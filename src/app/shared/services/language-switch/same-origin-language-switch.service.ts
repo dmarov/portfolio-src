@@ -1,4 +1,4 @@
-import { LanguageType } from "@/app/models/lang/language-type.enum";
+import { LanguageType } from "@/models/lang/language-type.enum";
 import { LanguageSwitchInterface } from "./language-switch.interface";
 
 type PrefixMapping = { [key in LanguageType]: string };

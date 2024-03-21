@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { TechEntry } from "@/app/models/home/tech-entry.interface";
+import { TechEntry } from "@/models/home/tech-entry.interface";
 
 @Component({
   selector: "app-tech-list",

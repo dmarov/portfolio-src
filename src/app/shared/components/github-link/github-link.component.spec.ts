@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 import { TRACKING } from "../../const/injection-tokens.const";
 import { GithubLinkComponent } from "./github-link.component";
 import { TrackingServiceMock } from "../../services/tracking/tracking.service.mock";

@@ -2,17 +2,17 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterModule } from "@angular/router";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { TrackingServiceMock } from "@/app/shared/services/tracking/tracking.service.mock";
+import { mockEnvironment } from "@env/environment.mock";
+import { TrackingServiceMock } from "@/shared/services/tracking/tracking.service.mock";
 import { HomeComponent } from "./home.component";
-import { CustomTrackingEvent } from "@/app/models/tracking/custom-tracking-event.enum";
+import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 import {
   ENVIRONMENT,
   TRACKING,
   VISIT_TIME,
-} from "@/app/shared/const/injection-tokens.const";
-import { mockEnvironment } from "@/environments/environment.mock";
+} from "@/shared/const/injection-tokens.const";
 import { ProductsComponent } from "../products/products.component";
-import { RoutePath } from "@/app/models/routing/route-path.enum";
+import { RoutePath } from "@/models/routing/route-path.enum";
 
 @Component({
   selector: "app-home-test",
