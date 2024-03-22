@@ -2,17 +2,17 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterModule } from "@angular/router";
 import { mockIntersectionObserver } from "jsdom-testing-mocks";
-import { mockEnvironment } from "@env/environment.mock";
 import { TrackingServiceMock } from "@/shared/services/tracking/tracking.service.mock";
 import { HomeComponent } from "./home.component";
 import { CustomTrackingEvent } from "@/models/tracking/custom-tracking-event.enum";
 import {
-  ENVIRONMENT,
+  CONSTANTS,
   TRACKING,
   VISIT_TIME,
 } from "@/shared/const/injection-tokens.const";
 import { ProductsComponent } from "../products/products.component";
 import { RoutePath } from "@/models/routing/route-path.enum";
+import { constants } from "@/shared/const/constants.const";
 
 @Component({
   selector: "app-home-test",
@@ -47,8 +47,8 @@ describe("HomeComponent", () => {
           useValue: new Date("Jan 18 2024").getTime(),
         },
         {
-          provide: ENVIRONMENT,
-          useValue: mockEnvironment,
+          provide: CONSTANTS,
+          useValue: constants,
         },
       ],
     });

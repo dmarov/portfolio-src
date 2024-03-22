@@ -14,7 +14,5 @@ export interface AppEnvironment {
   production: boolean;
   debugTracking: boolean;
   languages: SameOriginLang | MultiOriginLang;
-  dateBeginning: string;
-  trackingEventTimeout: number;
   featuresUrl: string;
 }

@@ -11,6 +11,7 @@ import { routes } from "@/pages/routes.const";
 import { MenuStateService } from "./app/shared/services/menu/menu-state.service";
 import { fetchFeatures } from "@/shared/utils/fetch-features/fetch-features.util";
 import {
+  CONSTANTS,
   ENVIRONMENT,
   FEATURES,
   LANGUAGE_SWITCH,
@@ -21,6 +22,7 @@ import {
 } from "@/shared/const/injection-tokens.const";
 import { languageSwitchServiceFactory } from "@/shared/factories/language-switch-service.factory";
 import { trackingServiceFactory } from "@/shared/factories/tracking-service.factory";
+import { constants } from "@/shared/const/constants.const";
 
 if (environment.production) {
   enableProdMode();
@@ -40,7 +42,7 @@ fetchFeatures().then((features) => {
       {
         provide: TRACKING,
         useFactory: trackingServiceFactory,
-        deps: [WINDOW, ENVIRONMENT],
+        deps: [WINDOW, ENVIRONMENT, CONSTANTS],
       },
       {
         provide: LANGUAGE_SWITCH,
@@ -54,6 +56,10 @@ fetchFeatures().then((features) => {
       {
         provide: ENVIRONMENT,
         useValue: environment,
+      },
+      {
+        provide: CONSTANTS,
+        useValue: constants,
       },
       {
         provide: FEATURES,
