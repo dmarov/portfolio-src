@@ -62,9 +62,8 @@
     "jest-preset-angular": "^13.1.1",
     "ngx-i18nsupport": "^0.17.1",
     "prettier": "^2.8.8",
-    "stylelint": "^14.7.1",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard-scss": "^13.0.0",
     "ts-node": "~8.3.0",
     "typescript": "~5.4.2"
   },
