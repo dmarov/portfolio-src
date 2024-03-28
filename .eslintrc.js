@@ -6,7 +6,6 @@ module.exports = {
       files: ["*.ts"],
       parserOptions: {
         project: "./tsconfig.json",
-        tsconfigRootDir: __dirname,
         createDefaultProgram: true,
       },
       extends: [
